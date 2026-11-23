@@ -33,6 +33,7 @@ import json
 import os
 import re
 import sys
+import unicodedata
 
 ROOT = os.path.dirname(os.path.dirname(os.path.abspath(__file__)))
 QUESTIONS = os.path.join(ROOT, "src", "data", "questions.2027.json")
@@ -92,6 +93,54 @@ def normalizuj(text):
 
 # Číslo včetně desetinné čárky a mezery jako oddělovače tisíců (2 000 000 Kč).
 RE_CISLO = re.compile(r"\d{1,3}(?:[  ]\d{3})+|\d+(?:[.,]\d+)?")
+
+
+# --- Prekryv slov mezi odpovedi a citovanym ustanovenim -----------------
+#
+# Ciselna kontrola nize chytne vymyslenou HODNOTU. Nechytne ale citaci, ktera
+# miri na jine, existujici ustanoveni — u odpovedi bez cisel projde cokoli, co
+# nekde v predpisu stoji. Namereno 23. 11. 2026 na zakonu 22/1997: zamena
+# "§ 4a odst. 1" za "§ 4 odst. 1" u otazky na harmonizovanou normu prosla,
+# ackoli § 4 o harmonizaci nemluvi.
+#
+# Prah 0,60 je vybrany z dat, ne z citu. Na 83 overenych odpovedich ma pokryti
+# vuci citovanemu ustanoveni median 1,00 a paty percentil 0,71; vuci nahodne
+# jinemu ustanoveni tehoz predpisu median 0,26; u te sabotaze 0,08.
+#
+# Co kontrola NEUMI: odpovedi s mene nez tremi obsahovymi slovy ("ano",
+# "5 let", "stat") se preskakuji — lexikalne je ukotvit nejde. Jejich jedinou
+# pojistkou zustava ciselna kontrola nize.
+PRAH_PREKRYVU = 0.60
+MIN_SLOV = 3
+
+NEOBSAHOVA = set("""
+a i o u v z s k na do od ve za se je to ke po pro nebo podle pismeno pismene
+odst odstavce bodu casti prilohy priloha tohoto teto tomuto timto vcetne jen tez
+jakoz ktery ktera ktere kterym kterych byt byl byla bylo jsou nejsou maji musi
+nesmi lze nelze pri pred pouze vsak tak take jako ani nez aby pokud kdyz pripade
+pripadne dale jejich jeho svych svem jine jiny jina dalsi takove ten
+nebo anebo popripade zpravidla zejmena napriklad tedy pak proto ovsem vsech
+vsechny tim tomu toho teto tyto tech temto
+""".split())
+
+
+def stemy(text):
+    """Obsahova slova zkracena na pet znaku — hruba nahrada za stemmer.
+
+    Cestina sklonuje, takze presne porovnani slov by selhalo na "harmonizovanou"
+    vs "harmonizovane". Pet znaku staci na rozliseni a snese sklonovani.
+    """
+    s = unicodedata.normalize("NFD", text.lower())
+    s = "".join(c for c in s if unicodedata.category(c) != "Mn")
+    return {w[:5] for w in re.findall(r"[a-z]{4,}", s) if w not in NEOBSAHOVA}
+
+
+def prekryv(odpoved, kontext):
+    """Jaky podil obsahovych slov odpovedi stoji v kontextu. None = nelze merit."""
+    a = stemy(odpoved)
+    if len(a) < MIN_SLOV:
+        return None
+    return len(a & stemy(kontext)) / len(a)
 
 
 def cisla_v(text):
@@ -345,6 +394,29 @@ def zkontroluj(path, bank_ids, bank_version, nalezy):
                         "ustanovení**. Buď je zdroj uvedený špatně, nebo je "
                         "hodnota vzatá odjinud.".format(kde, popis, cislo)
                     )
+
+            # Odpoved se musi opirat o CITOVANE ustanoveni, ne jen o predpis.
+            # Dvoustupnove hlaseni jako u cisel vyse: oboji je nalez, prochazi
+            # jen odpoved ukotvena v citovanem ustanoveni.
+            if uzky:
+                p_uzky = prekryv(spravna.get("text", ""), uzky)
+                if p_uzky is not None and p_uzky < PRAH_PREKRYVU:
+                    p_siroky = prekryv(spravna.get("text", ""), text)
+                    if p_siroky is not None and p_siroky >= PRAH_PREKRYVU:
+                        nalezy.append(
+                            "{}: slova správné odpovědi v předpisu {} jsou, ale "
+                            "**ne v citovaném ustanovení** (překryv {:.2f} proti "
+                            "{:.2f} v celém předpisu). Zdroj míří na jiné "
+                            "ustanovení, než ze kterého odpověď je.".format(
+                                kde, cislo, p_uzky, p_siroky)
+                        )
+                    else:
+                        nalezy.append(
+                            "{}: správná odpověď se slovy neopírá o citované "
+                            "ustanovení předpisu {} (překryv {:.2f}, prahem je "
+                            "{:.2f}). Ověř zdroj, nebo odpověď přeřaď na "
+                            "'navrh'.".format(kde, cislo, p_uzky, PRAH_PREKRYVU)
+                        )
 
     return overeno, navrh, sporne, len(videne)
 
