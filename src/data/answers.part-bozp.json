@@ -1,0 +1,264 @@
+{
+ "schemaVersion": 1,
+ "answersVersion": "0.3.0-bozp",
+ "bankVersion": "2027.1",
+ "license": "CC-BY-SA-4.0",
+ "answers": [
+  {
+   "questionId": "2027-ez1-004",
+   "options": [
+    {
+     "id": "a1",
+     "text": "Všechna opatření vyplývající z právních a ostatních předpisů k zajištění bezpečnosti a ochrany zdraví při práci a z opatření zaměstnavatele, která mají za cíl předcházet rizikům, odstraňovat je nebo minimalizovat působení neodstranitelných rizik."
+    },
+    {
+     "id": "a2",
+     "text": "Soustavné vyhledávání nebezpečných činitelů a procesů pracovního prostředí a zjišťování jejich příčin a zdrojů."
+    },
+    {
+     "id": "a3",
+     "text": "Vedení dokumentace o vyhledávání a vyhodnocování rizik a o přijatých opatřeních."
+    }
+   ],
+   "correctOptionId": "a1",
+   "explanation": "Definice je v § 102 odst. 2 zákoníku práce: prevencí rizik se rozumí všechna opatření vyplývající z právních a ostatních předpisů k zajištění bezpečnosti a ochrany zdraví při práci a z opatření zaměstnavatele, která mají za cíl předcházet rizikům, odstraňovat je nebo minimalizovat působení neodstranitelných rizik.",
+   "whyWrong": {
+    "a2": "Soustavné vyhledávání nebezpečných činitelů a procesů je povinnost zaměstnavatele podle § 102 odst. 3 — jeden z nástrojů prevence rizik, ne její definice.",
+    "a3": "Povinnost vést dokumentaci o vyhledávání a vyhodnocování rizik a o přijatých opatřeních je v § 102 odst. 4; prevenci rizik nedefinuje."
+   },
+   "status": "overeno",
+   "sourceClass": "volny",
+   "visibility": "verejne",
+   "verification": {
+    "method": "primární text předpisu",
+    "checkedAt": "2026-11-23",
+    "checkedBy": "agent",
+    "source": "zákon č. 262/2006 Sb., § 102 odst. 2 — doslovný text, predpisy/zakon-262-2006.txt"
+   }
+  },
+  {
+   "questionId": "2027-ez1-005",
+   "options": [
+    {
+     "id": "a1",
+     "text": "Pouze zákoník práce a prováděcí právní předpisy vydané k jeho provedení."
+    },
+    {
+     "id": "a2",
+     "text": "Konkrétní pokyny dané zaměstnanci vedoucími zaměstnanci, kteří jsou mu nadřízeni."
+    },
+    {
+     "id": "a3",
+     "text": "Předpisy na ochranu života a zdraví, předpisy hygienické a protiepidemické, technické předpisy, technické dokumenty a technické normy, stavební předpisy, dopravní předpisy, předpisy o požární ochraně a předpisy o zacházení s hořlavinami, výbušninami, zbraněmi, střelivem, municí, radioaktivními látkami, chemickými látkami a chemickými směsmi a jinými látkami škodlivými zdraví, pokud upravují otázky týkající se ochrany života a zdraví."
+    }
+   ],
+   "correctOptionId": "a3",
+   "explanation": "§ 349 odst. 1 zákoníku práce vypočítává, co se rozumí právními a ostatními předpisy k zajištění bezpečnosti a ochrany zdraví při práci. Do výčtu patří i technické dokumenty a technické normy, pokud upravují otázky týkající se ochrany života a zdraví — proto se jich může revizní technik dovolávat, i když samy nejsou obecně závazné.",
+   "whyWrong": {
+    "a1": "Výčet v § 349 odst. 1 je výrazně širší než zákoník práce a jeho prováděcí předpisy; zahrnuje mimo jiné technické, stavební a dopravní předpisy a technické normy.",
+    "a2": "Konkrétní pokyny nadřízených vedoucích zaměstnanců jsou podle § 349 odst. 2 pokyny k zajištění bezpečnosti a ochrany zdraví při práci, což je jiná kategorie než právní a ostatní předpisy."
+   },
+   "status": "overeno",
+   "sourceClass": "volny",
+   "visibility": "verejne",
+   "verification": {
+    "method": "primární text předpisu",
+    "checkedAt": "2026-11-23",
+    "checkedBy": "agent",
+    "source": "zákon č. 262/2006 Sb., § 349 odst. 1 (ve spojení s § 349 odst. 2) — doslovný text, predpisy/zakon-262-2006.txt"
+   }
+  },
+  {
+   "questionId": "2027-ez1-006",
+   "options": [
+    {
+     "id": "a1",
+     "text": "Zapracování předpisů Evropské unie a úprava dalších požadavků bezpečnosti a ochrany zdraví při práci v pracovněprávních vztazích v návaznosti na zákoník práce a zajištění bezpečnosti a ochrany zdraví při činnosti nebo poskytování služeb mimo pracovněprávní vztahy."
+    },
+    {
+     "id": "a2",
+     "text": "Stanovení bližších požadavků na bezpečný provoz a používání strojů, technických zařízení, přístrojů a nářadí."
+    },
+    {
+     "id": "a3",
+     "text": "Úprava odborné způsobilosti k činnostem na vyhrazených elektrických zařízeních a oprávnění k jejich montáži, opravám a revizím."
+    }
+   ],
+   "correctOptionId": "a1",
+   "explanation": "§ 1 zákona č. 309/2006 Sb. říká, že tento zákon zapracovává příslušné předpisy Evropské unie a v návaznosti na zákoník práce upravuje další požadavky bezpečnosti a ochrany zdraví při práci v pracovněprávních vztazích a zajištění bezpečnosti a ochrany zdraví při činnosti nebo poskytování služeb mimo pracovněprávní vztahy.",
+   "whyWrong": {
+    "a2": "Bližší požadavky na bezpečný provoz a používání zařízení stanoví prováděcí právní předpis, na který § 4 odst. 2 tohoto zákona odkazuje — nařízení vlády č. 378/2001 Sb.",
+    "a3": "Odbornou způsobilost a oprávnění k činnostem na vyhrazených elektrických zařízeních upravuje zákon o bezpečnosti práce v souvislosti s provozem vyhrazených technických zařízení a jeho prováděcí nařízení vlády."
+   },
+   "status": "overeno",
+   "sourceClass": "volny",
+   "visibility": "verejne",
+   "verification": {
+    "method": "primární text předpisu",
+    "checkedAt": "2026-11-23",
+    "checkedBy": "agent",
+    "source": "zákon č. 309/2006 Sb., § 1 — doslovný text, predpisy/zakon-309-2006.txt"
+   }
+  },
+  {
+   "questionId": "2027-ez1-007",
+   "options": [
+    {
+     "id": "a1",
+     "text": "Nejméně jednou za 12 měsíců prohlédnuty revizním technikem."
+    },
+    {
+     "id": "a2",
+     "text": "Pravidelně a řádně udržovány, kontrolovány a revidovány."
+    },
+    {
+     "id": "a3",
+     "text": "Opatřeny označením CE a doplněny prohlášením o shodě."
+    }
+   ],
+   "correctOptionId": "a2",
+   "explanation": "§ 4 odst. 1 ukládá zaměstnavateli zajistit, aby stroje, technická zařízení, dopravní prostředky a nářadí byly vhodné pro práci, při které budou používány, a aby byly podle písmene c) pravidelně a řádně udržovány, kontrolovány a revidovány.",
+   "whyWrong": {
+    "a1": "Žádnou lhůtu § 4 odst. 1 písm. c) neurčuje; četnost následných kontrol stanoví prováděcí nařízení vlády a místní provozní bezpečnostní předpis.",
+    "a3": "Označení CE a prohlášení o shodě se vážou k uvádění výrobku na trh podle zákona o technických požadavcích na výrobky; § 4 odst. 1 míří na provoz a používání zařízení u zaměstnavatele."
+   },
+   "status": "overeno",
+   "sourceClass": "volny",
+   "visibility": "verejne",
+   "verification": {
+    "method": "primární text předpisu",
+    "checkedAt": "2026-11-23",
+    "checkedBy": "agent",
+    "source": "zákon č. 309/2006 Sb., § 4 odst. 1 písm. c) — doslovný text, predpisy/zakon-309-2006.txt"
+   }
+  },
+  {
+   "questionId": "2027-ez1-008",
+   "options": [
+    {
+     "id": "a1",
+     "text": "Zákoník práce."
+    },
+    {
+     "id": "a2",
+     "text": "Zákon o technických požadavcích na výrobky."
+    },
+    {
+     "id": "a3",
+     "text": "Nařízení vlády, kterým se stanoví bližší požadavky na bezpečný provoz a používání strojů, technických zařízení, přístrojů a nářadí."
+    }
+   ],
+   "correctOptionId": "a3",
+   "explanation": "§ 1 nařízení vlády č. 378/2001 Sb. vymezuje jeho působnost: vztahuje se na bezpečný provoz a používání strojů, technických zařízení, přístrojů a nářadí, pokud požadavky na bezpečnost provozu a používání nestanoví zvláštní právní předpis jinak.",
+   "whyWrong": {
+    "a1": "Zákoník práce ukládá zaměstnavateli obecné povinnosti v prevenci rizik v § 102; bližší požadavky na provoz a používání zařízení v něm nejsou.",
+    "a2": "Zákon o technických požadavcích na výrobky řeší požadavky na výrobky při jejich uvádění na trh a posuzování shody, ne jejich provoz a používání u zaměstnavatele."
+   },
+   "status": "overeno",
+   "sourceClass": "volny",
+   "visibility": "verejne",
+   "verification": {
+    "method": "primární text předpisu",
+    "checkedAt": "2026-11-23",
+    "checkedBy": "agent",
+    "source": "nařízení vlády č. 378/2001 Sb., § 1 — doslovný text, predpisy/nv-378-2001.txt"
+   }
+  },
+  {
+   "questionId": "2027-ez1-009",
+   "options": [
+    {
+     "id": "a1",
+     "text": "Nejméně jednou za 12 měsíců v rozsahu stanoveném místním provozním bezpečnostním předpisem, nestanoví-li zvláštní právní předpis, průvodní dokumentace nebo normové hodnoty rozsah a četnost následných kontrol jinak."
+    },
+    {
+     "id": "a2",
+     "text": "Nejméně jednou za 24 měsíců v rozsahu stanoveném průvodní dokumentací výrobce."
+    },
+    {
+     "id": "a3",
+     "text": "Pouze před uvedením zařízení do provozu; následná kontrola se nepožaduje."
+    }
+   ],
+   "correctOptionId": "a1",
+   "explanation": "§ 4 odst. 2 nařízení vlády č. 378/2001 Sb.: zařízení musí být vybaveno provozní dokumentací a následná kontrola musí být prováděna nejméně jednou za 12 měsíců v rozsahu stanoveném místním provozním bezpečnostním předpisem, nestanoví-li zvláštní právní předpis, popřípadě průvodní dokumentace nebo normové hodnoty rozsah a četnost následných kontrol jinak.",
+   "whyWrong": {
+    "a2": "Lhůta v § 4 odst. 2 je jednou za 12 měsíců. Průvodní dokumentace nebo normové hodnoty ji mohou změnit, samy o sobě ale základní lhůtu neprodlužují.",
+    "a3": "Kontrola před uvedením do provozu je podle § 4 odst. 1 samostatná povinnost; následná kontrola podle § 4 odst. 2 se provádí navíc a opakovaně."
+   },
+   "status": "overeno",
+   "sourceClass": "volny",
+   "visibility": "verejne",
+   "verification": {
+    "method": "primární text předpisu",
+    "checkedAt": "2026-11-23",
+    "checkedBy": "agent",
+    "source": "nařízení vlády č. 378/2001 Sb., § 4 odst. 2 — doslovný text, predpisy/nv-378-2001.txt"
+   }
+  },
+  {
+   "questionId": "2027-ez1-010",
+   "options": [
+    {
+     "id": "a1",
+     "text": "Soubor dokumentů obsahujících návod výrobce pro montáž, manipulaci, opravy, údržbu, výchozí a následné pravidelné kontroly a revize zařízení."
+    },
+    {
+     "id": "a2",
+     "text": "Zejména pracovní technologické postupy pro používání zařízení a pravidla pohybu zařízení a zaměstnanců v prostorech a na pracovištích zaměstnavatele."
+    },
+    {
+     "id": "a3",
+     "text": "Konkrétní technický požadavek obsažený v příslušné české technické normě."
+    }
+   ],
+   "correctOptionId": "a2",
+   "explanation": "§ 2 písm. g) definuje místní provozní bezpečnostní předpis jako předpis zaměstnavatele upravující zejména pracovní technologické postupy pro používání zařízení a pravidla pohybu zařízení a zaměstnanců v prostorech a na pracovištích zaměstnavatele.",
+   "whyWrong": {
+    "a1": "Návod výrobce pro montáž, manipulaci, opravy, údržbu a kontroly je podle § 2 písm. e) průvodní dokumentace, kterou vydává výrobce, ne zaměstnavatel.",
+    "a3": "Konkrétní technický požadavek obsažený v české technické normě je podle § 2 písm. h) normová hodnota."
+   },
+   "status": "overeno",
+   "sourceClass": "volny",
+   "visibility": "verejne",
+   "verification": {
+    "method": "primární text předpisu",
+    "checkedAt": "2026-11-23",
+    "checkedBy": "agent",
+    "source": "nařízení vlády č. 378/2001 Sb., § 2 písm. g) — doslovný text, predpisy/nv-378-2001.txt"
+   }
+  },
+  {
+   "questionId": "2027-ez1-011",
+   "options": [
+    {
+     "id": "a1",
+     "text": "Revizní technik v revizní zprávě z výchozí revize."
+    },
+    {
+     "id": "a2",
+     "text": "Pověřená organizace na žádost provozovatele zařízení."
+    },
+    {
+     "id": "a3",
+     "text": "Zaměstnavatel, a to místním provozním bezpečnostním předpisem."
+    }
+   ],
+   "correctOptionId": "a3",
+   "explanation": "§ 4 odst. 1 nařízení vlády č. 378/2001 Sb.: kontrola bezpečnosti provozu zařízení před uvedením do provozu se provádí podle průvodní dokumentace výrobce; není-li výrobce znám nebo není-li průvodní dokumentace k dispozici, stanoví rozsah kontroly zařízení zaměstnavatel místním provozním bezpečnostním předpisem.",
+   "whyWrong": {
+    "a1": "Výchozí revize podle předpisů o vyhrazených technických zařízeních je jiný úkon; rozsah kontroly podle § 4 odst. 1 stanoví při chybějící dokumentaci zaměstnavatel.",
+    "a2": "Pověřená organizace plní úkoly podle zákona o bezpečnosti práce v souvislosti s provozem vyhrazených technických zařízení; § 4 odst. 1 jí stanovení rozsahu kontroly nesvěřuje."
+   },
+   "status": "overeno",
+   "sourceClass": "volny",
+   "visibility": "verejne",
+   "verification": {
+    "method": "primární text předpisu",
+    "checkedAt": "2026-11-23",
+    "checkedBy": "agent",
+    "source": "nařízení vlády č. 378/2001 Sb., § 4 odst. 1 — doslovný text, predpisy/nv-378-2001.txt"
+   }
+  }
+ ]
+}

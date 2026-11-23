@@ -62,7 +62,20 @@ PREDPIS_SOUBORY = {
     "309/2006": "zakon-309-2006.txt",
     "378/2001": "nv-378-2001.txt",
     "455/1991": "zakon-455-1991.txt",
+    # 278/2008 stojí za 455/1991 záměrně: otázka na živnostenské oprávnění
+    # cituje obě přílohy a `najdi_text_predpisu` bere první shodu, takže
+    # kontrola má sáhnout do živnostenského zákona, ne do jeho prováděcího
+    # nařízení. Totéž platí pro 505/1990 před 345/2002.
+    "278/2008": "nv-278-2008.txt",
     "89/2012": "zakon-89-2012.txt",
+    "251/2005": "zakon-251-2005.txt",
+    "90/2016": "zakon-90-2016.txt",
+    "117/2016": "nv-117-2016.txt",
+    "283/2021": "zakon-283-2021.txt",
+    "146/2024": "vyhlaska-146-2024.txt",
+    "366/2013": "nv-366-2013.txt",
+    "505/1990": "zakon-505-1990.txt",
+    "345/2002": "vyhlaska-345-2002.txt",
 }
 
 
@@ -105,6 +118,9 @@ def cisla_v(text):
 def rozdel_na_ustanoveni(raw):
     """Rozseká text předpisu na jednotlivé paragrafy a přílohy.
 
+    Hranicí je řádek, na kterém stojí jen označení paragrafu, včetně
+    paragrafů s písmenem (§ 4a). Obsah přílohy začíná jejím záhlavím.
+
     Bez tohohle kroku kontrola jen ověří, že se řetězec „§ 11" v předpisu
     někde vyskytuje — jenže se vyskytuje i v každém křížovém odkazu. Ověřená
     odpověď se musí dát najít **v tom ustanovení, které cituje**, ne kdekoliv
@@ -114,7 +130,7 @@ def rozdel_na_ustanoveni(raw):
     lines = raw.split("\n")
     hranice = []
     for i, l in enumerate(lines):
-        m = re.fullmatch(r"\s*§\s*(\d+)\s*", l)
+        m = re.fullmatch(r"\s*§\s*(\d+[a-z]?)\s*", l)
         if m:
             hranice.append((i, ("paragraf", m.group(1))))
             continue
@@ -150,9 +166,16 @@ def najdi_text_predpisu(source, cache):
 
 
 def ustanoveni_v(source):
-    """Vytáhne odkazy na ustanovení, např. '§ 6 odst. 2' nebo 'příloha č. 4'."""
+    """Vytáhne odkazy na ustanovení, např. '§ 6 odst. 2' nebo 'příloha č. 4'.
+
+    Číslo paragrafu může nést písmeno (§ 4a, § 36a). Bez něj by se z citace
+    '§ 4a odst. 1' přečetlo '§ 4' a kontrola by ověřovala úplně jiné
+    ustanovení — a **prošla by**, protože § 4 odst. 1 v zákoně taky existuje.
+    Falešně prošlá kontrola je horší než spadlá. Zjištěno 23. 11. 2026 na
+    zákonu č. 22/1997 Sb., kde § 4 i § 4a mluví o českých technických normách.
+    """
     out = []
-    for m in re.finditer(r"§\s*(\d+)(?:\s*odst\.\s*(\d+))?", source):
+    for m in re.finditer(r"§\s*(\d+[a-z]?)(?:\s*odst\.\s*(\d+))?", source):
         out.append(("paragraf", m.group(1), m.group(2)))
     for m in re.finditer(r"[Pp]říloh[ay]\s*č\.\s*(\d+)", source):
         out.append(("priloha", m.group(1), None))
@@ -297,6 +320,11 @@ def zkontroluj(path, bank_ids, bank_version, nalezy):
                     if jednotka:
                         # Číslo i s jednotkou — „5 let", ne jen „5".
                         varianty.add("{} {}".format(c, jednotka).lower())
+                        # Některé předpisy tiskne zdroj bez mezery („110kV 1m"
+                        # v § 46 odst. 5 zákona č. 458/2000 Sb.). Je to typografie
+                        # téže hodnoty, ne jiná hodnota: vymyšlené „7 m" tím
+                        # neprojde, protože „7m" v tom ustanovení taky není.
+                        varianty.add("{}{}".format(c, jednotka).lower())
                         # Skloňování: předpis může mít „5 letech" apod.
                         varianty.add("{} {}".format(c, jednotka[:-1]).lower()
                                      if len(jednotka) > 3 else "{} {}".format(c, jednotka).lower())

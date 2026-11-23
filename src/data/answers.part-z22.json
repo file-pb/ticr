@@ -1,0 +1,296 @@
+{
+ "schemaVersion": 1,
+ "answersVersion": "0.3.0-z22",
+ "bankVersion": "2027.1",
+ "license": "CC-BY-SA-4.0",
+ "answers": [
+  {
+   "questionId": "2027-ez1-069",
+   "options": [
+    {
+     "id": "a1",
+     "text": "Ano, česká technická norma je obecně závazná pro každého, kdo zařízení projektuje, montuje nebo reviduje."
+    },
+    {
+     "id": "a2",
+     "text": "Ne, česká technická norma není obecně závazná."
+    },
+    {
+     "id": "a3",
+     "text": "Ano, obecně závazné jsou ty české technické normy, které Úřad oznámil ve svém Věstníku."
+    }
+   ],
+   "correctOptionId": "a2",
+   "explanation": "§ 4 odst. 1 definuje českou technickou normu jako dokument schválený Úřadem pro technickou normalizaci, metrologii a státní zkušebnictví pro opakované nebo stálé použití, označený ČSN, jehož vydání bylo oznámeno ve Věstníku Úřadu, a poslední větou výslovně říká, že česká technická norma není obecně závazná.",
+   "whyWrong": {
+    "a1": "Obecnou závaznost § 4 odst. 1 výslovně vylučuje. Povinnost se podle normy řídit může vzniknout teprve jinak, například odkazem v právním předpisu nebo smluvním ujednáním.",
+    "a3": "Oznámení vydání ve Věstníku Úřadu je podle § 4 odst. 1 podmínkou toho, aby dokument vůbec byl českou technickou normou; závaznost z něj neplyne."
+   },
+   "status": "overeno",
+   "sourceClass": "volny",
+   "visibility": "verejne",
+   "verification": {
+    "method": "primární text předpisu",
+    "checkedAt": "2026-11-23",
+    "checkedBy": "agent",
+    "source": "zákon č. 22/1997 Sb., § 4 odst. 1 — doslovný text, predpisy/zakon-22-1997.txt"
+   }
+  },
+  {
+   "questionId": "2027-ez1-070",
+   "options": [
+    {
+     "id": "a1",
+     "text": "Jakmile ji Úřad označí ve Věstníku Úřadu jako určenou normu."
+    },
+    {
+     "id": "a2",
+     "text": "Jakmile ji převezme kterákoli z mezinárodních normalizačních organizací, jejímž členem je Česká republika."
+    },
+    {
+     "id": "a3",
+     "text": "Přejímá-li plně požadavky stanovené evropskou normou nebo harmonizačním dokumentem, které uznaly orgány Evropského společenství jako harmonizovanou evropskou normu."
+    }
+   ],
+   "correctOptionId": "a3",
+   "explanation": "§ 4a odst. 1 první věta: česká technická norma se stává harmonizovanou českou technickou normou, přejímá-li plně požadavky stanovené evropskou normou nebo harmonizačním dokumentem, které uznaly orgány Evropského společenství jako harmonizovanou evropskou normu, nebo evropskou normou stanovenou jako harmonizovaná společnou dohodou notifikovaných osob.",
+   "whyWrong": {
+    "a1": "Určené normy jsou podle druhé věty § 4a odst. 1 jiná kategorie — Úřad je po dohodě s ministerstvy určuje pro specifikaci technických požadavků vyplývajících z nařízení vlády, a nejsou tím harmonizovanými českými technickými normami.",
+    "a2": "Přejetí mezinárodní normy samo o sobě harmonizaci nezakládá. Soustavu českých technických norem tvoří podle § 4 odst. 2 i evropské či mezinárodní normy přejaté překladem nebo schválením, aniž by byly harmonizované."
+   },
+   "status": "overeno",
+   "sourceClass": "volny",
+   "visibility": "verejne",
+   "verification": {
+    "method": "primární text předpisu",
+    "checkedAt": "2026-11-23",
+    "checkedBy": "agent",
+    "source": "zákon č. 22/1997 Sb., § 4a odst. 1 — doslovný text, predpisy/zakon-22-1997.txt"
+   }
+  },
+  {
+   "questionId": "2027-ez1-072",
+   "options": [
+    {
+     "id": "a1",
+     "text": "Zákon o technických požadavcích na výrobky a o změně a doplnění některých zákonů."
+    },
+    {
+     "id": "a2",
+     "text": "Nařízení vlády o vyhrazených technických elektrických zařízeních a požadavcích na zajištění jejich bezpečnosti."
+    },
+    {
+     "id": "a3",
+     "text": "Zákon o bezpečnosti práce v souvislosti s provozem vyhrazených technických zařízení."
+    }
+   ],
+   "correctOptionId": "a1",
+   "explanation": "Tvorbu českých technických norem upravuje zákon o technických požadavcích na výrobky: § 4 vymezuje, co česká technická norma je, a § 5 odst. 1 stanoví, že jejich tvorbu, vydávání a distribuci, změny a zrušení v rozsahu vymezeném tímto zákonem zaručuje stát.",
+   "whyWrong": {
+    "a2": "Nařízení vlády o vyhrazených technických elektrických zařízeních řeší zařazení zařízení do tříd a požadavky na jejich bezpečnost, tvorbou norem se nezabývá.",
+    "a3": "Zákon o bezpečnosti práce v souvislosti s provozem vyhrazených technických zařízení upravuje odbornou způsobilost a oprávnění k činnostem na těchto zařízeních, ne normalizaci."
+   },
+   "status": "overeno",
+   "sourceClass": "volny",
+   "visibility": "verejne",
+   "verification": {
+    "method": "primární text předpisu",
+    "checkedAt": "2026-11-23",
+    "checkedBy": "agent",
+    "source": "zákon č. 22/1997 Sb., § 5 odst. 1 ve spojení s § 4 odst. 1 — doslovný text, predpisy/zakon-22-1997.txt"
+   }
+  },
+  {
+   "questionId": "2027-ez1-073",
+   "options": [
+    {
+     "id": "a1",
+     "text": "Česká agentura pro standardizaci je vydává jako samostatnou edici v databázi českých technických norem."
+    },
+    {
+     "id": "a2",
+     "text": "Úřad pro technickou normalizaci, metrologii a státní zkušebnictví je oznamuje ve Věstníku Úřadu a v oznámení uvede též technický předpis, k němuž se tyto normy vztahují."
+    },
+    {
+     "id": "a3",
+     "text": "Ministerstvo průmyslu a obchodu je zveřejňuje vyhláškou ve Sbírce zákonů."
+    }
+   ],
+   "correctOptionId": "a2",
+   "explanation": "§ 4a odst. 2: Úřad oznamuje ve Věstníku Úřadu harmonizované české technické normy, určené normy a jejich změny nebo zrušení a v oznámení uvede též technický předpis, k němuž se tyto normy vztahují. (Normativní odkaz v oficiální bance uvádí § 4 odst. 2; to ustanovení ale popisuje soustavu českých technických norem — zveřejňování harmonizovaných norem řeší § 4a odst. 2.)",
+   "whyWrong": {
+    "a1": "Česká agentura pro standardizaci podle § 5 odst. 2 zajišťuje tvorbu, vydávání a distribuci norem a vede jejich databázi; oznámení o harmonizaci je ale podle § 4a odst. 2 věcí Úřadu a děje se ve Věstníku Úřadu.",
+    "a3": "Harmonizované české technické normy se vyhláškou nevydávají. Ministerstvo průmyslu a obchodu vydává podle § 5 odst. 11 vyhlášku jen k poplatkům podle § 6a, 6b a 6d."
+   },
+   "status": "overeno",
+   "sourceClass": "volny",
+   "visibility": "verejne",
+   "verification": {
+    "method": "primární text předpisu",
+    "checkedAt": "2026-11-23",
+    "checkedBy": "agent",
+    "source": "zákon č. 22/1997 Sb., § 4a odst. 2 — doslovný text, predpisy/zakon-22-1997.txt"
+   }
+  },
+  {
+   "questionId": "2027-ez1-074",
+   "options": [
+    {
+     "id": "a1",
+     "text": "Stát; úkoly národního normalizačního orgánu, tvorbu, vydávání a distribuci norem a vedení jejich databáze zajišťuje Česká agentura pro standardizaci."
+    },
+    {
+     "id": "a2",
+     "text": "Výhradně Úřad pro technickou normalizaci, metrologii a státní zkušebnictví jako správní úřad."
+    },
+    {
+     "id": "a3",
+     "text": "Příslušná evropská normalizační organizace, jejímž prostřednictvím je Česká republika zapojena do normalizace."
+    }
+   ],
+   "correctOptionId": "a1",
+   "explanation": "§ 5 odst. 1: tvorbu, vydávání a distribuci českých technických norem, jejich změny a zrušení v rozsahu vymezeném tímto zákonem zaručuje stát. § 5 odst. 2 pak určuje, že tyto činnosti a úkoly národního normalizačního orgánu zajišťuje Česká agentura pro standardizaci.",
+   "whyWrong": {
+    "a2": "Úřad je podle § 5 odst. 3 zřizovatelem Agentury a podle § 4 odst. 1 schvaluje normy, samotnou tvorbu, vydávání a distribuci ale podle § 5 odst. 2 zajišťuje Agentura.",
+    "a3": "Členství v evropských a mezinárodních normalizačních organizacích zajišťuje podle § 5 odst. 2 Agentura; záruka za tvorbu a vydávání českých technických norem zůstává podle § 5 odst. 1 na státu."
+   },
+   "status": "overeno",
+   "sourceClass": "volny",
+   "visibility": "verejne",
+   "verification": {
+    "method": "primární text předpisu",
+    "checkedAt": "2026-11-23",
+    "checkedBy": "agent",
+    "source": "zákon č. 22/1997 Sb., § 5 odst. 1 ve spojení s § 5 odst. 2 — doslovný text, predpisy/zakon-22-1997.txt"
+   }
+  },
+  {
+   "questionId": "2027-ez1-075",
+   "options": [
+    {
+     "id": "a1",
+     "text": "Zajistit, aby všechny výrobky dodávané na trh v České republice byly vyrobeny podle českých technických norem."
+    },
+    {
+     "id": "a2",
+     "text": "Zabezpečit u výrobků stanovených podle tohoto zákona posouzení jejich shody s technickými požadavky stanovenými nařízeními vlády a u stavebních výrobků s označením CE posouzení a ověření stálosti jejich vlastností podle přímo použitelného předpisu pro stavební výrobky."
+    },
+    {
+     "id": "a3",
+     "text": "Vykonávat dozor nad tím, zda jsou výrobky na trhu neoprávněně opatřovány označením CE."
+    }
+   ],
+   "correctOptionId": "a2",
+   "explanation": "§ 9 definuje státní zkušebnictví jako soubor činností uskutečňovaných Úřadem a osobami pověřenými podle tohoto zákona, jejichž cílem je zabezpečit u stanovených výrobků posouzení shody s technickými požadavky stanovenými nařízeními vlády a u stavebních výrobků s označením CE posouzení a ověření stálosti jejich vlastností.",
+   "whyWrong": {
+    "a1": "Shoda se posuzuje s technickými požadavky stanovenými nařízeními vlády, ne s českými technickými normami — ty nejsou podle § 4 odst. 1 obecně závazné.",
+    "a3": "Dozor nad stanovenými výrobky je samostatná činnost, kterou vykonávají orgány dozoru; cílem státního zkušebnictví podle § 9 je posouzení shody."
+   },
+   "status": "overeno",
+   "sourceClass": "volny",
+   "visibility": "verejne",
+   "verification": {
+    "method": "primární text předpisu",
+    "checkedAt": "2026-11-23",
+    "checkedBy": "agent",
+    "source": "zákon č. 22/1997 Sb., § 9 — doslovný text, predpisy/zakon-22-1997.txt"
+   }
+  },
+  {
+   "questionId": "2027-ez1-076",
+   "options": [
+    {
+     "id": "a1",
+     "text": "Že výrobek splňuje technické požadavky stanovené ve všech nařízeních vlády, které se na něj vztahují a které toto označení stanovují nebo umožňují, a že byl při posouzení jeho shody dodržen stanovený postup."
+    },
+    {
+     "id": "a2",
+     "text": "Že výrobek byl vyroben v členském státě Evropské unie."
+    },
+    {
+     "id": "a3",
+     "text": "Že výrobek byl certifikován autorizovanou osobou a je zapsán v databázi Úřadu."
+    }
+   ],
+   "correctOptionId": "a1",
+   "explanation": "§ 13 odst. 3: označení CE na stanoveném výrobku vyjadřuje, že výrobek splňuje technické požadavky stanovené ve všech nařízeních vlády, které se na něj vztahují a které toto označení stanovují nebo umožňují, a že byl při posouzení jeho shody dodržen stanovený postup.",
+   "whyWrong": {
+    "a2": "Označení CE nevypovídá o místě výroby, ale o splnění technických požadavků a o dodržení postupu posouzení shody.",
+    "a3": "Účast autorizované osoby závisí na postupu posouzení shody, který stanoví nařízení vlády podle § 12 odst. 3; § 13 odst. 3 ji jako obsah označení CE neuvádí a žádný zápis v databázi Úřadu označení nepředpokládá."
+   },
+   "status": "overeno",
+   "sourceClass": "volny",
+   "visibility": "verejne",
+   "verification": {
+    "method": "primární text předpisu",
+    "checkedAt": "2026-11-23",
+    "checkedBy": "agent",
+    "source": "zákon č. 22/1997 Sb., § 13 odst. 3 — doslovný text, predpisy/zakon-22-1997.txt"
+   }
+  },
+  {
+   "questionId": "2027-ez1-077",
+   "options": [
+    {
+     "id": "a1",
+     "text": "U všech stanovených výrobků, u nichž to nařízení vlády umožňuje, bez ohledu na předpisy Evropských společenství."
+    },
+    {
+     "id": "a2",
+     "text": "Pouze u výrobků, na něž se nevztahují předpisy Evropských společenství."
+    },
+    {
+     "id": "a3",
+     "text": "Pouze u stavebních výrobků s označením CE."
+    }
+   ],
+   "correctOptionId": "a2",
+   "explanation": "§ 13 odst. 4: českou značku shody, kterou tvoří písmena CCZ, lze použít pouze u výrobků, na něž se nevztahují předpisy Evropských společenství. Vyjadřuje totéž co označení CE — splnění technických požadavků všech dopadajících nařízení vlády a dodržení stanoveného postupu posouzení shody.",
+   "whyWrong": {
+    "a1": "Omezení na výrobky mimo dosah předpisů Evropských společenství je v § 13 odst. 4 výslovné; nařízení vlády jej rozšířit nemůže.",
+    "a3": "Stavební výrobky s označením CE jsou z režimu § 13 podle jeho odstavce 15 naopak vyňaty, jejich uvádění na trh upravuje přímo použitelný předpis pro stavební výrobky."
+   },
+   "status": "overeno",
+   "sourceClass": "volny",
+   "visibility": "verejne",
+   "verification": {
+    "method": "primární text předpisu",
+    "checkedAt": "2026-11-23",
+    "checkedBy": "agent",
+    "source": "zákon č. 22/1997 Sb., § 13 odst. 4 — doslovný text, predpisy/zakon-22-1997.txt"
+   }
+  },
+  {
+   "questionId": "2027-ez1-078",
+   "options": [
+    {
+     "id": "a1",
+     "text": "Ano, pokud obě označení umístí výrobce."
+    },
+    {
+     "id": "a2",
+     "text": "Ano, u výrobků vyvážených mimo Evropskou unii."
+    },
+    {
+     "id": "a3",
+     "text": "Ne. Je-li stanovený výrobek opatřen označením CE, nesmí být souběžně označen českou značkou shody ani značkou, která by svým významem nebo podobou mohla vést k záměně s označením CE nebo s jiným stanoveným označením."
+    }
+   ],
+   "correctOptionId": "a3",
+   "explanation": "§ 13 odst. 5 souběžné označení zakazuje: pokud je stanovený výrobek opatřen označením CE, nesmí být souběžně označen českou značkou shody, nebo značkou, která by svým významem nebo podobou mohla vést k záměně s označením CE nebo s jiným stanoveným označením.",
+   "whyWrong": {
+    "a1": "Zákaz v § 13 odst. 5 se váže na výrobek, ne na to, kdo označení umístil.",
+    "a2": "§ 13 odst. 5 žádnou výjimku pro vývoz nestanoví; českou značku shody navíc lze podle § 13 odst. 4 použít jen u výrobků, na něž se nevztahují předpisy Evropských společenství."
+   },
+   "status": "overeno",
+   "sourceClass": "volny",
+   "visibility": "verejne",
+   "verification": {
+    "method": "primární text předpisu",
+    "checkedAt": "2026-11-23",
+    "checkedBy": "agent",
+    "source": "zákon č. 22/1997 Sb., § 13 odst. 5 — doslovný text, predpisy/zakon-22-1997.txt"
+   }
+  }
+ ]
+}

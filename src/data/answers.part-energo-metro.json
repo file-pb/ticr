@@ -1,0 +1,324 @@
+{
+ "schemaVersion": 1,
+ "answersVersion": "0.3.0-energo-metro",
+ "bankVersion": "2027.1",
+ "license": "CC-BY-SA-4.0",
+ "answers": [
+  {
+   "questionId": "2027-ez1-087",
+   "options": [
+    {
+     "id": "a1",
+     "text": "K zajištění spolehlivého provozu zařízení elektrizační soustavy a k ochraně života, zdraví a majetku osob."
+    },
+    {
+     "id": "a2",
+     "text": "K vymezení prostoru, ve kterém smí provozovatel soustavy umístit nové zařízení bez souhlasu vlastníka pozemku."
+    },
+    {
+     "id": "a3",
+     "text": "K vymezení prostoru, ve kterém se měří hladina elektromagnetického rušení od zařízení soustavy."
+    }
+   ],
+   "correctOptionId": "a1",
+   "explanation": "§ 46 odst. 1 zákona č. 458/2000 Sb.: ochranným pásmem zařízení elektrizační soustavy je prostor v bezprostřední blízkosti tohoto zařízení určený k zajištění jeho spolehlivého provozu a k ochraně života, zdraví a majetku osob.",
+   "whyWrong": {
+    "a2": "Ochranné pásmo neopravňuje k umístění nového zařízení. Naopak — § 46 odst. 8 v něm stavby a konstrukce bez souhlasu vlastníka zařízení zakazuje.",
+    "a3": "S měřením elektromagnetického rušení ochranné pásmo nesouvisí; účel je v § 46 odst. 1 vymezen jako spolehlivý provoz zařízení a ochrana života, zdraví a majetku."
+   },
+   "status": "overeno",
+   "sourceClass": "volny",
+   "visibility": "verejne",
+   "verification": {
+    "method": "primární text předpisu",
+    "checkedAt": "2026-11-23",
+    "checkedBy": "agent",
+    "source": "zákon č. 458/2000 Sb., § 46 odst. 1 — doslovný text, predpisy/zakon-458-2000.txt"
+   }
+  },
+  {
+   "questionId": "2027-ez1-088",
+   "options": [
+    {
+     "id": "a1",
+     "text": "Vnitřní elektrická instalace odběratele za měřicím místem."
+    },
+    {
+     "id": "a2",
+     "text": "Výrobna elektřiny nebo zařízení pro ukládání elektřiny připojené k distribuční soustavě s napětím do 1 kV včetně s instalovaným výkonem do 50 kW včetně — u těch se ochranné pásmo nestanovuje."
+    },
+    {
+     "id": "a3",
+     "text": "Vedení měřicí, ochranné, řídicí, zabezpečovací, informační a telekomunikační techniky."
+    }
+   ],
+   "correctOptionId": "a2",
+   "explanation": "§ 46 odst. 2 vypočítává, co ochrannými pásmy chráněno JE: nadzemní vedení, podzemní vedení, elektrické stanice, výrobny elektřiny, zařízení pro ukládání elektřiny a vedení měřicí, ochranné, řídicí, zabezpečovací, informační a telekomunikační techniky. Jediné výslovné „ochranné pásmo se nestanovuje“ je v § 46 odst. 7 poslední větě a týká se malých výroben a zařízení pro ukládání elektřiny do 1 kV a do 50 kW.",
+   "whyWrong": {
+    "a1": "Že vnitřní instalace odběratele není zařízením elektrizační soustavy, § 46 nikde neříká; je to úsudek z výčtu v odstavci 2, ne text předpisu.",
+    "a3": "Vedení měřicí, ochranné, řídicí, zabezpečovací, informační a telekomunikační techniky je v § 46 odst. 2 uvedeno jako chráněné."
+   },
+   "status": "navrh",
+   "sourceClass": "volny",
+   "visibility": "verejne",
+   "missing": "Oficiální normativní odkaz míří na § 46 odst. 2 a 3. Ta ale vypočítávají, co ochranným pásmem chráněno je — negativní vymezení v nich není a doplnit ho lze jen úsudkem. Výslovné „ochranné pásmo se nestanovuje“ stojí jinde, v § 46 odst. 7 poslední větě. Dokud není jasné, kterou z obou cest zkouška čeká, zůstává odpověď návrhem a do zkoušky nanečisto nevstupuje.",
+   "reference": "zákon č. 458/2000 Sb., § 46 odst. 2 a § 46 odst. 7 — doslovný text, predpisy/zakon-458-2000.txt"
+  },
+  {
+   "questionId": "2027-ez1-089",
+   "options": [
+    {
+     "id": "a1",
+     "text": "Výškou podpěrných bodů nadzemního vedení a jejich vzájemnou vzdáleností."
+    },
+    {
+     "id": "a2",
+     "text": "Souvislým prostorem vymezeným svislými rovinami vedenými po obou stranách vedení ve vodorovné vzdálenosti měřené kolmo na vedení od krajního vodiče na obě jeho strany; velikost této vzdálenosti závisí na napětí vedení a na druhu vodiče."
+    },
+    {
+     "id": "a3",
+     "text": "Vzdáleností měřenou od osy vedení, a to stejně pro všechna napětí."
+    }
+   ],
+   "correctOptionId": "a2",
+   "explanation": "§ 46 odst. 3 zákona č. 458/2000 Sb.: ochranné pásmo nadzemního vedení je souvislý prostor vymezený svislými rovinami vedenými po obou stranách vedení ve vodorovné vzdálenosti měřené kolmo na vedení, která činí od krajního vodiče vedení na obě jeho strany hodnoty odstupňované podle napětí a podle toho, zda jde o vodiče bez izolace, s izolací základní, nebo o závěsné kabelové vedení.",
+   "whyWrong": {
+    "a1": "Podpěrné body § 46 odst. 3 nezmiňuje; vzdálenost se měří od krajního vodiče vedení. Volný pruh pozemků kolem základů podpěrných bodů řeší samostatně § 46 odst. 4.",
+    "a3": "Vzdálenost se měří od krajního vodiče, ne od osy vedení, a § 46 odst. 3 ji odstupňovává podle napětí a druhu vodiče."
+   },
+   "status": "overeno",
+   "sourceClass": "volny",
+   "visibility": "verejne",
+   "verification": {
+    "method": "primární text předpisu",
+    "checkedAt": "2026-11-23",
+    "checkedBy": "agent",
+    "source": "zákon č. 458/2000 Sb., § 46 odst. 3 — doslovný text, predpisy/zakon-458-2000.txt"
+   }
+  },
+  {
+   "questionId": "2027-ez1-090",
+   "options": [
+    {
+     "id": "a1",
+     "text": "1 m na každou stranu od krajního kabelu vedení."
+    },
+    {
+     "id": "a2",
+     "text": "3 m na každou stranu od krajního kabelu vedení."
+    },
+    {
+     "id": "a3",
+     "text": "7 m na každou stranu od krajního kabelu vedení."
+    }
+   ],
+   "correctOptionId": "a1",
+   "explanation": "§ 46 odst. 5 písm. a) zákona č. 458/2000 Sb. stanoví ochranné pásmo podzemního vedení o napětí do 110 kV na 1 m od krajního kabelu vedení na obě jeho strany; kabel do 1 kV do tohoto rozsahu spadá.",
+   "whyWrong": {
+    "a2": "3 m platí podle § 46 odst. 5 písm. b) pro podzemní vedení o napětí nad 110 kV.",
+    "a3": "7 m je podle § 46 odst. 3 písm. a) bodu 1 ochranné pásmo nadzemního vedení o napětí nad 1 kV do 35 kV pro vodiče bez izolace, ne podzemního kabelu."
+   },
+   "status": "overeno",
+   "sourceClass": "volny",
+   "visibility": "verejne",
+   "verification": {
+    "method": "primární text předpisu",
+    "checkedAt": "2026-11-23",
+    "checkedBy": "agent",
+    "source": "zákon č. 458/2000 Sb., § 46 odst. 5 — doslovný text, predpisy/zakon-458-2000.txt"
+   }
+  },
+  {
+   "questionId": "2027-ez1-066",
+   "options": [
+    {
+     "id": "a1",
+     "text": "Pověřená organizace, tedy Technická inspekce České republiky."
+    },
+    {
+     "id": "a2",
+     "text": "Česká obchodní inspekce jako orgán dozoru."
+    },
+    {
+     "id": "a3",
+     "text": "Státní úřad inspekce práce a oblastní inspektoráty práce."
+    }
+   ],
+   "correctOptionId": "a3",
+   "explanation": "§ 3 odst. 1 písm. d) zákona č. 251/2005 Sb.: úřad a inspektoráty kontrolují dodržování povinností vyplývajících z právních předpisů k zajištění bezpečnosti provozu technických zařízení se zvýšenou mírou ohrožení života a zdraví a z právních předpisů o bezpečnosti provozu vyhrazených technických zařízení. Úřadem se podle § 2 odst. 1 rozumí Státní úřad inspekce práce a inspektorátem oblastní inspektorát práce.",
+   "whyWrong": {
+    "a1": "Pověřená organizace podle zákona o bezpečnosti práce v souvislosti s provozem vyhrazených technických zařízení vydává oprávnění a osvědčení a provádí prohlídky a zkoušky; kontrolu dodržování předpisů jí § 3 odst. 1 nesvěřuje.",
+    "a2": "Česká obchodní inspekce je orgánem dozoru nad stanovenými výrobky podle zákona o posuzování shody stanovených výrobků při jejich dodávání na trh, ne kontrolním orgánem na úseku bezpečnosti práce."
+   },
+   "status": "overeno",
+   "sourceClass": "volny",
+   "visibility": "verejne",
+   "verification": {
+    "method": "primární text předpisu",
+    "checkedAt": "2026-11-23",
+    "checkedBy": "agent",
+    "source": "zákon č. 251/2005 Sb., § 3 odst. 1 písm. d) ve spojení s § 2 odst. 1 — doslovný text, predpisy/zakon-251-2005.txt"
+   }
+  },
+  {
+   "questionId": "2027-ez1-067",
+   "options": [
+    {
+     "id": "a1",
+     "text": "Inspektor."
+    },
+    {
+     "id": "a2",
+     "text": "Pověřená organizace, která osvědčení nebo oprávnění vydala."
+    },
+    {
+     "id": "a3",
+     "text": "Ministerstvo práce a sociálních věcí."
+    }
+   ],
+   "correctOptionId": "a1",
+   "explanation": "§ 7 odst. 1 písm. h) zákona č. 251/2005 Sb.: inspektor je oprávněn vydat rozhodnutí o odnětí nebo omezení oprávnění nebo osvědčení o odborné způsobilosti k činnostem na vyhrazených technických zařízeních vydaného podle zákona o bezpečnosti práce v souvislosti s provozem vyhrazených technických zařízení, pokud jeho držitel neprovede řádně prohlídku, revizi nebo zkoušku ve stanoveném rozsahu.",
+   "whyWrong": {
+    "a2": "Pověřená organizace osvědčení a oprávnění vydává, o jejich odnětí nebo omezení ale podle § 7 odst. 1 písm. h) rozhoduje inspektor.",
+    "a3": "Ministerstvo práce a sociálních věcí podle § 2 odst. 3 řídí úřad; rozhodnutí o odnětí osvědčení nebo oprávnění § 7 odst. 1 písm. h) svěřuje inspektorovi."
+   },
+   "status": "overeno",
+   "sourceClass": "volny",
+   "visibility": "verejne",
+   "verification": {
+    "method": "primární text předpisu",
+    "checkedAt": "2026-11-23",
+    "checkedBy": "agent",
+    "source": "zákon č. 251/2005 Sb., § 7 odst. 1 písm. h) — doslovný text, predpisy/zakon-251-2005.txt"
+   }
+  },
+  {
+   "questionId": "2027-ez1-068",
+   "options": [
+    {
+     "id": "a1",
+     "text": "Ne, inspektor může uložit jen opatření k odstranění zjištěných nedostatků a lhůtu k jejich odstranění."
+    },
+    {
+     "id": "a2",
+     "text": "Ano, za přestupek na úseku bezpečnosti vyhrazených technických zařízení lze uložit pokutu až do výše 2 000 000 Kč."
+    },
+    {
+     "id": "a3",
+     "text": "Ano, ale jen fyzické osobě, která prohlídku, revizi nebo zkoušku prováděla."
+    }
+   ],
+   "correctOptionId": "a2",
+   "explanation": "§ 33 zákona č. 251/2005 Sb. vymezuje přestupky právnických a podnikajících fyzických osob na úseku bezpečnosti vyhrazených technických zařízení a v odstavci 2 k nim přiřazuje sankce: za nezajištění odstranění závad a nezajištění řádné obsluhy pokutu až do 1 000 000 Kč, za neprovedení prohlídky, revize, montáže, opravy nebo zkoušky, za činnost bez oprávnění či osvědčení a za neohlášení havárie pokutu až do 2 000 000 Kč.",
+   "whyWrong": {
+    "a1": "Ukládání opatření k nápravě podle § 7 odst. 1 písm. i) je samostatné oprávnění inspektora a sankci podle § 33 nevylučuje.",
+    "a3": "§ 33 je nadepsán jako přestupky právnických a podnikajících fyzických osob a odstavec 1 je výslovně adresuje jim; pokuta tedy nedopadá jen na fyzickou osobu, která úkon prováděla."
+   },
+   "status": "overeno",
+   "sourceClass": "volny",
+   "visibility": "verejne",
+   "verification": {
+    "method": "primární text předpisu",
+    "checkedAt": "2026-11-23",
+    "checkedBy": "agent",
+    "source": "zákon č. 251/2005 Sb., § 33 — doslovný text, predpisy/zakon-251-2005.txt"
+   }
+  },
+  {
+   "questionId": "2027-ez1-084",
+   "options": [
+    {
+     "id": "a1",
+     "text": "Všechna měřidla používaná při podnikatelské činnosti."
+    },
+    {
+     "id": "a2",
+     "text": "Etalony a certifikované referenční materiály."
+    },
+    {
+     "id": "a3",
+     "text": "Měřidla, která Ministerstvo průmyslu a obchodu stanoví vyhláškou k povinnému ověřování s ohledem na jejich význam v závazkových vztazích, pro stanovení sankcí, poplatků, tarifů a daní, pro ochranu zdraví, pro ochranu životního prostředí, pro bezpečnost při práci nebo při ochraně jiných veřejných zájmů chráněných zvláštními právními předpisy."
+    }
+   ],
+   "correctOptionId": "a3",
+   "explanation": "§ 3 odst. 3 zákona č. 505/1990 Sb.: stanovená měřidla jsou měřidla, která ministerstvo stanoví vyhláškou k povinnému ověřování, a to s ohledem na jejich význam v uvedených oblastech. Výčet oblastí je v témže odstavci pod písmeny a) až f).",
+   "whyWrong": {
+    "a1": "Použití při podnikání samo o sobě z měřidla stanovené měřidlo nedělá; rozhoduje zařazení vyhláškou podle § 3 odst. 3.",
+    "a2": "Etalon je podle § 3 odst. 2 měřidlo k realizaci a uchovávání jednotky a certifikované referenční materiály jsou podle § 3 odst. 5 samostatná kategorie — v členění podle § 3 odst. 1 stojí vedle stanovených měřidel, ne mezi nimi."
+   },
+   "status": "overeno",
+   "sourceClass": "volny",
+   "visibility": "verejne",
+   "verification": {
+    "method": "primární text předpisu",
+    "checkedAt": "2026-11-23",
+    "checkedBy": "agent",
+    "source": "zákon č. 505/1990 Sb., § 3 odst. 3 — doslovný text, predpisy/zakon-505-1990.txt"
+   }
+  },
+  {
+   "questionId": "2027-ez1-085",
+   "options": [
+    {
+     "id": "a1",
+     "text": "Že stanovené měřidlo má požadované metrologické vlastnosti."
+    },
+    {
+     "id": "a2",
+     "text": "Že metrologické vlastnosti měřidla byly porovnány s etalonem."
+    },
+    {
+     "id": "a3",
+     "text": "Že měřidlo bylo uvedeno na trh v souladu s předpisy o posuzování shody."
+    }
+   ],
+   "correctOptionId": "a1",
+   "explanation": "§ 9 odst. 1 zákona č. 505/1990 Sb.: ověřením stanoveného měřidla se potvrzuje, že stanovené měřidlo má požadované metrologické vlastnosti. Požadavek se považuje za splněný, pokud měřidlo má vlastnosti stanovené opatřením obecné povahy, které stanoví i zkoušky při ověřování.",
+   "whyWrong": {
+    "a2": "Porovnání s etalonem je podle § 9 odst. 5 kalibrace pracovního měřidla, ne ověření stanoveného měřidla.",
+    "a3": "Shoda při uvádění na trh je jiný režim; § 9 odst. 3 jen umožňuje považovat označení shody a zajišťovací značky výrobce za úřední značku prvotního ověření."
+   },
+   "status": "overeno",
+   "sourceClass": "volny",
+   "visibility": "verejne",
+   "verification": {
+    "method": "primární text předpisu",
+    "checkedAt": "2026-11-23",
+    "checkedBy": "agent",
+    "source": "zákon č. 505/1990 Sb., § 9 odst. 1 — doslovný text, predpisy/zakon-505-1990.txt"
+   }
+  },
+  {
+   "questionId": "2027-ez1-086",
+   "options": [
+    {
+     "id": "a1",
+     "text": "Stanoveným měřidlem, protože se jím měří hodnoty rozhodné pro bezpečnost při práci."
+    },
+    {
+     "id": "a2",
+     "text": "Pracovním měřidlem nestanoveným, tedy měřidlem, které není etalonem ani stanoveným měřidlem."
+    },
+    {
+     "id": "a3",
+     "text": "Etalonem, protože slouží k přenosu jednotky na měřidla nižší přesnosti."
+    }
+   ],
+   "correctOptionId": "a2",
+   "explanation": "Stanovená měřidla jsou podle § 3 odst. 3 zákona č. 505/1990 Sb. jen ta, která ministerstvo stanoví vyhláškou k povinnému ověřování; tím je vyhláška č. 345/2002 Sb., jejíž seznam revizní přístroje pro revize elektrických instalací neobsahuje. Podle § 3 odst. 4 je tedy revizní přístroj pracovním měřidlem — měřidlem, které není etalonem ani stanoveným měřidlem. Z toho plyne, že se neověřuje, ale kalibruje podle § 9 odst. 5.",
+   "whyWrong": {
+    "a1": "Význam pro bezpečnost při práci je podle § 3 odst. 3 písm. e) jen hledisko, podle kterého ministerstvo měřidla do vyhlášky zařazuje; samo zařazení nenahrazuje a revizní přístroje ve vyhlášce č. 345/2002 Sb. uvedeny nejsou.",
+    "a3": "Etalon je podle § 3 odst. 2 měřidlo sloužící k realizaci a uchovávání jednotky a k jejímu přenosu na měřidla nižší přesnosti; revizní přístroj touto funkcí určen není."
+   },
+   "status": "overeno",
+   "sourceClass": "volny",
+   "visibility": "verejne",
+   "verification": {
+    "method": "primární text předpisu",
+    "checkedAt": "2026-11-23",
+    "checkedBy": "agent",
+    "source": "zákon č. 505/1990 Sb., § 3 odst. 4 (ve spojení s § 3 odst. 3) a vyhláška č. 345/2002 Sb. (predpisy/vyhlaska-345-2002.txt), která revizní přístroje mezi stanovená měřidla nezařazuje — doslovný text, predpisy/zakon-505-1990.txt"
+   }
+  }
+ ]
+}

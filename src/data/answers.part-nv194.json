@@ -1,0 +1,328 @@
+{
+ "schemaVersion": 1,
+ "answersVersion": "0.3.0-nv194",
+ "bankVersion": "2027.1",
+ "license": "CC-BY-SA-4.0",
+ "answers": [
+  {
+   "questionId": "2027-ez1-056",
+   "options": [
+    {
+     "id": "a1",
+     "text": "Revizní technik, který u provozovatele provádí revize vyhrazených elektrických zařízení."
+    },
+    {
+     "id": "a2",
+     "text": "Pověřená osoba právnické osoby nebo podnikající fyzické osoby, která provozuje elektrické zařízení, k jejímž povinnostem patří zajištění bezpečného provozu elektrického zařízení a stanovení pravidel při výkonu jednotlivých činností na zařízení a organizaci nebo uspořádání místa výkonu těchto činností."
+    },
+    {
+     "id": "a3",
+     "text": "Předseda zkušební komise, který vede zkoušku z odborné způsobilosti a pořizuje o ní protokol."
+    }
+   ],
+   "correctOptionId": "a2",
+   "explanation": "Odpovědnou osobu vymezuje § 2 písm. f) jako pověřenou osobu provozovatele elektrického zařízení, která zajišťuje bezpečný provoz a stanovuje pravidla pro jednotlivé činnosti. Podle § 3 odst. 3 pak kontroluje, aby činnosti vykonávaly jen osoby odborně způsobilé, a některé své činnosti může delegovat.",
+   "whyWrong": {
+    "a1": "Revizní technik je podle § 5 odst. 1 písm. c) stupeň odborné způsobilosti osoby znalé, ne role provozovatele. Odpovědnou osobou se tím nestává.",
+    "a3": "Úkoly předsedy zkušební komise jsou v § 9 odst. 4 a týkají se jen průběhu zkoušky; s odpovědností za bezpečný provoz zařízení nemají nic společného."
+   },
+   "status": "overeno",
+   "sourceClass": "volny",
+   "visibility": "verejne",
+   "verification": {
+    "method": "primární text předpisu",
+    "checkedAt": "2026-11-23",
+    "checkedBy": "agent",
+    "source": "nařízení vlády č. 194/2022 Sb., § 2 písm. f) ve spojení s § 3 odst. 3 — doslovný text, predpisy/nv-194-2022.txt"
+   }
+  },
+  {
+   "questionId": "2027-ez1-057",
+   "options": [
+    {
+     "id": "a1",
+     "text": "Pro obsluhu a práci na elektrických zařízeních bez napětí, v blízkosti elektrických zařízení pod napětím a na elektrických zařízeních pod napětím a pro provádění revizí na vyhrazených elektrických zařízeních."
+    },
+    {
+     "id": "a2",
+     "text": "Pouze pro provádění revizí vyhrazených elektrických zařízení I. třídy."
+    },
+    {
+     "id": "a3",
+     "text": "Pouze pro obsluhu elektrických zařízení malého a nízkého napětí."
+    }
+   ],
+   "correctOptionId": "a1",
+   "explanation": "Výčet činností, pro které nařízení stanoví požadavky na odbornou způsobilost, je v § 1 písm. a): obsluha a práce na elektrických zařízeních bez napětí, v blízkosti zařízení pod napětím a na zařízeních pod napětím, a provádění revizí na vyhrazených elektrických zařízeních.",
+   "whyWrong": {
+    "a2": "Revize jsou v § 1 písm. a) jen jednou z vyjmenovaných činností a nařízení u nich nerozlišuje třídy zařízení; zařazení do tříd je věcí nařízení vlády o vyhrazených technických elektrických zařízeních.",
+    "a3": "Obsluha elektrického zařízení malého a nízkého napětí se podle § 3 odst. 2 za činnost vyžadující odbornou způsobilost podle tohoto nařízení naopak nepovažuje."
+   },
+   "status": "overeno",
+   "sourceClass": "volny",
+   "visibility": "verejne",
+   "verification": {
+    "method": "primární text předpisu",
+    "checkedAt": "2026-11-23",
+    "checkedBy": "agent",
+    "source": "nařízení vlády č. 194/2022 Sb., § 1 písm. a) ve spojení s § 3 odst. 2 — doslovný text, predpisy/nv-194-2022.txt"
+   }
+  },
+  {
+   "questionId": "2027-ez1-058",
+   "options": [
+    {
+     "id": "a1",
+     "text": "Doklad o úspěšném složení zkoušky z odborné způsobilosti k výkonu činností v elektrotechnice."
+    },
+    {
+     "id": "a2",
+     "text": "Osvědčení o odborné způsobilosti k činnostem na vyhrazených elektrických zařízeních."
+    },
+    {
+     "id": "a3",
+     "text": "Zápis, ve kterém musí být přesně vymezen rozsah poučení a specifikace pracoviště."
+    }
+   ],
+   "correctOptionId": "a3",
+   "explanation": "Podle § 4 odst. 3 musí být o poučení a ověření znalostí proveden zápis, který vyhotoví osoba znalá, která poučení a ověření provedla; v zápisu musí být přesně vymezen rozsah poučení a specifikace pracoviště.",
+   "whyWrong": {
+    "a1": "Doklad o úspěšném složení zkoušky obdrží podle § 9 odst. 3 osoba, která zkoušku složila. Osoba poučená žádnou zkoušku podle § 9 neskládá, u ní se znalosti jen ověřují.",
+    "a2": "Osvědčení o odborné způsobilosti vydává pověřená organizace na základě zákona osobám, které mají provádět revize; s poučením osoby poučené nesouvisí."
+   },
+   "status": "overeno",
+   "sourceClass": "volny",
+   "visibility": "verejne",
+   "verification": {
+    "method": "primární text předpisu",
+    "checkedAt": "2026-11-23",
+    "checkedBy": "agent",
+    "source": "nařízení vlády č. 194/2022 Sb., § 4 odst. 3 — doslovný text, predpisy/nv-194-2022.txt"
+   }
+  },
+  {
+   "questionId": "2027-ez1-059",
+   "options": [
+    {
+     "id": "a1",
+     "text": "Doklad o úspěšném složení zkoušky z odborné způsobilosti k výkonu činností v elektrotechnice, jehož vzor je uveden v příloze č. 2 k tomuto nařízení."
+    },
+    {
+     "id": "a2",
+     "text": "Osvědčení o odborné způsobilosti k činnostem na vyhrazených elektrických zařízeních vydané pověřenou organizací."
+    },
+    {
+     "id": "a3",
+     "text": "Zápis o poučení s vymezeným rozsahem poučení a specifikací pracoviště."
+    }
+   ],
+   "correctOptionId": "a1",
+   "explanation": "Podle § 9 odst. 3 obdrží osoba, která úspěšně složí zkoušku podle § 9 odst. 2, doklad o úspěšném složení zkoušky z odborné způsobilosti k výkonu činností v elektrotechnice; jeho vzor je v příloze č. 2 k nařízení. Vystavuje jej podle § 9 odst. 4 písm. d) předseda komise jménem osoby, u níž se zkouška skládá.",
+   "whyWrong": {
+    "a2": "Osvědčení k provádění revizí stojí mimo zkoušku podle § 9 — vydává je pověřená organizace podle zákona a revizní technik je podle § 8 odst. 1 musí mít navíc ke způsobilosti podle § 7.",
+    "a3": "Zápis podle § 4 odst. 3 se vyhotovuje o poučení osoby poučené, ne o zkoušce osoby znalé."
+   },
+   "status": "overeno",
+   "sourceClass": "volny",
+   "visibility": "verejne",
+   "verification": {
+    "method": "primární text předpisu",
+    "checkedAt": "2026-11-23",
+    "checkedBy": "agent",
+    "source": "nařízení vlády č. 194/2022 Sb., § 9 odst. 3 — doslovný text, predpisy/nv-194-2022.txt"
+   }
+  },
+  {
+   "questionId": "2027-ez1-060",
+   "options": [
+    {
+     "id": "a1",
+     "text": "Osoba poučená, elektrotechnik a vedoucí elektrotechnik."
+    },
+    {
+     "id": "a2",
+     "text": "Elektrotechnik, vedoucí elektrotechnik a revizní technik."
+    },
+    {
+     "id": "a3",
+     "text": "Odpovědná osoba, elektrotechnik a revizní technik."
+    }
+   ],
+   "correctOptionId": "a2",
+   "explanation": "§ 5 odst. 1 vyjmenovává osoby znalé vyčerpávajícím způsobem: osoba znalá pro samostatnou činnost (elektrotechnik), osoba znalá pro řízení činnosti (vedoucí elektrotechnik) a revizní technik.",
+   "whyWrong": {
+    "a1": "Osoba poučená je samostatný stupeň odborné způsobilosti podle § 4; mezi osoby znalé ji § 5 odst. 1 nezařazuje.",
+    "a3": "Odpovědná osoba je podle § 2 písm. f) role na straně provozovatele zařízení, nikoli stupeň odborné způsobilosti; vedoucí elektrotechnik ve výčtu naopak chybí."
+   },
+   "status": "overeno",
+   "sourceClass": "volny",
+   "visibility": "verejne",
+   "verification": {
+    "method": "primární text předpisu",
+    "checkedAt": "2026-11-23",
+    "checkedBy": "agent",
+    "source": "nařízení vlády č. 194/2022 Sb., § 5 odst. 1 — doslovný text, predpisy/nv-194-2022.txt"
+   }
+  },
+  {
+   "questionId": "2027-ez1-061",
+   "options": [
+    {
+     "id": "a1",
+     "text": "Vedoucí elektrotechnik bez omezení napětí."
+    },
+    {
+     "id": "a2",
+     "text": "Revizní technik v rozsahu uvedeném v osvědčení."
+    },
+    {
+     "id": "a3",
+     "text": "Elektrotechnik, a to s rozsahem omezeným na činnosti do 1 kV střídavého napětí nebo do 1,5 kV stejnosměrného napětí v objektech bez nebezpečí výbuchu."
+    }
+   ],
+   "correctOptionId": "a3",
+   "explanation": "Podle § 6 odst. 7 může odpovědná osoba na základě rizik stanovit, že pro daný typ činnosti lze odbornou kvalifikaci nahradit profesní kvalifikací podle § 2 písm. b). Rozsah zkoušky i vydaného dokladu je pak omezen na činnosti do 1 kV střídavého napětí nebo do 1,5 kV stejnosměrného napětí v objektech bez nebezpečí výbuchu a doklad platí jen pro danou právnickou nebo podnikající fyzickou osobu.",
+   "whyWrong": {
+    "a1": "Vedoucím elektrotechnikem může být podle § 7 odst. 1 jen osoba s odbornou kvalifikací podle § 2 písm. a); profesní kvalifikace podle § 2 písm. b) na tento stupeň nestačí.",
+    "a2": "Revizní technik musí být podle § 8 odst. 1 zároveň osobou odborně způsobilou podle § 7, takže i tady je potřeba odborná kvalifikace podle § 2 písm. a)."
+   },
+   "status": "overeno",
+   "sourceClass": "volny",
+   "visibility": "verejne",
+   "verification": {
+    "method": "primární text předpisu",
+    "checkedAt": "2026-11-23",
+    "checkedBy": "agent",
+    "source": "nařízení vlády č. 194/2022 Sb., § 6 odst. 7 — doslovný text, predpisy/nv-194-2022.txt"
+   }
+  },
+  {
+   "questionId": "2027-ez1-062",
+   "options": [
+    {
+     "id": "a1",
+     "text": "Ano. Úplná profesní kvalifikace zveřejněná v Národní soustavě kvalifikací pod oborem kvalifikace „Elektrotechnika, telekomunikační a výpočetní technika“ je odbornou kvalifikací, takže po splnění požadované odborné praxe a složení zkoušky se vedoucím elektrotechnikem stát může."
+    },
+    {
+     "id": "a2",
+     "text": "Ne, vedoucím elektrotechnikem může být jen osoba s ukončeným vysokoškolským vzděláním z oblasti vzdělávání Elektrotechnika."
+    },
+    {
+     "id": "a3",
+     "text": "Ne, držitel profesní kvalifikace může být nejvýše elektrotechnikem."
+    }
+   ],
+   "correctOptionId": "a1",
+   "explanation": "§ 7 odst. 1 požaduje odbornou kvalifikaci podle § 2 písm. a). Úplná profesní kvalifikace zveřejněná v Národní soustavě kvalifikací pod oborem kvalifikace „Elektrotechnika, telekomunikační a výpočetní technika“ je v § 2 písm. a) bodě 5 uvedena jako jedna z forem odborné kvalifikace. Zbývá tedy splnit odbornou praxi podle § 7 odst. 2 a 3 a složit zkoušku podle § 9.",
+   "whyWrong": {
+    "a2": "§ 2 písm. a) uznává jako odbornou kvalifikaci i ukončené střední vzdělání a úplnou profesní kvalifikaci; vysokoškolské vzdělání podmínkou není.",
+    "a3": "Omezení na stupeň elektrotechnika se v § 6 odst. 7 váže na profesní kvalifikaci podle § 2 písm. b). Úplná profesní kvalifikace stojí v § 2 písm. a) bodě 5 a tomuto omezení nepodléhá."
+   },
+   "status": "overeno",
+   "sourceClass": "volny",
+   "visibility": "verejne",
+   "verification": {
+    "method": "primární text předpisu",
+    "checkedAt": "2026-11-23",
+    "checkedBy": "agent",
+    "source": "nařízení vlády č. 194/2022 Sb., § 7 odst. 1 ve spojení s § 2 písm. a) bodem 5 — doslovný text, predpisy/nv-194-2022.txt"
+   }
+  },
+  {
+   "questionId": "2027-ez1-063",
+   "options": [
+    {
+     "id": "a1",
+     "text": "Osoba poučená."
+    },
+    {
+     "id": "a2",
+     "text": "Elektrotechnik."
+    },
+    {
+     "id": "a3",
+     "text": "Vedoucí elektrotechnik."
+    }
+   ],
+   "correctOptionId": "a3",
+   "explanation": "§ 7 odst. 1 druhá věta vypočítává, co může vedoucí elektrotechnik dělat: veškeré činnosti elektrotechnika, řízení činností, řízení provozu a projektování vyhrazených elektrických zařízení, které není předmětem autorizace podle jiného právního předpisu. Projektování je tedy vyhrazeno tomuto stupni.",
+   "whyWrong": {
+    "a1": "Rozsah činností osoby poučené vymezuje § 4 odst. 4 a projektování mezi nimi není.",
+    "a2": "Elektrotechnik podle § 6 odst. 1 vykonává činnosti na elektrických zařízeních samostatně, projektování mu § 7 odst. 1 nepřiznává."
+   },
+   "status": "overeno",
+   "sourceClass": "volny",
+   "visibility": "verejne",
+   "verification": {
+    "method": "primární text předpisu",
+    "checkedAt": "2026-11-23",
+    "checkedBy": "agent",
+    "source": "nařízení vlády č. 194/2022 Sb., § 7 odst. 1 — doslovný text, predpisy/nv-194-2022.txt"
+   }
+  },
+  {
+   "questionId": "2027-ez1-064",
+   "options": [
+    {
+     "id": "a1",
+     "text": "Osoba odborně způsobilá k provádění revizí podle § 11 zákona."
+    },
+    {
+     "id": "a2",
+     "text": "Vedoucí elektrotechnik určený odpovědnou osobou."
+    },
+    {
+     "id": "a3",
+     "text": "Zástupce pověřené organizace."
+    }
+   ],
+   "correctOptionId": "a1",
+   "explanation": "§ 6 odst. 3 i § 7 odst. 4 shodně požadují tříčlennou zkušební komisi, jejímž předsedou musí být osoba odborně způsobilá k provádění revizí podle § 11 zákona.",
+   "whyWrong": {
+    "a2": "Předsedou s kvalifikací vedoucího elektrotechnika může být podle druhé věty § 6 odst. 3 a § 7 odst. 4 jen odpovědná osoba provozovatele přenosové nebo distribuční soustavy, ne obecně kdokoli.",
+    "a3": "Zkoušku skládá komise u právnické osoby nebo podnikající fyzické osoby, u níž se zkouška koná; účast pověřené organizace nařízení nepožaduje."
+   },
+   "status": "overeno",
+   "sourceClass": "volny",
+   "visibility": "verejne",
+   "verification": {
+    "method": "primární text předpisu",
+    "checkedAt": "2026-11-23",
+    "checkedBy": "agent",
+    "source": "nařízení vlády č. 194/2022 Sb., § 6 odst. 3 a § 7 odst. 4 — doslovný text, predpisy/nv-194-2022.txt"
+   }
+  },
+  {
+   "questionId": "2027-ez1-065",
+   "options": [
+    {
+     "id": "a1",
+     "text": "Každá osoba znalá, tedy i elektrotechnik a vedoucí elektrotechnik."
+    },
+    {
+     "id": "a2",
+     "text": "Revizní technik s osvědčením o odborné způsobilosti k činnostem na vyhrazených elektrických zařízeních příslušného rozsahu pro provádění revizí."
+    },
+    {
+     "id": "a3",
+     "text": "Odpovědná osoba provozovatele elektrického zařízení."
+    }
+   ],
+   "correctOptionId": "a2",
+   "explanation": "Podle § 5 odst. 3 vykonává revize vyhrazených elektrických zařízení na základě zákona revizní technik s osvědčením o odborné způsobilosti k činnostem na vyhrazených elektrických zařízeních příslušného rozsahu pro provádění revizí.",
+   "whyWrong": {
+    "a1": "Osobou znalou je podle § 5 odst. 1 i elektrotechnik a vedoucí elektrotechnik, revize vyhrazených elektrických zařízení ale § 5 odst. 3 svěřuje výslovně revizními technikovi.",
+    "a3": "Odpovědná osoba podle § 2 písm. f) a § 3 odst. 3 kontroluje, že činnosti vykonávají způsobilé osoby; revize sama neprovádí."
+   },
+   "status": "overeno",
+   "sourceClass": "volny",
+   "visibility": "verejne",
+   "verification": {
+    "method": "primární text předpisu",
+    "checkedAt": "2026-11-23",
+    "checkedBy": "agent",
+    "source": "nařízení vlády č. 194/2022 Sb., § 5 odst. 3 — doslovný text, predpisy/nv-194-2022.txt"
+   }
+  }
+ ]
+}

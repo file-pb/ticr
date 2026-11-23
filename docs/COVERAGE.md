@@ -6,17 +6,17 @@ Banka `2027.1`, platnost od 2027-01-01. Vygenerováno skriptem `scripts/coverage
 
 | Okruh | Název | Otázek | Ověřeno | Návrh | Sporné | Bez odpovědi |
 | --- | --- | ---: | ---: | ---: | ---: | ---: |
-| ez1 | Obecný test | 90 | 44 | 0 | 0 | 46 |
+| ez1 | Obecný test | 90 | 89 | 1 | 0 | 0 |
 | ez2 | Ochrana před úrazem elektrickým proudem | 100 | 0 | 0 | 0 | 100 |
 | ez3 | Všeobecné požadavky na elektrická zařízení | 140 | 0 | 0 | 0 | 140 |
 | ez4 | LPS v prostředí bez nebezpečí výbuchu | 100 | 2 | 0 | 0 | 98 |
-| | **celkem** | **430** | **46** | **0** | **0** | **384** |
+| | **celkem** | **430** | **91** | **1** | **0** | **338** |
 
 ## Lze spustit zkoušku nanečisto?
 
 Předvolba chce 15 ověřených otázek z každého okruhu, tedy 60 celkem.
 
-- `ez1`: ověřeno 44 z 15 — ano
+- `ez1`: ověřeno 89 z 15 — ano
 - `ez2`: ověřeno 0 z 15 — chybí 15
 - `ez3`: ověřeno 0 z 15 — chybí 15
 - `ez4`: ověřeno 2 z 15 — chybí 13
@@ -39,26 +39,11 @@ vrstvě `src/data/answers.2027.local.json`, která není v gitu ani ve veřejné
 
 ## Co konkrétně chybí doložit
 
-### Právní předpisy — volně ověřitelné (47 otázek)
+### Právní předpisy — volně ověřitelné (1 otázek)
 
 Nejčastější chybějící podklady:
 
-- NV č. 194/2022 Sb., § 7, odst. 1 — 2 otázek
-- zákon č. 22/1997 Sb., § 5, odst. 1 — 2 otázek
-- Příloha č. 1 k zákonu č. 455/1991 Sb. — 1 otázek
-- Příloha č. 1 k zákonu č. 455/1991 Sb. a Příloha č. 1 k nařízení vlády č. 278/2008 Sb. — 1 otázek
-- §5, odst. 1, zákona č. 89/2012 Sb. — 1 otázek
-- § 102 zákona č. 262/2006 Sb. — 1 otázek
-- § 349, odst. 1, zákona č. 262/2006 Sb. — 1 otázek
-- Zákon č. 309/2006 Sb. — 1 otázek
-- Zákon č. 309/2006 Sb., § 4, odst. 1, písm. c — 1 otázek
-- NV č. 378/2001 Sb., § 1 — 1 otázek
-- NV č. 378/2001 Sb., § 4, odst. 2 — 1 otázek
-- NV č. 378/2001 Sb., § 2, písm. g — 1 otázek
-- NV č. 378/2001 Sb., § 4, odst. 1 — 1 otázek
-- NV č. 194/2022 Sb., § 2 a 3 — 1 otázek
-- NV č. 194/2022 Sb., § 1, písm. a — 1 otázek
-- …a dalších 30 různých odkazů
+- Nařízení vlády č. 117/2016 Sb. § 2 v platném znění — 1 otázek
 
 ### Normy ČSN — potřeba přístup k normě (337 otázek)
 

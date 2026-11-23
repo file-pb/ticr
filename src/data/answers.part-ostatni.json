@@ -1,0 +1,296 @@
+{
+ "schemaVersion": 1,
+ "answersVersion": "0.3.0-ostatni",
+ "bankVersion": "2027.1",
+ "license": "CC-BY-SA-4.0",
+ "answers": [
+  {
+   "questionId": "2027-ez1-001",
+   "options": [
+    {
+     "id": "a1",
+     "text": "Živností řemeslnou."
+    },
+    {
+     "id": "a2",
+     "text": "Živností vázanou."
+    },
+    {
+     "id": "a3",
+     "text": "Živností volnou."
+    }
+   ],
+   "correctOptionId": "a1",
+   "explanation": "Příloha č. 1 k zákonu č. 455/1991 Sb. je nadepsána ŽIVNOSTI ŘEMESLNÉ a v části A uvádí mimo jiné „Montáž, opravy, revize a zkoušky elektrických zařízení“ a stejně stavěné živnosti pro plynová, tlaková a zdvihací zařízení. Revize a zkoušky vyhrazených technických zařízení tedy spadají mezi živnosti ohlašovací řemeslné.",
+   "whyWrong": {
+    "a2": "Živnosti vázané jsou v příloze č. 2 k zákonu a žádná z nich se revizí a zkoušek vyhrazených technických zařízení netýká.",
+    "a3": "Živnost volná je ta, pro jejíž provozování zákon odbornou způsobilost nevyžaduje; u řemeslné živnosti podle přílohy č. 1 se odborná způsobilost prokazuje."
+   },
+   "status": "overeno",
+   "sourceClass": "volny",
+   "visibility": "verejne",
+   "verification": {
+    "method": "primární text předpisu",
+    "checkedAt": "2026-11-23",
+    "checkedBy": "agent",
+    "source": "Příloha č. 1 k zákonu č. 455/1991 Sb. (živnosti řemeslné, část A) — doslovný text, predpisy/zakon-455-1991.txt"
+   }
+  },
+  {
+   "questionId": "2027-ez1-002",
+   "options": [
+    {
+     "id": "a1",
+     "text": "Vázanou živností „Projektová činnost ve výstavbě“."
+    },
+    {
+     "id": "a2",
+     "text": "Ohlašovací řemeslnou živností „Montáž, opravy, revize a zkoušky elektrických zařízení“."
+    },
+    {
+     "id": "a3",
+     "text": "Volnou živností „Výroba, obchod a služby neuvedené v přílohách živnostenského zákona“."
+    }
+   ],
+   "correctOptionId": "a2",
+   "explanation": "Příloha č. 1 k zákonu č. 455/1991 Sb. (živnosti řemeslné) uvádí v části A živnost „Montáž, opravy, revize a zkoušky elektrických zařízení“. Její obsahovou náplň vymezuje příloha č. 1 k nařízení vlády č. 278/2008 Sb. jako montáž, opravy, revize a zkoušky vyhrazených elektrických technických zařízení určených pro výrobu, přeměnu, přenos, rozvod a odběr elektrické energie.",
+   "whyWrong": {
+    "a1": "Projektová činnost ve výstavbě je samostatná živnost vázaná podle přílohy č. 2 k zákonu a k provádění revizí neopravňuje.",
+    "a3": "Volná živnost je určena pro činnosti neuvedené v přílohách zákona; revize elektrických zařízení jsou v příloze č. 1 uvedeny výslovně, takže volná živnost nestačí."
+   },
+   "status": "overeno",
+   "sourceClass": "volny",
+   "visibility": "verejne",
+   "verification": {
+    "method": "primární text předpisu",
+    "checkedAt": "2026-11-23",
+    "checkedBy": "agent",
+    "source": "Příloha č. 1 k zákonu č. 455/1991 Sb. ve spojení s přílohou č. 1 k nařízení vlády č. 278/2008 Sb. (predpisy/nv-278-2008.txt) — doslovný text, predpisy/zakon-455-1991.txt"
+   }
+  },
+  {
+   "questionId": "2027-ez1-003",
+   "options": [
+    {
+     "id": "a1",
+     "text": "Že za škodu způsobenou při výkonu povolání odpovídá jen do výše svého pojistného plnění."
+    },
+    {
+     "id": "a2",
+     "text": "Že je schopen jednat se znalostí a pečlivostí, která je s jeho povoláním nebo stavem spojena; jedná-li bez této odborné péče, jde to k jeho tíži."
+    },
+    {
+     "id": "a3",
+     "text": "Že jeho právní jednání nelze zpochybnit, i kdyby k činnosti neměl potřebné oprávnění."
+    }
+   ],
+   "correctOptionId": "a2",
+   "explanation": "§ 5 odst. 1 občanského zákoníku: kdo se veřejně nebo ve styku s jinou osobou přihlásí k odbornému výkonu jako příslušník určitého povolání nebo stavu, dává tím najevo, že je schopen jednat se znalostí a pečlivostí, která je s jeho povoláním nebo stavem spojena, a jedná-li bez této odborné péče, jde to k jeho tíži. Pro revizního technika to znamená, že se nemůže dovolávat neznalosti v rozsahu, ve kterém se k odbornosti přihlásil.",
+   "whyWrong": {
+    "a1": "O odpovědnosti za škodu ani o pojištění § 5 nemluví; následek je v odstavci 1 formulován jako to, že nedostatek odborné péče jde k tíži toho, kdo se k odbornému výkonu přihlásil.",
+    "a3": "§ 5 odst. 2 říká něco jiného a v jiné situaci: proti vůli dotčené strany nelze povahu nebo platnost právního jednání zpochybnit jen proto, že jednal ten, kdo nemá potřebné oprávnění. To není důsledek přihlášení se k odbornému výkonu."
+   },
+   "status": "overeno",
+   "sourceClass": "volny",
+   "visibility": "verejne",
+   "verification": {
+    "method": "primární text předpisu",
+    "checkedAt": "2026-11-23",
+    "checkedBy": "agent",
+    "source": "zákon č. 89/2012 Sb., § 5 odst. 1 (ve spojení s § 5 odst. 2) — doslovný text, predpisy/zakon-89-2012.txt"
+   }
+  },
+  {
+   "questionId": "2027-ez1-071",
+   "options": [
+    {
+     "id": "a1",
+     "text": "Úřad pro technickou normalizaci, metrologii a státní zkušebnictví."
+    },
+    {
+     "id": "a2",
+     "text": "Oblastní inspektorát práce."
+    },
+    {
+     "id": "a3",
+     "text": "Česká obchodní inspekce, nebo další správní orgán, pokud tak jiný zákon stanoví."
+    }
+   ],
+   "correctOptionId": "a3",
+   "explanation": "§ 49 odst. 1 zákona č. 90/2016 Sb.: dozor nad tím, zda jsou výrobky dodávány na trh, uváděny do provozu nebo používány v souladu se stanovenými požadavky, zda hospodářské subjekty plní své povinnosti a zda výrobky nejsou neoprávněně opatřovány označením CE, provádí orgán dozoru, kterým je Česká obchodní inspekce, nebo další správní orgán, pokud tak jiný zákon stanoví.",
+   "whyWrong": {
+    "a1": "Úřad pro technickou normalizaci, metrologii a státní zkušebnictví podle zákona o technických požadavcích na výrobky schvaluje normy a uskutečňuje státní zkušebnictví; dozor nad stanovenými výrobky § 49 odst. 1 svěřuje orgánu dozoru.",
+    "a2": "Oblastní inspektorát práce kontroluje podle zákona o inspekci práce dodržování předpisů k zajištění bezpečnosti práce a provozu zařízení u zaměstnavatelů, ne výrobky dodávané na trh."
+   },
+   "status": "overeno",
+   "sourceClass": "volny",
+   "visibility": "verejne",
+   "verification": {
+    "method": "primární text předpisu",
+    "checkedAt": "2026-11-23",
+    "checkedBy": "agent",
+    "source": "zákon č. 90/2016 Sb., § 49 odst. 1 — doslovný text, predpisy/zakon-90-2016.txt"
+   }
+  },
+  {
+   "questionId": "2027-ez1-079",
+   "options": [
+    {
+     "id": "a1",
+     "text": "Schopnost zařízení uspokojivě fungovat v elektromagnetickém prostředí, aniž by samo způsobovalo nepřípustné elektromagnetické rušení jiného zařízení v tomto prostředí."
+    },
+    {
+     "id": "a2",
+     "text": "Schopnost zařízení správně fungovat bez zhoršení kvality funkce za přítomnosti elektromagnetického rušení."
+    },
+    {
+     "id": "a3",
+     "text": "Elektromagnetický jev, který může zhoršit funkci zařízení."
+    }
+   ],
+   "correctOptionId": "a1",
+   "explanation": "§ 2 odst. 1 písm. d) nařízení vlády č. 117/2016 Sb. definuje elektromagnetickou kompatibilitu jako schopnost zařízení uspokojivě fungovat v elektromagnetickém prostředí, aniž by samo způsobovalo nepřípustné elektromagnetické rušení jiného zařízení v tomto prostředí. (Normativní odkaz v oficiální bance uvádí písmeno e); kompatibilita je ve znění nařízení pod písmenem d), písmeno e) definuje elektromagnetické rušení.)",
+   "whyWrong": {
+    "a2": "To je definice odolnosti podle § 2 odst. 1 písm. f). Odolnost je jen jedna ze dvou stránek kompatibility — druhou je, že zařízení samo nepřípustně neruší.",
+    "a3": "To je definice elektromagnetického rušení podle § 2 odst. 1 písm. e), tedy jevu, proti kterému kompatibilita míří."
+   },
+   "status": "overeno",
+   "sourceClass": "volny",
+   "visibility": "verejne",
+   "verification": {
+    "method": "primární text předpisu",
+    "checkedAt": "2026-11-23",
+    "checkedBy": "agent",
+    "source": "nařízení vlády č. 117/2016 Sb., § 2 odst. 1 — doslovný text, predpisy/nv-117-2016.txt"
+   }
+  },
+  {
+   "questionId": "2027-ez1-080",
+   "options": [
+    {
+     "id": "a1",
+     "text": "Po dobu 5 let od uvedení přístroje na trh."
+    },
+    {
+     "id": "a2",
+     "text": "Po dobu 10 let od uvedení přístroje na trh."
+    },
+    {
+     "id": "a3",
+     "text": "Po celou dobu výroby přístroje a dále 2 roky po jejím ukončení."
+    }
+   ],
+   "correctOptionId": "a2",
+   "explanation": "§ 5 odst. 3 nařízení vlády č. 117/2016 Sb.: výrobce uchovává technickou dokumentaci a EU prohlášení o shodě po dobu 10 let od uvedení přístroje na trh.",
+   "whyWrong": {
+    "a1": "Lhůta v § 5 odst. 3 je 10 let, ne 5.",
+    "a3": "Lhůta se podle § 5 odst. 3 počítá od uvedení přístroje na trh, ne od ukončení výroby, a je pevná."
+   },
+   "status": "overeno",
+   "sourceClass": "volny",
+   "visibility": "verejne",
+   "verification": {
+    "method": "primární text předpisu",
+    "checkedAt": "2026-11-23",
+    "checkedBy": "agent",
+    "source": "nařízení vlády č. 117/2016 Sb., § 5 odst. 3 — doslovný text, predpisy/nv-117-2016.txt"
+   }
+  },
+  {
+   "questionId": "2027-ez1-081",
+   "options": [
+    {
+     "id": "a1",
+     "text": "Ano. Vlastník stavby je povinen uchovávat po celou dobu trvání stavby ověřenou dokumentaci odpovídající jejímu skutečnému provedení podle vydaných povolení; nedochovala-li se nebo není-li v náležitém stavu a stavba byla povolena, je povinen pořídit pasport stavby."
+    },
+    {
+     "id": "a2",
+     "text": "Ne, tato povinnost se váže jen na stavebníka a končí kolaudací stavby."
+    },
+    {
+     "id": "a3",
+     "text": "Ano, ale jen po dobu 10 let od dokončení stavby."
+    }
+   ],
+   "correctOptionId": "a1",
+   "explanation": "§ 245 odst. 1 stavebního zákona: vlastník stavby je povinen uchovávat po celou dobu trvání stavby ověřenou dokumentaci odpovídající jejímu skutečnému provedení podle vydaných povolení. Nedochovala-li se dokumentace nebo není v náležitém stavu a stavba byla povolena, je vlastník povinen pořídit pasport stavby; podle § 245 odst. 3 mu to stavební úřad může nařídit.",
+   "whyWrong": {
+    "a2": "Povinnost je v § 245 odst. 1 adresována vlastníkovi stavby a trvá po celou dobu trvání stavby, nikoli do kolaudace.",
+    "a3": "Žádnou lhůtu § 245 odst. 1 nestanoví — dokumentace se uchovává po celou dobu trvání stavby."
+   },
+   "status": "overeno",
+   "sourceClass": "volny",
+   "visibility": "verejne",
+   "verification": {
+    "method": "primární text předpisu",
+    "checkedAt": "2026-11-23",
+    "checkedBy": "agent",
+    "source": "zákon č. 283/2021 Sb., § 245 odst. 1 — doslovný text, predpisy/zakon-283-2021.txt"
+   }
+  },
+  {
+   "questionId": "2027-ez1-082",
+   "options": [
+    {
+     "id": "a1",
+     "text": "Na všech stavbách pro bydlení bez výjimky."
+    },
+    {
+     "id": "a2",
+     "text": "U výrobny a skladu výbušných a hořlavých hmot, kapalin, plynů a výbušnin, u muničního skladiště včetně volného složiště, přístřešku a místa pro manipulaci s nimi a u nadzemní stavby nebo nadzemních částí stavby vyhrazeného plynového technického zařízení; v ostatních případech tam, kde by blesk mohl způsobit ohrožení života nebo zdraví osob nebo zvířat nebo kde by mohl způsobit značné škody."
+    },
+    {
+     "id": "a3",
+     "text": "Jen na stavbách, které přesahují výšku okolní zástavby."
+    }
+   ],
+   "correctOptionId": "a2",
+   "explanation": "§ 26 odst. 1 vyhlášky č. 146/2024 Sb. vyjmenovává stavby, u kterých ochrana před bleskem být navržena a provedena musí. § 26 odst. 2 k tomu dodává, že v případech neuvedených v odstavci 1 musí být ochrana navržena a provedena tam, kde by blesk mohl způsobit ohrožení života nebo zdraví osob nebo zvířat, zejména u staveb pro bydlení a staveb občanského vybavení, nebo kde by mohl způsobit značné škody.",
+   "whyWrong": {
+    "a1": "Stavby pro bydlení jsou v § 26 odst. 2 uvedeny jako typický příklad případů, kde blesk může ohrozit život nebo zdraví — plošnou povinnost pro všechny stavby pro bydlení bez posouzení odstavec 2 nezakládá.",
+    "a3": "Žádné výškové kritérium ani srovnání s okolní zástavbou § 26 nezná; rozhoduje druh stavby podle odstavce 1 a posouzení ohrožení a škod podle odstavce 2."
+   },
+   "status": "overeno",
+   "sourceClass": "volny",
+   "visibility": "verejne",
+   "verification": {
+    "method": "primární text předpisu",
+    "checkedAt": "2026-11-23",
+    "checkedBy": "agent",
+    "source": "vyhláška č. 146/2024 Sb., § 26 odst. 1 a § 26 odst. 2 — doslovný text, predpisy/vyhlaska-146-2024.txt"
+   }
+  },
+  {
+   "questionId": "2027-ez1-083",
+   "options": [
+    {
+     "id": "a1",
+     "text": "Rozvody elektrické energie až k bytovému jističi za elektroměrem."
+    },
+    {
+     "id": "a2",
+     "text": "Rozvody elektrické energie včetně vnitřních rozvodů v jednotlivých bytech."
+    },
+    {
+     "id": "a3",
+     "text": "Pouze osvětlení společných částí domu a nouzové osvětlení."
+    }
+   ],
+   "correctOptionId": "a1",
+   "explanation": "§ 6 písm. b) nařízení vlády č. 366/2013 Sb. řadí mezi společné části domu rozvody elektrické energie až k bytovému jističi za elektroměrem. Právě tam tedy končí rozsah revize elektroinstalace společných částí domu.",
+   "whyWrong": {
+    "a2": "Společnou částí jsou podle § 6 písm. b) rozvody jen až k bytovému jističi za elektroměrem; vnitřní rozvody v bytě už společnou částí nejsou.",
+    "a3": "Osvětlení společných částí a nouzové osvětlení včetně záložních zdrojů jsou podle § 6 písm. f) rovněž společnými částmi, výčet v § 6 jimi ale nekončí — rozvody elektrické energie jsou uvedeny pod písmenem b)."
+   },
+   "status": "overeno",
+   "sourceClass": "volny",
+   "visibility": "verejne",
+   "verification": {
+    "method": "primární text předpisu",
+    "checkedAt": "2026-11-23",
+    "checkedBy": "agent",
+    "source": "nařízení vlády č. 366/2013 Sb., § 6 písm. b) — doslovný text, predpisy/nv-366-2013.txt"
+   }
+  }
+ ]
+}
