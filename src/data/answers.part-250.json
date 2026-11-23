@@ -1,0 +1,492 @@
+{
+  "schemaVersion": 1,
+  "answersVersion": "0.2.0-z250",
+  "bankVersion": "2027.1",
+  "license": "CC-BY-SA-4.0",
+  "answers": [
+    {
+      "questionId": "2027-ez1-012",
+      "options": [
+        { "id": "a1", "text": "Institut technické inspekce Praha, organizace státního odborného dozoru." },
+        { "id": "a2", "text": "Státní úřad inspekce práce společně s oblastními inspektoráty práce." },
+        { "id": "a3", "text": "Technická inspekce České republiky, která se ode dne nabytí účinnosti zákona považuje za pověřenou organizaci podle § 5 a 6." }
+      ],
+      "correctOptionId": "a3",
+      "explanation": "Podle § 24 odst. 3 se Technická inspekce České republiky ode dne nabytí účinnosti zákona považuje za pověřenou organizaci podle § 5 a 6; samotné zřízení státní příspěvkové organizace upravuje § 5 odst. 1.",
+      "whyWrong": {
+        "a1": "Institut technické inspekce Praha je v § 24 odst. 3 zmíněn jen jako organizace, jejíž zřizovací listina byla opatřením ministerstva změněna; pověřenou organizací se podle tohoto ustanovení stala Technická inspekce České republiky.",
+        "a2": "Státní úřad inspekce práce a oblastní inspektoráty práce vykonávají podle § 4 státní správu, nejsou pověřenou organizací."
+      },
+      "status": "overeno",
+      "sourceClass": "volny",
+      "verification": {
+        "source": "zákon č. 250/2021 Sb., § 24 odst. 3 (přechodná ustanovení), ve spojení s § 5 odst. 1 — doslovný text, podklady/predpisy/zakon-250-2021.txt",
+        "method": "primární text předpisu",
+        "checkedAt": "2026-11-23",
+        "checkedBy": "agent"
+      }
+    },
+    {
+      "questionId": "2027-ez1-013",
+      "options": [
+        { "id": "a1", "text": "10 let ode dne nabytí právní moci rozhodnutí o udělení osvědčení." },
+        { "id": "a2", "text": "5 let ode dne jeho udělení." },
+        { "id": "a3", "text": "3 roky ode dne vydání osvědčení." }
+      ],
+      "correctOptionId": "a2",
+      "explanation": "Podle § 11 odst. 3 je platnost osvědčení o odborné způsobilosti k činnostem na vyhrazených technických zařízeních 5 let ode dne jeho udělení; osvědčení se uděluje na základě úspěšného prověření odborné způsobilosti zkouškou u pověřené organizace.",
+      "whyWrong": {
+        "a1": "Doba 10 let a vazba na nabytí právní moci rozhodnutí patří podle § 8 odst. 4 k oprávnění právnických osob a podnikajících fyzických osob, ne k osvědčení fyzické osoby.",
+        "a3": "Platnost 3 roky ode dne vydání má podle § 19 odst. 2 písm. b) doklad o úspěšném složení zkoušky z odborné způsobilosti k výkonu činností v elektrotechnice, nikoli osvědčení podle § 11."
+      },
+      "status": "overeno",
+      "sourceClass": "volny",
+      "verification": {
+        "source": "zákon č. 250/2021 Sb., § 11 odst. 3 — doslovný text, podklady/predpisy/zakon-250-2021.txt",
+        "method": "primární text předpisu",
+        "checkedAt": "2026-11-23",
+        "checkedBy": "agent"
+      }
+    },
+    {
+      "questionId": "2027-ez1-014",
+      "options": [
+        { "id": "a1", "text": "Pověřená organizace, která je současně správcem a provozovatelem této evidence." },
+        { "id": "a2", "text": "Ministerstvo práce a sociálních věcí jako nadřízený správní orgán pověřené organizace." },
+        { "id": "a3", "text": "Oblastní inspektorát práce příslušný podle místa bydliště revizního technika." }
+      ],
+      "correctOptionId": "a1",
+      "explanation": "Podle § 18 odst. 1 vede evidenci revizních techniků pověřená organizace a je zároveň jejím správcem a provozovatelem; evidence je informačním systémem veřejné správy. Vedení této evidence je také výslovně uvedeno v § 6 odst. 1 písm. g).",
+      "whyWrong": {
+        "a2": "Ministerstvo je podle § 5 odst. 2 nadřízeným správním orgánem pověřené organizace, evidenci revizních techniků však podle § 18 odst. 1 nevede.",
+        "a3": "Oblastní inspektorát práce podle § 4 vykonává státní správu a podle § 22 přijímá hlášení havárií; evidenci revizních techniků nevede."
+      },
+      "status": "overeno",
+      "sourceClass": "volny",
+      "verification": {
+        "source": "zákon č. 250/2021 Sb., § 18 odst. 1 — doslovný text, podklady/predpisy/zakon-250-2021.txt",
+        "method": "primární text předpisu",
+        "checkedAt": "2026-11-23",
+        "checkedBy": "agent"
+      }
+    },
+    {
+      "questionId": "2027-ez1-015",
+      "options": [
+        { "id": "a1", "text": "Vykonává státní správu v oblasti bezpečnosti provozu vyhrazených technických zařízení." },
+        { "id": "a2", "text": "Plní úkoly v oblasti bezpečnosti provozu vyhrazených technických zařízení podle tohoto zákona a právních předpisů vydaných k jeho provedení." },
+        { "id": "a3", "text": "Vydává zřizovací listinu a jmenuje statutární orgán pro úsek bezpečnosti provozu vyhrazených technických zařízení." }
+      ],
+      "correctOptionId": "a2",
+      "explanation": "Podle § 5 odst. 1 může ministerstvo zřídit státní příspěvkovou organizaci (pověřenou organizaci) k plnění úkolů v oblasti bezpečnosti provozu vyhrazených technických zařízení podle tohoto zákona a právních předpisů vydaných k jeho provedení; výčet jednotlivých činností pak rozvádí § 6 odst. 1.",
+      "whyWrong": {
+        "a1": "Státní správu v této oblasti vykonává podle § 4 ministerstvo, Státní úřad inspekce práce a oblastní inspektoráty práce, nikoli pověřená organizace.",
+        "a3": "Zřizovací listinu podle § 5 odst. 1 vydává ministerstvo a statutární orgán pověřené organizace podle § 5 odst. 3 jmenuje a odvolává ministr práce a sociálních věcí; nejde o činnost pověřené organizace."
+      },
+      "status": "overeno",
+      "sourceClass": "volny",
+      "verification": {
+        "source": "zákon č. 250/2021 Sb., § 5 odst. 1 (ve spojení s § 6 odst. 1) — doslovný text, podklady/predpisy/zakon-250-2021.txt",
+        "method": "primární text předpisu",
+        "checkedAt": "2026-11-23",
+        "checkedBy": "agent"
+      }
+    },
+    {
+      "questionId": "2027-ez1-016",
+      "options": [
+        { "id": "a1", "text": "Pověřená organizace zřízená ministerstvem jako státní příspěvková organizace." },
+        { "id": "a2", "text": "Ministerstvo práce a sociálních věcí a pověřená organizace společně." },
+        { "id": "a3", "text": "Ministerstvo práce a sociálních věcí, Státní úřad inspekce práce a oblastní inspektoráty práce." }
+      ],
+      "correctOptionId": "a3",
+      "explanation": "Podle § 4 vykonává státní správu v oblasti bezpečnosti provozu vyhrazených technických zařízení Ministerstvo práce a sociálních věcí, Státní úřad inspekce práce a oblastní inspektoráty práce.",
+      "whyWrong": {
+        "a1": "Pověřená organizace podle § 5 odst. 1 a § 6 odst. 1 plní úkoly a vykonává odborné činnosti, mezi orgány vykonávající státní správu ji § 4 neřadí.",
+        "a2": "Výčet v § 4 zahrnuje vedle ministerstva Státní úřad inspekce práce a oblastní inspektoráty práce; pověřená organizace v něm uvedena není."
+      },
+      "status": "overeno",
+      "sourceClass": "volny",
+      "verification": {
+        "source": "zákon č. 250/2021 Sb., § 4 — doslovný text, podklady/predpisy/zakon-250-2021.txt",
+        "method": "primární text předpisu",
+        "checkedAt": "2026-11-23",
+        "checkedBy": "agent"
+      }
+    },
+    {
+      "questionId": "2027-ez1-017",
+      "options": [
+        { "id": "a1", "text": "Tlakové, zdvihací, elektrické nebo plynové zařízení, které při provozu svým charakterem nebo akumulovanou energií, v důsledku nesprávného použití, výskytem provozních rizik vyvolávajících nebezpečné situace nebo nedodržením podmínek bezpečného provozu představuje závažné riziko ohrožení života, zdraví a bezpečnosti fyzických osob." },
+        { "id": "a2", "text": "Pouze tlaková a plynová zařízení zařazená podle míry rizika do I. třídy." },
+        { "id": "a3", "text": "Všechna technická zařízení, u nichž je podle průvodní dokumentace předepsána výchozí revize." }
+      ],
+      "correctOptionId": "a1",
+      "explanation": "Vymezení pojmu v § 2 písm. a) označuje za vyhrazené technické zařízení tlakové, zdvihací, elektrické nebo plynové zařízení, které za uvedených okolností představuje závažné riziko ohrožení života, zdraví a bezpečnosti fyzických osob.",
+      "whyWrong": {
+        "a2": "Druhy zařízení jsou v § 2 písm. a) čtyři, nejen tlaková a plynová; zařazení do I. třídy je podle § 3 odst. 2 otázkou nejvyšší míry rizika u již vyhrazeného zařízení, ne podmínkou, aby zařízení bylo vyhrazené.",
+        "a3": "Průvodní dokumentace je podle § 2 písm. g) soubor dokumentů dodaných výrobcem nebo dodavatelem; předepsaná revize není znakem vymezení vyhrazeného technického zařízení."
+      },
+      "status": "overeno",
+      "sourceClass": "volny",
+      "verification": {
+        "source": "zákon č. 250/2021 Sb., § 2 písm. a) — doslovný text, podklady/predpisy/zakon-250-2021.txt",
+        "method": "primární text předpisu",
+        "checkedAt": "2026-11-23",
+        "checkedBy": "agent"
+      }
+    },
+    {
+      "questionId": "2027-ez1-018",
+      "options": [
+        { "id": "a1", "text": "5 let ode dne jeho vydání." },
+        { "id": "a2", "text": "10 let ode dne nabytí právní moci rozhodnutí o vydání oprávnění." },
+        { "id": "a3", "text": "20 let ode dne zápisu do evidence odborně způsobilých osob." }
+      ],
+      "correctOptionId": "a2",
+      "explanation": "Podle § 8 odst. 4 rozhodne pověřená organizace o vydání oprávnění, splňuje-li žadatel podmínky pro řádné zajištění činnosti, a platnost oprávnění je 10 let ode dne nabytí právní moci rozhodnutí o vydání oprávnění.",
+      "whyWrong": {
+        "a1": "Platnost 5 let má podle § 11 odst. 3 osvědčení o odborné způsobilosti fyzické osoby, nikoli oprávnění podle § 8.",
+        "a3": "Doba 20 let je podle § 10 odst. 3 dobou, po kterou pověřená organizace uchovává evidované údaje v neveřejné evidenci po skončení platnosti oprávnění, není to doba platnosti oprávnění."
+      },
+      "status": "overeno",
+      "sourceClass": "volny",
+      "verification": {
+        "source": "zákon č. 250/2021 Sb., § 8 odst. 4 — doslovný text, podklady/predpisy/zakon-250-2021.txt",
+        "method": "primární text předpisu",
+        "checkedAt": "2026-11-23",
+        "checkedBy": "agent"
+      }
+    },
+    {
+      "questionId": "2027-ez1-019",
+      "options": [
+        { "id": "a1", "text": "Statutární orgán žadatele, který odpovídá za potřebné technické vybavení k požadovaným činnostem." },
+        { "id": "a2", "text": "Zaměstnanec pověřené organizace, který u žadatele dozoruje řádný výkon revizí a zkoušek." },
+        { "id": "a3", "text": "Jedna nebo více určených fyzických osob, které splňují předpoklady odborné způsobilosti pro požadovaný rozsah činností a budou u žadatele odpovídat za řádný výkon montáže, oprav, revizí, zkoušek vyhrazených technických zařízení a plnění nádob plyny." }
+      ],
+      "correctOptionId": "a3",
+      "explanation": "Podmínkou pro vydání oprávnění je podle § 8 odst. 2 písm. a) určení jedné nebo více fyzických osob splňujících předpoklady odborné způsobilosti pro požadovaný rozsah činností, které budou odpovídat za řádný výkon montáže, oprav, revizí, zkoušek vyhrazených technických zařízení a plnění nádob plyny u žadatele; zákon je zde označuje jako odpovědnou odbornou osobu.",
+      "whyWrong": {
+        "a1": "Potřebné technické vybavení je samostatnou podmínkou podle § 8 odst. 2 písm. c) a odpovědná odborná osoba je podle písmene a) určena podle odborné způsobilosti, nikoli podle postavení statutárního orgánu.",
+        "a2": "Zaměstnanec pověřené organizace je podle § 12 odst. 2 vždy předsedou zkušební komise; odpovědnou odbornou osobu podle § 8 odst. 2 písm. a) určuje žadatel ze svých odborně způsobilých osob."
+      },
+      "status": "overeno",
+      "sourceClass": "volny",
+      "verification": {
+        "source": "zákon č. 250/2021 Sb., § 8 odst. 2 písm. a) — doslovný text, podklady/predpisy/zakon-250-2021.txt",
+        "method": "primární text předpisu",
+        "checkedAt": "2026-11-23",
+        "checkedBy": "agent"
+      }
+    },
+    {
+      "questionId": "2027-ez1-020",
+      "options": [
+        { "id": "a1", "text": "Veřejná, s výjimkou adresy bydliště nebo místa trvalého pobytu evidované osoby." },
+        { "id": "a2", "text": "Veřejná v celém rozsahu zapisovaných údajů, a to způsobem umožňujícím dálkový přístup." },
+        { "id": "a3", "text": "Neveřejná; údaje se poskytují jen pro potřeby jiných orgánů podle jiných právních předpisů." }
+      ],
+      "correctOptionId": "a1",
+      "explanation": "Podle § 18 odst. 4 je evidence revizních techniků veřejná s výjimkou údajů podle odstavce 2 písm. c) a odstavce 3 písm. d), tedy adresy bydliště nebo místa trvalého pobytu; ostatní vyjmenované údaje jsou veřejně přístupné způsobem umožňujícím dálkový přístup u pověřené organizace.",
+      "whyWrong": {
+        "a2": "Veřejná přístupnost se podle § 18 odst. 4 nevztahuje na údaje podle odstavce 2 písm. c) a odstavce 3 písm. d), evidence tedy veřejná v celém rozsahu není.",
+        "a3": "Bezplatné poskytování informací pro potřeby jiných orgánů i veřejnosti je účelem evidence podle § 18 odst. 1 a odstavec 4 ji výslovně označuje za veřejnou; neveřejně se podle § 10 odst. 3 uchovávají údaje o oprávněních po skončení jejich platnosti."
+      },
+      "status": "overeno",
+      "sourceClass": "volny",
+      "verification": {
+        "source": "zákon č. 250/2021 Sb., § 18 odst. 4 (ve spojení s § 18 odst. 2 písm. c) a odst. 3 písm. d)) — doslovný text, podklady/predpisy/zakon-250-2021.txt",
+        "method": "primární text předpisu",
+        "checkedAt": "2026-11-23",
+        "checkedBy": "agent"
+      }
+    },
+    {
+      "questionId": "2027-ez1-021",
+      "options": [
+        { "id": "a1", "text": "Po dobu platnosti oprávnění k montáži, opravám, revizím a zkouškám, tedy 10 let." },
+        { "id": "a2", "text": "Po celou dobu provozu zařízení." },
+        { "id": "a3", "text": "Po dobu 20 let od uvedení zařízení do provozu." }
+      ],
+      "correctOptionId": "a2",
+      "explanation": "Podle § 2 písm. g) je průvodní dokumentací soubor dokumentů dodaných výrobcem nebo dodavatelem vyhrazeného technického zařízení v českém jazyce, který musí být k dispozici po celou dobu provozu zařízení.",
+      "whyWrong": {
+        "a1": "Doba 10 let je podle § 8 odst. 4 dobou platnosti oprávnění právnické osoby nebo podnikající fyzické osoby, s dostupností průvodní dokumentace nijak nesouvisí.",
+        "a3": "Doba 20 let je lhůtou pro uchovávání evidovaných údajů podle § 10 odst. 3 a § 18 odst. 6, ne lhůtou pro průvodní dokumentaci."
+      },
+      "status": "overeno",
+      "sourceClass": "volny",
+      "verification": {
+        "source": "zákon č. 250/2021 Sb., § 2 písm. g) — doslovný text, podklady/predpisy/zakon-250-2021.txt",
+        "method": "primární text předpisu",
+        "checkedAt": "2026-11-23",
+        "checkedBy": "agent"
+      }
+    },
+    {
+      "questionId": "2027-ez1-022",
+      "options": [
+        { "id": "a1", "text": "Průvodní dokumentace dodané výrobcem nebo dodavatelem zařízení." },
+        { "id": "a2", "text": "Technické dokumentace, podle které se provádí rekonstrukce zařízení." },
+        { "id": "a3", "text": "Provozní dokumentace." }
+      ],
+      "correctOptionId": "a3",
+      "explanation": "Podle § 2 písm. h) je provozní dokumentací soubor dokumentů obsahující záznamy o kontrolách, zkouškách a revizích, místní provozní řád, provozní deník, doklady o kvalifikaci obsluhy, záznamy o opravách a údržbě, harmonogramy a další dokumenty vznikající při provozu zařízení.",
+      "whyWrong": {
+        "a1": "Průvodní dokumentace je podle § 2 písm. g) soubor dokumentů dodaných výrobcem nebo dodavatelem; místní provozní řád vzniká až při provozu zařízení.",
+        "a2": "Technická dokumentace je v § 2 písm. i) zmíněna jako podklad, podle kterého se zpravidla provádí rekonstrukce; místní provozní řád mezi její součásti zákon neřadí."
+      },
+      "status": "overeno",
+      "sourceClass": "volny",
+      "verification": {
+        "source": "zákon č. 250/2021 Sb., § 2 písm. h) — doslovný text, podklady/predpisy/zakon-250-2021.txt",
+        "method": "primární text předpisu",
+        "checkedAt": "2026-11-23",
+        "checkedBy": "agent"
+      }
+    },
+    {
+      "questionId": "2027-ez1-023",
+      "options": [
+        { "id": "a1", "text": "Ano, upravuje je po celou dobu používání vyhrazených technických zařízení; u určených druhů již provozovaných zařízení stanoví i požadavky na jejich montáž a uvádění do provozu." },
+        { "id": "a2", "text": "Ne, upravuje je pouze do okamžiku uvedení vyhrazeného technického zařízení do provozu." },
+        { "id": "a3", "text": "Ne, upravuje pouze výkon státní správy na úseku bezpečnosti provozu vyhrazených technických zařízení." }
+      ],
+      "correctOptionId": "a1",
+      "explanation": "Podle § 1 odst. 1 písm. a) zákon upravuje požadavky na bezpečnost provozu vyhrazených technických zařízení a ochranu zdraví při práci po celou dobu používání těchto zařízení a u určených druhů již provozovaných zařízení stanoví i požadavky na jejich montáž a uvádění do provozu.",
+      "whyWrong": {
+        "a2": "Text § 1 odst. 1 písm. a) hovoří výslovně o celé době používání zařízení; omezení na dobu do uvedení do provozu zákon neobsahuje.",
+        "a3": "Výkon státní správy na tomto úseku je jen jedním z předmětů úpravy, uvedeným v § 1 odst. 1 písm. b) vedle požadavků podle písmene a)."
+      },
+      "status": "overeno",
+      "sourceClass": "volny",
+      "verification": {
+        "source": "zákon č. 250/2021 Sb., § 1 odst. 1 písm. a) — doslovný text, podklady/predpisy/zakon-250-2021.txt",
+        "method": "primární text předpisu",
+        "checkedAt": "2026-11-23",
+        "checkedBy": "agent"
+      }
+    },
+    {
+      "questionId": "2027-ez1-024",
+      "options": [
+        { "id": "a1", "text": "Ne, stávající nevyhovující část se nahrazuje novou nebo modernější beze změny základních technických nebo bezpečnostních parametrů zařízení." },
+        { "id": "a2", "text": "Ano, při rekonstrukci dojde ke změně základních technických nebo bezpečnostních parametrů zařízení, a to zpravidla podle technické dokumentace." },
+        { "id": "a3", "text": "Ne, jde o činnost prováděnou za účelem zajištění bezpečného a provozuschopného stavu zařízení, při níž se parametry zařízení nemění." }
+      ],
+      "correctOptionId": "a2",
+      "explanation": "Podle § 2 písm. i) je rekonstrukcí nahrazení stávající nevyhovující části již provozovaného vyhrazeného technického zařízení novou nebo modernější částí, přičemž dojde ke změně základních technických nebo bezpečnostních parametrů zařízení, a to zpravidla podle technické dokumentace.",
+      "whyWrong": {
+        "a1": "Obnovení použitelného stavu beze změny základních technických nebo bezpečnostních parametrů je znakem opravy podle § 2 písm. e), ne rekonstrukce.",
+        "a3": "Takto je v § 2 písm. f) vymezena údržba, tedy činnost k zajištění bezpečného a provozuschopného stavu zařízení, pokud nejde o opravu nebo montáž."
+      },
+      "status": "overeno",
+      "sourceClass": "volny",
+      "verification": {
+        "source": "zákon č. 250/2021 Sb., § 2 písm. i) (ve spojení s § 2 písm. e) a f)) — doslovný text, podklady/predpisy/zakon-250-2021.txt",
+        "method": "primární text předpisu",
+        "checkedAt": "2026-11-23",
+        "checkedBy": "agent"
+      }
+    },
+    {
+      "questionId": "2027-ez1-025",
+      "options": [
+        { "id": "a1", "text": "Podle právních a ostatních předpisů k zajištění bezpečnosti a ochrany zdraví při práci platných a účinných ke dni provedení kontroly, zkoušky nebo revize." },
+        { "id": "a2", "text": "Podle právních a ostatních předpisů k zajištění bezpečnosti a ochrany zdraví při práci platných a účinných ke dni provedení rekonstrukce zařízení." },
+        { "id": "a3", "text": "Podle právních a ostatních předpisů k zajištění bezpečnosti a ochrany zdraví při práci platných a účinných v době uvedení těchto zařízení do provozu." }
+      ],
+      "correctOptionId": "a3",
+      "explanation": "Podle § 3 odst. 5 se stav vyhrazených technických zařízení při jejich kontrole, zkouškách nebo revizích až do doby jejich rekonstrukce posuzuje podle právních a ostatních předpisů k zajištění bezpečnosti a ochrany zdraví při práci platných a účinných v době uvedení těchto zařízení do provozu.",
+      "whyWrong": {
+        "a1": "Rozhodující je podle § 3 odst. 5 doba uvedení zařízení do provozu, nikoli stav předpisů ke dni provádění kontroly, zkoušky nebo revize.",
+        "a2": "Rekonstrukce je v § 3 odst. 5 hranicí, do které se použije posouzení podle předpisů z doby uvedení do provozu; předpisy účinné ke dni rekonstrukce toto ustanovení jako kritérium neuvádí."
+      },
+      "status": "overeno",
+      "sourceClass": "volny",
+      "verification": {
+        "source": "zákon č. 250/2021 Sb., § 3 odst. 5 — doslovný text, podklady/predpisy/zakon-250-2021.txt",
+        "method": "primární text předpisu",
+        "checkedAt": "2026-11-23",
+        "checkedBy": "agent"
+      }
+    },
+    {
+      "questionId": "2027-ez1-026",
+      "options": [
+        { "id": "a1", "text": "Ministerstvo práce a sociálních věcí." },
+        { "id": "a2", "text": "Státní úřad inspekce práce." },
+        { "id": "a3", "text": "Oblastní inspektorát práce příslušný podle sídla pověřené organizace." }
+      ],
+      "correctOptionId": "a1",
+      "explanation": "Podle § 5 odst. 2 je nadřízeným správním orgánem pověřené organizace ministerstvo, tedy Ministerstvo práce a sociálních věcí ve smyslu § 4; témuž ministerstvu je pověřená organizace podle § 6 odst. 3 podřízena i ve věcech správy poplatků za svou odbornou činnost.",
+      "whyWrong": {
+        "a2": "Státní úřad inspekce práce je podle § 4 jedním z orgánů vykonávajících státní správu, nadřízeným správním orgánem pověřené organizace jej § 5 odst. 2 nečiní.",
+        "a3": "Oblastní inspektorát práce podle § 22 přijímá hlášení o vzniku havárie a podle § 20 odst. 5 ukládá opatření k odstranění závad; postavení nadřízeného správního orgánu pověřené organizace mu zákon nedává."
+      },
+      "status": "overeno",
+      "sourceClass": "volny",
+      "verification": {
+        "source": "zákon č. 250/2021 Sb., § 5 odst. 2 (ve spojení s § 4) — doslovný text, podklady/predpisy/zakon-250-2021.txt",
+        "method": "primární text předpisu",
+        "checkedAt": "2026-11-23",
+        "checkedBy": "agent"
+      }
+    },
+    {
+      "questionId": "2027-ez1-027",
+      "options": [
+        { "id": "a1", "text": "Osvědčení o tom, že zařízení splňuje požadavky právních a ostatních předpisů k zajištění bezpečnosti a ochrany zdraví při práci." },
+        { "id": "a2", "text": "Odborné stanovisko." },
+        { "id": "a3", "text": "Oprávnění k montáži, opravám, revizím a zkouškám vyhrazených technických zařízení." }
+      ],
+      "correctOptionId": "a2",
+      "explanation": "Podle § 6 odst. 1 písm. a) podává pověřená organizace na vyžádání odborná stanoviska o tom, zda jsou při projektování, konstrukci, montáži, provozu, obsluze, opravách, údržbě a revizi vyhrazených technických zařízení splněny požadavky bezpečnosti provozu těchto zařízení.",
+      "whyWrong": {
+        "a1": "Osvědčení o splnění požadavků předpisů k zajištění bezpečnosti a ochrany zdraví při práci vydává pověřená organizace podle § 6 odst. 1 písm. b) na základě prohlídek a zkoušek u zařízení I. třídy, ne na vyžádání jako stanovisko.",
+        "a3": "Oprávnění vydává pověřená organizace podle § 6 odst. 1 písm. c) a § 8 právnickým osobám a podnikajícím fyzickým osobám po prověření jejich odborné způsobilosti; není to doklad podle písmene a)."
+      },
+      "status": "overeno",
+      "sourceClass": "volny",
+      "verification": {
+        "source": "zákon č. 250/2021 Sb., § 6 odst. 1 písm. a) — doslovný text, podklady/predpisy/zakon-250-2021.txt",
+        "method": "primární text předpisu",
+        "checkedAt": "2026-11-23",
+        "checkedBy": "agent"
+      }
+    },
+    {
+      "questionId": "2027-ez1-028",
+      "options": [
+        { "id": "a1", "text": "Podává odborné stanovisko o tom, zda jsou splněny požadavky bezpečnosti provozu vyhrazeného technického zařízení." },
+        { "id": "a2", "text": "Vydává oprávnění k montáži, opravám, revizím a zkouškám tohoto vyhrazeného technického zařízení." },
+        { "id": "a3", "text": "Vydává na základě prohlídek a zkoušek osvědčení, zda vyhrazená technická zařízení splňují požadavky právních a ostatních předpisů k zajištění bezpečnosti a ochrany zdraví při práci, a potvrzuje úspěšné výsledky zkoušek." }
+      ],
+      "correctOptionId": "a3",
+      "explanation": "Podle § 6 odst. 1 písm. b) provádí pověřená organizace u vyhrazených technických zařízení I. třídy prohlídky a zkoušky nebo se zkoušek zúčastňuje a na jejich základě vydává osvědčení, zda zařízení splňují požadavky právních a ostatních předpisů k zajištění bezpečnosti a ochrany zdraví při práci, a potvrzuje úspěšné výsledky zkoušek.",
+      "whyWrong": {
+        "a1": "Odborná stanoviska podává pověřená organizace na vyžádání podle § 6 odst. 1 písm. a); výsledkem prohlídek a zkoušek podle písmene b) je osvědčení a potvrzení výsledků zkoušek.",
+        "a2": "Oprávnění vydává pověřená organizace podle § 6 odst. 1 písm. c) a § 8 osobám po prověření odborné způsobilosti, ne zařízením na základě prohlídek a zkoušek."
+      },
+      "status": "overeno",
+      "sourceClass": "volny",
+      "verification": {
+        "source": "zákon č. 250/2021 Sb., § 6 odst. 1 písm. b) — doslovný text, podklady/predpisy/zakon-250-2021.txt",
+        "method": "primární text předpisu",
+        "checkedAt": "2026-11-23",
+        "checkedBy": "agent"
+      }
+    },
+    {
+      "questionId": "2027-ez1-029",
+      "options": [
+        { "id": "a1", "text": "Ano, k zániku oprávnění dochází dnem, k němuž uplyne doba platnosti oprávnění." },
+        { "id": "a2", "text": "Ne, oprávnění zaniká pouze dnem, kdy nabude právní moci rozhodnutí o jeho odnětí." },
+        { "id": "a3", "text": "Ne, oprávnění se vydává bez časového omezení, a proto uplynutím doby nezaniká." }
+      ],
+      "correctOptionId": "a1",
+      "explanation": "Podle § 9 odst. 2 písm. d) dochází k zániku oprávnění dnem, k němuž uplyne doba platnosti oprávnění; den zániku pověřená organizace bezodkladně vyznačí v evidenci odborně způsobilých právnických osob a podnikajících fyzických osob.",
+      "whyWrong": {
+        "a2": "Nabytí právní moci rozhodnutí o odnětí oprávnění je jen jedním z důvodů zániku, uvedeným v § 9 odst. 2 písm. e) vedle uplynutí doby platnosti podle písmene d).",
+        "a3": "Doba platnosti oprávnění je podle § 9 odst. 1 písm. c) náležitostí rozhodnutí a podle § 8 odst. 4 činí 10 let, oprávnění tedy časově omezeno je."
+      },
+      "status": "overeno",
+      "sourceClass": "volny",
+      "verification": {
+        "source": "zákon č. 250/2021 Sb., § 9 odst. 2 písm. d) — doslovný text, podklady/predpisy/zakon-250-2021.txt",
+        "method": "primární text předpisu",
+        "checkedAt": "2026-11-23",
+        "checkedBy": "agent"
+      }
+    },
+    {
+      "questionId": "2027-ez1-030",
+      "options": [
+        { "id": "a1", "text": "Ministerstvo práce a sociálních věcí jako nadřízený správní orgán pověřené organizace." },
+        { "id": "a2", "text": "Pověřená organizace." },
+        { "id": "a3", "text": "Státní úřad inspekce práce." }
+      ],
+      "correctOptionId": "a2",
+      "explanation": "Podle § 10 odst. 1 vede evidenci odborně způsobilých právnických osob a podnikajících fyzických osob pověřená organizace; tato evidence je informačním systémem veřejné správy a jejím správcem a provozovatelem je pověřená organizace.",
+      "whyWrong": {
+        "a1": "Ministerstvo je podle § 5 odst. 2 nadřízeným správním orgánem pověřené organizace; správcem a provozovatelem evidence je podle § 10 odst. 1 pověřená organizace. Činnosti podle § 6 odst. 1 by ministerstvo vykonávalo jen tehdy, není-li pověřená organizace zřízena (§ 6 odst. 4).",
+        "a3": "Státní úřad inspekce práce podle § 4 vykonává státní správu, vedení ani správu této evidence mu zákon nepřiznává."
+      },
+      "status": "overeno",
+      "sourceClass": "volny",
+      "verification": {
+        "source": "zákon č. 250/2021 Sb., § 10 odst. 1 — doslovný text, podklady/predpisy/zakon-250-2021.txt",
+        "method": "primární text předpisu",
+        "checkedAt": "2026-11-23",
+        "checkedBy": "agent"
+      }
+    },
+    {
+      "questionId": "2027-ez1-031",
+      "options": [
+        { "id": "a1", "text": "Skutečnost, že držitel oprávnění neoznámil pověřené organizaci změny evidovaných údajů nejpozději do 15 dnů od jejich vzniku." },
+        { "id": "a2", "text": "Skutečnost, že provozovatel neohlásil oblastnímu inspektorátu práce vznik havárie se škodou na majetku zjevně přesahující 5000000 Kč." },
+        { "id": "a3", "text": "Provoz zařízení, u něhož není doložena zpráva o revizi provedené ve stanovených lhůtách a rozsahu nebo chybí ve stanovených případech souhlas pověřené organizace, provoz v rozporu s průvodní nebo provozní dokumentací a chybějící průvodní nebo provozní dokumentace, pokud byla vydána." }
+      ],
+      "correctOptionId": "a3",
+      "explanation": "Za stav ohrožující bezpečnost práce a provozu vyhrazeného technického zařízení se podle § 20 odst. 3 písm. a) až c) považuje provoz bez doložené zprávy o revizi provedené ve stanovených lhůtách a rozsahu nebo bez souhlasu vydaného pověřenou organizací, provoz v rozporu s průvodní nebo provozní dokumentací a chybějící průvodní nebo provozní dokumentace, pokud byla vydána.",
+      "whyWrong": {
+        "a1": "Lhůta 15 dnů pro oznámení změn evidovaných údajů plyne z § 8 odst. 5 a § 11 odst. 6; mezi stavy vyjmenovanými v § 20 odst. 3 toto porušení není.",
+        "a2": "Hlášení havárie se škodou zjevně přesahující 5000000 Kč oblastnímu inspektorátu práce je samostatnou povinností provozovatele podle § 22, nikoli stavem ohrožujícím bezpečnost práce a provozu podle § 20 odst. 3."
+      },
+      "status": "overeno",
+      "sourceClass": "volny",
+      "verification": {
+        "source": "zákon č. 250/2021 Sb., § 20 odst. 3 písm. a) až c) — doslovný text, podklady/predpisy/zakon-250-2021.txt",
+        "method": "primární text předpisu",
+        "checkedAt": "2026-11-23",
+        "checkedBy": "agent"
+      }
+    },
+    {
+      "questionId": "2027-ez1-032",
+      "options": [
+        { "id": "a1", "text": "Orgán inspekce práce v opatření na základě své kontroly; není-li takové kontroly, stanoví termíny provozovatel." },
+        { "id": "a2", "text": "Pověřená organizace v osvědčení vydaném na základě prohlídky a zkoušky zařízení." },
+        { "id": "a3", "text": "Revizní technik ve zprávě o provedené revizi, a to vždy bez zbytečného odkladu po jejím vyhotovení." }
+      ],
+      "correctOptionId": "a1",
+      "explanation": "Podle § 20 odst. 5 musí být závady ohrožující bezpečný a spolehlivý provoz odstraněny bez zbytečného odkladu, zatímco ostatní závady musí být odstraněny podle míry závažnosti v termínech uložených v opatření orgánu inspekce práce na základě jeho kontroly, a není-li takové kontroly, v termínech stanovených provozovatelem.",
+      "whyWrong": {
+        "a2": "Pověřená organizace vydává osvědčení podle § 6 odst. 1 písm. b) na základě prohlídek a zkoušek u zařízení I. třídy; termíny k odstranění ostatních závad podle § 20 odst. 5 nestanovuje.",
+        "a3": "Lhůta bez zbytečného odkladu po vyhotovení revizní zprávy se podle § 20 odst. 5 vztahuje na závady ohrožující bezpečný a spolehlivý provoz; termíny u ostatních závad zákon revizního technika stanovovat nenechává."
+      },
+      "status": "overeno",
+      "sourceClass": "volny",
+      "verification": {
+        "source": "zákon č. 250/2021 Sb., § 20 odst. 5 — doslovný text, podklady/predpisy/zakon-250-2021.txt",
+        "method": "primární text předpisu",
+        "checkedAt": "2026-11-23",
+        "checkedBy": "agent"
+      }
+    },
+    {
+      "questionId": "2027-ez1-033",
+      "options": [
+        { "id": "a1", "text": "Pouze provedení provozní revize ve lhůtě stanovené místním provozním předpisem." },
+        { "id": "a2", "text": "Ověření bezpečnosti vyhrazeného technického zařízení včetně provedení zkoušek a výchozí revize." },
+        { "id": "a3", "text": "Oznámení rekonstrukce pověřené organizaci nejpozději do 15 dnů od jejího provedení." }
+      ],
+      "correctOptionId": "a2",
+      "explanation": "Podle § 20 odst. 6 musí provozovatel po rekonstrukci ověřit bezpečnost vyhrazeného technického zařízení včetně provedení zkoušek a výchozí revize.",
+      "whyWrong": {
+        "a1": "Ustanovení § 20 odst. 6 požaduje ověření bezpečnosti včetně zkoušek a výchozí revize; místním provozním předpisem stanoví provozovatel podle § 20 odst. 4 rozsah kontroly jen tehdy, není-li k dispozici průvodní nebo provozní dokumentace.",
+        "a3": "Lhůta 15 dnů pro oznámení pověřené organizaci se podle § 8 odst. 5 vztahuje na změny údajů vedených v evidenci u držitele oprávnění, nikoli na rekonstrukci provozovaného zařízení."
+      },
+      "status": "overeno",
+      "sourceClass": "volny",
+      "verification": {
+        "source": "zákon č. 250/2021 Sb., § 20 odst. 6 — doslovný text, podklady/predpisy/zakon-250-2021.txt",
+        "method": "primární text předpisu",
+        "checkedAt": "2026-11-23",
+        "checkedBy": "agent"
+      }
+    }
+  ]
+}

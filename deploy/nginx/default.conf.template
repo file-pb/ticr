@@ -1,0 +1,47 @@
+# Port z proměnné prostředí, výchozí 8080 (bod 1 kontraktu platformy).
+# Obraz nginx dosadí ${PORT} při startu přes envsubst.
+server {
+    listen ${PORT};
+    server_name _;
+    root /usr/share/nginx/html;
+    index index.html;
+
+    # Bez tohohle si nginx k relativnímu přesměrování doplní port, na kterém
+    # sám poslouchá, a zvenčí to skončí na :8080. Poučení z nasazení `filip`.
+    absolute_redirect off;
+
+    # Body 2 a 7 kontraktu obsluhuje nginx, aplikace nemá co implementovat.
+    location = /health {
+        access_log off;
+        add_header Content-Type text/plain;
+        return 200 "ok\n";
+    }
+    location = /health/ready {
+        access_log off;
+        add_header Content-Type text/plain;
+        return 200 "ready\n";
+    }
+    location = /verze {
+        access_log off;
+        default_type text/plain;
+        alias /usr/share/nginx/html/verze.txt;
+    }
+
+    # Banka otázek a klíč odpovědí jsou součástí sestavení, ne stahují se za běhu.
+    location /assets/ {
+        expires 1y;
+        add_header Cache-Control "public, immutable";
+    }
+
+    # Jednostránková aplikace: neznámá cesta vrací index.html.
+    location / {
+        try_files $uri $uri/ /index.html;
+    }
+
+    gzip on;
+    gzip_types text/plain text/css application/javascript application/json image/svg+xml;
+    gzip_min_length 1024;
+
+    add_header X-Content-Type-Options nosniff;
+    add_header Referrer-Policy strict-origin-when-cross-origin;
+}

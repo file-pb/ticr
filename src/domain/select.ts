@@ -1,0 +1,98 @@
+import { isPracticable, isScorable } from './bank'
+import { shuffle, type Rng } from './rng'
+import type { AttemptItem, CircuitId, Item } from './types'
+
+export interface ExamPreset {
+  circuits: CircuitId[]
+  perCircuit: number
+  minutes: number
+  thresholdPercent: number
+}
+
+/**
+ * Tréninkové nastavení, ne potvrzená pravidla TIČR.
+ *
+ * Hranici 80 % uvádí TIČR ve zveřejněných informacích. Skladbu — pro rozsah
+ * E2A čtyři testy po patnácti otázkách, na každý 20 minut — shodně uvádějí
+ * dva nezávislé zdroje: přednášející kurzu ESČ 18. 5. 2026 („E2A jsou čtyři
+ * testy po patnácti otázkách, 20 minut na test") a cvičný test rozdaný na
+ * konci téhož kurzu 21. 5. 2026 (60 otázek, 80 minut). Obojí jsou druhotné
+ * zdroje, ne dokument TIČR.
+ *
+ * **Čím se tahle předvolba od skutečné zkoušky liší:** zkouška běží jako
+ * čtyři samostatné testy po 20 minutách, takže čas nejde přenášet mezi
+ * okruhy. Aplikace zatím losuje jeden blok 60 otázek na 80 minut dohromady,
+ * což je mírnější. Rozdíl je popsaný v README.
+ */
+export const DEFAULT_EXAM: ExamPreset = {
+  circuits: ['ez1', 'ez2', 'ez3', 'ez4'],
+  perCircuit: 15,
+  minutes: 80,
+  thresholdPercent: 80,
+}
+
+export interface Shortfall {
+  circuit: CircuitId
+  needed: number
+  available: number
+}
+
+export type ExamSelection =
+  | { ok: true; items: Item[] }
+  | { ok: false; shortfalls: Shortfall[] }
+
+/**
+ * Výběr otázek pro zkoušku nanečisto. Losuje **výhradně z ověřených** odpovědí.
+ * Když v okruhu není dost ověřených otázek, vrátí, co kde chybí — nedolévá
+ * z jiného okruhu a nepoužije otázku dvakrát.
+ */
+export function selectExam(items: Item[], preset: ExamPreset, rng: Rng): ExamSelection {
+  const shortfalls: Shortfall[] = []
+  const picked: Item[] = []
+
+  for (const circuit of preset.circuits) {
+    const pool = items.filter((i) => i.question.circuit === circuit && isScorable(i))
+    if (pool.length < preset.perCircuit) {
+      shortfalls.push({ circuit, needed: preset.perCircuit, available: pool.length })
+      continue
+    }
+    picked.push(...shuffle(pool, rng).slice(0, preset.perCircuit))
+  }
+
+  if (shortfalls.length > 0) return { ok: false, shortfalls }
+  return { ok: true, items: shuffle(picked, rng) }
+}
+
+export interface PracticeQuery {
+  circuits?: CircuitId[]
+  count?: number
+  /** Jen otázky z tohoto seznamu ID — opakování chyb, uložených a nejistých. */
+  onlyIds?: string[]
+  /** Pustit i neověřené návrhy. Ve zkoušce nikdy. */
+  includeUnverified: boolean
+}
+
+export function selectPractice(items: Item[], query: PracticeQuery, rng: Rng): Item[] {
+  const idFilter = query.onlyIds ? new Set(query.onlyIds) : null
+  let pool = items.filter((i) =>
+    (query.includeUnverified ? isPracticable(i) : isScorable(i)) &&
+    (!query.circuits || query.circuits.includes(i.question.circuit)) &&
+    (!idFilter || idFilter.has(i.question.id)),
+  )
+  pool = shuffle(pool, rng)
+  return query.count ? pool.slice(0, query.count) : pool
+}
+
+/** Složí položky pokusu včetně promíchaných možností. */
+export function buildAttemptItems(items: Item[], rng: Rng): AttemptItem[] {
+  return items.map((item) => {
+    const ids = (item.answer?.options ?? []).map((o) => o.id)
+    return {
+      questionId: item.question.id,
+      optionOrder: shuffle(ids, rng),
+      chosenOptionId: null,
+      flagged: false,
+      guessed: false,
+    }
+  })
+}

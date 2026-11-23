@@ -1,0 +1,22 @@
+node_modules/
+dist/
+.DS_Store
+*.local
+
+# Nedůvěryhodná stažená data a mezivýstupy importu. Banka se verzuje jako
+# src/data/questions.2027.json, ne jako ZIP a .doc soubory.
+data/raw/
+data/txt/
+# Stará sada otázek (platná do 31. 12. 2026) — stahuje se jen kvůli porovnání.
+data/stara/
+
+# Lokální vrstva odpovědí odvozených z placených podkladů — normy ČSN,
+# materiály ze školení. Patří na stroj toho, kdo si je zaplatil, ne do gitu
+# a ne do veřejného nasazení.
+src/data/answers.*.local.json
+tsconfig.tsbuildinfo
+
+# Digesty ze záznamů placeného kurzu (ESČ RT-online) a z konferencí.
+# Studijní poznámky jednoho člověka k materiálu, za který zaplatil.
+# Do gitu ani do veřejného nasazení nepatří.
+podklady/

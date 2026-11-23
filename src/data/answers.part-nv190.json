@@ -1,0 +1,752 @@
+{
+  "schemaVersion": 1,
+  "answersVersion": "0.2.0-nv190",
+  "bankVersion": "2027.1",
+  "license": "CC-BY-SA-4.0",
+  "answers": [
+    {
+      "questionId": "2027-ez1-034",
+      "options": [
+        {
+          "id": "a1",
+          "text": "Zařízení musí být podrobeno výchozí revizi podle části B bodu I. přílohy č. 2 a vyhrazené elektrické zařízení I. třídy lze uvést do provozu jen na základě osvědčení vydaného pověřenou organizací, které provozovatel uchovává po celou dobu provozu zařízení."
+        },
+        {
+          "id": "a2",
+          "text": "Postačí zpráva o výchozí revizi; osvědčení pověřené organizace se vyžaduje jen u zařízení určených pro použití v prostředí s nebezpečím výbuchu plynů, par nebo prachů."
+        },
+        {
+          "id": "a3",
+          "text": "Postačí osvědčení vydané pověřenou organizací; výchozí revize se u zařízení I. třídy nahrazuje kontrolou ověřením stavu zařízení."
+        }
+      ],
+      "correctOptionId": "a1",
+      "explanation": "§ 6 odst. 2 písm. d) žádá u vyhrazeného elektrického zařízení výchozí revizi podle části B bodu I. přílohy č. 2 a § 6 odst. 6 navíc podmiňuje uvedení zařízení I. třídy podle § 4 odst. 1 do provozu osvědčením vydaným pověřenou organizací, které provozovatel uchovává po celou dobu provozu.",
+      "whyWrong": {
+        "a2": "Osvědčení pověřené organizace se podle § 6 odst. 6 váže na celou I. třídu podle § 4 odst. 1, ne jen na zařízení pro prostředí s nebezpečím výbuchu podle § 4 odst. 1 písm. b).",
+        "a3": "Výchozí revizi § 6 odst. 2 písm. d) vyžaduje bez výjimky; kontrola ověřením stavu je v § 2 písm. g) alternativou jen při samotném úkonu uvedení do provozu, výchozí revizi nenahrazuje."
+      },
+      "status": "overeno",
+      "sourceClass": "volny",
+      "verification": {
+        "source": "NV č. 190/2022 Sb., § 6 odst. 2 písm. d) a § 6 odst. 6 — doslovný text, podklady/predpisy/nv-190-2022.txt",
+        "method": "primární text předpisu",
+        "checkedAt": "2026-11-23",
+        "checkedBy": "agent"
+      }
+    },
+    {
+      "questionId": "2027-ez1-035",
+      "options": [
+        {
+          "id": "a1",
+          "text": "Každé zařízení silové, sdělovací, řídicí a zvláštní, které ke své činnosti nebo působení využívá účinků elektrických nebo elektromagnetických jevů."
+        },
+        {
+          "id": "a2",
+          "text": "Pouze elektrická zařízení pro výrobu, přeměnu, přenos, rozvod, distribuci a odběr elektrické energie a elektrické instalace staveb a technologií."
+        },
+        {
+          "id": "a3",
+          "text": "Zařízení, která představují zvýšenou míru ohrožení života, zdraví a bezpečnosti fyzických osob, a to elektrická zařízení pro výrobu, přeměnu, přenos, rozvod, distribuci a odběr elektrické energie a elektrické instalace staveb a technologií a zařízení určená k ochraně před účinky atmosférické nebo statické elektřiny."
+        }
+      ],
+      "correctOptionId": "a3",
+      "explanation": "§ 3 odst. 1 vymezuje vyhrazená elektrická zařízení jako zařízení představující zvýšenou míru ohrožení života, zdraví a bezpečnosti fyzických osob a dělí je na zařízení podle písm. a) a na zařízení určená k ochraně před účinky atmosférické nebo statické elektřiny podle písm. b).",
+      "whyWrong": {
+        "a1": "To je obecná definice elektrického zařízení v § 2 písm. a); vyhrazeným je podle § 3 odst. 1 jen zařízení se zvýšenou mírou ohrožení a § 3 odst. 2 další zařízení výslovně vylučuje.",
+        "a2": "Vynechává § 3 odst. 1 písm. b), tedy zařízení určená k ochraně před účinky atmosférické nebo statické elektřiny."
+      },
+      "status": "overeno",
+      "sourceClass": "volny",
+      "verification": {
+        "source": "NV č. 190/2022 Sb., § 3 odst. 1 písm. a) a b) — doslovný text, podklady/predpisy/nv-190-2022.txt",
+        "method": "primární text předpisu",
+        "checkedAt": "2026-11-23",
+        "checkedBy": "agent"
+      }
+    },
+    {
+      "questionId": "2027-ez1-036",
+      "options": [
+        {
+          "id": "a1",
+          "text": "Na prostory nízkého napětí, vysokého napětí a prostory ochrany před atmosférickou elektřinou, přepětím a statickou elektřinou, označené znaky E1, E2 a E3."
+        },
+        {
+          "id": "a2",
+          "text": "Na zařízení v prostorech bez nebezpečí výbuchu, označené znakem A, a na zařízení v prostorech s nebezpečím výbuchu podle § 4 odst. 1 písm. b), označené znakem B."
+        },
+        {
+          "id": "a3",
+          "text": "Na prostory mokré, prostory s trvalým výskytem korozivních nebo znečišťujících látek a prostory s nebezpečím požáru a výbuchu."
+        }
+      ],
+      "correctOptionId": "a2",
+      "explanation": "Bod II. přílohy č. 3 i bod II. přílohy č. 5 člení podle druhu vyhrazeného elektrického zařízení pouze na zařízení v prostorech bez nebezpečí výbuchu se znakem A a na zařízení v prostorech s nebezpečím výbuchu podle § 4 odst. 1 písm. b) se znakem B.",
+      "whyWrong": {
+        "a1": "Znaky E1 až E3 jsou v bodě I. téže přílohy rozlišením podle rozsahu vyhrazeného elektrického zařízení, ne podle druhu prostoru.",
+        "a3": "Tyto prostory jsou položkami tabulky revizních lhůt v příloze č. 4, nikoli členěním podle druhu zařízení v přílohách č. 3 a 5."
+      },
+      "status": "overeno",
+      "sourceClass": "volny",
+      "verification": {
+        "source": "NV č. 190/2022 Sb., příloha č. 3 bod II. a příloha č. 5 bod II. — doslovný text, podklady/predpisy/nv-190-2022.txt",
+        "method": "primární text předpisu",
+        "checkedAt": "2026-11-23",
+        "checkedBy": "agent"
+      }
+    },
+    {
+      "questionId": "2027-ez1-037",
+      "options": [
+        {
+          "id": "a1",
+          "text": "Průvodní dokumentaci vyhrazeného elektrického zařízení odpovídající skutečnému provedení, jejíž součástí je posouzení vnějších vlivů, a zprávu o výchozí revizi, pokud není sjednán jiný způsob zajištění revize."
+        },
+        {
+          "id": "a2",
+          "text": "Pouze zprávu o výchozí revizi vyhrazeného elektrického zařízení."
+        },
+        {
+          "id": "a3",
+          "text": "Průvodní dokumentaci a osvědčení vydané pověřenou organizací podle § 6 odst. 1 písm. b) zákona."
+        }
+      ],
+      "correctOptionId": "a1",
+      "explanation": "Podle § 6 odst. 3 obdrží přebírající odběratel od dodavatele montáže průvodní dokumentaci odpovídající skutečnému provedení včetně posouzení vnějších vlivů [písm. a)] a zprávu o výchozí revizi, pokud není sjednán jiný způsob zajištění revize [písm. b)].",
+      "whyWrong": {
+        "a2": "Opomíjí § 6 odst. 3 písm. a), tedy průvodní dokumentaci odpovídající skutečnému provedení včetně posouzení vnějších vlivů.",
+        "a3": "Osvědčení podle § 6 odst. 6 uchovává provozovatel jako podmínku uvedení zařízení I. třídy do provozu; mezi doklady předávané dodavatelem montáže podle § 6 odst. 3 nepatří a chybí zde zpráva o výchozí revizi."
+      },
+      "status": "overeno",
+      "sourceClass": "volny",
+      "verification": {
+        "source": "NV č. 190/2022 Sb., § 6 odst. 3 písm. a) a b) — doslovný text, podklady/predpisy/nv-190-2022.txt",
+        "method": "primární text předpisu",
+        "checkedAt": "2026-11-23",
+        "checkedBy": "agent"
+      }
+    },
+    {
+      "questionId": "2027-ez1-038",
+      "options": [
+        {
+          "id": "a1",
+          "text": "Naměřené hodnoty."
+        },
+        {
+          "id": "a2",
+          "text": "Doporučení lhůty provedení příští revize."
+        },
+        {
+          "id": "a3",
+          "text": "Identifikaci právnické osoby nebo podnikající fyzické osoby, včetně čísla oprávnění, která elektroinstalaci prováděla."
+        }
+      ],
+      "correctOptionId": "a3",
+      "explanation": "§ 10 odst. 1 vypočítává obsah zprávy o revizi v písmenech a) až o) a identifikace zhotovitele elektroinstalace včetně čísla oprávnění mezi nimi není — podle přílohy č. 2 části A bodu I. písm. h) je to podklad pro provedení výchozí revize, ne povinná část zprávy.",
+      "whyWrong": {
+        "a1": "Naměřené hodnoty zpráva o revizi obsahovat musí, § 10 odst. 1 písm. j).",
+        "a2": "Doporučení lhůty provedení příští revize zpráva o revizi obsahovat musí, § 10 odst. 1 písm. n)."
+      },
+      "status": "overeno",
+      "sourceClass": "volny",
+      "verification": {
+        "source": "NV č. 190/2022 Sb., § 10 odst. 1 písm. a) až o), ve spojení s přílohou č. 2 částí A bodem I. písm. h) — doslovný text, podklady/predpisy/nv-190-2022.txt",
+        "method": "primární text předpisu",
+        "checkedAt": "2026-11-23",
+        "checkedBy": "agent"
+      }
+    },
+    {
+      "questionId": "2027-ez1-039",
+      "options": [
+        {
+          "id": "a1",
+          "text": "Elektrické instalace staveb a technologií."
+        },
+        {
+          "id": "a2",
+          "text": "Elektrické zařízení strojního zařízení, které je považováno za výrobek podle jiného právního předpisu."
+        },
+        {
+          "id": "a3",
+          "text": "Zařízení určená k ochraně před účinky atmosférické nebo statické elektřiny."
+        }
+      ],
+      "correctOptionId": "a2",
+      "explanation": "§ 3 odst. 2 písm. d) vyjímá z vyhrazených elektrických zařízení elektrické zařízení strojního zařízení, které je považováno za výrobek podle jiného právního předpisu (odkaz na zákon č. 22/1997 Sb.).",
+      "whyWrong": {
+        "a1": "§ 3 odst. 1 písm. a) řadí elektrické instalace staveb a technologií přímo mezi vyhrazená elektrická zařízení.",
+        "a3": "§ 3 odst. 1 písm. b) je řadí mezi vyhrazená elektrická zařízení; podle § 4 se zařazují do I. nebo II. třídy."
+      },
+      "status": "overeno",
+      "sourceClass": "volny",
+      "verification": {
+        "source": "NV č. 190/2022 Sb., § 3 odst. 2 písm. d) — doslovný text, podklady/predpisy/nv-190-2022.txt",
+        "method": "primární text předpisu",
+        "checkedAt": "2026-11-23",
+        "checkedBy": "agent"
+      }
+    },
+    {
+      "questionId": "2027-ez1-040",
+      "options": [
+        {
+          "id": "a1",
+          "text": "Doklad vypracovaný revizním technikem elektrických zařízení s využitím jednotlivých výchozích revizních zpráv částí vyhrazeného elektrického zařízení, z něhož je patrný jeho stav v době vykonání revize a splnění požadavků na bezpečnost práce a provozu tohoto zařízení a na jeho provozní dokumentaci; přípustná je listinná nebo elektronická podoba."
+        },
+        {
+          "id": "a2",
+          "text": "Doklad o výsledku revize provedené podle přílohy č. 2, který dokládá stav zařízení v době vykonání revize a splnění požadavků kladených na bezpečnost provozu tohoto zařízení, na jeho provozní dokumentaci a soulad s předpisy k zajištění bezpečnosti a ochrany zdraví při práci."
+        },
+        {
+          "id": "a3",
+          "text": "Doklad, který z jednotlivých zpráv o výchozí revizi sestaví osoba odpovědná za elektrické zařízení určená provozovatelem podle § 8 písm. d)."
+        }
+      ],
+      "correctOptionId": "a1",
+      "explanation": "§ 2 písm. k) definuje souhrnnou zprávu o výchozí revizi jako doklad vypracovaný revizním technikem elektrických zařízení s využitím jednotlivých výchozích revizních zpráv částí zařízení; § 10 odst. 2 ji vyžaduje před předáním a uvedením celého zařízení do trvalého provozu, byla-li výchozí revize prováděna po částech.",
+      "whyWrong": {
+        "a2": "To je definice zprávy o revizi v § 2 písm. f), ne souhrnné zprávy o výchozí revizi.",
+        "a3": "Podle § 2 písm. k) souhrnnou zprávu vypracovává revizní technik elektrických zařízení, ne osoba odpovědná za elektrické zařízení podle § 8 písm. d)."
+      },
+      "status": "overeno",
+      "sourceClass": "volny",
+      "verification": {
+        "source": "NV č. 190/2022 Sb., § 2 písm. k), ve spojení s § 10 odst. 2 — doslovný text, podklady/predpisy/nv-190-2022.txt",
+        "method": "primární text předpisu",
+        "checkedAt": "2026-11-23",
+        "checkedBy": "agent"
+      }
+    },
+    {
+      "questionId": "2027-ez1-041",
+      "options": [
+        {
+          "id": "a1",
+          "text": "Činnost směřující k ověření, zda volba zařízení odpovídá provozním podmínkám, zda je zařízení řádně instalováno a provozováno a zda jsou respektovány požadavky jeho výrobce."
+        },
+        {
+          "id": "a2",
+          "text": "Úkon, kterým bylo zařízení po provedení předepsané revize nebo kontroly ověřením jeho stavu a po vyhodnocení dosažených výsledků uznáno způsobilým k používání a bezpečnému provozu."
+        },
+        {
+          "id": "a3",
+          "text": "Okamžik, kdy přebírající odběratel obdrží od dodavatele montáže průvodní dokumentaci a zprávu o výchozí revizi."
+        }
+      ],
+      "correctOptionId": "a2",
+      "explanation": "§ 2 písm. g) rozumí uvedením vyhrazeného elektrického zařízení do provozu úkon, kterým bylo zařízení po provedení předepsané revize nebo kontroly ověřením jeho stavu a po vyhodnocení dosažených výsledků uznáno způsobilým k používání a bezpečnému provozu.",
+      "whyWrong": {
+        "a1": "To je definice prohlídky v § 2 písm. c).",
+        "a3": "Předání dokladů je samostatnou povinností dodavatele montáže podle § 6 odst. 3; § 2 písm. g) váže uvedení do provozu na uznání zařízení způsobilým k používání a bezpečnému provozu."
+      },
+      "status": "overeno",
+      "sourceClass": "volny",
+      "verification": {
+        "source": "NV č. 190/2022 Sb., § 2 písm. g) — doslovný text, podklady/predpisy/nv-190-2022.txt",
+        "method": "primární text předpisu",
+        "checkedAt": "2026-11-23",
+        "checkedBy": "agent"
+      }
+    },
+    {
+      "questionId": "2027-ez1-042",
+      "options": [
+        {
+          "id": "a1",
+          "text": "Ostatní vyhrazená elektrická zařízení podle § 3 odst. 1 písm. a), neuvedená v § 3 odst. 2 a v § 4 odst. 1 písm. a) až d)."
+        },
+        {
+          "id": "a2",
+          "text": "Zařízení určená na ochranu před účinky atmosférické a statické elektřiny neuvedená v § 4 odst. 1 písm. e)."
+        },
+        {
+          "id": "a3",
+          "text": "Elektrické zařízení ve vnitřních a vnějších prostorách s extrémně vysokými teplotami okolí nad + 55 °C, v prostorách s výskytem tryskající a intenzivně tryskající vody a možností ponoření, v prostorách s trvalým výskytem korozivních a znečišťujících látek a v prostorách s nebezpečím požáru hořlavých kapalin, přičemž nebezpečí působení vnějších vlivů musí vyplývat z projektové nebo provozní dokumentace."
+        }
+      ],
+      "correctOptionId": "a3",
+      "explanation": "§ 4 odst. 1 písm. a) řadí do I. třídy elektrické zařízení v prostorách s extrémně vysokými teplotami okolí nad + 55 °C, s výskytem tryskající a intenzivně tryskající vody a možností ponoření, s trvalým výskytem korozivních a znečišťujících látek a s nebezpečím požáru hořlavých kapalin; nebezpečí působení vnějších vlivů musí vyplývat z projektové nebo provozní dokumentace.",
+      "whyWrong": {
+        "a1": "To je podle § 4 odst. 2 písm. a) vyhrazené elektrické zařízení II. třídy.",
+        "a2": "To je podle § 4 odst. 2 písm. b) vyhrazené elektrické zařízení II. třídy."
+      },
+      "status": "overeno",
+      "sourceClass": "volny",
+      "verification": {
+        "source": "NV č. 190/2022 Sb., § 4 odst. 1 písm. a) — doslovný text, podklady/predpisy/nv-190-2022.txt",
+        "method": "primární text předpisu",
+        "checkedAt": "2026-11-23",
+        "checkedBy": "agent"
+      }
+    },
+    {
+      "questionId": "2027-ez1-043",
+      "options": [
+        {
+          "id": "a1",
+          "text": "Není, pokud není určen pro pevné připojení k elektrické síti; spotřebič do napětí 400 V včetně určený pro pevné připojení k síti z této výjimky vyňat není."
+        },
+        {
+          "id": "a2",
+          "text": "Není, a to bez jakékoli výjimky."
+        },
+        {
+          "id": "a3",
+          "text": "Je, protože jde o odběr elektrické energie podle § 3 odst. 1 písm. a)."
+        }
+      ],
+      "correctOptionId": "a1",
+      "explanation": "§ 3 odst. 2 písm. a) vyjímá z vyhrazených elektrických zařízení ruční elektromechanické nářadí, elektronické přístroje a elektrické spotřebiče do napětí 400 V včetně, a to výslovně jen „pokud nejsou určené pro pevné připojení k elektrické síti“.",
+      "whyWrong": {
+        "a2": "Výjimka v § 3 odst. 2 písm. a) je podmíněna tím, že spotřebič není určen pro pevné připojení k elektrické síti.",
+        "a3": "Spotřebiče do napětí 400 V včetně § 3 odst. 2 písm. a) z vyhrazených elektrických zařízení vyjímá, nejsou-li určeny pro pevné připojení k elektrické síti."
+      },
+      "status": "overeno",
+      "sourceClass": "volny",
+      "verification": {
+        "source": "NV č. 190/2022 Sb., § 3 odst. 2 písm. a) — doslovný text, podklady/predpisy/nv-190-2022.txt",
+        "method": "primární text předpisu",
+        "checkedAt": "2026-11-23",
+        "checkedBy": "agent"
+      }
+    },
+    {
+      "questionId": "2027-ez1-044",
+      "options": [
+        {
+          "id": "a1",
+          "text": "Zařízení smí být uváděno pod napětí pouze v souvislosti s provedením zkoušky a s ověřováním jeho správné funkce."
+        },
+        {
+          "id": "a2",
+          "text": "Nehotové části musí být spolehlivě odpojené a zajištěné proti nežádoucímu zapojení nebo jinak zabezpečené tak, aby ve stavu pod napětím nedošlo k ohrožení bezpečnosti práce a provozu."
+        },
+        {
+          "id": "a3",
+          "text": "Zařízení musí být po dokončení montáže podrobeno revizi, a to po opravě nebo přemístění na nové stanoviště podle potřeby."
+        }
+      ],
+      "correctOptionId": "a2",
+      "explanation": "§ 6 odst. 2 písm. a) požaduje u zařízení uváděného do provozu po částech, aby nehotové části byly spolehlivě odpojené a zajištěné proti nežádoucímu zapojení nebo jinak zabezpečené tak, aby ve stavu pod napětím nedošlo k ohrožení bezpečnosti práce a provozu.",
+      "whyWrong": {
+        "a1": "§ 6 odst. 2 písm. b) se týká uvádění pod napětí před dokončením montáže nebo opravy, ne uvádění do provozu po částech.",
+        "a3": "To je požadavek § 6 odst. 2 písm. c) na revizi po dokončení montáže, opravě nebo přemístění, nikoli na zajištění nehotových částí."
+      },
+      "status": "overeno",
+      "sourceClass": "volny",
+      "verification": {
+        "source": "NV č. 190/2022 Sb., § 6 odst. 2 písm. a) — doslovný text, podklady/predpisy/nv-190-2022.txt",
+        "method": "primární text předpisu",
+        "checkedAt": "2026-11-23",
+        "checkedBy": "agent"
+      }
+    },
+    {
+      "questionId": "2027-ez1-045",
+      "options": [
+        {
+          "id": "a1",
+          "text": "Ne, pod napětí smí být uváděno teprve po dokončení montáže a provedení výchozí revize."
+        },
+        {
+          "id": "a2",
+          "text": "Ano, kdykoli, jsou-li nehotové části spolehlivě odpojené a zajištěné proti nežádoucímu zapojení."
+        },
+        {
+          "id": "a3",
+          "text": "Ano, ale pouze v souvislosti s provedením zkoušky a s ověřováním jeho správné funkce, a to při provedení takových opatření, aby nebyla ohrožena bezpečnost práce a provozu."
+        }
+      ],
+      "correctOptionId": "a3",
+      "explanation": "§ 6 odst. 2 písm. b) připouští uvedení zařízení pod napětí před dokončením montáže nebo opravy pouze v souvislosti s provedením zkoušky a s ověřováním jeho správné funkce, přičemž se provedou taková opatření, aby nebyla ohrožena bezpečnost práce a provozu.",
+      "whyWrong": {
+        "a1": "§ 6 odst. 2 písm. b) uvádění pod napětí před dokončením montáže nebo opravy výslovně připouští pro zkoušku a ověření správné funkce.",
+        "a2": "Zajištění nehotových částí podle § 6 odst. 2 písm. a) platí pro uvádění do provozu po částech; samo o sobě k uvedení pod napětí neopravňuje, to je vázáno na zkoušku a ověření funkce."
+      },
+      "status": "overeno",
+      "sourceClass": "volny",
+      "verification": {
+        "source": "NV č. 190/2022 Sb., § 6 odst. 2 písm. b) — doslovný text, podklady/predpisy/nv-190-2022.txt",
+        "method": "primární text předpisu",
+        "checkedAt": "2026-11-23",
+        "checkedBy": "agent"
+      }
+    },
+    {
+      "questionId": "2027-ez1-046",
+      "options": [
+        {
+          "id": "a1",
+          "text": "Musí být provedena výchozí revize podle části B bodu I. přílohy č. 2 k tomuto nařízení."
+        },
+        {
+          "id": "a2",
+          "text": "Musí být provedena pravidelná revize podle části B bodu II. přílohy č. 2 k tomuto nařízení."
+        },
+        {
+          "id": "a3",
+          "text": "Postačí prohlídka a zkouška v rozsahu přílohy č. 1; revize se provede až po uvedení zařízení do provozu."
+        }
+      ],
+      "correctOptionId": "a1",
+      "explanation": "§ 6 odst. 2 písm. d) požaduje, aby u vyhrazeného elektrického zařízení byla provedena výchozí revize podle části B bodu I. přílohy č. 2 k tomuto nařízení.",
+      "whyWrong": {
+        "a2": "Část B bod II. přílohy č. 2 popisuje náplň pravidelné a mimořádné revize; před uvedením do provozu žádá § 6 odst. 2 písm. d) revizi výchozí.",
+        "a3": "Prohlídka a zkouška v rozsahu přílohy č. 1 je podle § 7 odst. 3 součástí revize, revizi samu nenahrazuje, a § 6 odst. 2 písm. d) ji žádá před uvedením do provozu."
+      },
+      "status": "overeno",
+      "sourceClass": "volny",
+      "verification": {
+        "source": "NV č. 190/2022 Sb., § 6 odst. 2 písm. d) — doslovný text, podklady/predpisy/nv-190-2022.txt",
+        "method": "primární text předpisu",
+        "checkedAt": "2026-11-23",
+        "checkedBy": "agent"
+      }
+    },
+    {
+      "questionId": "2027-ez1-047",
+      "options": [
+        {
+          "id": "a1",
+          "text": "Soupis použitých měřicích přístrojů, naměřené hodnoty a přehled zjištěných závad s uvedením ustanovení porušených právních a ostatních předpisů."
+        },
+        {
+          "id": "a2",
+          "text": "Jednotlivé úkony prohlídek, zkoušek a údržby včetně preventivní údržby, pravidelné intervaly jejich provádění, způsob evidence výsledků a zjištěných a odstraněných závad a lhůty revizí v souladu s přílohou č. 4."
+        },
+        {
+          "id": "a3",
+          "text": "Projektovou nebo výkresovou dokumentaci, protokoly o určení vnějších vlivů a zprávu o předchozí revizi."
+        }
+      ],
+      "correctOptionId": "a2",
+      "explanation": "§ 7 odst. 5 stanoví obsah řádu prohlídek, údržby a revizí: jednotlivé úkony prohlídek, zkoušek a údržby včetně preventivní údržby [písm. a)], pravidelné intervaly jejich provádění [písm. b)], způsob evidence výsledků a zjištěných a odstraněných závad [písm. c)] a lhůty revizí v souladu s přílohou č. 4 [písm. d)].",
+      "whyWrong": {
+        "a1": "To jsou položky obsahu zprávy o revizi podle § 10 odst. 1 písm. g), j) a k), ne obsah řádu prohlídek, údržby a revizí.",
+        "a3": "To jsou podle části A bodu II. přílohy č. 2 podklady pro provedení pravidelné a mimořádné revize."
+      },
+      "status": "overeno",
+      "sourceClass": "volny",
+      "verification": {
+        "source": "NV č. 190/2022 Sb., § 7 odst. 5 písm. a) až d) — doslovný text, podklady/predpisy/nv-190-2022.txt",
+        "method": "primární text předpisu",
+        "checkedAt": "2026-11-23",
+        "checkedBy": "agent"
+      }
+    },
+    {
+      "questionId": "2027-ez1-048",
+      "options": [
+        {
+          "id": "a1",
+          "text": "Je nutné je neprodleně odpojit od napájecího zdroje a zajistit proti nežádoucímu připojení."
+        },
+        {
+          "id": "a2",
+          "text": "Je možné je ponechat pod napětím, zajistí-li se dozor vedoucího práce stanoveného podle § 8 písm. e)."
+        },
+        {
+          "id": "a3",
+          "text": "Je nutné je vypnout, pokud jeho vypnutím nebude ohrožena bezpečnost práce nebo provozu; o nutnosti ponechat je v provozu rozhodne osoba odpovědná za elektrické zařízení."
+        }
+      ],
+      "correctOptionId": "a3",
+      "explanation": "§ 7 odst. 7 ukládá prozatímní vyhrazené elektrické zařízení nebo jeho části v době, kdy není používáno, vypnout, pokud tím nebude ohrožena bezpečnost práce nebo provozu; o nutnosti ponechat je v provozu rozhodne osoba odpovědná za elektrické zařízení.",
+      "whyWrong": {
+        "a1": "To je postup podle § 7 odst. 8 u zařízení, u kterého se zjistí stav bezprostředně ohrožující bezpečnost práce nebo provozu.",
+        "a2": "§ 7 odst. 7 svěřuje rozhodnutí ponechat zařízení v provozu osobě odpovědné za elektrické zařízení a váže je na ohrožení bezpečnosti, ne na dozor vedoucího práce."
+      },
+      "status": "overeno",
+      "sourceClass": "volny",
+      "verification": {
+        "source": "NV č. 190/2022 Sb., § 7 odst. 7 — doslovný text, podklady/predpisy/nv-190-2022.txt",
+        "method": "primární text předpisu",
+        "checkedAt": "2026-11-23",
+        "checkedBy": "agent"
+      }
+    },
+    {
+      "questionId": "2027-ez1-049",
+      "options": [
+        {
+          "id": "a1",
+          "text": "Je nutné je neprodleně odpojit od napájecího zdroje a zajistit proti nežádoucímu připojení; není-li to možné, je nutné zajistit jeho opravu bez zbytečného odkladu."
+        },
+        {
+          "id": "a2",
+          "text": "Je nutné je vypnout, pokud jeho vypnutím nebude ohrožena bezpečnost práce nebo provozu; o nutnosti ponechat je v provozu rozhodne osoba odpovědná za elektrické zařízení."
+        },
+        {
+          "id": "a3",
+          "text": "Je nutné na něm provést mimořádnou revizi a do předání zprávy o revizi je provozovat podle pokynů osoby odpovědné za elektrické zařízení."
+        }
+      ],
+      "correctOptionId": "a1",
+      "explanation": "§ 7 odst. 8 ukládá zařízení, u kterého se zjistí stav bezprostředně ohrožující bezpečnost práce nebo provozu, neprodleně odpojit od napájecího zdroje a zajistit proti nežádoucímu připojení; není-li to možné, zajistit jeho opravu bez zbytečného odkladu.",
+      "whyWrong": {
+        "a2": "To je režim prozatímního vyhrazeného elektrického zařízení v době, kdy není používáno, podle § 7 odst. 7.",
+        "a3": "§ 7 odst. 8 žádá neprodlené odpojení a zajištění, případně opravu bez zbytečného odkladu; další provoz do výsledku revize nepřipouští."
+      },
+      "status": "overeno",
+      "sourceClass": "volny",
+      "verification": {
+        "source": "NV č. 190/2022 Sb., § 7 odst. 8 — doslovný text, podklady/predpisy/nv-190-2022.txt",
+        "method": "primární text předpisu",
+        "checkedAt": "2026-11-23",
+        "checkedBy": "agent"
+      }
+    },
+    {
+      "questionId": "2027-ez1-050",
+      "options": [
+        {
+          "id": "a1",
+          "text": "Osoba stanovená pro každou práci na vyhrazeném elektrickém zařízení, která má povinnost řádně zajistit danou činnost."
+        },
+        {
+          "id": "a2",
+          "text": "Fyzická osoba určená na základě písemného pověření vydaného v listinné nebo elektronické podobě právnickou nebo podnikající fyzickou osobou, která vyhrazené elektrické zařízení provozuje, k jejímž povinnostem patří zajištění bezpečného provozu tohoto zařízení."
+        },
+        {
+          "id": "a3",
+          "text": "Fyzická osoba, která je držitelem osvědčení o odborné způsobilosti podle § 11 odst. 3 zákona v rozsahu stanoveném v příloze č. 5 k tomuto nařízení."
+        }
+      ],
+      "correctOptionId": "a2",
+      "explanation": "§ 8 písm. d) řadí mezi minimální požadavky určení fyzické osoby odpovědné za elektrické zařízení, k jejímž povinnostem patří zajištění bezpečného provozu vyhrazeného elektrického zařízení, a to na základě písemného pověření v listinné nebo elektronické podobě vydaného provozovatelem zařízení.",
+      "whyWrong": {
+        "a1": "To je vedoucí práce podle § 8 písm. e).",
+        "a3": "To je revizní technik podle § 9."
+      },
+      "status": "overeno",
+      "sourceClass": "volny",
+      "verification": {
+        "source": "NV č. 190/2022 Sb., § 8 písm. d) — doslovný text, podklady/predpisy/nv-190-2022.txt",
+        "method": "primární text předpisu",
+        "checkedAt": "2026-11-23",
+        "checkedBy": "agent"
+      }
+    },
+    {
+      "questionId": "2027-ez1-051",
+      "options": [
+        {
+          "id": "a1",
+          "text": "Kterákoli odborně způsobilá osoba, která byla vybavena potřebnými osobními ochrannými pracovními prostředky a seznámena s jejich používáním podle § 7 odst. 6."
+        },
+        {
+          "id": "a2",
+          "text": "Pouze revizní technik, který je držitelem osvědčení podle § 9."
+        },
+        {
+          "id": "a3",
+          "text": "Pouze osoba znalá; vedoucí práce se stanoví pro každou práci na vyhrazeném elektrickém zařízení a před jejím zahájením se provede rozbor její složitosti, aby byla pro výkon zvolena osoba s vhodnou odbornou způsobilostí."
+        }
+      ],
+      "correctOptionId": "a3",
+      "explanation": "§ 8 písm. e) žádá stanovení vedoucího práce pro každou práci na vyhrazeném elektrickém zařízení, rozbor složitosti práce před jejím zahájením a výslovně stanoví, že vedoucího práce může vykonávat pouze osoba znalá (odkaz na § 19 zákona).",
+      "whyWrong": {
+        "a1": "§ 7 odst. 6 upravuje vybavení osobními ochrannými pracovními prostředky pro práci na zařízení; funkci vedoucího práce § 8 písm. e) vyhrazuje osobě znalé.",
+        "a2": "Osvědčení revizního technika podle § 9 opravňuje k provádění revizí; u vedoucího práce žádá § 8 písm. e) osobu znalou, ne revizního technika."
+      },
+      "status": "overeno",
+      "sourceClass": "volny",
+      "verification": {
+        "source": "NV č. 190/2022 Sb., § 8 písm. e) — doslovný text, podklady/predpisy/nv-190-2022.txt",
+        "method": "primární text předpisu",
+        "checkedAt": "2026-11-23",
+        "checkedBy": "agent"
+      }
+    },
+    {
+      "questionId": "2027-ez1-052",
+      "options": [
+        {
+          "id": "a1",
+          "text": "Použije se z nich lhůta nejkratší."
+        },
+        {
+          "id": "a2",
+          "text": "Použije se z nich lhůta nejdelší."
+        },
+        {
+          "id": "a3",
+          "text": "Použije se lhůta, kterou si provozovatel stanoví ve svém řádu preventivní údržby, a to až dvojnásobná."
+        }
+      ],
+      "correctOptionId": "a1",
+      "explanation": "Doplňující informace k základním nejdelším lhůtám pravidelných revizí v příloze č. 4 písm. a) stanoví, že pokud se na elektrické zařízení vztahuje více než jedna revizní lhůta, použije se z nich lhůta nejkratší.",
+      "whyWrong": {
+        "a2": "Příloha č. 4 písm. a) říká opak — rozhoduje nejkratší z lhůt, které se na zařízení vztahují.",
+        "a3": "Možnost stanovit lhůty až dvojnásobné dává písm. c) téže doplňující informace jen provozovatelům se zpracovaným řádem preventivní údržby; pravidlo pro souběh více lhůt je v písm. a)."
+      },
+      "status": "overeno",
+      "sourceClass": "volny",
+      "verification": {
+        "source": "NV č. 190/2022 Sb., příloha č. 4, doplňující informace k základním nejdelším lhůtám pravidelných revizí, písm. a) — doslovný text, podklady/predpisy/nv-190-2022.txt",
+        "method": "primární text předpisu",
+        "checkedAt": "2026-11-23",
+        "checkedBy": "agent"
+      }
+    },
+    {
+      "questionId": "2027-ez1-053",
+      "options": [
+        {
+          "id": "a1",
+          "text": "3 roky."
+        },
+        {
+          "id": "a2",
+          "text": "2 roky."
+        },
+        {
+          "id": "a3",
+          "text": "5 let."
+        }
+      ],
+      "correctOptionId": "a2",
+      "explanation": "Tabulka přílohy č. 4 stanoví pro elektrické zařízení v objektu, který podle požárně bezpečnostního řešení umožňuje přítomnost více než 200 osob, základní nejdelší lhůtu pravidelných revizí 2 roky.",
+      "whyWrong": {
+        "a1": "3 roky stanoví tabulka pro objekty určené pro výrobu, vzdělávání, ubytování a lékařské účely a pro prostory s nebezpečím požáru a výbuchu.",
+        "a3": "5 let je lhůta pro objekty určené pro administrativní činnost."
+      },
+      "status": "overeno",
+      "sourceClass": "volny",
+      "verification": {
+        "source": "NV č. 190/2022 Sb., příloha č. 4, tabulka „Podle objektu a prostoru“, řádek o objektu s přítomností více než 200 osob — doslovný text, podklady/predpisy/nv-190-2022.txt",
+        "method": "primární text předpisu",
+        "checkedAt": "2026-11-23",
+        "checkedBy": "agent"
+      }
+    },
+    {
+      "questionId": "2027-ez1-054",
+      "options": [
+        {
+          "id": "a1",
+          "text": "Jednou za 2 roky."
+        },
+        {
+          "id": "a2",
+          "text": "Jednou za 0,5 roku."
+        },
+        {
+          "id": "a3",
+          "text": "Nejméně jednou ročně, a to na všech zařízeních LPS; kontrolou se ověří, že LPS není viditelně poškozen."
+        }
+      ],
+      "correctOptionId": "a3",
+      "explanation": "Doplňující informace k základním nejdelším lhůtám pravidelných revizí LPS v příloze č. 4 písm. a) stanoví, že na všech zařízeních LPS je nutno provést nejméně jednou ročně vizuální kontrolu, kterou se ověří, že LPS není viditelně poškozen.",
+      "whyWrong": {
+        "a1": "2 roky je v tabulce přílohy č. 4 revizní lhůta LPS chránícího kritické systémy, ne lhůta vizuální kontroly.",
+        "a2": "0,5 roku je v tabulce přílohy č. 4 revizní lhůta prozatímních zařízení stavenišť."
+      },
+      "status": "overeno",
+      "sourceClass": "volny",
+      "verification": {
+        "source": "NV č. 190/2022 Sb., příloha č. 4, doplňující informace k základním nejdelším lhůtám pravidelných revizí LPS, písm. a) — doslovný text, podklady/predpisy/nv-190-2022.txt",
+        "method": "primární text předpisu",
+        "checkedAt": "2026-11-23",
+        "checkedBy": "agent"
+      }
+    },
+    {
+      "questionId": "2027-ez1-055",
+      "options": [
+        {
+          "id": "a1",
+          "text": "Stavby obsahující citlivé vnitřní systémy, kancelářské budovy a obchodní budovy; patří mezi ně vyhrazená elektrická zařízení I. třídy a objekty, kde následkem úderu blesku nebo přepětí může vzniknout škoda velkého rozsahu."
+        },
+        {
+          "id": "a2",
+          "text": "Stavby obsahující citlivé vnitřní systémy a vyhrazená elektrická zařízení II. třídy."
+        },
+        {
+          "id": "a3",
+          "text": "Pouze objekty, které podle požárně bezpečnostního řešení umožňují přítomnost více než 200 osob, a zdravotnické prostory."
+        }
+      ],
+      "correctOptionId": "a1",
+      "explanation": "Doplňující informace k lhůtám LPS v příloze č. 4 písm. b) uvádí, že kritické systémy mohou zahrnovat stavby obsahující citlivé vnitřní systémy, kancelářské budovy a obchodní budovy, a že mezi kritické systémy patří vyhrazená elektrická zařízení I. třídy a objekty, kde následkem úderu blesku nebo přepětí může vzniknout škoda velkého rozsahu.",
+      "whyWrong": {
+        "a2": "Příloha č. 4 písm. b) řadí mezi kritické systémy vyhrazená elektrická zařízení I. třídy, ne II. třídy, kterou § 4 odst. 2 vymezuje jako zbytkovou kategorii.",
+        "a3": "To jsou jen dvě z položek § 4 odst. 1 písm. c) a d) určujících I. třídu; kritické systémy příloha č. 4 vymezuje šířeji — stavbami s citlivými vnitřními systémy, kancelářskými a obchodními budovami a objekty s možnou škodou velkého rozsahu."
+      },
+      "status": "overeno",
+      "sourceClass": "volny",
+      "verification": {
+        "source": "NV č. 190/2022 Sb., příloha č. 4, doplňující informace k základním nejdelším lhůtám pravidelných revizí LPS, písm. b) — doslovný text, podklady/predpisy/nv-190-2022.txt",
+        "method": "primární text předpisu",
+        "checkedAt": "2026-11-23",
+        "checkedBy": "agent"
+      }
+    },
+    {
+      "questionId": "2027-ez4-079",
+      "options": [
+        {
+          "id": "a1",
+          "text": "1 rok u LPS chránících kritické systémy a 2 roky u LPS chránících ostatní objekty nebo zařízení."
+        },
+        {
+          "id": "a2",
+          "text": "2 roky u LPS chránících kritické systémy a 4 roky u LPS chránících ostatní objekty nebo zařízení."
+        },
+        {
+          "id": "a3",
+          "text": "3 roky u LPS chránících kritické systémy a 5 let u LPS chránících ostatní objekty nebo zařízení."
+        }
+      ],
+      "correctOptionId": "a2",
+      "explanation": "Tabulka přílohy č. 4 stanoví v části o ochraně před účinky atmosférické a statické elektřiny revizní lhůtu 2 roky pro LPS chránící kritické systémy a 4 roky pro LPS chránící ostatní objekty nebo zařízení.",
+      "whyWrong": {
+        "a1": "1 rok je v tabulce přílohy č. 4 lhůtou pojízdných a převozných prostředků a prostorů mokrých a s trvalým výskytem korozivních nebo znečišťujících látek, ne lhůtou LPS.",
+        "a3": "3 roky a 5 let jsou v téže tabulce lhůty podle objektu a prostoru (výroba, vzdělávání, ubytování a lékařské účely, resp. administrativní činnost), ne lhůty LPS."
+      },
+      "status": "overeno",
+      "sourceClass": "volny",
+      "verification": {
+        "source": "NV č. 190/2022 Sb., příloha č. 4, tabulka „Ochrana před účinky atmosférické a statické elektřiny“ — doslovný text, podklady/predpisy/nv-190-2022.txt",
+        "method": "primární text předpisu",
+        "checkedAt": "2026-11-23",
+        "checkedBy": "agent"
+      }
+    },
+    {
+      "questionId": "2027-ez4-080",
+      "options": [
+        {
+          "id": "a1",
+          "text": "Jednou za 4 roky, stejně jako revizi LPS chránícího ostatní objekty nebo zařízení."
+        },
+        {
+          "id": "a2",
+          "text": "Pouze v rámci pravidelné revize LPS, tedy podle chráněného objektu každé 2 nebo 4 roky."
+        },
+        {
+          "id": "a3",
+          "text": "Nejméně jednou ročně, a to na všech zařízeních LPS."
+        }
+      ],
+      "correctOptionId": "a3",
+      "explanation": "Podle doplňující informace k lhůtám LPS v příloze č. 4 písm. a) je nutno na všech zařízeních LPS provést nejméně jednou ročně vizuální kontrolu, kterou se ověří, že LPS není viditelně poškozen.",
+      "whyWrong": {
+        "a1": "4 roky je revizní lhůta LPS chránícího ostatní objekty nebo zařízení z tabulky přílohy č. 4; vizuální kontrola má podle doplňující informace písm. a) vlastní roční lhůtu.",
+        "a2": "Vizuální kontrola je podle doplňující informace k lhůtám LPS samostatným úkonem s roční lhůtou, nezávislým na revizních lhůtách 2 a 4 roky."
+      },
+      "status": "overeno",
+      "sourceClass": "volny",
+      "verification": {
+        "source": "NV č. 190/2022 Sb., příloha č. 4, doplňující informace k základním nejdelším lhůtám pravidelných revizí LPS, písm. a) — doslovný text, podklady/predpisy/nv-190-2022.txt",
+        "method": "primární text předpisu",
+        "checkedAt": "2026-11-23",
+        "checkedBy": "agent"
+      }
+    }
+  ]
+}

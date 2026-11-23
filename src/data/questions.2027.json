@@ -1,0 +1,4375 @@
+{
+ "schemaVersion": 1,
+ "bankVersion": "2027.1",
+ "validFrom": "2027-01-01",
+ "scope": "E2A – revizní technik elektrických zařízení, okruhy ez1–ez4 (včetně LPS bez nebezpečí výbuchu). Okruhy ez5–ez7 nejsou součástí.",
+ "disclaimer": "Oficiální dokumenty TIČR obsahují znění otázek a normativní odkazy. Neobsahují zveřejněné možnosti A/B/C ani klíč správných odpovědí. Možnosti v této aplikaci jsou učební, nikoli autentické odpovědi TIČR.",
+ "provenance": {
+  "pageUrl": "https://www.ticr.eu/inpage/testove-otazky-ez/",
+  "zipUrl": "https://www.ticr.eu/soubor/ez-testove-otazky-od-2027-01-01-zip/",
+  "importedAt": "2026-11-23",
+  "zipSha256": "8306d131b41c9fe58a3407017d34b468c6b04a59518265b588f75ffdbad32808",
+  "files": [
+   {
+    "name": "ez1 obecny test - 2027.doc",
+    "sha256": "c6fe2e1b9e13d5edc7fcea7d67275b293edaac51443146aeabb81ae4ec3596fd",
+    "bytes": 58368,
+    "questions": 90
+   },
+   {
+    "name": "ez2 ochrana pred urazem el.proudem - 2027.doc",
+    "sha256": "0064967a191af84048853aa0f6aac8ac1740b3b2fc5c933f66e5432ed5a6b9d0",
+    "bytes": 76288,
+    "questions": 100
+   },
+   {
+    "name": "ez3 vseob pozadavky na EZ - 2027.doc",
+    "sha256": "a75c7cf6d1f088e2b0ceec6bade58ac5ef8df07307c533b9b3a794c6cdecd325",
+    "bytes": 96768,
+    "questions": 140
+   },
+   {
+    "name": "ez4 LPS v prostredi bez nebezpeci vybuchu - 2027.doc",
+    "sha256": "506ca625a908d7e609a840c5cb71dac73f4287eb94d6346a91b026ae49a9acfd",
+    "bytes": 116224,
+    "questions": 100
+   }
+  ]
+ },
+ "circuits": [
+  {
+   "id": "ez1",
+   "sourceFile": "ez1 obecny test - 2027.doc",
+   "title": "Obecný test",
+   "expected": 90,
+   "imported": 90,
+   "withNormativeRef": 90
+  },
+  {
+   "id": "ez2",
+   "sourceFile": "ez2 ochrana pred urazem el.proudem - 2027.doc",
+   "title": "Ochrana před úrazem elektrickým proudem",
+   "expected": 100,
+   "imported": 100,
+   "withNormativeRef": 100
+  },
+  {
+   "id": "ez3",
+   "sourceFile": "ez3 vseob pozadavky na EZ - 2027.doc",
+   "title": "Všeobecné požadavky na elektrická zařízení",
+   "expected": 140,
+   "imported": 140,
+   "withNormativeRef": 140
+  },
+  {
+   "id": "ez4",
+   "sourceFile": "ez4 LPS v prostredi bez nebezpeci vybuchu - 2027.doc",
+   "title": "LPS v prostředí bez nebezpečí výbuchu",
+   "expected": 100,
+   "imported": 100,
+   "withNormativeRef": 100
+  }
+ ],
+ "questions": [
+  {
+   "id": "2027-ez1-001",
+   "circuit": "ez1",
+   "circuitTitle": "Obecný test",
+   "number": 1,
+   "sourceMarker": "1)",
+   "numberedInSource": true,
+   "text": "Jakým druhem živnosti ohlašovací dle zákona č. 455/1991 Sb., v platném znění (živnostenský zákon), musí disponovat podnikající fyzické nebo právnické osoby provádějící revize a zkoušky vyhrazených technických zařízení?",
+   "normativeRef": "Příloha č. 1 k zákonu č. 455/1991 Sb."
+  },
+  {
+   "id": "2027-ez1-002",
+   "circuit": "ez1",
+   "circuitTitle": "Obecný test",
+   "number": 2,
+   "sourceMarker": "2)",
+   "numberedInSource": true,
+   "text": "Jakým živnostenským oprávněním musí disponovat právnická nebo podnikající fyzická osoba provádějící revize vyhrazených elektrických zařízení jako předmět své podnikatelské činnosti?",
+   "normativeRef": "Příloha č. 1 k zákonu č. 455/1991 Sb. a Příloha č. 1 k nařízení vlády č. 278/2008 Sb."
+  },
+  {
+   "id": "2027-ez1-003",
+   "circuit": "ez1",
+   "circuitTitle": "Obecný test",
+   "number": 3,
+   "sourceMarker": "3)",
+   "numberedInSource": true,
+   "text": "Zákon č. 89/2012 Sb. (občanský zákoník) v platném znění stanovuje, že kdo se veřejně nebo ve styku s jinou osobou přihlásí k odbornému výkonu jako příslušník určitého povolání nebo stavu, dává tím najevo,",
+   "normativeRef": "§5, odst. 1, zákona č. 89/2012 Sb."
+  },
+  {
+   "id": "2027-ez1-004",
+   "circuit": "ez1",
+   "circuitTitle": "Obecný test",
+   "number": 4,
+   "sourceMarker": "4)",
+   "numberedInSource": true,
+   "text": "Co se rozumí pojmem prevence rizik?",
+   "normativeRef": "§ 102 zákona č. 262/2006 Sb."
+  },
+  {
+   "id": "2027-ez1-005",
+   "circuit": "ez1",
+   "circuitTitle": "Obecný test",
+   "number": 5,
+   "sourceMarker": "5)",
+   "numberedInSource": true,
+   "text": "Co se rozumí ve smyslu zákoníku práce právními a ostatními předpisy k zajištění bezpečnosti a ochrany zdraví při práci?",
+   "normativeRef": "§ 349, odst. 1, zákona č. 262/2006 Sb."
+  },
+  {
+   "id": "2027-ez1-006",
+   "circuit": "ez1",
+   "circuitTitle": "Obecný test",
+   "number": 6,
+   "sourceMarker": "6)",
+   "numberedInSource": true,
+   "text": "Co je předmětem zákona č. 309/2006 Sb.?",
+   "normativeRef": "Zákon č. 309/2006 Sb."
+  },
+  {
+   "id": "2027-ez1-007",
+   "circuit": "ez1",
+   "circuitTitle": "Obecný test",
+   "number": 7,
+   "sourceMarker": "7)",
+   "numberedInSource": true,
+   "text": "Zákon č. 309/2006 Sb. v platném znění stanovuje, že stroje, technická zařízení, dopravní prostředky a nářadí musí být:",
+   "normativeRef": "Zákon č. 309/2006 Sb., § 4, odst. 1, písm. c"
+  },
+  {
+   "id": "2027-ez1-008",
+   "circuit": "ez1",
+   "circuitTitle": "Obecný test",
+   "number": 8,
+   "sourceMarker": "8)",
+   "numberedInSource": true,
+   "text": "Který předpis stanoví bližší požadavky na bezpečný provoz a používání strojů, technických zařízení, přístrojů a nářadí?",
+   "normativeRef": "NV č. 378/2001 Sb., § 1"
+  },
+  {
+   "id": "2027-ez1-009",
+   "circuit": "ez1",
+   "circuitTitle": "Obecný test",
+   "number": 9,
+   "sourceMarker": "9)",
+   "numberedInSource": true,
+   "text": "Jak často musí být podle nařízení vlády č. 378/2001 Sb. prováděna následná kontrola zařízení?",
+   "normativeRef": "NV č. 378/2001 Sb., § 4, odst. 2"
+  },
+  {
+   "id": "2027-ez1-010",
+   "circuit": "ez1",
+   "circuitTitle": "Obecný test",
+   "number": 10,
+   "sourceMarker": "10)",
+   "numberedInSource": true,
+   "text": "Co upravuje dle NV č. 378/2001 Sb. v platném znění místní provozní bezpečnostní předpis?",
+   "normativeRef": "NV č. 378/2001 Sb., § 2, písm. g"
+  },
+  {
+   "id": "2027-ez1-011",
+   "circuit": "ez1",
+   "circuitTitle": "Obecný test",
+   "number": 11,
+   "sourceMarker": "11)",
+   "numberedInSource": true,
+   "text": "Kdo podle nařízení vlády č. 378/2001 Sb. stanovuje rozsah kontroly strojního zařízení před uvedením do provozu, když není k dispozici průvodní dokumentace od výrobce?",
+   "normativeRef": "NV č. 378/2001 Sb., § 4, odst. 1"
+  },
+  {
+   "id": "2027-ez1-012",
+   "circuit": "ez1",
+   "circuitTitle": "Obecný test",
+   "number": 12,
+   "sourceMarker": "12)",
+   "numberedInSource": true,
+   "text": "Kdo je pověřenou organizací podle zák. č. 250/2021 Sb., v platném znění?",
+   "normativeRef": "zákon č. 250/2021 Sb., § 24, odst. 3"
+  },
+  {
+   "id": "2027-ez1-013",
+   "circuit": "ez1",
+   "circuitTitle": "Obecný test",
+   "number": 13,
+   "sourceMarker": "13)",
+   "numberedInSource": true,
+   "text": "Jaká je platnost osvědčení o odborné způsobilosti k činnostem na vyhrazených technických zařízeních?",
+   "normativeRef": "zákon č. 250/2021 Sb., § 11, odst. 3"
+  },
+  {
+   "id": "2027-ez1-014",
+   "circuit": "ez1",
+   "circuitTitle": "Obecný test",
+   "number": 14,
+   "sourceMarker": "14)",
+   "numberedInSource": true,
+   "text": "Kdo vede evidenci revizních techniků podle zák. č. 250/2021 Sb., v platném znění?",
+   "normativeRef": "zákon č. 250/2021 Sb., § 18, odst. 1"
+  },
+  {
+   "id": "2027-ez1-015",
+   "circuit": "ez1",
+   "circuitTitle": "Obecný test",
+   "number": 15,
+   "sourceMarker": "15)",
+   "numberedInSource": true,
+   "text": "Jakou činnost vykonává pověřená organizace podle zákona č. 250/2021 Sb.?",
+   "normativeRef": "zákon č. 250/2021 Sb., § 5, odst.1"
+  },
+  {
+   "id": "2027-ez1-016",
+   "circuit": "ez1",
+   "circuitTitle": "Obecný test",
+   "number": 16,
+   "sourceMarker": "16)",
+   "numberedInSource": true,
+   "text": "Kdo vykonává státní správu v oblasti bezpečnosti provozu vyhrazených technických zařízení podle zákona č. 250/2021 Sb.?",
+   "normativeRef": "zákon č. 250/2021 Sb., § 4"
+  },
+  {
+   "id": "2027-ez1-017",
+   "circuit": "ez1",
+   "circuitTitle": "Obecný test",
+   "number": 17,
+   "sourceMarker": "17)",
+   "numberedInSource": true,
+   "text": "Která technická zařízení jsou vyhrazená podle zákona č. 250/2021 Sb.?",
+   "normativeRef": "zákon č. 250/2021 Sb., § 2, písm. a"
+  },
+  {
+   "id": "2027-ez1-018",
+   "circuit": "ez1",
+   "circuitTitle": "Obecný test",
+   "number": 18,
+   "sourceMarker": "18)",
+   "numberedInSource": true,
+   "text": "Jaká je platnost oprávnění k odborné činnosti na vyhrazeném technickém zařízení podle zákona č. 250/2021 Sb.?",
+   "normativeRef": "zákon č. 250/2021 Sb., § 8, odst. 4"
+  },
+  {
+   "id": "2027-ez1-019",
+   "circuit": "ez1",
+   "circuitTitle": "Obecný test",
+   "number": 19,
+   "sourceMarker": "19)",
+   "numberedInSource": true,
+   "text": "Kdo je odpovědná odborná osoba ve smyslu podmínky pro vydání oprávnění podle zákona č. 250/2021 Sb.?",
+   "normativeRef": "zákon č. 250/2021 Sb., § 8, odst. 2, písm. a"
+  },
+  {
+   "id": "2027-ez1-020",
+   "circuit": "ez1",
+   "circuitTitle": "Obecný test",
+   "number": 20,
+   "sourceMarker": "20)",
+   "numberedInSource": true,
+   "text": "Evidence revizních techniků vedená pověřenou organizací podle zákona č. 250/2021 Sb. je:",
+   "normativeRef": "zákon č. 250/2021 Sb., § 18, odst. 4"
+  },
+  {
+   "id": "2027-ez1-021",
+   "circuit": "ez1",
+   "circuitTitle": "Obecný test",
+   "number": 21,
+   "sourceMarker": "21)",
+   "numberedInSource": true,
+   "text": "Jak dlouho musí být k dispozici průvodní dokumentace vyhrazeného technického zařízení?",
+   "normativeRef": "zákon č. 250/2021 Sb., § 2, písm. g"
+  },
+  {
+   "id": "2027-ez1-022",
+   "circuit": "ez1",
+   "circuitTitle": "Obecný test",
+   "number": 22,
+   "sourceMarker": "22)",
+   "numberedInSource": true,
+   "text": "Místní provozní předpis/řád je podle zákona č. 250/2021 Sb. součástí:",
+   "normativeRef": "zákon č. 250/2021 Sb., § 2, písm. h"
+  },
+  {
+   "id": "2027-ez1-023",
+   "circuit": "ez1",
+   "circuitTitle": "Obecný test",
+   "number": 23,
+   "sourceMarker": "23)",
+   "numberedInSource": true,
+   "text": "Upravuje zákon č. 250/2021 Sb. požadavky na bezpečnost provozu vyhrazených technických zařízení a ochranu zdraví při práci po celou dobu jejich používání?",
+   "normativeRef": "zákon č. 250/2021 Sb., § 1, písm. a"
+  },
+  {
+   "id": "2027-ez1-024",
+   "circuit": "ez1",
+   "circuitTitle": "Obecný test",
+   "number": 24,
+   "sourceMarker": "24)",
+   "numberedInSource": true,
+   "text": "Dochází při rekonstrukci vyhrazených technických zařízení ke změně základních technických nebo bezpečnostních parametrů zařízení?",
+   "normativeRef": "zákon č. 250/2021 Sb., § 2, písm. i"
+  },
+  {
+   "id": "2027-ez1-025",
+   "circuit": "ez1",
+   "circuitTitle": "Obecný test",
+   "number": 25,
+   "sourceMarker": "25)",
+   "numberedInSource": true,
+   "text": "Jak se určuje stav vyhrazených technických zařízení při jejich kontrole, zkouškách nebo revizích až do doby jejich rekonstrukce?",
+   "normativeRef": "zákon č. 250/2021 Sb., § 3, odst. 5"
+  },
+  {
+   "id": "2027-ez1-026",
+   "circuit": "ez1",
+   "circuitTitle": "Obecný test",
+   "number": 26,
+   "sourceMarker": "26)",
+   "numberedInSource": true,
+   "text": "Kdo je nadřízeným správním orgánem pověřené organizace (TIČR)?",
+   "normativeRef": "zákon č. 250/2021 Sb., § 5, odst. 2"
+  },
+  {
+   "id": "2027-ez1-027",
+   "circuit": "ez1",
+   "circuitTitle": "Obecný test",
+   "number": 27,
+   "sourceMarker": "27)",
+   "numberedInSource": true,
+   "text": "Jaký doklad na vyžádání podává pověřená organizace (TIČR) o tom, zda jsou při projektování, konstrukci, montáži, provozu, obsluze, opravách, údržbě a revizi vyhrazených technických zařízení splněny požadavky bezpečnosti provozu vyhrazených technických zařízení?",
+   "normativeRef": "zákon č. 250/2021 Sb., § 6, odst. 1, písm. a"
+  },
+  {
+   "id": "2027-ez1-028",
+   "circuit": "ez1",
+   "circuitTitle": "Obecný test",
+   "number": 28,
+   "sourceMarker": "28)",
+   "numberedInSource": true,
+   "text": "Jakou činnost vykonává pověřená organizace (TIČR), pokud provádí u vyhrazených technických zařízení I. třídy prohlídky a zkoušky nebo se na těchto zařízeních zúčastňuje zkoušek?",
+   "normativeRef": "zákon č. 250/2021 Sb., § 6, odst. 1, písm. b"
+  },
+  {
+   "id": "2027-ez1-029",
+   "circuit": "ez1",
+   "circuitTitle": "Obecný test",
+   "number": 29,
+   "sourceMarker": "29)",
+   "numberedInSource": true,
+   "text": "Dojde k zániku oprávnění dnem, k němuž uplyne jeho doba platnosti?",
+   "normativeRef": "zákon č. 250/2021 Sb., § 9, odst. 2, písm. d"
+  },
+  {
+   "id": "2027-ez1-030",
+   "circuit": "ez1",
+   "circuitTitle": "Obecný test",
+   "number": 30,
+   "sourceMarker": "30)",
+   "numberedInSource": true,
+   "text": "Kdo je správcem a provozovatelem evidence odborně způsobilých právnických osob a podnikajících fyzických osob k montáži, opravám, revizím a zkouškám vyhrazených technických zařízení a k plnění nádob plyny?",
+   "normativeRef": "zákon č. 250/2021 Sb., § 10, odst. 1"
+  },
+  {
+   "id": "2027-ez1-031",
+   "circuit": "ez1",
+   "circuitTitle": "Obecný test",
+   "number": 31,
+   "sourceMarker": "31)",
+   "numberedInSource": true,
+   "text": "Co je dle zákona č. 250/2021 Sb. v platném znění považováno za stav ohrožující bezpečnost práce a provozu vyhrazeného technického zařízení?",
+   "normativeRef": "zákon č. 250/2021 Sb., § 20, odst. 3"
+  },
+  {
+   "id": "2027-ez1-032",
+   "circuit": "ez1",
+   "circuitTitle": "Obecný test",
+   "number": 32,
+   "sourceMarker": "32)",
+   "numberedInSource": true,
+   "text": "Kdo stanovuje, v jakých termínech podle zákona č. 250/2021 Sb. musí být odstraněny závady, které bezprostředně neohrožují bezpečný provoz?",
+   "normativeRef": "zákon č. 250/2021 Sb., § 20, odst. 5"
+  },
+  {
+   "id": "2027-ez1-033",
+   "circuit": "ez1",
+   "circuitTitle": "Obecný test",
+   "number": 33,
+   "sourceMarker": "33)",
+   "numberedInSource": true,
+   "text": "Co musí zajistit provozovatel po provedené rekonstrukci?",
+   "normativeRef": "zákon č. 250/2021 Sb., § 20, odst. 6"
+  },
+  {
+   "id": "2027-ez1-034",
+   "circuit": "ez1",
+   "circuitTitle": "Obecný test",
+   "number": 34,
+   "sourceMarker": "34/",
+   "numberedInSource": true,
+   "text": "Co musí být zajištěno před uvedením vyhrazeného elektrického zařízení třídy I. do provozu dle NV č. 190/2022 Sb., v platném znění?",
+   "normativeRef": "NV č. 190/2022 Sb., § 6, odst. 2,6"
+  },
+  {
+   "id": "2027-ez1-035",
+   "circuit": "ez1",
+   "circuitTitle": "Obecný test",
+   "number": 35,
+   "sourceMarker": "35)",
+   "numberedInSource": true,
+   "text": "Co se rozumí ve smyslu nařízení vlády č. 190/2022 Sb. vyhrazeným elektrickým zařízením?",
+   "normativeRef": "NV č. 190/2022 Sb., § 3, odst. 1"
+  },
+  {
+   "id": "2027-ez1-036",
+   "circuit": "ez1",
+   "circuitTitle": "Obecný test",
+   "number": 36,
+   "sourceMarker": "36)",
+   "numberedInSource": true,
+   "text": "Jak se člení prostory podle druhu vyhrazeného elektrického zařízení v nařízení vlády č. 190/2022 Sb.?",
+   "normativeRef": "NV č. 190/2022 Sb., příloha č. 3 a příloha č. 5"
+  },
+  {
+   "id": "2027-ez1-037",
+   "circuit": "ez1",
+   "circuitTitle": "Obecný test",
+   "number": 37,
+   "sourceMarker": "37)",
+   "numberedInSource": true,
+   "text": "Jaké doklady musí obdržet po dokončení montáže vyhrazeného elektrického zařízení odběratel? (Nařízení vlády č. 190/2022 Sb.)",
+   "normativeRef": "NV č. 190/2022 Sb., § 6, odst. 3"
+  },
+  {
+   "id": "2027-ez1-038",
+   "circuit": "ez1",
+   "circuitTitle": "Obecný test",
+   "number": 38,
+   "sourceMarker": "38)",
+   "numberedInSource": true,
+   "text": "Co nemusí ve smyslu nařízení vlády č. 190/2022 Sb. obsahovat zpráva o revizi?",
+   "normativeRef": "NV č. 190/2022 Sb., § 10"
+  },
+  {
+   "id": "2027-ez1-039",
+   "circuit": "ez1",
+   "circuitTitle": "Obecný test",
+   "number": 39,
+   "sourceMarker": "39)",
+   "numberedInSource": true,
+   "text": "Jaká elektrická zařízení dle NV č. 190/2022 Sb. v platném znění nejsou vyhrazenými elektrickými zařízeními?",
+   "normativeRef": "NV č. 190/2022 Sb., § 3, odst. 2, písm. d"
+  },
+  {
+   "id": "2027-ez1-040",
+   "circuit": "ez1",
+   "circuitTitle": "Obecný test",
+   "number": 40,
+   "sourceMarker": "40)",
+   "numberedInSource": true,
+   "text": "Co je souhrnná zpráva o výchozí revizi dle NV č. 190/2022 Sb. v platném znění?",
+   "normativeRef": "NV č. 190/2022 Sb., § 2, písm. k"
+  },
+  {
+   "id": "2027-ez1-041",
+   "circuit": "ez1",
+   "circuitTitle": "Obecný test",
+   "number": 41,
+   "sourceMarker": "41)",
+   "numberedInSource": true,
+   "text": "Jak definuje NV č. 190/2022 Sb. v platném znění uvedení vyhrazeného elektrického zařízení do provozu?",
+   "normativeRef": "NV č. 190/2022 Sb., § 2, písm. g"
+  },
+  {
+   "id": "2027-ez1-042",
+   "circuit": "ez1",
+   "circuitTitle": "Obecný test",
+   "number": 42,
+   "sourceMarker": "42)",
+   "numberedInSource": true,
+   "text": "Jaká vyhrazená elektrická zařízení dle NV č. 190/2022 Sb. v platném znění patří mezi vyhrazená elektrická zařízení I. třídy?",
+   "normativeRef": "NV č. 190/2022 Sb., § 4, odst. 1, písm. a"
+  },
+  {
+   "id": "2027-ez1-043",
+   "circuit": "ez1",
+   "circuitTitle": "Obecný test",
+   "number": 43,
+   "sourceMarker": "43)",
+   "numberedInSource": true,
+   "text": "Je elektrický spotřebič do napětí 400 V vyhrazeným elektrickým zařízením dle NV č. 190/2022 Sb. v platném znění?",
+   "normativeRef": "NV č. 190/2022 Sb., § 3, odst. 2, písm. a"
+  },
+  {
+   "id": "2027-ez1-044",
+   "circuit": "ez1",
+   "circuitTitle": "Obecný test",
+   "number": 44,
+   "sourceMarker": "44)",
+   "numberedInSource": true,
+   "text": "Jaké požadavky na bezpečnost stanovuje NV č. 190/2022 Sb. v platném znění pro uvádění vyhrazeného el. zařízení do provozu po částech?",
+   "normativeRef": "NV č. 190/2022 Sb., § 6, odst. 2, písm. a"
+  },
+  {
+   "id": "2027-ez1-045",
+   "circuit": "ez1",
+   "circuitTitle": "Obecný test",
+   "number": 45,
+   "sourceMarker": "45)",
+   "numberedInSource": true,
+   "text": "Smí být vyhrazené elektrické zařízení před dokončením montáže dle NV č. 190/2022 Sb. v platném znění uváděno pod napětí?",
+   "normativeRef": "NV č. 190/2022 Sb., § 6, odst. 2, písm. b"
+  },
+  {
+   "id": "2027-ez1-046",
+   "circuit": "ez1",
+   "circuitTitle": "Obecný test",
+   "number": 46,
+   "sourceMarker": "46)",
+   "numberedInSource": true,
+   "text": "Co musí být provedeno dle NV č. 190/2022 Sb., v platném znění, před uvedením vyhrazeného el. zařízení do provozu?",
+   "normativeRef": "NV č. 190/2022 Sb., § 6, odst. 2, písm. d"
+  },
+  {
+   "id": "2027-ez1-047",
+   "circuit": "ez1",
+   "circuitTitle": "Obecný test",
+   "number": 47,
+   "sourceMarker": "47)",
+   "numberedInSource": true,
+   "text": "Co má podle NV č. 190/2022 Sb., v platném znění, obsahovat řád prohlídek, údržby a revizí?",
+   "normativeRef": "NV č. 190/2022 Sb., § 7, odst. 5"
+  },
+  {
+   "id": "2027-ez1-048",
+   "circuit": "ez1",
+   "circuitTitle": "Obecný test",
+   "number": 48,
+   "sourceMarker": "48)",
+   "numberedInSource": true,
+   "text": "Co je podle NV č. 190/2022 Sb., v platném znění, nutné učinit s prozatímním vyhrazeným elektrickým zařízením nebo jeho částí v době, kdy není používáno?",
+   "normativeRef": "NV č. 190/2022 Sb., § 7, odst. 7"
+  },
+  {
+   "id": "2027-ez1-049",
+   "circuit": "ez1",
+   "circuitTitle": "Obecný test",
+   "number": 49,
+   "sourceMarker": "49)",
+   "numberedInSource": true,
+   "text": "Co je podle NV č. 190/2022 Sb., v platném znění, nutné učinit s vyhrazeným elektrickým zařízením, u kterého se zjistí stav bezprostředně ohrožující bezpečnost práce nebo provozu?",
+   "normativeRef": "NV č. 190/2022 Sb., § 7, odst. 8"
+  },
+  {
+   "id": "2027-ez1-050",
+   "circuit": "ez1",
+   "circuitTitle": "Obecný test",
+   "number": 50,
+   "sourceMarker": "50)",
+   "numberedInSource": true,
+   "text": "Kdo je osoba odpovědná za el. zařízení dle NV č. 190/2022 Sb., v platném znění?",
+   "normativeRef": "NV č. 190/2022 Sb., § 8, písm. d"
+  },
+  {
+   "id": "2027-ez1-051",
+   "circuit": "ez1",
+   "circuitTitle": "Obecný test",
+   "number": 51,
+   "sourceMarker": "51)",
+   "numberedInSource": true,
+   "text": "Kdo smí vykonávat funkci vedoucího práce na vyhrazeném elektrickém zařízení dle NV č. 190/2022 Sb., v platném znění?",
+   "normativeRef": "NV č. 190/2022 Sb., § 8, písm. e"
+  },
+  {
+   "id": "2027-ez1-052",
+   "circuit": "ez1",
+   "circuitTitle": "Obecný test",
+   "number": 52,
+   "sourceMarker": "52)",
+   "numberedInSource": true,
+   "text": "Jaká lhůta revizí vyhrazeného elektrického zařízení se v souladu s NV č. 190/2022 Sb., v platném znění, použije, pokud se na dané zařízení vztahuje více než jedna revizní lhůta?",
+   "normativeRef": "NV č. 190/2022 Sb., příloha č. 4"
+  },
+  {
+   "id": "2027-ez1-053",
+   "circuit": "ez1",
+   "circuitTitle": "Obecný test",
+   "number": 53,
+   "sourceMarker": "53)",
+   "numberedInSource": true,
+   "text": "Jaká základní nejdelší lhůta pravidelných revizí je stanovena v příloze č. 4 k nařízení vlády č. 190/2022 Sb., v platném znění, pro elektrická zařízení v objektu, který podle požárně bezpečnostního řešení umožňuje přítomnost více než 200 osob?",
+   "normativeRef": "NV č. 190/2022 Sb., příloha č. 4"
+  },
+  {
+   "id": "2027-ez1-054",
+   "circuit": "ez1",
+   "circuitTitle": "Obecný test",
+   "number": 54,
+   "sourceMarker": "54)",
+   "numberedInSource": true,
+   "text": "Jak často se musí podle přílohy č. 4 k nařízení vlády č. 190/2022 Sb., v platném znění, provádět vizuální kontrola LPS?",
+   "normativeRef": "NV č. 190/2022 Sb., příloha č. 4"
+  },
+  {
+   "id": "2027-ez1-055",
+   "circuit": "ez1",
+   "circuitTitle": "Obecný test",
+   "number": 55,
+   "sourceMarker": "55)",
+   "numberedInSource": true,
+   "text": "Co mohou zahrnovat kritické systémy dle přílohy č. 4 k nařízení vlády č. 190/2022 Sb., v platném znění?",
+   "normativeRef": "NV č. 190/2022 Sb., příloha č. 4"
+  },
+  {
+   "id": "2027-ez1-056",
+   "circuit": "ez1",
+   "circuitTitle": "Obecný test",
+   "number": 56,
+   "sourceMarker": "56)",
+   "numberedInSource": true,
+   "text": "Kdo je odpovědná osoba dle NV č. 194/2022 Sb., v platném znění?",
+   "normativeRef": "NV č. 194/2022 Sb., § 2 a 3"
+  },
+  {
+   "id": "2027-ez1-057",
+   "circuit": "ez1",
+   "circuitTitle": "Obecný test",
+   "number": 57,
+   "sourceMarker": "57)",
+   "numberedInSource": true,
+   "text": "Pro jaké činnosti stanovuje NV č. 194/2022 Sb., v platném znění, odbornou způsobilost?",
+   "normativeRef": "NV č. 194/2022 Sb., § 1, písm. a"
+  },
+  {
+   "id": "2027-ez1-058",
+   "circuit": "ez1",
+   "circuitTitle": "Obecný test",
+   "number": 58,
+   "sourceMarker": "58)",
+   "numberedInSource": true,
+   "text": "Jaký doklad vyhotoví osoba znalá o provedení poučení a ověření znalostí osoby poučené dle NV č. 194/2022 Sb., v platném znění?",
+   "normativeRef": "NV č. 194/2022 Sb., § 4, odst. 3"
+  },
+  {
+   "id": "2027-ez1-059",
+   "circuit": "ez1",
+   "circuitTitle": "Obecný test",
+   "number": 59,
+   "sourceMarker": "59)",
+   "numberedInSource": true,
+   "text": "Jaký doklad obdrží osoba, která úspěšně složí zkoušku odborné způsobilosti v elektrotechnice ve stupni § 6 – elektrotechnik nebo § 7 – vedoucí elektrotechnik dle NV č. 194/2022 Sb., v platném znění?",
+   "normativeRef": "NV č. 194/2022 Sb., § 9, odst. 3"
+  },
+  {
+   "id": "2027-ez1-060",
+   "circuit": "ez1",
+   "circuitTitle": "Obecný test",
+   "number": 60,
+   "sourceMarker": "60)",
+   "numberedInSource": true,
+   "text": "Které stupně odborné způsobilosti dle NV č. 194/2022 Sb., v platném znění, jsou považovány za osoby znalé?",
+   "normativeRef": "NV č. 194/2022 Sb., § 5, odst. 1"
+  },
+  {
+   "id": "2027-ez1-061",
+   "circuit": "ez1",
+   "circuitTitle": "Obecný test",
+   "number": 61,
+   "sourceMarker": "61)",
+   "numberedInSource": true,
+   "text": "Jaký stupeň odborné způsobilosti osoby znalé může po úspěšném složení zkoušky získat osoba, která je držitelem elektrotechnické profesní kvalifikace dle §2 písm. b) NV č. 194/2022 Sb., v platném znění?",
+   "normativeRef": "NV č. 194/2022 Sb., § 6, odst. 7"
+  },
+  {
+   "id": "2027-ez1-062",
+   "circuit": "ez1",
+   "circuitTitle": "Obecný test",
+   "number": 62,
+   "sourceMarker": "62)",
+   "numberedInSource": true,
+   "text": "Může se osoba, která je držitelem úplné elektrotechnické profesní kvalifikace, stát osobou znalou pro řízení činnosti – vedoucím elektrotechnikem dle §7 NV č. 194/2022 Sb., v platném znění?",
+   "normativeRef": "NV č. 194/2022 Sb., § 7, odst. 1"
+  },
+  {
+   "id": "2027-ez1-063",
+   "circuit": "ez1",
+   "circuitTitle": "Obecný test",
+   "number": 63,
+   "sourceMarker": "63)",
+   "numberedInSource": true,
+   "text": "Jaký stupeň odborné způsobilosti dle NV č. 194/2022 Sb., v platném znění, musí mít osoba, která chce provádět projektování vyhrazených elektrických zařízení, které není předmětem autorizace podle jiného právního předpisu?",
+   "normativeRef": "NV č. 194/2022 Sb., § 7, odst. 1"
+  },
+  {
+   "id": "2027-ez1-064",
+   "circuit": "ez1",
+   "circuitTitle": "Obecný test",
+   "number": 64,
+   "sourceMarker": "64)",
+   "numberedInSource": true,
+   "text": "Kdo musí být předsedou zkušební komise při zkouškách odborné způsobilosti v elektrotechnice, a to v rozsahu § 6 a § 7 NV č. 194/2022 Sb., v platném znění?",
+   "normativeRef": "NV č. 194/2022 Sb., § 6, odst. 3, a § 7, odst. 4"
+  },
+  {
+   "id": "2027-ez1-065",
+   "circuit": "ez1",
+   "circuitTitle": "Obecný test",
+   "number": 65,
+   "sourceMarker": "65)",
+   "numberedInSource": true,
+   "text": "Kdo může dle NV č. 194/2022 Sb., v platném znění, provádět revize vyhrazených elektrických zařízení?",
+   "normativeRef": "NV č. 194/2022 Sb., § 5, odst. 3"
+  },
+  {
+   "id": "2027-ez1-066",
+   "circuit": "ez1",
+   "circuitTitle": "Obecný test",
+   "number": 66,
+   "sourceMarker": "66)",
+   "numberedInSource": true,
+   "text": "Kdo je podle zákona č. 251/2005 Sb., v platném znění, oprávněn kontrolovat dodržování právních předpisů k zajištění bezpečnosti provozu vyhrazených technických zařízení?",
+   "normativeRef": "zákon č. 251/2005 Sb., § 3, odst. 1, písm. d"
+  },
+  {
+   "id": "2027-ez1-067",
+   "circuit": "ez1",
+   "circuitTitle": "Obecný test",
+   "number": 67,
+   "sourceMarker": "67)",
+   "numberedInSource": true,
+   "text": "Kdo rozhoduje o odnětí osvědčení nebo oprávnění vydaného fyzické osobě, pokud je u ní zjištěno porušení předpisů k zajištění bezpečnosti práce a technických zařízení?",
+   "normativeRef": "zákon č. 251/2005 Sb., § 7, odst. 1, písm. h"
+  },
+  {
+   "id": "2027-ez1-068",
+   "circuit": "ez1",
+   "circuitTitle": "Obecný test",
+   "number": 68,
+   "sourceMarker": "68)",
+   "numberedInSource": true,
+   "text": "Může být na základě provedené kontroly inspektorem oblastního inspektorátu práce uložena právnické nebo podnikající fyzické osobě pokuta za porušení předpisů na úseku bezpečnosti vyhrazených technických zařízení?",
+   "normativeRef": "zákon č. 251/2005 Sb., § 33"
+  },
+  {
+   "id": "2027-ez1-069",
+   "circuit": "ez1",
+   "circuitTitle": "Obecný test",
+   "number": 69,
+   "sourceMarker": "69)",
+   "numberedInSource": true,
+   "text": "Jsou české technické normy ve smyslu zákona č. 22/1997 Sb., v platném znění, obecně závazné?",
+   "normativeRef": "zákon č. 22/1997 Sb., § 4, odst. 1"
+  },
+  {
+   "id": "2027-ez1-070",
+   "circuit": "ez1",
+   "circuitTitle": "Obecný test",
+   "number": 70,
+   "sourceMarker": "70)",
+   "numberedInSource": true,
+   "text": "Kdy se česká technická norma stává harmonizovanou českou technickou normou podle zákona č. 22/1997 Sb., v platném znění?",
+   "normativeRef": "zákon č. 22/1997 Sb., § 4a, odst. 1"
+  },
+  {
+   "id": "2027-ez1-071",
+   "circuit": "ez1",
+   "circuitTitle": "Obecný test",
+   "number": 71,
+   "sourceMarker": "71)",
+   "numberedInSource": true,
+   "text": "Kdo provádí dozor nad stanovenými výrobky podle zákona č. 90/2016 Sb., v platném znění?",
+   "normativeRef": "zákon č. 90/2016 Sb., § 49, odst. 1"
+  },
+  {
+   "id": "2027-ez1-072",
+   "circuit": "ez1",
+   "circuitTitle": "Obecný test",
+   "number": 72,
+   "sourceMarker": "72)",
+   "numberedInSource": true,
+   "text": "Který předpis upravuje tvorbu českých technických norem (ČSN)?",
+   "normativeRef": "zákon č. 22/1997 Sb., § 5, odst. 1"
+  },
+  {
+   "id": "2027-ez1-073",
+   "circuit": "ez1",
+   "circuitTitle": "Obecný test",
+   "number": 73,
+   "sourceMarker": "73)",
+   "numberedInSource": true,
+   "text": "Kdo a jak zveřejňuje harmonizované české technické normy?",
+   "normativeRef": "zákon č. 22/1997 Sb., § 4, odst. 2"
+  },
+  {
+   "id": "2027-ez1-074",
+   "circuit": "ez1",
+   "circuitTitle": "Obecný test",
+   "number": 74,
+   "sourceMarker": "74)",
+   "numberedInSource": true,
+   "text": "Kdo zaručuje tvorbu a vydávání českých technických norem?",
+   "normativeRef": "zákon č. 22/1997 Sb., § 5, odst. 1"
+  },
+  {
+   "id": "2027-ez1-075",
+   "circuit": "ez1",
+   "circuitTitle": "Obecný test",
+   "number": 75,
+   "sourceMarker": "75)",
+   "numberedInSource": true,
+   "text": "Co je cílem státního zkušebnictví podle zákona č. 22/1997 Sb.?",
+   "normativeRef": "zákon č. 22/1997 Sb., § 9"
+  },
+  {
+   "id": "2027-ez1-076",
+   "circuit": "ez1",
+   "circuitTitle": "Obecný test",
+   "number": 76,
+   "sourceMarker": "76)",
+   "numberedInSource": true,
+   "text": "Co znamená označení CE na stanoveném výrobku?",
+   "normativeRef": "zákon č. 22/1997 Sb., § 13, odst. 3"
+  },
+  {
+   "id": "2027-ez1-077",
+   "circuit": "ez1",
+   "circuitTitle": "Obecný test",
+   "number": 77,
+   "sourceMarker": "77)",
+   "numberedInSource": true,
+   "text": "U jakých výrobků lze použít Českou značku shody „CCZ“?",
+   "normativeRef": "zákon č. 22/1997 Sb., § 13, odst. 4"
+  },
+  {
+   "id": "2027-ez1-078",
+   "circuit": "ez1",
+   "circuitTitle": "Obecný test",
+   "number": 78,
+   "sourceMarker": "78)",
+   "numberedInSource": true,
+   "text": "Smí být stanovený výrobek označený CE souběžně označen značkou CCZ?",
+   "normativeRef": "zákon č. 22/1997 Sb., § 13, odst. 5"
+  },
+  {
+   "id": "2027-ez1-079",
+   "circuit": "ez1",
+   "circuitTitle": "Obecný test",
+   "number": 79,
+   "sourceMarker": "79)",
+   "numberedInSource": true,
+   "text": "Co se rozumí ve smyslu NV č. 117/2016 Sb., v platném znění, elektromagnetickou kompatibilitou?",
+   "normativeRef": "NV č. 117/2016 Sb., § 2, odst. 1, písm. e"
+  },
+  {
+   "id": "2027-ez1-080",
+   "circuit": "ez1",
+   "circuitTitle": "Obecný test",
+   "number": 80,
+   "sourceMarker": "80)",
+   "numberedInSource": true,
+   "text": "Jak dlouho uchovává výrobce technickou dokumentaci a EU prohlášení o shodě u přístroje uvedeného na trh dle NV č. 117/2016 Sb. (elektromagnetická kompatibilita), v platném znění?",
+   "normativeRef": "NV č. 117/2016 Sb., § 5, odst. 3"
+  },
+  {
+   "id": "2027-ez1-081",
+   "circuit": "ez1",
+   "circuitTitle": "Obecný test",
+   "number": 81,
+   "sourceMarker": "81)",
+   "numberedInSource": true,
+   "text": "Je vlastník stavby ve smyslu stavebního zákona povinen uchovávat dokumentaci odpovídající skutečnému provedení?",
+   "normativeRef": "zákon č. 283/2021 Sb., § 245, odst. 1"
+  },
+  {
+   "id": "2027-ez1-082",
+   "circuit": "ez1",
+   "circuitTitle": "Obecný test",
+   "number": 82,
+   "sourceMarker": "82)",
+   "numberedInSource": true,
+   "text": "Na jakých stavbách se musí zřizovat ochrana před bleskem podle vyhlášky č. 146/2024 Sb.?",
+   "normativeRef": "vyhláška č. 146/2024 Sb., § 26, odst. 1 a 2"
+  },
+  {
+   "id": "2027-ez1-083",
+   "circuit": "ez1",
+   "circuitTitle": "Obecný test",
+   "number": 83,
+   "sourceMarker": "83)",
+   "numberedInSource": true,
+   "text": "Co patří podle NV č. 366/2013 Sb. mezi společné části domu a reviduje se tedy při revizi elektroinstalace společných částí domu?",
+   "normativeRef": "NV č. 366/2013 Sb., § 6, písm. b"
+  },
+  {
+   "id": "2027-ez1-084",
+   "circuit": "ez1",
+   "circuitTitle": "Obecný test",
+   "number": 84,
+   "sourceMarker": "84)",
+   "numberedInSource": true,
+   "text": "Která měřidla jsou podle zákona o metrologii stanovena k povinnému ověřování?",
+   "normativeRef": "zákon č. 505/1990 Sb., § 3, odst. 3"
+  },
+  {
+   "id": "2027-ez1-085",
+   "circuit": "ez1",
+   "circuitTitle": "Obecný test",
+   "number": 85,
+   "sourceMarker": "85)",
+   "numberedInSource": true,
+   "text": "Co se potvrzuje ověřováním stanovených měřidel?",
+   "normativeRef": "zákon č. 505/1990 Sb., § 9, odst. 1"
+  },
+  {
+   "id": "2027-ez1-086",
+   "circuit": "ez1",
+   "circuitTitle": "Obecný test",
+   "number": 86,
+   "sourceMarker": "86)",
+   "numberedInSource": true,
+   "text": "Jakým typem měřidla je dle zákona č. 505/1990 Sb., v platném znění, revizní přístroj pro provádění revizí elektrických instalací?",
+   "normativeRef": "zákon č. 505/1990 Sb., § 3, odst. 3 a 4 a vyhláška č. 345/2002 Sb."
+  },
+  {
+   "id": "2027-ez1-087",
+   "circuit": "ez1",
+   "circuitTitle": "Obecný test",
+   "number": 87,
+   "sourceMarker": "87)",
+   "numberedInSource": true,
+   "text": "K čemu je určeno ochranné pásmo zařízení elektrizační soustavy?",
+   "normativeRef": "zákon č. 458/2000 Sb., § 46, odst. 1"
+  },
+  {
+   "id": "2027-ez1-088",
+   "circuit": "ez1",
+   "circuitTitle": "Obecný test",
+   "number": 88,
+   "sourceMarker": "88)",
+   "numberedInSource": true,
+   "text": "Co není chráněno ochranným pásmem zařízení elektrizační soustavy?",
+   "normativeRef": "zákon č. 458/2000 Sb., § 46, odst. 2 a 3"
+  },
+  {
+   "id": "2027-ez1-089",
+   "circuit": "ez1",
+   "circuitTitle": "Obecný test",
+   "number": 89,
+   "sourceMarker": "89)",
+   "numberedInSource": true,
+   "text": "Čím je určeno ochranné pásmo nadzemního vedení elektrizační soustavy?",
+   "normativeRef": "zákon č. 458/2000 Sb., § 46, odst. 3"
+  },
+  {
+   "id": "2027-ez1-090",
+   "circuit": "ez1",
+   "circuitTitle": "Obecný test",
+   "number": 90,
+   "sourceMarker": "90)",
+   "numberedInSource": true,
+   "text": "Jak velké je ochranné pásmo podzemního kabelu s napětím do 1 kV?",
+   "normativeRef": "zákon č. 458/2000 Sb., § 46, odst. 5, písm. a"
+  },
+  {
+   "id": "2027-ez2-001",
+   "circuit": "ez2",
+   "circuitTitle": "Ochrana před úrazem elektrickým proudem",
+   "number": 1,
+   "sourceMarker": "1)",
+   "numberedInSource": true,
+   "text": "Z čeho musí sestávat ochranné opatření?",
+   "normativeRef": "ČSN 33 2000-4-41 ed. 3:2018 čl. 410.3.2."
+  },
+  {
+   "id": "2027-ez2-002",
+   "circuit": "ez2",
+   "circuitTitle": "Ochrana před úrazem elektrickým proudem",
+   "number": 2,
+   "sourceMarker": "2)",
+   "numberedInSource": true,
+   "text": "Co musí zajišťovat ochranné opatření, spočívající ve zvýšené ochraně?",
+   "normativeRef": "ČSN 33 2000-4-41 ed. 3:2018 čl. 410.3.2."
+  },
+  {
+   "id": "2027-ez2-003",
+   "circuit": "ez2",
+   "circuitTitle": "Ochrana před úrazem elektrickým proudem",
+   "number": 3,
+   "sourceMarker": "3)",
+   "numberedInSource": true,
+   "text": "Jak je specifikována doplňková ochrana?",
+   "normativeRef": "ČSN 33 2000-4-41 ed. 3:2018 čl. 410.3.2."
+  },
+  {
+   "id": "2027-ez2-004",
+   "circuit": "ez2",
+   "circuitTitle": "Ochrana před úrazem elektrickým proudem",
+   "number": 4,
+   "sourceMarker": "4)",
+   "numberedInSource": true,
+   "text": "Jaké ochranné opatření je nejčastěji uplatňováno v elektrických instalacích?",
+   "normativeRef": "ČSN 33 2000-4-41 ed. 3:2018 čl. 410.3.3."
+  },
+  {
+   "id": "2027-ez2-005",
+   "circuit": "ez2",
+   "circuitTitle": "Ochrana před úrazem elektrickým proudem",
+   "number": 5,
+   "sourceMarker": "5)",
+   "numberedInSource": true,
+   "text": "Kolik ochranných opatření musí být uplatněno v každé části instalace?",
+   "normativeRef": "ČSN 33 2000-4-41 ed. 3:2018 čl. 410.3.3."
+  },
+  {
+   "id": "2027-ez2-006",
+   "circuit": "ez2",
+   "circuitTitle": "Ochrana před úrazem elektrickým proudem",
+   "number": 6,
+   "sourceMarker": "6)",
+   "numberedInSource": true,
+   "text": "Musí se s ochrannými opatřeními, která jsou uplatněna v instalaci uvažovat z hlediska výběru a montáže zařízení?",
+   "normativeRef": "ČSN 33 2000-4-41 ed. 3:2018 čl. 410.3.3"
+  },
+  {
+   "id": "2027-ez2-007",
+   "circuit": "ez2",
+   "circuitTitle": "Ochrana před úrazem elektrickým proudem",
+   "number": 7,
+   "sourceMarker": "7)",
+   "numberedInSource": true,
+   "text": "Kdy se mohou použít jako ochranné opatření zábrany?",
+   "normativeRef": "ČSN 33 2000-4-41 ed. 3:2018 čl. 410.3.5"
+  },
+  {
+   "id": "2027-ez2-008",
+   "circuit": "ez2",
+   "circuitTitle": "Ochrana před úrazem elektrickým proudem",
+   "number": 8,
+   "sourceMarker": "8)",
+   "numberedInSource": true,
+   "text": "Kdy se může použít ochranné opatření umístěním mimo dosah (ochrana polohou) ?",
+   "normativeRef": "ČSN 33 2000-4-41 ed. 3:2018 čl. 410.3.5."
+  },
+  {
+   "id": "2027-ez2-009",
+   "circuit": "ez2",
+   "circuitTitle": "Ochrana před úrazem elektrickým proudem",
+   "number": 9,
+   "sourceMarker": "9)",
+   "numberedInSource": true,
+   "text": "Lze použít ochranné opatření zábranou tam, kam mají přístup osoby bez elektrotechnické kvalifikace?",
+   "normativeRef": "ČSN 33 2000-4-41 ed. 3:2018 čl. 410.3.5"
+  },
+  {
+   "id": "2027-ez2-010",
+   "circuit": "ez2",
+   "circuitTitle": "Ochrana před úrazem elektrickým proudem",
+   "number": 10,
+   "sourceMarker": "10)",
+   "numberedInSource": true,
+   "text": "Kdy se může uplatnit ochranné opatření nevodivým okolím?",
+   "normativeRef": "ČSN 33 2000-4-41 ed. 3:2018 čl. 410.3.6"
+  },
+  {
+   "id": "2027-ez2-011",
+   "circuit": "ez2",
+   "circuitTitle": "Ochrana před úrazem elektrickým proudem",
+   "number": 11,
+   "sourceMarker": "11)",
+   "numberedInSource": true,
+   "text": "Může porucha jednoho ochranného opatření narušit ostatní ochranná opatření?",
+   "normativeRef": "ČSN 33 2000-4-41 ed. 3:2018 čl. 410.3.8"
+  },
+  {
+   "id": "2027-ez2-012",
+   "circuit": "ez2",
+   "circuitTitle": "Ochrana před úrazem elektrickým proudem",
+   "number": 12,
+   "sourceMarker": "12)",
+   "numberedInSource": true,
+   "text": "Musí se uplatnit nějaká další opatření, jestliže určité podmínky ochranných opatření nemohou být splněny?",
+   "normativeRef": "ČSN 33 2000-4-41 ed. 3:2018 čl. 410.3.7"
+  },
+  {
+   "id": "2027-ez2-013",
+   "circuit": "ez2",
+   "circuitTitle": "Ochrana před úrazem elektrickým proudem",
+   "number": 13,
+   "sourceMarker": "13)",
+   "numberedInSource": true,
+   "text": "Může se ochranné opatření „Elektrickým oddělením pro napájení více než jednoho spotřebiče“ uplatnit, jestliže mají k instalaci samostatný přístup i laici ?",
+   "normativeRef": "ČSN 33 2000-4-41 ed. 3:2018 čl. 410.3.6"
+  },
+  {
+   "id": "2027-ez2-014",
+   "circuit": "ez2",
+   "circuitTitle": "Ochrana před úrazem elektrickým proudem",
+   "number": 14,
+   "sourceMarker": "14)",
+   "numberedInSource": true,
+   "text": "Kdy mohou být vynechána opatření na ochranu při poruše (ochrana před nepřímým dotykem neboli před dotykem neživých částí)?",
+   "normativeRef": "ČSN 33 2000-4-41 ed. 3:2018 čl. 410.3.9"
+  },
+  {
+   "id": "2027-ez2-015",
+   "circuit": "ez2",
+   "circuitTitle": "Ochrana před úrazem elektrickým proudem",
+   "number": 15,
+   "sourceMarker": "15)",
+   "numberedInSource": true,
+   "text": "Jak se uplatňují ochranná opatření ve vztahu k nebezpečí úrazu elektrickým proudem, které může vzniknout při provozu elektrických zařízení s ohledem na vnější vlivy a jejich působení?",
+   "normativeRef": "ČSN 33 2000-4-41 ed. 3:2018 čl. 410.3.4"
+  },
+  {
+   "id": "2027-ez2-016",
+   "circuit": "ez2",
+   "circuitTitle": "Ochrana před úrazem elektrickým proudem",
+   "number": 16,
+   "sourceMarker": "16)",
+   "numberedInSource": true,
+   "text": "Jakým způsobem je zajištěno ochranné opatření automatickým odpojením od zdroje?",
+   "normativeRef": "ČSN 33 2000-4-41 ed. 3:2018 čl. 411.1"
+  },
+  {
+   "id": "2027-ez2-017",
+   "circuit": "ez2",
+   "circuitTitle": "Ochrana před úrazem elektrickým proudem",
+   "number": 17,
+   "sourceMarker": "17)",
+   "numberedInSource": true,
+   "text": "Jak musí být uzemněny neživé části současně přístupné dotyku při automatickém odpojení od zdroje?",
+   "normativeRef": "ČSN 33 2000-4-41 ed. 3:2018 čl. 411.3.1.1"
+  },
+  {
+   "id": "2027-ez2-018",
+   "circuit": "ez2",
+   "circuitTitle": "Ochrana před úrazem elektrickým proudem",
+   "number": 18,
+   "sourceMarker": "18)",
+   "numberedInSource": true,
+   "text": "Musí u ochranného opatření „Automatickým odpojením od zdroje“, každý obvod obsahovat ochranný vodič připojený k příslušné uzemňovací svorce?",
+   "normativeRef": "ČSN 33 2000-4-41 ed. 3:2018 čl. 411.3.1."
+  },
+  {
+   "id": "2027-ez2-019",
+   "circuit": "ez2",
+   "circuitTitle": "Ochrana před úrazem elektrickým proudem",
+   "number": 19,
+   "sourceMarker": "19)",
+   "numberedInSource": true,
+   "text": "Ochranný prvek musí v případě poruchy mezi živou částí a neživou částí nebo ochranným vodičem zařízení samočinně (automaticky) odpojit zdroj napájení zařízení. Jaká doba je nepřekročitelná pro distribuční obvody?",
+   "normativeRef": "ČSN 33 2000-4-41 ed. 3:2018 čl. 411.3.2."
+  },
+  {
+   "id": "2027-ez2-020",
+   "circuit": "ez2",
+   "circuitTitle": "Ochrana před úrazem elektrickým proudem",
+   "number": 20,
+   "sourceMarker": "20)",
+   "numberedInSource": true,
+   "text": "Jaká maximální doba odpojení se musí uplatnit pro koncové obvody jejichž jmenovitý proud nepřekračuje u pevně připojených spotřebičů 32 A a 63 A u obvodů s jednou nebo více zásuvkami, v síti TN Uo = 230V / Uo = 3 x 230V AC?",
+   "normativeRef": "ČSN 33 2000-4-41 ed. 3:2018 čl. 411.3.2."
+  },
+  {
+   "id": "2027-ez2-021",
+   "circuit": "ez2",
+   "circuitTitle": "Ochrana před úrazem elektrickým proudem",
+   "number": 21,
+   "sourceMarker": "21)",
+   "numberedInSource": true,
+   "text": "Jaké opatření je nutno provést, jestliže v instalaci nebo její části není možno dosáhnou automatického odpojení od zdroje?",
+   "normativeRef": "ČSN 33 2000-4-41 ed. 3:2018 čl. 411.3.2."
+  },
+  {
+   "id": "2027-ez2-022",
+   "circuit": "ez2",
+   "circuitTitle": "Ochrana před úrazem elektrickým proudem",
+   "number": 22,
+   "sourceMarker": "22)",
+   "numberedInSource": true,
+   "text": "Kdy musí být provedena doplňková ochrana pomocí proudových chráničů (RCD), jejichž jmenovitý reziduální pracovní proud nepřekračuje 30 mA, ve střídavé síti s ochranným opatřením automatickým odpojením od zdroje?",
+   "normativeRef": "ČSN 33 2000-4-41 ed. 3:2018 čl. 411.3.3"
+  },
+  {
+   "id": "2027-ez2-023",
+   "circuit": "ez2",
+   "circuitTitle": "Ochrana před úrazem elektrickým proudem",
+   "number": 23,
+   "sourceMarker": "23)",
+   "numberedInSource": true,
+   "text": "Kdy musí být provedena doplňková ochrana pomocí proudových chráničů (RCD), jejichž jmenovitý reziduální pracovní proud nepřekračuje 30 mA, ve střídavé síti s ochranným opatřením automatickým odpojením od zdroje?",
+   "normativeRef": "ČSN 33 2000-4-41 ed. 3:2018 čl. 411.3.3"
+  },
+  {
+   "id": "2027-ez2-024",
+   "circuit": "ez2",
+   "circuitTitle": "Ochrana před úrazem elektrickým proudem",
+   "number": 24,
+   "sourceMarker": "24)",
+   "numberedInSource": true,
+   "text": "Musí být pro koncové obvody napájející svítidla, v prostorech určených pro samostatnou domácnost, použity proudové chrániče (RCD) jako doplňková ochrana?",
+   "normativeRef": "ČSN 33 2000-4-41 ed. 3:2018 čl. 411.3.4"
+  },
+  {
+   "id": "2027-ez2-025",
+   "circuit": "ez2",
+   "circuitTitle": "Ochrana před úrazem elektrickým proudem",
+   "number": 25,
+   "sourceMarker": "25)",
+   "numberedInSource": true,
+   "text": "Jakou podmínku musí u sítí TN splňovat impedance smyčky?",
+   "normativeRef": "ČSN 33 2000-4-41 ed. 3:2018 čl. 411.4.4"
+  },
+  {
+   "id": "2027-ez2-026",
+   "circuit": "ez2",
+   "circuitTitle": "Ochrana před úrazem elektrickým proudem",
+   "number": 26,
+   "sourceMarker": "26)",
+   "numberedInSource": true,
+   "text": "Jaké ochranné zařízení nesmí být použito v sítích TN-C při ochranném opatření automatickým odpojením od zdroje?",
+   "normativeRef": "ČSN 33 2000-4-41 ed. 3:2018 čl. 411.4.5"
+  },
+  {
+   "id": "2027-ez2-027",
+   "circuit": "ez2",
+   "circuitTitle": "Ochrana před úrazem elektrickým proudem",
+   "number": 27,
+   "sourceMarker": "27)",
+   "numberedInSource": true,
+   "text": "Jestliže je proudový chránič (RCD) používán v síti TN-C-S, může být na straně zátěže použit vodič PEN?",
+   "normativeRef": "ČSN 33 2000-5-53 ed. 3: 2022 čl. 531.3.5."
+  },
+  {
+   "id": "2027-ez2-028",
+   "circuit": "ez2",
+   "circuitTitle": "Ochrana před úrazem elektrickým proudem",
+   "number": 28,
+   "sourceMarker": "28)",
+   "numberedInSource": true,
+   "text": "Jak musí být u proudových chráničů (RCD), v síti TN-C-S, provedeno spojení ochranného vodiče PE s vodičem PEN?",
+   "normativeRef": "ČSN 33 2000-5-53 ed. 3: 2022 čl. 531.3.5."
+  },
+  {
+   "id": "2027-ez2-029",
+   "circuit": "ez2",
+   "circuitTitle": "Ochrana před úrazem elektrickým proudem",
+   "number": 29,
+   "sourceMarker": "29)",
+   "numberedInSource": true,
+   "text": "Jak musí být v sítích TT instalovány všechny neživé části při použití společného ochranného přístroje?",
+   "normativeRef": "ČSN 33 2000-4-41 ed. 3:2018 čl. 411.5.1."
+  },
+  {
+   "id": "2027-ez2-030",
+   "circuit": "ez2",
+   "circuitTitle": "Ochrana před úrazem elektrickým proudem",
+   "number": 30,
+   "sourceMarker": "30)",
+   "numberedInSource": true,
+   "text": "Jakou podmínku musí splňovat součet odporů zemniče a ochranného vodiče neživých částí RA v síti TT?",
+   "normativeRef": "ČSN 33 2000-4-41 ed. 3:2018 čl. 411.5.3"
+  },
+  {
+   "id": "2027-ez2-031",
+   "circuit": "ez2",
+   "circuitTitle": "Ochrana před úrazem elektrickým proudem",
+   "number": 31,
+   "sourceMarker": "31)",
+   "numberedInSource": true,
+   "text": "Jak musí být provedeno zapojení živých částí v síti IT?",
+   "normativeRef": "ČSN 33 2000-4-41 ed. 3:2018 čl. 411.6.1"
+  },
+  {
+   "id": "2027-ez2-032",
+   "circuit": "ez2",
+   "circuitTitle": "Ochrana před úrazem elektrickým proudem",
+   "number": 32,
+   "sourceMarker": "32)",
+   "numberedInSource": true,
+   "text": "Jaká podmínka musí být splněna ve střídavých sítích IT, aby bylo omezeno dotykové napětí?",
+   "normativeRef": "ČSN 33 2000-4-41 ed. 3:2018 čl. 411.6.2"
+  },
+  {
+   "id": "2027-ez2-033",
+   "circuit": "ez2",
+   "circuitTitle": "Ochrana před úrazem elektrickým proudem",
+   "number": 33,
+   "sourceMarker": "33)",
+   "numberedInSource": true,
+   "text": "V případech, kdy je síť IT navržena tak, aby nedocházelo k odpojení v případě první poruchy, musí být výskyt první poruchy indikován hlídačem izolačního stavu (IMD)?",
+   "normativeRef": "ČSN 33 2000-4-41 ed. 3:2018 čl. 411.6.3."
+  },
+  {
+   "id": "2027-ez2-034",
+   "circuit": "ez2",
+   "circuitTitle": "Ochrana před úrazem elektrickým proudem",
+   "number": 34,
+   "sourceMarker": "34)",
+   "numberedInSource": true,
+   "text": "Jaké jsou požadavky na ochranu při poruše obvodu FELV?",
+   "normativeRef": "ČSN 33 2000-4-41 ed. 3:2018 čl. 411.7.3"
+  },
+  {
+   "id": "2027-ez2-035",
+   "circuit": "ez2",
+   "circuitTitle": "Ochrana před úrazem elektrickým proudem",
+   "number": 35,
+   "sourceMarker": "35)",
+   "numberedInSource": true,
+   "text": "Jakým požadavkům musí vyhovět vidlice a zásuvky pro obvody FELV?",
+   "normativeRef": "ČSN 33 2000-4-41 ed. 3:2018 čl. 411.7.5"
+  },
+  {
+   "id": "2027-ez2-036",
+   "circuit": "ez2",
+   "circuitTitle": "Ochrana před úrazem elektrickým proudem",
+   "number": 36,
+   "sourceMarker": "36)",
+   "numberedInSource": true,
+   "text": "Co je účelem použití ochrany elektrického zařízení třídy II, nebo s rovnocennou izolací?",
+   "normativeRef": "ČSN 33 2000-4-41 ed. 3:2018 čl. 412.1.1"
+  },
+  {
+   "id": "2027-ez2-037",
+   "circuit": "ez2",
+   "circuitTitle": "Ochrana před úrazem elektrickým proudem",
+   "number": 37,
+   "sourceMarker": "37)",
+   "numberedInSource": true,
+   "text": "Kdy smí být uplatněno ochranné opatření dvojitou nebo zesílenou izolací jako jediné v jednom obvodě či instalaci?",
+   "normativeRef": "ČSN 33 2000-4-41 ed. 3:2018 čl. 412.1.2"
+  },
+  {
+   "id": "2027-ez2-038",
+   "circuit": "ez2",
+   "circuitTitle": "Ochrana před úrazem elektrickým proudem",
+   "number": 38,
+   "sourceMarker": "38)",
+   "numberedInSource": true,
+   "text": "Jaké podmínky platí pro kryty použité při ochranném opatření dvojitou nebo zesílenou izolací?",
+   "normativeRef": "ČSN 33 2000-4-41 ed. 3:2018 čl. 412.2.2.2"
+  },
+  {
+   "id": "2027-ez2-039",
+   "circuit": "ez2",
+   "circuitTitle": "Ochrana před úrazem elektrickým proudem",
+   "number": 39,
+   "sourceMarker": "39)",
+   "numberedInSource": true,
+   "text": "Jak musí být připojeny vodivé části uzavřené v izolačním krytu, použitého při ochranném opatření dvojitou nebo zesílenou izolací?",
+   "normativeRef": "ČSN 33 2000-4-41 ed. 3:2018 čl. 412.2.2.4"
+  },
+  {
+   "id": "2027-ez2-040",
+   "circuit": "ez2",
+   "circuitTitle": "Ochrana před úrazem elektrickým proudem",
+   "number": 40,
+   "sourceMarker": "40)",
+   "numberedInSource": true,
+   "text": "Musí mít obvod napájející jednotlivá zařízení třídy ochrany II ochranný vodič vedený ke každému bodu instalace a každému bodu připojení?",
+   "normativeRef": "ČSN 33 2000-4-41 ed. 3:2018 čl. 412.2.3.2"
+  },
+  {
+   "id": "2027-ez2-041",
+   "circuit": "ez2",
+   "circuitTitle": "Ochrana před úrazem elektrickým proudem",
+   "number": 41,
+   "sourceMarker": "41)",
+   "numberedInSource": true,
+   "text": "Jak je zajištěna základní ochrana a ochrana při poruše u ochranného opatření elektrickým oddělením?",
+   "normativeRef": "ČSN 33 2000-4-41 ed. 3:2018 čl. 413.1.1"
+  },
+  {
+   "id": "2027-ez2-042",
+   "circuit": "ez2",
+   "circuitTitle": "Ochrana před úrazem elektrickým proudem",
+   "number": 42,
+   "sourceMarker": "42)",
+   "numberedInSource": true,
+   "text": "Jaké napětí nesmí přesáhnout zdroj s jednoduchým oddělením pro ochranné opatření elektrickým oddělením?",
+   "normativeRef": "ČSN 33 2000-4-41 ed. 3:2018 čl. 413.3.2"
+  },
+  {
+   "id": "2027-ez2-043",
+   "circuit": "ez2",
+   "circuitTitle": "Ochrana před úrazem elektrickým proudem",
+   "number": 43,
+   "sourceMarker": "43)",
+   "numberedInSource": true,
+   "text": "Mohou být živé části elektricky odděleného obvodu spojeny s jiným obvodem nebo se zemí?",
+   "normativeRef": "ČSN 33 2000-4-41 ed. 3:2018 čl. 413.3.3"
+  },
+  {
+   "id": "2027-ez2-044",
+   "circuit": "ez2",
+   "circuitTitle": "Ochrana před úrazem elektrickým proudem",
+   "number": 44,
+   "sourceMarker": "44)",
+   "numberedInSource": true,
+   "text": "Co musí být splněno při ochranném opatření elektrickým oddělením?",
+   "normativeRef": "ČSN 33 2000-4-41 ed. 3:2018 čl. 413.3.4"
+  },
+  {
+   "id": "2027-ez2-045",
+   "circuit": "ez2",
+   "circuitTitle": "Ochrana před úrazem elektrickým proudem",
+   "number": 45,
+   "sourceMarker": "45)",
+   "numberedInSource": true,
+   "text": "Mohou být při ochranném opatření elektrickým oddělením neživé části oddělených obvodů spojeny se zemí?",
+   "normativeRef": "ČSN 33 2000-4-41 ed. 3:2018 čl. 413.3.6"
+  },
+  {
+   "id": "2027-ez2-046",
+   "circuit": "ez2",
+   "circuitTitle": "Ochrana před úrazem elektrickým proudem",
+   "number": 46,
+   "sourceMarker": "46)",
+   "numberedInSource": true,
+   "text": "Za jaké ochranné opatření je považováno použití malého napětí SELV a PELV?",
+   "normativeRef": "ČSN 33 2000-4-41 ed. 3:2018 čl. 414.1.2"
+  },
+  {
+   "id": "2027-ez2-047",
+   "circuit": "ez2",
+   "circuitTitle": "Ochrana před úrazem elektrickým proudem",
+   "number": 47,
+   "sourceMarker": "47)",
+   "numberedInSource": true,
+   "text": "Pro jaký účel se užívá označení SELV?",
+   "normativeRef": "ČSN 33 2000-4-41 ed. 3:2018 čl. 414.4.1"
+  },
+  {
+   "id": "2027-ez2-048",
+   "circuit": "ez2",
+   "circuitTitle": "Ochrana před úrazem elektrickým proudem",
+   "number": 48,
+   "sourceMarker": "48)",
+   "numberedInSource": true,
+   "text": "Musí být odděleny živé části obvodů SELV a PELV?",
+   "normativeRef": "ČSN 33 2000-4-41 ed. 3:2018 čl. 414.4.2"
+  },
+  {
+   "id": "2027-ez2-049",
+   "circuit": "ez2",
+   "circuitTitle": "Ochrana před úrazem elektrickým proudem",
+   "number": 49,
+   "sourceMarker": "49)",
+   "numberedInSource": true,
+   "text": "Jakým požadavkům musí vyhovět vidlice a zásuvky v sítích SELV a PELV?",
+   "normativeRef": "ČSN 33 2000-4-41 ed. 3:2018 čl. 414.4.3"
+  },
+  {
+   "id": "2027-ez2-050",
+   "circuit": "ez2",
+   "circuitTitle": "Ochrana před úrazem elektrickým proudem",
+   "number": 50,
+   "sourceMarker": "50)",
+   "numberedInSource": true,
+   "text": "Kdy se nevyžaduje základní ochrana při ochranném opatření malým napětím SELV a PELV?",
+   "normativeRef": "ČSN 33 2000-4-41 ed. 3:2018 čl. 414.4.5"
+  },
+  {
+   "id": "2027-ez2-051",
+   "circuit": "ez2",
+   "circuitTitle": "Ochrana před úrazem elektrickým proudem",
+   "number": 51,
+   "sourceMarker": "51)",
+   "numberedInSource": true,
+   "text": "Je doplňková ochrana proudovým chráničem považována za výhradní ochranné opatření?",
+   "normativeRef": "ČSN 33 2000-4-41 ed. 3:2018 čl. 415.1.1 a 415.1.2"
+  },
+  {
+   "id": "2027-ez2-052",
+   "circuit": "ez2",
+   "circuitTitle": "Ochrana před úrazem elektrickým proudem",
+   "number": 52,
+   "sourceMarker": "52)",
+   "numberedInSource": true,
+   "text": "Lze v některých případech ochranu doplňujícím ochranným pospojováním považovat za ochranu základní?",
+   "normativeRef": "ČSN 33 2000-4-41 ed. 3:2018 čl. 415.1.1 a 415.2"
+  },
+  {
+   "id": "2027-ez2-053",
+   "circuit": "ez2",
+   "circuitTitle": "Ochrana před úrazem elektrickým proudem",
+   "number": 53,
+   "sourceMarker": "53)",
+   "numberedInSource": true,
+   "text": "Jakou podmínku musí splňovat odpor R mezi neživými částmi současně přístupnými dotyku a cizími vodivými částmi v AC sítích u doplňkové ochrany doplňujícím ochranným pospojováním?",
+   "normativeRef": "ČSN 33 2000-4-41 ed. 3:2018 čl. 415.2.2"
+  },
+  {
+   "id": "2027-ez2-054",
+   "circuit": "ez2",
+   "circuitTitle": "Ochrana před úrazem elektrickým proudem",
+   "number": 54,
+   "sourceMarker": "54)",
+   "numberedInSource": true,
+   "text": "Jaké jsou požadavky na základní izolaci živých částí?",
+   "normativeRef": "ČSN 33 2000-4-41 ed. 3:2018 příloha A čl. A.1"
+  },
+  {
+   "id": "2027-ez2-055",
+   "circuit": "ez2",
+   "circuitTitle": "Ochrana před úrazem elektrickým proudem",
+   "number": 55,
+   "sourceMarker": "55)",
+   "numberedInSource": true,
+   "text": "Jaký stupeň krytí musí splňovat zařízení s živými částmi uvnitř krytů nebo za přepážkami při ochraně kryty nebo přepážkami (mimo vodorovných horních povrchů krytů nebo přepážek, které zajišťují krytí)?",
+   "normativeRef": "ČSN 33 2000-4-41 ed. 3:2018 příloha A čl. A.2.1"
+  },
+  {
+   "id": "2027-ez2-056",
+   "circuit": "ez2",
+   "circuitTitle": "Ochrana před úrazem elektrickým proudem",
+   "number": 56,
+   "sourceMarker": "56)",
+   "numberedInSource": true,
+   "text": "Co musí splňovat přepážky nebo kryty, jestliže je nutno tyto přepážky, kryty nebo části krytů odstranit?",
+   "normativeRef": "ČSN 33 2000-4-41 ed. 3:2018 příloha A čl. A.2.4"
+  },
+  {
+   "id": "2027-ez2-057",
+   "circuit": "ez2",
+   "circuitTitle": "Ochrana před úrazem elektrickým proudem",
+   "number": 57,
+   "sourceMarker": "57)",
+   "numberedInSource": true,
+   "text": "Čemu musí bránit ochranné opatření zábranou?",
+   "normativeRef": "ČSN 33 2000-4-41 ed. 3:2018 příloha B čl. B.2.1"
+  },
+  {
+   "id": "2027-ez2-058",
+   "circuit": "ez2",
+   "circuitTitle": "Ochrana před úrazem elektrickým proudem",
+   "number": 58,
+   "sourceMarker": "58)",
+   "numberedInSource": true,
+   "text": "Mohou být při ochraně zábranou odstraněny zábrany bez použití klíče nebo nástroje?",
+   "normativeRef": "ČSN 33 2000-4-41 ed. 3:2018 příloha B čl. B.2.2"
+  },
+  {
+   "id": "2027-ez2-059",
+   "circuit": "ez2",
+   "circuitTitle": "Ochrana před úrazem elektrickým proudem",
+   "number": 59,
+   "sourceMarker": "59)",
+   "numberedInSource": true,
+   "text": "Kdy se u ochrany polohou předpokládá, že jsou části současně přístupné dotyku?",
+   "normativeRef": "ČSN 33 2000-4-41 ed. 3:2018 příloha B čl. B.3.1"
+  },
+  {
+   "id": "2027-ez2-060",
+   "circuit": "ez2",
+   "circuitTitle": "Ochrana před úrazem elektrickým proudem",
+   "number": 60,
+   "sourceMarker": "60)",
+   "numberedInSource": true,
+   "text": "Jaká je u vnitřních zařízení nn (kategorie napětí II. viz ČSN 33 0010) zóna (hranice) dosahu ruky od stanoviště ve směru nahoru (v prostorách kam mají přístup pouze osoby znalé)?",
+   "normativeRef": "ČSN 33 2000-4-41 ed. 3:2018 příloha B čl. B.3.2"
+  },
+  {
+   "id": "2027-ez2-061",
+   "circuit": "ez2",
+   "circuitTitle": "Ochrana před úrazem elektrickým proudem",
+   "number": 61,
+   "sourceMarker": "61)",
+   "numberedInSource": true,
+   "text": "Na co se vztahuje hodnota dosahu ruky při ochranném opatření polohou (umístěním mimo dosah)?",
+   "normativeRef": "ČSN 33 2000-4-41 ed. 3:2018 příloha B čl. B.3.2"
+  },
+  {
+   "id": "2027-ez2-062",
+   "circuit": "ez2",
+   "circuitTitle": "Ochrana před úrazem elektrickým proudem",
+   "number": 62,
+   "sourceMarker": "62)",
+   "numberedInSource": true,
+   "text": "Ochranná opatření představovaná zábranami a polohou (umístěním mimo dosah) zajišťují jakou ochranu?",
+   "normativeRef": "ČSN 33 2000-4-41 ed. 3:2018 příloha B, čl.B.3"
+  },
+  {
+   "id": "2027-ez2-063",
+   "circuit": "ez2",
+   "circuitTitle": "Ochrana před úrazem elektrickým proudem",
+   "number": 63,
+   "sourceMarker": "63)",
+   "numberedInSource": true,
+   "text": "Může být v prostorách, kde je uplatněno ochranné opatření nevodivým okolím připojen ochranný vodič?",
+   "normativeRef": "ČSN 33 2000-4-41 ed. 3:2018 příloha C čl. C.1.3"
+  },
+  {
+   "id": "2027-ez2-064",
+   "circuit": "ez2",
+   "circuitTitle": "Ochrana před úrazem elektrickým proudem",
+   "number": 64,
+   "sourceMarker": "64)",
+   "numberedInSource": true,
+   "text": "Jakou minimální hodnotu musí u ochrany nevodivým okolím dosáhnout odpor izolujících podlah a stěn v každém bodě měření při napětí instalace do 500 V?",
+   "normativeRef": "ČSN 33 2000-4-41 ed. 3:2018 příloha C čl. C.1.5"
+  },
+  {
+   "id": "2027-ez2-065",
+   "circuit": "ez2",
+   "circuitTitle": "Ochrana před úrazem elektrickým proudem",
+   "number": 65,
+   "sourceMarker": "65)",
+   "numberedInSource": true,
+   "text": "Co je účelem ochrany neuzemněným místním pospojováním?",
+   "normativeRef": "ČSN 33 2000-4-41 ed. 3:2018 příloha C, POZNÁMKA"
+  },
+  {
+   "id": "2027-ez2-066",
+   "circuit": "ez2",
+   "circuitTitle": "Ochrana před úrazem elektrickým proudem",
+   "number": 66,
+   "sourceMarker": "66)",
+   "numberedInSource": true,
+   "text": "Mohou být vodiče soustavy neuzemněného místního pospojování v elektrickém spojení se zemí?",
+   "normativeRef": "ČSN 33 2000-4-41 ed. 3:2018 příloha C čl. C.2.3"
+  },
+  {
+   "id": "2027-ez2-067",
+   "circuit": "ez2",
+   "circuitTitle": "Ochrana před úrazem elektrickým proudem",
+   "number": 67,
+   "sourceMarker": "67)",
+   "numberedInSource": true,
+   "text": "Musí se uplatnit doplňující ochranná opatření, jestliže nemohou být splněny určité podmínky ochranných opatření?",
+   "normativeRef": "ČSN 33 2000-4-41 ed. 3:2018 čl. 410.3.7"
+  },
+  {
+   "id": "2027-ez2-068",
+   "circuit": "ez2",
+   "circuitTitle": "Ochrana před úrazem elektrickým proudem",
+   "number": 68,
+   "sourceMarker": "68)",
+   "numberedInSource": true,
+   "text": "Kdy je splněna základní ochrana omezením napětí?",
+   "normativeRef": "ČSN 61140 ed.3 10: 2016 čl.5.2.6"
+  },
+  {
+   "id": "2027-ez2-069",
+   "circuit": "ez2",
+   "circuitTitle": "Ochrana před úrazem elektrickým proudem",
+   "number": 69,
+   "sourceMarker": "69)",
+   "numberedInSource": true,
+   "text": "Jaká je mezní hodnota ustáleného dotykového proudu (práhu reakce) protékajícího mezi vodivými částmi současně přístupnými dotyku nepřekračující mez bolesti?",
+   "normativeRef": "ČSN EN 61140 ed. 3:2016 čl. 5.2.7"
+  },
+  {
+   "id": "2027-ez2-070",
+   "circuit": "ez2",
+   "circuitTitle": "Ochrana před úrazem elektrickým proudem",
+   "number": 70,
+   "sourceMarker": "70)",
+   "numberedInSource": true,
+   "text": "Čemu musí u nízkonapěťových instalací obvykle odpovídat základní ochrana před dotykem?",
+   "normativeRef": "ČSN EN 61140 ed. 3:2016 čl. 5.2.1"
+  },
+  {
+   "id": "2027-ez2-071",
+   "circuit": "ez2",
+   "circuitTitle": "Ochrana před úrazem elektrickým proudem",
+   "number": 71,
+   "sourceMarker": "71)",
+   "numberedInSource": true,
+   "text": "Co lze považovat za podmínku jedné poruchy?",
+   "normativeRef": "ČSN EN 61140 ed. 3:2016 čl. 4.3.1"
+  },
+  {
+   "id": "2027-ez2-072",
+   "circuit": "ez2",
+   "circuitTitle": "Ochrana před úrazem elektrickým proudem",
+   "number": 72,
+   "sourceMarker": "72)",
+   "numberedInSource": true,
+   "text": "Jakým způsobem může být dosažena ochrana při jedné poruše?",
+   "normativeRef": "ČSN EN 61140 ed. 3:2016 čl. 4.3.1"
+  },
+  {
+   "id": "2027-ez2-073",
+   "circuit": "ez2",
+   "circuitTitle": "Ochrana před úrazem elektrickým proudem",
+   "number": 73,
+   "sourceMarker": "73)",
+   "numberedInSource": true,
+   "text": "Základní ochrana musí být tvořena pomocí jednoho nebo více prostředků, které za normálních podmínek brání dotyku nebezpečných živých částí. Co lze zařadit mezi prostředky základní ochrany?",
+   "normativeRef": "ČSN EN 61140 ed. 3:2016 čl. 5.2"
+  },
+  {
+   "id": "2027-ez2-074",
+   "circuit": "ez2",
+   "circuitTitle": "Ochrana před úrazem elektrickým proudem",
+   "number": 74,
+   "sourceMarker": "74)",
+   "numberedInSource": true,
+   "text": "Ochrana při poruše musí být tvořena jedním nebo více prostředky, které na základní ochraně nezávisí ani ji nedoplňují. Jakými prostředky musí být tvořena tato ochrana?",
+   "normativeRef": "ČSN EN 61140 ed. 3:2016 čl. 5.3.3.1"
+  },
+  {
+   "id": "2027-ez2-075",
+   "circuit": "ez2",
+   "circuitTitle": "Ochrana před úrazem elektrickým proudem",
+   "number": 75,
+   "sourceMarker": "75)",
+   "numberedInSource": true,
+   "text": "Jaké prostředky patří mezi ochrany před poruchou?",
+   "normativeRef": "ČSN EN 61140 ed. 3:2016 čl. 5.3.6.1"
+  },
+  {
+   "id": "2027-ez2-076",
+   "circuit": "ez2",
+   "circuitTitle": "Ochrana před úrazem elektrickým proudem",
+   "number": 76,
+   "sourceMarker": "76)",
+   "numberedInSource": true,
+   "text": "Co musí splňovat prostředky zvýšené ochrany?",
+   "normativeRef": "ČSN EN 61140 ed. 3:2016 čl. 5.4.1"
+  },
+  {
+   "id": "2027-ez2-077",
+   "circuit": "ez2",
+   "circuitTitle": "Ochrana před úrazem elektrickým proudem",
+   "number": 77,
+   "sourceMarker": "77)",
+   "numberedInSource": true,
+   "text": "Čím je zajištěno ochranné opatření pomocí ochrany dvojitou nebo zesílenou izolací?",
+   "normativeRef": "ČSN EN 61140 ed. 3:2016 čl. 6.3"
+  },
+  {
+   "id": "2027-ez2-078",
+   "circuit": "ez2",
+   "circuitTitle": "Ochrana před úrazem elektrickým proudem",
+   "number": 78,
+   "sourceMarker": "78)",
+   "numberedInSource": true,
+   "text": "Čím je zajištěno ochranné opatření pomocí ochrany SELV?",
+   "normativeRef": "ČSN EN 61140 ed. 3:2016 čl. 6.7"
+  },
+  {
+   "id": "2027-ez2-079",
+   "circuit": "ez2",
+   "circuitTitle": "Ochrana před úrazem elektrickým proudem",
+   "number": 79,
+   "sourceMarker": "79)",
+   "numberedInSource": true,
+   "text": "Čím je zajištěno ochranné opatření pomocí ochrany PELV?",
+   "normativeRef": "ČSN EN 61140 ed. 3:2016 čl. 6.8"
+  },
+  {
+   "id": "2027-ez2-080",
+   "circuit": "ez2",
+   "circuitTitle": "Ochrana před úrazem elektrickým proudem",
+   "number": 80,
+   "sourceMarker": "80)",
+   "numberedInSource": true,
+   "text": "K čemu slouží pracovní pospojování?",
+   "normativeRef": "ČSN 33 2000-5-54 ZMĚNA Z2 ed. 3: 2023 čl. 541.3.15"
+  },
+  {
+   "id": "2027-ez2-081",
+   "circuit": "ez2",
+   "circuitTitle": "Ochrana před úrazem elektrickým proudem",
+   "number": 81,
+   "sourceMarker": "81)",
+   "numberedInSource": true,
+   "text": "K čemu slouží ochranné pospojování?",
+   "normativeRef": "ČSN 33 2000-5-54 ZMĚNA Z2 ed. 3: 2023 čl. 541.3.16"
+  },
+  {
+   "id": "2027-ez2-082",
+   "circuit": "ez2",
+   "circuitTitle": "Ochrana před úrazem elektrickým proudem",
+   "number": 82,
+   "sourceMarker": "82)",
+   "numberedInSource": true,
+   "text": "Jak musí být označen vodič pracovního uzemnění?",
+   "normativeRef": "ČSN 33 2000-5-54 ZMĚNA Z2 ed. 3: 2023 čl. 545.1.3"
+  },
+  {
+   "id": "2027-ez2-083",
+   "circuit": "ez2",
+   "circuitTitle": "Ochrana před úrazem elektrickým proudem",
+   "number": 83,
+   "sourceMarker": "83)",
+   "numberedInSource": true,
+   "text": "Pro elektrickou spojitost vodičů pracovního pospojování platí: Jestliže části zařízení mohou být odstraněny, může být vodič pracovního pospojování pro zbývající část elektrické instalace přerušen?",
+   "normativeRef": "ČSN 33 2000-5-54 ZMĚNA Z2 ed. 3: 2023 čl. 545.1.4"
+  },
+  {
+   "id": "2027-ez2-084",
+   "circuit": "ez2",
+   "circuitTitle": "Ochrana před úrazem elektrickým proudem",
+   "number": 84,
+   "sourceMarker": "84)",
+   "numberedInSource": true,
+   "text": "Jakou zkratkou se označuje hlavní svorka pracovního uzemnění?",
+   "normativeRef": "ČSN 33 2000-5-54 ZMĚNA Z2 ed. 3: 2023 čl. 541.3.14"
+  },
+  {
+   "id": "2027-ez2-085",
+   "circuit": "ez2",
+   "circuitTitle": "Ochrana před úrazem elektrickým proudem",
+   "number": 85,
+   "sourceMarker": "85)",
+   "numberedInSource": true,
+   "text": "Jaké minimální průřezy se musí uplatnit pro vodiče pracovního uzemnění a pracovního pospojování?",
+   "normativeRef": "ČSN 33 2000-5-54 ZMĚNA Z2 ed. 3: 2023 čl. 545.1.2"
+  },
+  {
+   "id": "2027-ez2-086",
+   "circuit": "ez2",
+   "circuitTitle": "Ochrana před úrazem elektrickým proudem",
+   "number": 86,
+   "sourceMarker": "86)",
+   "numberedInSource": true,
+   "text": "Které vodiče se musí v elektrickém zařízení spojovat s hlavní ochrannou svorkou nebo přípojnici?",
+   "normativeRef": "ČSN 33 2000-5-54 ed. 3:2012 čl. 542.4.1"
+  },
+  {
+   "id": "2027-ez2-087",
+   "circuit": "ez2",
+   "circuitTitle": "Ochrana před úrazem elektrickým proudem",
+   "number": 87,
+   "sourceMarker": "87)",
+   "numberedInSource": true,
+   "text": "Jaký nejmenší průřez musí mít ochranný vodič, má-li fázový vodič průřez 35 mm2 a oba jsou ze stejného materiálu?",
+   "normativeRef": "ČSN 33 2000-5-54 ed. 3:2012 čl. 543.1.1"
+  },
+  {
+   "id": "2027-ez2-088",
+   "circuit": "ez2",
+   "circuitTitle": "Ochrana před úrazem elektrickým proudem",
+   "number": 88,
+   "sourceMarker": "88)",
+   "numberedInSource": true,
+   "text": "Jak se ukládají páskové nebo drátové zemniče do kabelových rýh?",
+   "normativeRef": "ČSN 33 2000-5-54 ed. 3:2012 čl. NA.10.3.1"
+  },
+  {
+   "id": "2027-ez2-089",
+   "circuit": "ez2",
+   "circuitTitle": "Ochrana před úrazem elektrickým proudem",
+   "number": 89,
+   "sourceMarker": "89)",
+   "numberedInSource": true,
+   "text": "Jak se musí chránit přívody od základových zemničů pasivní ochranou proti korozi na přechodu z betonu na povrch?",
+   "normativeRef": "ČSN 33 2000-5-54 ed. 3:2012 čl. NA.7.5"
+  },
+  {
+   "id": "2027-ez2-090",
+   "circuit": "ez2",
+   "circuitTitle": "Ochrana před úrazem elektrickým proudem",
+   "number": 90,
+   "sourceMarker": "90)",
+   "numberedInSource": true,
+   "text": "Kdy se u společných uzemňovacích soustav nemusí měřit zemní odpor?",
+   "normativeRef": "ČSN 33 2000-5-54 ed. 3:2012 čl. NA.15.3"
+  },
+  {
+   "id": "2027-ez2-091",
+   "circuit": "ez2",
+   "circuitTitle": "Ochrana před úrazem elektrickým proudem",
+   "number": 91,
+   "sourceMarker": "91)",
+   "numberedInSource": true,
+   "text": "Klade-li se zemnič ve tvaru paprsku hvězdy, mají být jednotlivé paprsky rozděleny pravidelně. Jaký nejmenší úhel má být mezi jednotlivými paprsky?",
+   "normativeRef": "ČSN 33 2000-5-54 ed. 3:2012 čl. NA.10.3.2"
+  },
+  {
+   "id": "2027-ez2-092",
+   "circuit": "ez2",
+   "circuitTitle": "Ochrana před úrazem elektrickým proudem",
+   "number": 92,
+   "sourceMarker": "92)",
+   "numberedInSource": true,
+   "text": "Mohou se pracovní a ochranná uzemnění různých rozvodných soustav do 1000V vzájemně spojovat?",
+   "normativeRef": "ČSN 33 2000-5-54 ed. 3:2012 čl. NA.12.2.1"
+  },
+  {
+   "id": "2027-ez2-093",
+   "circuit": "ez2",
+   "circuitTitle": "Ochrana před úrazem elektrickým proudem",
+   "number": 93,
+   "sourceMarker": "93)",
+   "numberedInSource": true,
+   "text": "Na čem závisí odpor zemniče při jeho ukládání do půdy?",
+   "normativeRef": "ČSN 33 2000-5-54 ed. 3: 2012 příloha D, čl. D.1"
+  },
+  {
+   "id": "2027-ez2-094",
+   "circuit": "ez2",
+   "circuitTitle": "Ochrana před úrazem elektrickým proudem",
+   "number": 94,
+   "sourceMarker": "94)",
+   "numberedInSource": true,
+   "text": "Kdy se nemusí spojovat uzemnění hromosvodu a silových zařízení?",
+   "normativeRef": "ČSN 33 2000-5-54 ed. 3:2012 čl. NA.12.4.2"
+  },
+  {
+   "id": "2027-ez2-095",
+   "circuit": "ez2",
+   "circuitTitle": "Ochrana před úrazem elektrickým proudem",
+   "number": 95,
+   "sourceMarker": "95)",
+   "numberedInSource": true,
+   "text": "Co nesmí být použito za náhodný ochranný vodič?",
+   "normativeRef": "ČSN 33 2000-5-54 ed. 3:2012 čl. 543.2.3"
+  },
+  {
+   "id": "2027-ez2-096",
+   "circuit": "ez2",
+   "circuitTitle": "Ochrana před úrazem elektrickým proudem",
+   "number": 96,
+   "sourceMarker": "96)",
+   "numberedInSource": true,
+   "text": "Co může být použito za náhodný ochranný vodič?",
+   "normativeRef": "ČSN 33 2000-5-54 ed. 3:2012 čl. NA.18.1"
+  },
+  {
+   "id": "2027-ez2-097",
+   "circuit": "ez2",
+   "circuitTitle": "Ochrana před úrazem elektrickým proudem",
+   "number": 97,
+   "sourceMarker": "97)",
+   "numberedInSource": true,
+   "text": "Jaký nejmenší průřez vodiče PEN, se může použít v pevných instalacích sítí TN?",
+   "normativeRef": "ČSN 33 2000-5-54 ed. 3:2012 čl. 543.4.1"
+  },
+  {
+   "id": "2027-ez2-098",
+   "circuit": "ez2",
+   "circuitTitle": "Ochrana před úrazem elektrickým proudem",
+   "number": 98,
+   "sourceMarker": "98)",
+   "numberedInSource": true,
+   "text": "Jakou izolaci musí splňovat ochranný vodič ve společném obložení?",
+   "normativeRef": "ČSN 33 2000-5-54 ed. 3:2012 čl. NA.19.1"
+  },
+  {
+   "id": "2027-ez2-099",
+   "circuit": "ez2",
+   "circuitTitle": "Ochrana před úrazem elektrickým proudem",
+   "number": 99,
+   "sourceMarker": "99)",
+   "numberedInSource": true,
+   "text": "Jakým způsobem musí být postupováno při pracích na náhodných zemničích (měření, výměny dílů apod.)?",
+   "normativeRef": "ČSN 33 2000-5-54 ed. 3:2012 čl. NA.23"
+  },
+  {
+   "id": "2027-ez2-100",
+   "circuit": "ez2",
+   "circuitTitle": "Ochrana před úrazem elektrickým proudem",
+   "number": 100,
+   "sourceMarker": "100)",
+   "numberedInSource": true,
+   "text": "Je přípustné použít v pevných instalací připojených na sítě TN vodič PEN o průřezu menším než 10 mm2 Cu nebo 16 mm2 Al?",
+   "normativeRef": "ČSN 33 2000-5-54 ed. 3:2012 čl. NA.19.2"
+  },
+  {
+   "id": "2027-ez3-001",
+   "circuit": "ez3",
+   "circuitTitle": "Všeobecné požadavky na elektrická zařízení",
+   "number": 1,
+   "sourceMarker": "1)",
+   "numberedInSource": true,
+   "text": "Jaké jsou povolené odchylky jmenovitých napájecích napětí sítí nn?",
+   "normativeRef": "ČSN EN 50160 ed. 4:2023 čl. 4.2.2."
+  },
+  {
+   "id": "2027-ez3-002",
+   "circuit": "ez3",
+   "circuitTitle": "Všeobecné požadavky na elektrická zařízení",
+   "number": 2,
+   "sourceMarker": "2)",
+   "numberedInSource": true,
+   "text": "Jaké jsou přednostní barvy pro fázové nebo krajní izolované vodiče střídavých systémů?",
+   "normativeRef": "ČSN EN IEC 60445 ed. 6:2022 čl. 6.2.3"
+  },
+  {
+   "id": "2027-ez3-003",
+   "circuit": "ez3",
+   "circuitTitle": "Všeobecné požadavky na elektrická zařízení",
+   "number": 3,
+   "sourceMarker": "3)",
+   "numberedInSource": true,
+   "text": "Jakým způsobem musí být identifikovány vodiče?",
+   "normativeRef": "ČSN EN IEC 60445 ed. 6:2022 čl. 4"
+  },
+  {
+   "id": "2027-ez3-004",
+   "circuit": "ez3",
+   "circuitTitle": "Všeobecné požadavky na elektrická zařízení",
+   "number": 4,
+   "sourceMarker": "4)",
+   "numberedInSource": true,
+   "text": "Jaké jsou přednostní barvy pro vodič PEN?",
+   "normativeRef": "ČSN EN IEC 60445 ed. 6:2022 čl. 6.3.3"
+  },
+  {
+   "id": "2027-ez3-005",
+   "circuit": "ez3",
+   "circuitTitle": "Všeobecné požadavky na elektrická zařízení",
+   "number": 5,
+   "sourceMarker": "5)",
+   "numberedInSource": true,
+   "text": "Jaké jsou doporučené barvy pro ovládače STOP/VYP?",
+   "normativeRef": "ČSN EN 60073 ed. 2:2003 čl. 5.2.1."
+  },
+  {
+   "id": "2027-ez3-006",
+   "circuit": "ez3",
+   "circuitTitle": "Všeobecné požadavky na elektrická zařízení",
+   "number": 6,
+   "sourceMarker": "6)",
+   "numberedInSource": true,
+   "text": "Jaké krytí značí IPX6?",
+   "normativeRef": "ČSN EN 60529:1993 část 6, tabulka III a změna A2:2014"
+  },
+  {
+   "id": "2027-ez3-007",
+   "circuit": "ez3",
+   "circuitTitle": "Všeobecné požadavky na elektrická zařízení",
+   "number": 7,
+   "sourceMarker": "7)",
+   "numberedInSource": true,
+   "text": "Jaké krytí značí IP4X?",
+   "normativeRef": "ČSN EN 60529:1993 část 6, tabulka II"
+  },
+  {
+   "id": "2027-ez3-008",
+   "circuit": "ez3",
+   "circuitTitle": "Všeobecné požadavky na elektrická zařízení",
+   "number": 8,
+   "sourceMarker": "8)",
+   "numberedInSource": true,
+   "text": "Jak musí být provedena vnitřní ochranná svorka neživých částí zařízení?",
+   "normativeRef": "ČSN 33 0360 ed. 2:2014 čl. 4.4"
+  },
+  {
+   "id": "2027-ez3-009",
+   "circuit": "ez3",
+   "circuitTitle": "Všeobecné požadavky na elektrická zařízení",
+   "number": 9,
+   "sourceMarker": "9)",
+   "numberedInSource": true,
+   "text": "Která norma se přednostně používá pro postupy při provádění revizí elektrických instalaci v budovách?",
+   "normativeRef": "ČSN 33 1500:1990 úvodní ustanovení, změna 3:2004, změna 4:2007"
+  },
+  {
+   "id": "2027-ez3-010",
+   "circuit": "ez3",
+   "circuitTitle": "Všeobecné požadavky na elektrická zařízení",
+   "number": 10,
+   "sourceMarker": "10)",
+   "numberedInSource": true,
+   "text": "Jsou lhůty pravidelných revizí ve smyslu tabulky 1 ČSN 33 1500:1990 doporučené pro všechna zařízení?",
+   "normativeRef": "ČSN 33 1500:1990 čl. 3.1, změna 1:1996"
+  },
+  {
+   "id": "2027-ez3-011",
+   "circuit": "ez3",
+   "circuitTitle": "Všeobecné požadavky na elektrická zařízení",
+   "number": 11,
+   "sourceMarker": "11)",
+   "numberedInSource": true,
+   "text": "Jaký postup revizí platí u elektrických zařízení připojovaných na elektrické instalace objektů (např. strojních zařízení, zdvihacích zařízení, zařízení pro plynulou dopravu nákladů, průmyslových robotů apod.)?",
+   "normativeRef": "ČSN 33 1500:1990 čl. 5, změna 3:2004"
+  },
+  {
+   "id": "2027-ez3-012",
+   "circuit": "ez3",
+   "circuitTitle": "Všeobecné požadavky na elektrická zařízení",
+   "number": 12,
+   "sourceMarker": "12)",
+   "numberedInSource": true,
+   "text": "Co je nutné ověřovat při provádění revizí obvodů SELV?",
+   "normativeRef": "ČSN 33 2000-6 ed. 2:2017 čl. 61.3.4.1 a 61.3.4.2"
+  },
+  {
+   "id": "2027-ez3-013",
+   "circuit": "ez3",
+   "circuitTitle": "Všeobecné požadavky na elektrická zařízení",
+   "number": 13,
+   "sourceMarker": "13)",
+   "numberedInSource": true,
+   "text": "Jakou metodu na měření odporu zemniče je možné použít v takových místech (např. ve městech), kde prakticky není možné použít dva pomocné zemniče?",
+   "normativeRef": "ČSN 33 2000-6 ed. 2:2017 čl. 61.4.3."
+  },
+  {
+   "id": "2027-ez3-014",
+   "circuit": "ez3",
+   "circuitTitle": "Všeobecné požadavky na elektrická zařízení",
+   "number": 14,
+   "sourceMarker": "14)",
+   "numberedInSource": true,
+   "text": "Z jakého zdroje musí být napájeny elektrické instalace a spotřebiče určené k užívání laiky?",
+   "normativeRef": "ČSN 33 1310 ed. 2: 2009 čl. 4.1"
+  },
+  {
+   "id": "2027-ez3-015",
+   "circuit": "ez3",
+   "circuitTitle": "Všeobecné požadavky na elektrická zařízení",
+   "number": 15,
+   "sourceMarker": "15)",
+   "numberedInSource": true,
+   "text": "Při zřizování zkušebního pracoviště vzniká nebezpečný prostor. Co je myšleno tímto nebezpečným prostorem?",
+   "normativeRef": "ČSN EN 50191 ed. 2: 2011 č. 4.1.1."
+  },
+  {
+   "id": "2027-ez3-016",
+   "circuit": "ez3",
+   "circuitTitle": "Všeobecné požadavky na elektrická zařízení",
+   "number": 16,
+   "sourceMarker": "16)",
+   "numberedInSource": true,
+   "text": "Podle způsobu uzemnění se uvažují různé druhy sítí a jejich označování (např. IT, TT, TN). Jaký vztah sítě a uzemnění označuje písmeno T, pokud je na prvém místě?",
+   "normativeRef": "ČSN 33 2000-1 ed. 2:2009 čl. 312.2"
+  },
+  {
+   "id": "2027-ez3-017",
+   "circuit": "ez3",
+   "circuitTitle": "Všeobecné požadavky na elektrická zařízení",
+   "number": 17,
+   "sourceMarker": "17)",
+   "numberedInSource": true,
+   "text": "Sítě TN se rozlišují podle uspořádání středních a ochranných vodičů. Jakým způsobem lze charakterizovat síť TN-S?",
+   "normativeRef": "ČSN 33 2000-1 ed. 2:2009 čl. 312.2.1."
+  },
+  {
+   "id": "2027-ez3-018",
+   "circuit": "ez3",
+   "circuitTitle": "Všeobecné požadavky na elektrická zařízení",
+   "number": 18,
+   "sourceMarker": "18)",
+   "numberedInSource": true,
+   "text": "Sítě TN se rozlišují podle uspořádání středních a ochranných vodičů. Jakým způsobem lze charakterizovat síť TN-C-S?",
+   "normativeRef": "ČSN 33 2000-1 ed. 2:2009 čl. 312.2"
+  },
+  {
+   "id": "2027-ez3-019",
+   "circuit": "ez3",
+   "circuitTitle": "Všeobecné požadavky na elektrická zařízení",
+   "number": 19,
+   "sourceMarker": "19)",
+   "numberedInSource": true,
+   "text": "Co označuje při určování vnějších vlivů písmeno A, uvedené jako prvé písmeno v označení stupně vnějšího vlivu („Ax.x“)?",
+   "normativeRef": "ČSN 33 2000-5-51 ed. 3+Z1+Z2:2022 předmluva"
+  },
+  {
+   "id": "2027-ez3-020",
+   "circuit": "ez3",
+   "circuitTitle": "Všeobecné požadavky na elektrická zařízení",
+   "number": 20,
+   "sourceMarker": "20)",
+   "numberedInSource": true,
+   "text": "Je dovoleno použít elektrické zařízení, když jeho vlastnosti dané jeho konstrukcí neodpovídají vnějším vlivům v místě, kde se nachází?",
+   "normativeRef": "ČSN 33 2000-5-51 ed. 3+Z1+Z2:2022 příloha ZA"
+  },
+  {
+   "id": "2027-ez3-021",
+   "circuit": "ez3",
+   "circuitTitle": "Všeobecné požadavky na elektrická zařízení",
+   "number": 21,
+   "sourceMarker": "21)",
+   "numberedInSource": true,
+   "text": "Jak podmínka musí být splněna, má-li být zajištěna ochrana před proudovým přetížením?",
+   "normativeRef": "ČSN 33 2000-4-43 ed. 3:2024 čl. 431.4.2"
+  },
+  {
+   "id": "2027-ez3-022",
+   "circuit": "ez3",
+   "circuitTitle": "Všeobecné požadavky na elektrická zařízení",
+   "number": 22,
+   "sourceMarker": "22)",
+   "numberedInSource": true,
+   "text": "Jak musí být obecně chráněny vodiče obvodu před působením zkratových proudů?",
+   "normativeRef": "ČSN 33 2000-4-43 ed. 3: 2024 čl. 431.5.1"
+  },
+  {
+   "id": "2027-ez3-023",
+   "circuit": "ez3",
+   "circuitTitle": "Všeobecné požadavky na elektrická zařízení",
+   "number": 23,
+   "sourceMarker": "23)",
+   "numberedInSource": true,
+   "text": "Jaké podmínky musí splňovat použití stykačů se zpožděnou funkcí při ochraně před podpětím?",
+   "normativeRef": "ČSN 33 2000-4-45:1996 čl. 451.3"
+  },
+  {
+   "id": "2027-ez3-024",
+   "circuit": "ez3",
+   "circuitTitle": "Všeobecné požadavky na elektrická zařízení",
+   "number": 24,
+   "sourceMarker": "24)",
+   "numberedInSource": true,
+   "text": "Kdy musí být zajištěna možnost nouzového vypnutí kterékoliv části elektrické instalace?",
+   "normativeRef": "ČSN 33 2000-4-46 ed. 3:2017 čl. 465.1"
+  },
+  {
+   "id": "2027-ez3-025",
+   "circuit": "ez3",
+   "circuitTitle": "Všeobecné požadavky na elektrická zařízení",
+   "number": 25,
+   "sourceMarker": "25)",
+   "numberedInSource": true,
+   "text": "Které vodiče musí odpojit zařízení nouzového vypnutí tam, kde je nebezpečí úrazu elektrickým proudem?",
+   "normativeRef": "ČSN 33 2000-4-46 ed. 3:2017 čl. 465.2"
+  },
+  {
+   "id": "2027-ez3-026",
+   "circuit": "ez3",
+   "circuitTitle": "Všeobecné požadavky na elektrická zařízení",
+   "number": 26,
+   "sourceMarker": "26)",
+   "numberedInSource": true,
+   "text": "Jak musí být navrženy řídící obvody motorů?",
+   "normativeRef": "ČSN 33 2000-4-46 ed. 3:2017 čl. 463.3.1"
+  },
+  {
+   "id": "2027-ez3-027",
+   "circuit": "ez3",
+   "circuitTitle": "Všeobecné požadavky na elektrická zařízení",
+   "number": 27,
+   "sourceMarker": "27)",
+   "numberedInSource": true,
+   "text": "Kdy smí být v rozvodu nn použit pohyblivý přívod bez ochranného vodiče, s vidlicí bez ochranného kontaktu, hodící se do zásuvky s ochranným kontaktem?",
+   "normativeRef": "ČSN 33 2000-4-46 ed. 3:2017 Příloha NA, čl. NA.4"
+  },
+  {
+   "id": "2027-ez3-028",
+   "circuit": "ez3",
+   "circuitTitle": "Všeobecné požadavky na elektrická zařízení",
+   "number": 28,
+   "sourceMarker": "28)",
+   "numberedInSource": true,
+   "text": "Musí být pro ochranu zásuvek se jmenovitým proudem nepřekračujícím 32 A ve venkovním prostoru a pro ochranu zásuvek, u kterých lze předpokládat, že budou použity pro napájení ručního přenosného nářadí používaného venku, použit proudový chránič?",
+   "normativeRef": "ČSN 33 2000-4-41 ed. 3:2018 čl. 411.3.3"
+  },
+  {
+   "id": "2027-ez3-029",
+   "circuit": "ez3",
+   "circuitTitle": "Všeobecné požadavky na elektrická zařízení",
+   "number": 29,
+   "sourceMarker": "29)",
+   "numberedInSource": true,
+   "text": "Jakým požadavkům musí vyhovovat vidlice a zásuvky určené pro obvody FELV?",
+   "normativeRef": "ČSN 33 2000-4-41 ed. 3:2018 čl. 411.3.3"
+  },
+  {
+   "id": "2027-ez3-030",
+   "circuit": "ez3",
+   "circuitTitle": "Všeobecné požadavky na elektrická zařízení",
+   "number": 30,
+   "sourceMarker": "30)",
+   "numberedInSource": true,
+   "text": "Jaký smí být průřez nulového vodiče hlavního domovního vedení v bytových domech u kterých je pravděpodobné, že povedou třetí a liché násobky třetí harmonické proudů, jejichž podíl na celkovém proudu je mezi 15 % a 33 %?",
+   "normativeRef": "ČSN 33 2130 ed. 4:2024 příloha C, článek C1"
+  },
+  {
+   "id": "2027-ez3-031",
+   "circuit": "ez3",
+   "circuitTitle": "Všeobecné požadavky na elektrická zařízení",
+   "number": 31,
+   "sourceMarker": "31)",
+   "numberedInSource": true,
+   "text": "Jak musí být provedeno jištění paralelních kabelů?",
+   "normativeRef": "ČSN 33 2000-5-52 ed. 2:2012 čl. 523.7"
+  },
+  {
+   "id": "2027-ez3-032",
+   "circuit": "ez3",
+   "circuitTitle": "Všeobecné požadavky na elektrická zařízení",
+   "number": 32,
+   "sourceMarker": "32)",
+   "numberedInSource": true,
+   "text": "Kdy mohou být obsaženy obvody napěťového pásma I a napěťového pásma II podle IEC 60449 ve stejném systému vedení?",
+   "normativeRef": "ČSN 33 2000-5-52 ed. 2:2012 čl. 528.1"
+  },
+  {
+   "id": "2027-ez3-033",
+   "circuit": "ez3",
+   "circuitTitle": "Všeobecné požadavky na elektrická zařízení",
+   "number": 33,
+   "sourceMarker": "33)",
+   "numberedInSource": true,
+   "text": "Může být v prostoru s nebezpečím požáru zpracovávaných nebo skladovaných hmot použit ochranný vodič PEN?",
+   "normativeRef": "ČSN 33 2000-4-42 ed. 2:2012 čl. 422.3.12"
+  },
+  {
+   "id": "2027-ez3-034",
+   "circuit": "ez3",
+   "circuitTitle": "Všeobecné požadavky na elektrická zařízení",
+   "number": 34,
+   "sourceMarker": "34)",
+   "numberedInSource": true,
+   "text": "Mohou být v prostoru s nebezpečím požáru zpracovávaných nebo skladovaných hmot namontovány tepelné spotřebiče?",
+   "normativeRef": "ČSN 33 2000-4-42 ed. 2:2012 čl. 421.2"
+  },
+  {
+   "id": "2027-ez3-035",
+   "circuit": "ez3",
+   "circuitTitle": "Všeobecné požadavky na elektrická zařízení",
+   "number": 35,
+   "sourceMarker": "35)",
+   "numberedInSource": true,
+   "text": "Jaká je minimální hloubka uložení silových kabelů s napětím do 1 kV v zemi bez mechanické ochrany ve volném terénu?",
+   "normativeRef": "ČSN 33 2000-5-52 ed. 2:2012 čl. NA.4.5.13"
+  },
+  {
+   "id": "2027-ez3-036",
+   "circuit": "ez3",
+   "circuitTitle": "Všeobecné požadavky na elektrická zařízení",
+   "number": 36,
+   "sourceMarker": "36)",
+   "numberedInSource": true,
+   "text": "Může být používán proudový chránič v sítích TN-C?",
+   "normativeRef": "ČSN 33 2000-4-41 ed. 3:2018 čl. 411.4.5"
+  },
+  {
+   "id": "2027-ez3-037",
+   "circuit": "ez3",
+   "circuitTitle": "Všeobecné požadavky na elektrická zařízení",
+   "number": 37,
+   "sourceMarker": "37)",
+   "numberedInSource": true,
+   "text": "Smí se považovat použití proudového chrániče v obvodech bez ochranného vodiče za dostatečné opatření před nebezpečným dotykem neživých částí?",
+   "normativeRef": "ČSN 33 2000-4-41 ed. 3:2018 čl. 411.4.5"
+  },
+  {
+   "id": "2027-ez3-038",
+   "circuit": "ez3",
+   "circuitTitle": "Všeobecné požadavky na elektrická zařízení",
+   "number": 38,
+   "sourceMarker": "38)",
+   "numberedInSource": true,
+   "text": "Vyžaduje se detekce nadproudu pro vodič PEL ve stejnosměrných obvodech?",
+   "normativeRef": "ČSN 33 2000-4-43 ed. 3:2024 čl. 431.1.2"
+  },
+  {
+   "id": "2027-ez3-039",
+   "circuit": "ez3",
+   "circuitTitle": "Všeobecné požadavky na elektrická zařízení",
+   "number": 39,
+   "sourceMarker": "39)",
+   "numberedInSource": true,
+   "text": "S jakou teplotou se obvykle počítá pro kabely uložené v zemi, přímo v půdě?",
+   "normativeRef": "ČSN 33 2000-5-52 ed. 2:2012"
+  },
+  {
+   "id": "2027-ez3-040",
+   "circuit": "ez3",
+   "circuitTitle": "Všeobecné požadavky na elektrická zařízení",
+   "number": 40,
+   "sourceMarker": "40)",
+   "numberedInSource": true,
+   "text": "Jak musí být provedeno nouzové vypínání hlavního elektrického obvodu při použití jističů a stykačů dálkově ovládaných?",
+   "normativeRef": "ČSN 33 2000-5-53 ed. 3:2022 čl. 537.3.3."
+  },
+  {
+   "id": "2027-ez3-041",
+   "circuit": "ez3",
+   "circuitTitle": "Všeobecné požadavky na elektrická zařízení",
+   "number": 41,
+   "sourceMarker": "41)",
+   "numberedInSource": true,
+   "text": "Jak je možné spínat skupinu svítidel připojenou na různé fáze třífázového světelného obvodu s jedním společným nulovým vodičem?",
+   "normativeRef": "ČSN 33 2000-5-559 ed. 2:2013 čl. 559.5.5"
+  },
+  {
+   "id": "2027-ez3-042",
+   "circuit": "ez3",
+   "circuitTitle": "Všeobecné požadavky na elektrická zařízení",
+   "number": 42,
+   "sourceMarker": "42)",
+   "numberedInSource": true,
+   "text": "Mohou být ve svítidlech použity kondenzátory s kapacitou větší než 0,5 μF?",
+   "normativeRef": "ČSN 33 2000-5-559 ed. 2:2013 čl. 559.7"
+  },
+  {
+   "id": "2027-ez3-043",
+   "circuit": "ez3",
+   "circuitTitle": "Všeobecné požadavky na elektrická zařízení",
+   "number": 43,
+   "sourceMarker": "43)",
+   "numberedInSource": true,
+   "text": "Jak je vymezena zóna 1 pro vanu?",
+   "normativeRef": "ČSN 33 2000-7-701 ed.3: 2025 čl. 701.30.103"
+  },
+  {
+   "id": "2027-ez3-044",
+   "circuit": "ez3",
+   "circuitTitle": "Všeobecné požadavky na elektrická zařízení",
+   "number": 44,
+   "sourceMarker": "44)",
+   "numberedInSource": true,
+   "text": "Jaká zařízení smí být instalována u koupelen v zóně 2?",
+   "normativeRef": "ČSN 33 2000-7-701 ed.3: 2025 čl. 701.512.2.4.101.4 Zóna 2:"
+  },
+  {
+   "id": "2027-ez3-045",
+   "circuit": "ez3",
+   "circuitTitle": "Všeobecné požadavky na elektrická zařízení",
+   "number": 45,
+   "sourceMarker": "45)",
+   "numberedInSource": true,
+   "text": "Alespoň jaký stupeň ochrany krytem musí mít elektrické zařízení v koupelně v zóně 1?",
+   "normativeRef": "ČSN 33 2000-7-701 ed.3: 2025 čl. 701.512.2.4.101.3"
+  },
+  {
+   "id": "2027-ez3-046",
+   "circuit": "ez3",
+   "circuitTitle": "Všeobecné požadavky na elektrická zařízení",
+   "number": 46,
+   "sourceMarker": "46)",
+   "numberedInSource": true,
+   "text": "Za jakých podmínek je u plaveckých bazénů a jiných nádrží povoleno ochranné opatření zábranou a umístěním mimo dosah?",
+   "normativeRef": "ČSN 33 2000-7-702 ed. 3:2011 čl. 702.410.3.5"
+  },
+  {
+   "id": "2027-ez3-047",
+   "circuit": "ez3",
+   "circuitTitle": "Všeobecné požadavky na elektrická zařízení",
+   "number": 47,
+   "sourceMarker": "47)",
+   "numberedInSource": true,
+   "text": "Je povoleno u plaveckých bazénů a jiných nádrží používat odbočné krabice?",
+   "normativeRef": "ČSN 33 2000-7-702 ed. 3:2011 čl. 702.522.8."
+  },
+  {
+   "id": "2027-ez3-048",
+   "circuit": "ez3",
+   "circuitTitle": "Všeobecné požadavky na elektrická zařízení",
+   "number": 48,
+   "sourceMarker": "48)",
+   "numberedInSource": true,
+   "text": "Smí se instalovat v zóně 0 u plaveckých bazénů a jiných nádrží spínače a řídící přístroje?",
+   "normativeRef": "ČSN 33 2000-7-702 ed. 3:2011 čl. 702.53"
+  },
+  {
+   "id": "2027-ez3-049",
+   "circuit": "ez3",
+   "circuitTitle": "Všeobecné požadavky na elektrická zařízení",
+   "number": 49,
+   "sourceMarker": "49)",
+   "numberedInSource": true,
+   "text": "Jaké spotřebiče mohou být instalovány v zóně 1 uvnitř místnosti určené pro saunová kamna?",
+   "normativeRef": "ČSN 33 2000-7-703 ed. 2:2005 čl. 703.512.2"
+  },
+  {
+   "id": "2027-ez3-050",
+   "circuit": "ez3",
+   "circuitTitle": "Všeobecné požadavky na elektrická zařízení",
+   "number": 50,
+   "sourceMarker": "50)",
+   "numberedInSource": true,
+   "text": "Za jakých podmínek je povoleno uvnitř místnosti či kabiny sauny, určené pro saunová kamna, používat zásuvkové vývody?",
+   "normativeRef": "ČSN 33 2000-7-703 ed. 2:2005 čl. 703.536.5"
+  },
+  {
+   "id": "2027-ez3-051",
+   "circuit": "ez3",
+   "circuitTitle": "Všeobecné požadavky na elektrická zařízení",
+   "number": 51,
+   "sourceMarker": "51)",
+   "numberedInSource": true,
+   "text": "Jakým způsobem smí být napájena elektroinstalace jednoho staveniště?",
+   "normativeRef": "ČSN 33 2000-7-704 ed. 3:2018 čl. 704.313"
+  },
+  {
+   "id": "2027-ez3-052",
+   "circuit": "ez3",
+   "circuitTitle": "Všeobecné požadavky na elektrická zařízení",
+   "number": 52,
+   "sourceMarker": "52)",
+   "numberedInSource": true,
+   "text": "Jak musí být na staveništi chráněny zásuvky se jmenovitým proudem do 32 A včetně?",
+   "normativeRef": "ČSN 33 2000-7-704 ed. 3:2018 čl. 704.410.3."
+  },
+  {
+   "id": "2027-ez3-053",
+   "circuit": "ez3",
+   "circuitTitle": "Všeobecné požadavky na elektrická zařízení",
+   "number": 53,
+   "sourceMarker": "53)",
+   "numberedInSource": true,
+   "text": "Jakými přístroji pro odpojování musí být vybaven každý staveništní rozváděč (ACS)?",
+   "normativeRef": "ČSN 33 2000-7-704 ed. 3:2018 čl. 704.537.2."
+  },
+  {
+   "id": "2027-ez3-054",
+   "circuit": "ez3",
+   "circuitTitle": "Všeobecné požadavky na elektrická zařízení",
+   "number": 54,
+   "sourceMarker": "54)",
+   "numberedInSource": true,
+   "text": "Jak musí být na staveništi chráněny obvody napájející zásuvkové vývody se jmenovitým proudem vyšším než 32 A?",
+   "normativeRef": "ČSN 33 2000-7-704 ed. 3:2018 čl. 704.410.3.2."
+  },
+  {
+   "id": "2027-ez3-055",
+   "circuit": "ez3",
+   "circuitTitle": "Všeobecné požadavky na elektrická zařízení",
+   "number": 55,
+   "sourceMarker": "55)",
+   "numberedInSource": true,
+   "text": "Je možné na staveništi pokládat kabely přes cesty nebo ochozy?",
+   "normativeRef": "ČSN 33 2000-7-704 ed. 3:2018 čl. 704.522.8."
+  },
+  {
+   "id": "2027-ez3-056",
+   "circuit": "ez3",
+   "circuitTitle": "Všeobecné požadavky na elektrická zařízení",
+   "number": 56,
+   "sourceMarker": "56)",
+   "numberedInSource": true,
+   "text": "Musí být koncové obvody napájející zásuvky se jmenovitým proudem více než 32 A v zemědělských provozovnách chráněny proudovým chráničem?",
+   "normativeRef": "ČSN 33 2000-7-705 ed. 2:2007 čl. 705.411.1"
+  },
+  {
+   "id": "2027-ez3-057",
+   "circuit": "ez3",
+   "circuitTitle": "Všeobecné požadavky na elektrická zařízení",
+   "number": 57,
+   "sourceMarker": "57)",
+   "numberedInSource": true,
+   "text": "Jak se v zemědělských provozech provádí všeobecná ochrana před vznikem požáru způsobeného elektrickým zařízením?",
+   "normativeRef": "ČSN 33 2000-7-705 ed. 2:2007 čl. 705.422.7"
+  },
+  {
+   "id": "2027-ez3-058",
+   "circuit": "ez3",
+   "circuitTitle": "Všeobecné požadavky na elektrická zařízení",
+   "number": 58,
+   "sourceMarker": "58)",
+   "numberedInSource": true,
+   "text": "Jaká ochranná opatření k zajištění ochrany před úrazem elektrickým proudem nesmí být použita v omezených vodivých prostorech?",
+   "normativeRef": "ČSN 33 2000-7-706 ed. 3:2026 čl. 706.410.3.5"
+  },
+  {
+   "id": "2027-ez3-059",
+   "circuit": "ez3",
+   "circuitTitle": "Všeobecné požadavky na elektrická zařízení",
+   "number": 59,
+   "sourceMarker": "59)",
+   "numberedInSource": true,
+   "text": "Za jakých podmínek je možné v omezených vodivých prostorech používat zdroje SELV a PELV?",
+   "normativeRef": "ČSN 33 2000-7-706 ed. 3:2026 čl. 706.410.3."
+  },
+  {
+   "id": "2027-ez3-060",
+   "circuit": "ez3",
+   "circuitTitle": "Všeobecné požadavky na elektrická zařízení",
+   "number": 60,
+   "sourceMarker": "60)",
+   "numberedInSource": true,
+   "text": "Alespoň jaký průřez musí mít zesílený ochranný vodič pro elektrická zařízení určené pro trvalé připojení, jejichž ochranným vodičem protéká proud vyšší než 10mA?",
+   "normativeRef": "ČSN 33 2000-5-54 ed. 3:2012 čl. 543.7"
+  },
+  {
+   "id": "2027-ez3-061",
+   "circuit": "ez3",
+   "circuitTitle": "Všeobecné požadavky na elektrická zařízení",
+   "number": 61,
+   "sourceMarker": "61)",
+   "numberedInSource": true,
+   "text": "Jaké požadavky jsou kladeny na zpětný vodič PEL nebo PEM pro silové napájení informační technologie?",
+   "normativeRef": "ČSN 33 2000-5-54 ed. 3:2012 čl. 543.5.1"
+  },
+  {
+   "id": "2027-ez3-062",
+   "circuit": "ez3",
+   "circuitTitle": "Všeobecné požadavky na elektrická zařízení",
+   "number": 62,
+   "sourceMarker": "62)",
+   "numberedInSource": true,
+   "text": "Jaké bezpečnostní požadavky musí splňovat zásuvky pro připojení Každé stanoviště karavanu, nebo stanu v kempincích?",
+   "normativeRef": "ČSN 33 2000-7-708 ed. 4:2018 čl. 708.55.101.4 a 708.55.101.5"
+  },
+  {
+   "id": "2027-ez3-063",
+   "circuit": "ez3",
+   "circuitTitle": "Všeobecné požadavky na elektrická zařízení",
+   "number": 63,
+   "sourceMarker": "63)",
+   "numberedInSource": true,
+   "text": "Jak musí být chráněny zásuvky pro připojení obytných vozidel v kempincích?",
+   "normativeRef": "ČSN 33 2000-7-708 ed. 4:2018 čl. 708.415.1"
+  },
+  {
+   "id": "2027-ez3-064",
+   "circuit": "ez3",
+   "circuitTitle": "Všeobecné požadavky na elektrická zařízení",
+   "number": 64,
+   "sourceMarker": "64)",
+   "numberedInSource": true,
+   "text": "Smí být v zdravotnických prostorách použita síť TN-C?",
+   "normativeRef": "ČSN 33 2000-7-710 ed.2: 2026 čl. 710.312.2"
+  },
+  {
+   "id": "2027-ez3-065",
+   "circuit": "ez3",
+   "circuitTitle": "Všeobecné požadavky na elektrická zařízení",
+   "number": 65,
+   "sourceMarker": "65)",
+   "numberedInSource": true,
+   "text": "Jaké je dovolené dotykové napětí v lékařských prostorách skupiny 1 a 2 v sítích IT, TN a TT?",
+   "normativeRef": "ČSN 33 2000-7-710 ed.2: 2026 čl. 710.411.3.2."
+  },
+  {
+   "id": "2027-ez3-066",
+   "circuit": "ez3",
+   "circuitTitle": "Všeobecné požadavky na elektrická zařízení",
+   "number": 66,
+   "sourceMarker": "66)",
+   "numberedInSource": true,
+   "text": "Jakou hodnotu nesmí překročit odpor mezi současně přístupnými vodivými částmi, včetně svorek ochranného vodiče zásuvek a pevných zařízení, vnějších vodivých částí a bodů pospojování, ve zdravotnických prostorech skupiny 1 a skupiny 2?",
+   "normativeRef": "ČSN 33 2000-7-710 ed.2: 2026 čl. 710.415.2."
+  },
+  {
+   "id": "2027-ez3-067",
+   "circuit": "ez3",
+   "circuitTitle": "Všeobecné požadavky na elektrická zařízení",
+   "number": 67,
+   "sourceMarker": "67)",
+   "numberedInSource": true,
+   "text": "Musí být ve zdravotnických prostorech, připojovací body doplňkového pospojování pro připojení ME přístroje, určených pro prostory skupiny 2, také zohledněny v prostorách skupiny 1?",
+   "normativeRef": "ČSN 33 2000-7-710 ed.2: 2026 čl. 710.415.2."
+  },
+  {
+   "id": "2027-ez3-068",
+   "circuit": "ez3",
+   "circuitTitle": "Všeobecné požadavky na elektrická zařízení",
+   "number": 68,
+   "sourceMarker": "68)",
+   "numberedInSource": true,
+   "text": "Jak musí být ve zdravotnických prostorech skupiny 1 a skupiny 2 zajištěny světelné obvody?",
+   "normativeRef": "ČSN 33 2000-7-710 ed.2čl. 710.559.101"
+  },
+  {
+   "id": "2027-ez3-069",
+   "circuit": "ez3",
+   "circuitTitle": "Všeobecné požadavky na elektrická zařízení",
+   "number": 69,
+   "sourceMarker": "69)",
+   "numberedInSource": true,
+   "text": "Jaké ochranné opatření musí být použito na DC straně fotovoltaického (PV) systému?",
+   "normativeRef": "ČSN 33 2000-7-712 ed.2:2016 čl. 712.410.102"
+  },
+  {
+   "id": "2027-ez3-070",
+   "circuit": "ez3",
+   "circuitTitle": "Všeobecné požadavky na elektrická zařízení",
+   "number": 70,
+   "sourceMarker": "70)",
+   "numberedInSource": true,
+   "text": "Jaké jsou dodatečné požadavky na zkoušky fotovoltaického (PV) sytému při uvedení do provozu (provádění revize)?",
+   "normativeRef": "ČSN 33 2000-7-712 ed.2:2016 čl. 712.6.101"
+  },
+  {
+   "id": "2027-ez3-071",
+   "circuit": "ez3",
+   "circuitTitle": "Všeobecné požadavky na elektrická zařízení",
+   "number": 71,
+   "sourceMarker": "71)",
+   "numberedInSource": true,
+   "text": "Jaká ochranná opatření, jako ochrana před úrazem elektrickým proudem, nejsou dovolena u zařízení pro venkovní osvětlení?",
+   "normativeRef": "ČSN 33 2000-7-714 ed. 2:2012 čl. 714.410.3.6"
+  },
+  {
+   "id": "2027-ez3-072",
+   "circuit": "ez3",
+   "circuitTitle": "Všeobecné požadavky na elektrická zařízení",
+   "number": 72,
+   "sourceMarker": "72)",
+   "numberedInSource": true,
+   "text": "Musí se připojovat při ochranném opatření automatickým odpojením od zdroje kovové konstrukce, které jsou v blízkosti, ale nejsou součástí zařízení pro venkovní osvětlení k jeho zemnící svorce?",
+   "normativeRef": "ČSN 33 2000-7-714 ed. 2:2012 čl. 714.411.3.1."
+  },
+  {
+   "id": "2027-ez3-073",
+   "circuit": "ez3",
+   "circuitTitle": "Všeobecné požadavky na elektrická zařízení",
+   "number": 73,
+   "sourceMarker": "73)",
+   "numberedInSource": true,
+   "text": "Jak musí být zajištěn přístup ke světelnému zdroji venkovního osvětlení, který je umístěn níže než 2,80 m nad úrovní terénu?",
+   "normativeRef": "ČSN 33 2000-7-714 ed. 2:2012 čl. 714.41"
+  },
+  {
+   "id": "2027-ez3-074",
+   "circuit": "ez3",
+   "circuitTitle": "Všeobecné požadavky na elektrická zařízení",
+   "number": 74,
+   "sourceMarker": "74)",
+   "numberedInSource": true,
+   "text": "Jaké napájecí zdroje lze použít pro světelné instalace z neizolovaných vodičů při napájení malým napětím?",
+   "normativeRef": "ČSN 33 2000-7-715 ed. 2:2013 čl. 715.414"
+  },
+  {
+   "id": "2027-ez3-075",
+   "circuit": "ez3",
+   "circuitTitle": "Všeobecné požadavky na elektrická zařízení",
+   "number": 75,
+   "sourceMarker": "75)",
+   "numberedInSource": true,
+   "text": "Musí se vždy u napájecího místa elektrického vozidla instalovat proudový chránič?e vždy u napájecího místa elektrického vozidla instalovat proudový chránič?",
+   "normativeRef": "ČSN 33 2000-7-722 ed.3:2019 čl. 722.411.3.3"
+  },
+  {
+   "id": "2027-ez3-076",
+   "circuit": "ez3",
+   "circuitTitle": "Všeobecné požadavky na elektrická zařízení",
+   "number": 76,
+   "sourceMarker": "76)",
+   "numberedInSource": true,
+   "text": "Jak musí být provedena instalace obvodů pro podlahové a stropní topné jednotky?",
+   "normativeRef": "ČSN 33 2000-7-753 ed. 2:2015 čl. 753.415.1.1"
+  },
+  {
+   "id": "2027-ez3-077",
+   "circuit": "ez3",
+   "circuitTitle": "Všeobecné požadavky na elektrická zařízení",
+   "number": 77,
+   "sourceMarker": "77)",
+   "numberedInSource": true,
+   "text": "Jaké konstrukce musí být ochrana před přehřátím topné jednotky určené pro montáž do zdi?",
+   "normativeRef": "ČSN 33 2000-7-753 ed. 2:2015 čl. 753.424.101"
+  },
+  {
+   "id": "2027-ez3-078",
+   "circuit": "ez3",
+   "circuitTitle": "Všeobecné požadavky na elektrická zařízení",
+   "number": 78,
+   "sourceMarker": "78)",
+   "numberedInSource": true,
+   "text": "Jakým proudem se jistí zásuvky zařazené do světelných obvodů?",
+   "normativeRef": "ČSN 33 2130 ed. 4:2024 čl. 5.2.2"
+  },
+  {
+   "id": "2027-ez3-079",
+   "circuit": "ez3",
+   "circuitTitle": "Všeobecné požadavky na elektrická zařízení",
+   "number": 79,
+   "sourceMarker": "79)",
+   "numberedInSource": true,
+   "text": "Jakým maximálním proudem se jistí světelné obvody?",
+   "normativeRef": "ČSN 33 2130 ed. 4:2024 čl. 5.2.9"
+  },
+  {
+   "id": "2027-ez3-080",
+   "circuit": "ez3",
+   "circuitTitle": "Všeobecné požadavky na elektrická zařízení",
+   "number": 80,
+   "sourceMarker": "80)",
+   "numberedInSource": true,
+   "text": "Jak se doporučuje zapojit jednofázovou zásuvku s ochranným kolíkem?",
+   "normativeRef": "ČSN 33 2130 ed. 4:2024 čl. 5.3.3"
+  },
+  {
+   "id": "2027-ez3-081",
+   "circuit": "ez3",
+   "circuitTitle": "Všeobecné požadavky na elektrická zařízení",
+   "number": 81,
+   "sourceMarker": "81)",
+   "numberedInSource": true,
+   "text": "Kolik zásuvkových vývodů lze obecně připojit na jeden jednofázový zásuvkový obvod při jištění 16 A?",
+   "normativeRef": "ČSN 33 2130 ed. 4:2024 čl. 5.3.6"
+  },
+  {
+   "id": "2027-ez3-082",
+   "circuit": "ez3",
+   "circuitTitle": "Všeobecné požadavky na elektrická zařízení",
+   "number": 82,
+   "sourceMarker": "82)",
+   "numberedInSource": true,
+   "text": "Jakým způsobem se smí jistit zásuvkové obvody při použití jističe nebo pojistky?",
+   "normativeRef": "ČSN 33 2130 ed. 4:2024 čl. 5.3.11"
+  },
+  {
+   "id": "2027-ez3-083",
+   "circuit": "ez3",
+   "circuitTitle": "Všeobecné požadavky na elektrická zařízení",
+   "number": 83,
+   "sourceMarker": "83)",
+   "numberedInSource": true,
+   "text": "Zřizují se pro pevně připojené jednofázové spotřebiče o příkonu 2 000 VA a více samostatně jištěné obvody?",
+   "normativeRef": "ČSN 33 2130 ed. 4:2024 čl. 5.4.1"
+  },
+  {
+   "id": "2027-ez3-084",
+   "circuit": "ez3",
+   "circuitTitle": "Všeobecné požadavky na elektrická zařízení",
+   "number": 84,
+   "sourceMarker": "84)",
+   "numberedInSource": true,
+   "text": "Jaké prvky nesmí být instalovány v budovách, kde je zaveden plyn?",
+   "normativeRef": "ČSN 33 2130 ed. 4:2024 čl. 6.1.4"
+  },
+  {
+   "id": "2027-ez3-085",
+   "circuit": "ez3",
+   "circuitTitle": "Všeobecné požadavky na elektrická zařízení",
+   "number": 85,
+   "sourceMarker": "85)",
+   "numberedInSource": true,
+   "text": "Musí být v záchodech a koupelnách pro osoby s omezenou možností pohybu signalizační systém?",
+   "normativeRef": "ČSN 33 2130 ed. 4:2024 čl. 6.1.5"
+  },
+  {
+   "id": "2027-ez3-086",
+   "circuit": "ez3",
+   "circuitTitle": "Všeobecné požadavky na elektrická zařízení",
+   "number": 86,
+   "sourceMarker": "86)",
+   "numberedInSource": true,
+   "text": "Kde musí být provedeno rozdělení PEN vodiče u nově zřizovaných elektrických rozvodů v bytech?",
+   "normativeRef": "ČSN 33 2130 ed. 4:2024 čl. 8.6.16"
+  },
+  {
+   "id": "2027-ez3-087",
+   "circuit": "ez3",
+   "circuitTitle": "Všeobecné požadavky na elektrická zařízení",
+   "number": 87,
+   "sourceMarker": "87)",
+   "numberedInSource": true,
+   "text": "Jakým způsobem se připojují spotřebiče, sloužící jako základní zdroj vytápění nebo ohřev TUV?",
+   "normativeRef": "ČSN 33 2130 ed. 4:2024 čl. 8.7.9"
+  },
+  {
+   "id": "2027-ez3-088",
+   "circuit": "ez3",
+   "circuitTitle": "Všeobecné požadavky na elektrická zařízení",
+   "number": 88,
+   "sourceMarker": "88)",
+   "numberedInSource": true,
+   "text": "Smí být v umývacím prostoru umístěny zásuvky?",
+   "normativeRef": "ČSN 33 2130 ed. 4:2024 čl. 8.8.2"
+  },
+  {
+   "id": "2027-ez3-089",
+   "circuit": "ez3",
+   "circuitTitle": "Všeobecné požadavky na elektrická zařízení",
+   "number": 89,
+   "sourceMarker": "89)",
+   "numberedInSource": true,
+   "text": "Podle jakého předpisu se provádí pravidelné revize a kontroly ve zdravotnických zařízeních?",
+   "normativeRef": "ČSN 33 2000-7-710 ed.2: 2026 čl. 710.6"
+  },
+  {
+   "id": "2027-ez3-090",
+   "circuit": "ez3",
+   "circuitTitle": "Všeobecné požadavky na elektrická zařízení",
+   "number": 90,
+   "sourceMarker": "90)",
+   "numberedInSource": true,
+   "text": "V jaké výši se umisťují instalační spínače nad podlahou?",
+   "normativeRef": "ČSN 33 2180:1980 čl. 4.1"
+  },
+  {
+   "id": "2027-ez3-091",
+   "circuit": "ez3",
+   "circuitTitle": "Všeobecné požadavky na elektrická zařízení",
+   "number": 91,
+   "sourceMarker": "91)",
+   "numberedInSource": true,
+   "text": "Jak se umisťují zásuvky v obytných místnostech, kromě zásuvek, které jsou součástí pevného stavebnicového rozvodu?",
+   "normativeRef": "ČSN 33 2180:1980 čl. 6.1.1"
+  },
+  {
+   "id": "2027-ez3-092",
+   "circuit": "ez3",
+   "circuitTitle": "Všeobecné požadavky na elektrická zařízení",
+   "number": 92,
+   "sourceMarker": "92)",
+   "numberedInSource": true,
+   "text": "Jak se připojují zásuvky, které jsou součástí pevného rozvodu?",
+   "normativeRef": "ČSN 33 2180:1980 čl. 6.2.2"
+  },
+  {
+   "id": "2027-ez3-093",
+   "circuit": "ez3",
+   "circuitTitle": "Všeobecné požadavky na elektrická zařízení",
+   "number": 93,
+   "sourceMarker": "93)",
+   "numberedInSource": true,
+   "text": "Za jakého předpokladu je možné uložit silové kabely přímo na hořlavé podklady?",
+   "normativeRef": "ČSN 33 2312 ed. 2:2014 čl. 3.2"
+  },
+  {
+   "id": "2027-ez3-094",
+   "circuit": "ez3",
+   "circuitTitle": "Všeobecné požadavky na elektrická zařízení",
+   "number": 94,
+   "sourceMarker": "94)",
+   "numberedInSource": true,
+   "text": "Jak musí být provedena ochrana silových obvodů u sítí TN kladených na hořlavé podklady?",
+   "normativeRef": "ČSN 33 2312 ed. 2:2014 čl. 5.2"
+  },
+  {
+   "id": "2027-ez3-095",
+   "circuit": "ez3",
+   "circuitTitle": "Všeobecné požadavky na elektrická zařízení",
+   "number": 95,
+   "sourceMarker": "95)",
+   "numberedInSource": true,
+   "text": "Jak lze charakterizovat stupeň hořlavosti a třídu reakce na oheň u hořlavých stavebních hmot?",
+   "normativeRef": "ČSN 33 2312 ed. 2:2014 příloha A"
+  },
+  {
+   "id": "2027-ez3-096",
+   "circuit": "ez3",
+   "circuitTitle": "Všeobecné požadavky na elektrická zařízení",
+   "number": 96,
+   "sourceMarker": "96)",
+   "numberedInSource": true,
+   "text": "Jaké vodiče jsou povoleny pro instalace v nepohybujícím se nábytku?",
+   "normativeRef": "ČSN 33 2000-7-713:2018 čl. 713.522.116"
+  },
+  {
+   "id": "2027-ez3-097",
+   "circuit": "ez3",
+   "circuitTitle": "Všeobecné požadavky na elektrická zařízení",
+   "number": 97,
+   "sourceMarker": "97)",
+   "numberedInSource": true,
+   "text": "Jak musí být chráněna elektroinstalace v nábytku?",
+   "normativeRef": "ČSN 33 2000-7-713: 2018 čl. 713.415.1.1."
+  },
+  {
+   "id": "2027-ez3-098",
+   "circuit": "ez3",
+   "circuitTitle": "Všeobecné požadavky na elektrická zařízení",
+   "number": 98,
+   "sourceMarker": "98)",
+   "numberedInSource": true,
+   "text": "Jak se musí otevírat nouzové dveře elektrické provozovny?",
+   "normativeRef": "ČSN EN IEC 61936-1 ed. 2:2022 čl. 7.5.5"
+  },
+  {
+   "id": "2027-ez3-099",
+   "circuit": "ez3",
+   "circuitTitle": "Všeobecné požadavky na elektrická zařízení",
+   "number": 99,
+   "sourceMarker": "99)",
+   "numberedInSource": true,
+   "text": "Jak se umísťuje přípojková skříň u kabelové přípojky nad definitivně upravený terén?",
+   "normativeRef": "ČSN 33 3320 ed. 2:2014 čl. 4.2.5"
+  },
+  {
+   "id": "2027-ez3-100",
+   "circuit": "ez3",
+   "circuitTitle": "Všeobecné požadavky na elektrická zařízení",
+   "number": 100,
+   "sourceMarker": "100)",
+   "numberedInSource": true,
+   "text": "Jak musí být provedeno jištění v přípojkové skříni u kabelové přípojky?",
+   "normativeRef": "ČSN 33 3320 ed. 2:2014 čl. 4.2.8"
+  },
+  {
+   "id": "2027-ez3-101",
+   "circuit": "ez3",
+   "circuitTitle": "Všeobecné požadavky na elektrická zařízení",
+   "number": 101,
+   "sourceMarker": "101)",
+   "numberedInSource": true,
+   "text": "Co je to elektromagnetická kompatibilita (EMC)?",
+   "normativeRef": "Nařízení vlády č. 117/2016 Sb. § 2 v platném znění"
+  },
+  {
+   "id": "2027-ez3-102",
+   "circuit": "ez3",
+   "circuitTitle": "Všeobecné požadavky na elektrická zařízení",
+   "number": 102,
+   "sourceMarker": "102)",
+   "numberedInSource": true,
+   "text": "Kdy lze použít pohyblivý přívod bez ochranného vodiče s vidlicí bez ochranného kontaktu?",
+   "normativeRef": "ČSN 34 0350 ed. 2:2009 čl. 5.3.1"
+  },
+  {
+   "id": "2027-ez3-103",
+   "circuit": "ez3",
+   "circuitTitle": "Všeobecné požadavky na elektrická zařízení",
+   "number": 103,
+   "sourceMarker": "103)",
+   "numberedInSource": true,
+   "text": "K čemu je nutno přihlédnout při volbě průřezu žil pohyblivých prodlužovacích přívodů?",
+   "normativeRef": "ČSN 34 0350 ed. 2:2009 čl. 5.3.2"
+  },
+  {
+   "id": "2027-ez3-104",
+   "circuit": "ez3",
+   "circuitTitle": "Všeobecné požadavky na elektrická zařízení",
+   "number": 104,
+   "sourceMarker": "104)",
+   "numberedInSource": true,
+   "text": "Jak musí být proveden prodlužovací přívod k prodloužení rozvodu z pevné zásuvky?",
+   "normativeRef": "ČSN 34 0350 ed. 2:2009 čl. 5.3.2"
+  },
+  {
+   "id": "2027-ez3-105",
+   "circuit": "ez3",
+   "circuitTitle": "Všeobecné požadavky na elektrická zařízení",
+   "number": 105,
+   "sourceMarker": "105)",
+   "numberedInSource": true,
+   "text": "Jaká je přípustná délka prodlužovacího přívodu s průřezem žil 1,5 mm2?",
+   "normativeRef": "ČSN 34 0350 ed. 2:2009 čl. 5.3.4"
+  },
+  {
+   "id": "2027-ez3-106",
+   "circuit": "ez3",
+   "circuitTitle": "Všeobecné požadavky na elektrická zařízení",
+   "number": 106,
+   "sourceMarker": "106)",
+   "numberedInSource": true,
+   "text": "Za jakých podmínek mohou být zřizována v průmyslových závodech prozatímní elektrická zařízení?",
+   "normativeRef": "ČSN 34 1090 ed. 2:2011 čl. 6.4"
+  },
+  {
+   "id": "2027-ez3-107",
+   "circuit": "ez3",
+   "circuitTitle": "Všeobecné požadavky na elektrická zařízení",
+   "number": 107,
+   "sourceMarker": "107)",
+   "numberedInSource": true,
+   "text": "Co představuje pojem obsluha a práce na elektrickém zařízení?",
+   "normativeRef": "ČSN EN 50110-1 ed. 4:2025 čl. 3.1.2"
+  },
+  {
+   "id": "2027-ez3-108",
+   "circuit": "ez3",
+   "circuitTitle": "Všeobecné požadavky na elektrická zařízení",
+   "number": 108,
+   "sourceMarker": "108)",
+   "numberedInSource": true,
+   "text": "Kdo je při práci na elektrickém zařízení vedoucí práce?",
+   "normativeRef": "ČSN EN 50110-1 ed. 4: 2025 čl. 3.2.3"
+  },
+  {
+   "id": "2027-ez3-109",
+   "circuit": "ez3",
+   "circuitTitle": "Všeobecné požadavky na elektrická zařízení",
+   "number": 109,
+   "sourceMarker": "109)",
+   "numberedInSource": true,
+   "text": "Jak je definováno riziko v oblasti bezpečnosti elektrických instalací (zařízení)?",
+   "normativeRef": "ČSN EN 50110-1 ed. 4:2015 čl. 3.1.3."
+  },
+  {
+   "id": "2027-ez3-110",
+   "circuit": "ez3",
+   "circuitTitle": "Všeobecné požadavky na elektrická zařízení",
+   "number": 110,
+   "sourceMarker": "110)",
+   "numberedInSource": true,
+   "text": "Jakou barvu musí mít výstražná fólie určená pro silnoproudé kabely?",
+   "normativeRef": "ČSN 73 6006:2003 čl. 5.1, Tabulka 1"
+  },
+  {
+   "id": "2027-ez3-111",
+   "circuit": "ez3",
+   "circuitTitle": "Všeobecné požadavky na elektrická zařízení",
+   "number": 111,
+   "sourceMarker": "111)",
+   "numberedInSource": true,
+   "text": "Jak musí být označena svorka pro připojení vnějšího ochranného vodiče u pracovního stroje?",
+   "normativeRef": "ČSN EN 60204-1 ed. 3:2019 čl. 5.2"
+  },
+  {
+   "id": "2027-ez3-112",
+   "circuit": "ez3",
+   "circuitTitle": "Všeobecné požadavky na elektrická zařízení",
+   "number": 112,
+   "sourceMarker": "112)",
+   "numberedInSource": true,
+   "text": "Je možno použít zásuvkové spojení pro elektrické napájení ohebným kabelem jako hlavní vypínač stroje?",
+   "normativeRef": "ČSN EN 60204-1 ed. 3:2019 čl. 5.3.2"
+  },
+  {
+   "id": "2027-ez3-113",
+   "circuit": "ez3",
+   "circuitTitle": "Všeobecné požadavky na elektrická zařízení",
+   "number": 113,
+   "sourceMarker": "113)",
+   "numberedInSource": true,
+   "text": "Co musí splňovat zásuvkové spojení, je-li použito jako hlavní vypínač pracovního stroje?",
+   "normativeRef": "ČSN EN 60204-1 ed. 3:2019 čl. 5.3.3, 13.4.5"
+  },
+  {
+   "id": "2027-ez3-114",
+   "circuit": "ez3",
+   "circuitTitle": "Všeobecné požadavky na elektrická zařízení",
+   "number": 114,
+   "sourceMarker": "114)",
+   "numberedInSource": true,
+   "text": "Kdo určuje jištění přívodních vodičů proti nadproudu u pracovních strojů?",
+   "normativeRef": "ČSN EN 60204-1 ed. 3:2019 čl. 7.2.2"
+  },
+  {
+   "id": "2027-ez3-115",
+   "circuit": "ez3",
+   "circuitTitle": "Všeobecné požadavky na elektrická zařízení",
+   "number": 115,
+   "sourceMarker": "115)",
+   "numberedInSource": true,
+   "text": "Jaké podmínky musí splňovat připojovací místo ochranného vodiče?",
+   "normativeRef": "ČSN EN 60204-1 ed. 3:2019 čl. 8.2.1"
+  },
+  {
+   "id": "2027-ez3-116",
+   "circuit": "ez3",
+   "circuitTitle": "Všeobecné požadavky na elektrická zařízení",
+   "number": 116,
+   "sourceMarker": "116)",
+   "numberedInSource": true,
+   "text": "Jak je ovlivňována proudová zatížitelnost přívodních kabelů stroje navíjených na válcový větraný buben?",
+   "normativeRef": "ČSN EN 60204-1 ed. 3:2019 čl. 12.6.3"
+  },
+  {
+   "id": "2027-ez3-117",
+   "circuit": "ez3",
+   "circuitTitle": "Všeobecné požadavky na elektrická zařízení",
+   "number": 117,
+   "sourceMarker": "117)",
+   "numberedInSource": true,
+   "text": "Kolik vodičů ochranného obvodu pracovního stroje se může připojit k jedné svorce?",
+   "normativeRef": "ČSN EN 60204-1 ed. 3:2019 čl. 13.1.1"
+  },
+  {
+   "id": "2027-ez3-118",
+   "circuit": "ez3",
+   "circuitTitle": "Všeobecné požadavky na elektrická zařízení",
+   "number": 118,
+   "sourceMarker": "118)",
+   "numberedInSource": true,
+   "text": "Co představuje označení rozváděč nn?",
+   "normativeRef": "ČSN EN IEC 61439-1 ed. 3:2022"
+  },
+  {
+   "id": "2027-ez3-119",
+   "circuit": "ez3",
+   "circuitTitle": "Všeobecné požadavky na elektrická zařízení",
+   "number": 119,
+   "sourceMarker": "119)",
+   "numberedInSource": true,
+   "text": "Kde může být umístěn štítek u rozváděče určeného k provozování laiky?",
+   "normativeRef": "ČSN EN IEC 61439-1 ed. 3:2022"
+  },
+  {
+   "id": "2027-ez3-120",
+   "circuit": "ez3",
+   "circuitTitle": "Všeobecné požadavky na elektrická zařízení",
+   "number": 120,
+   "sourceMarker": "120)",
+   "numberedInSource": true,
+   "text": "Který údaj musí být uveden na štítku rozváděče?",
+   "normativeRef": "ČSN EN IEC 61439-1 ed. 3:2022 čl. 6.1"
+  },
+  {
+   "id": "2027-ez3-121",
+   "circuit": "ez3",
+   "circuitTitle": "Všeobecné požadavky na elektrická zařízení",
+   "number": 121,
+   "sourceMarker": "121)",
+   "numberedInSource": true,
+   "text": "Jaké podmínky musí splňovat u rozváděče ochrana živých částí izolací?",
+   "normativeRef": "ČSN EN IEC 61439-1 ed. 3:2022 čl. 8.4.2.2"
+  },
+  {
+   "id": "2027-ez3-122",
+   "circuit": "ez3",
+   "circuitTitle": "Všeobecné požadavky na elektrická zařízení",
+   "number": 122,
+   "sourceMarker": "122)",
+   "numberedInSource": true,
+   "text": "Mohou být použity konstrukční části rozváděče jako vodič PEN?",
+   "normativeRef": "ČSN EN IEC 61439-1 ed. 3:2022 čl. 8.4.2."
+  },
+  {
+   "id": "2027-ez3-123",
+   "circuit": "ez3",
+   "circuitTitle": "Všeobecné požadavky na elektrická zařízení",
+   "number": 123,
+   "sourceMarker": "123)",
+   "numberedInSource": true,
+   "text": "Jaký může být nejmenší průřez měděného vodiče PEN v rozváděči?",
+   "normativeRef": "ČSN EN IEC 61439-1 ed. 3:2022 čl. 8.4.3."
+  },
+  {
+   "id": "2027-ez3-124",
+   "circuit": "ez3",
+   "circuitTitle": "Všeobecné požadavky na elektrická zařízení",
+   "number": 124,
+   "sourceMarker": "124)",
+   "numberedInSource": true,
+   "text": "Jaké kovové části smí procházet krytem rozváděče při použití ochrany dvojitou izolací?",
+   "normativeRef": "ČSN EN IEC 61439-1 ed. 3:2022 čl. 8.4.4"
+  },
+  {
+   "id": "2027-ez3-125",
+   "circuit": "ez3",
+   "circuitTitle": "Všeobecné požadavky na elektrická zařízení",
+   "number": 125,
+   "sourceMarker": "125)",
+   "numberedInSource": true,
+   "text": "Je možné u rozváděčů nn používat u vodičů spojujících dvě připojovací místa mezilehlý spoj, např. splétaný nebo svařovaný?",
+   "normativeRef": "ČSN EN IEC 61439-1 ed. 3:2022 čl. 8.6.3"
+  },
+  {
+   "id": "2027-ez3-126",
+   "circuit": "ez3",
+   "circuitTitle": "Všeobecné požadavky na elektrická zařízení",
+   "number": 126,
+   "sourceMarker": "126)",
+   "numberedInSource": true,
+   "text": "Jak musí být v rozváděči umístěny svorky pro vstupující a vystupující vodiče PE, N a PEN?",
+   "normativeRef": "ČSN EN IEC 61439-1 ed. 3:2022 čl. 8.8"
+  },
+  {
+   "id": "2027-ez3-127",
+   "circuit": "ez3",
+   "circuitTitle": "Všeobecné požadavky na elektrická zařízení",
+   "number": 127,
+   "sourceMarker": "127)",
+   "numberedInSource": true,
+   "text": "Kdo odpovídá za provedení ověřovacích zkoušek rozváděčů nn?",
+   "normativeRef": "ČSN EN IEC 61439-1 ed. 3:2022 čl. 10.1"
+  },
+  {
+   "id": "2027-ez3-128",
+   "circuit": "ez3",
+   "circuitTitle": "Všeobecné požadavky na elektrická zařízení",
+   "number": 128,
+   "sourceMarker": "128)",
+   "numberedInSource": true,
+   "text": "Co je úkolem kusového ověřování rozváděče?",
+   "normativeRef": "ČSN EN IEC 61439-1 ed. 3:2022 čl. 11.1"
+  },
+  {
+   "id": "2027-ez3-129",
+   "circuit": "ez3",
+   "circuitTitle": "Všeobecné požadavky na elektrická zařízení",
+   "number": 129,
+   "sourceMarker": "129)",
+   "numberedInSource": true,
+   "text": "Jaká je přípustná hodnota odporu mezi vstupním ochranným vodičem a příslušnou neživou částí při ověřování účinnosti ochranného obvodu?",
+   "normativeRef": "ČSN EN IEC 61439-1 ed. 3:2022 čl. 10.5.2"
+  },
+  {
+   "id": "2027-ez3-130",
+   "circuit": "ez3",
+   "circuitTitle": "Všeobecné požadavky na elektrická zařízení",
+   "number": 130,
+   "sourceMarker": "130)",
+   "numberedInSource": true,
+   "text": "Kolik svorek pro nulové vodiče a vodiče ochranného pospojování musí obsahovat rozvodnice DBO určené k provozování laiky?",
+   "normativeRef": "ČSN EN 61439-3 ed. 2:2025 čl. 8.8."
+  },
+  {
+   "id": "2027-ez3-131",
+   "circuit": "ez3",
+   "circuitTitle": "Všeobecné požadavky na elektrická zařízení",
+   "number": 131,
+   "sourceMarker": "131)",
+   "numberedInSource": true,
+   "text": "Co představuje u výkonového rozváděče nízkého napětí označení IK?",
+   "normativeRef": "ČSN EN IEC 61439-2 ed. 3: 2021 čl.10.2.6"
+  },
+  {
+   "id": "2027-ez3-132",
+   "circuit": "ez3",
+   "circuitTitle": "Všeobecné požadavky na elektrická zařízení",
+   "number": 132,
+   "sourceMarker": "132)",
+   "numberedInSource": true,
+   "text": "Jaké krytí je přípustné u vnitřního rozváděče DBO určeného k provozování laiky?",
+   "normativeRef": "ČSN EN 61439-3:2025 čl. 8.2.2"
+  },
+  {
+   "id": "2027-ez3-133",
+   "circuit": "ez3",
+   "circuitTitle": "Všeobecné požadavky na elektrická zařízení",
+   "number": 133,
+   "sourceMarker": "133)",
+   "numberedInSource": true,
+   "text": "Jaké krytí musí splňovat staveništní rozváděč ACS před dotykem živých částí, vniknutím pevných cizích těles a vody při zavřených dveřích?",
+   "normativeRef": "ČSN EN 61439-4:2013 čl. 8.2.2"
+  },
+  {
+   "id": "2027-ez3-134",
+   "circuit": "ez3",
+   "circuitTitle": "Všeobecné požadavky na elektrická zařízení",
+   "number": 134,
+   "sourceMarker": "134)",
+   "numberedInSource": true,
+   "text": "Jaké části staveništního rozváděče ACS smí být přístupné bez použití klíče nebo nástroje?",
+   "normativeRef": "ČSN EN 61439-4:2013 čl. 8.5.101"
+  },
+  {
+   "id": "2027-ez3-135",
+   "circuit": "ez3",
+   "circuitTitle": "Všeobecné požadavky na elektrická zařízení",
+   "number": 135,
+   "sourceMarker": "135)",
+   "numberedInSource": true,
+   "text": "Jakou ochranu proti dotyku neživých částí musí mít zásuvky se jmenovitým proudem nepřesahujícím 32 A používané pro přenosné spotřebiče u výstupní jednotky staveništního rozváděče ACS?",
+   "normativeRef": "ČSN EN 61439-4:2013 čl. 101.5"
+  },
+  {
+   "id": "2027-ez3-136",
+   "circuit": "ez3",
+   "circuitTitle": "Všeobecné požadavky na elektrická zařízení",
+   "number": 136,
+   "sourceMarker": "136)",
+   "numberedInSource": true,
+   "text": "Pojmem přípojnicový rozvod BTS je označován krytý rozváděč používaný pro rozvod a regulaci elektrické energie. Pro jaké využití je určen?",
+   "normativeRef": "ČSN EN 61439-6:2013 čl. 3.101"
+  },
+  {
+   "id": "2027-ez3-137",
+   "circuit": "ez3",
+   "circuitTitle": "Všeobecné požadavky na elektrická zařízení",
+   "number": 137,
+   "sourceMarker": "137)",
+   "numberedInSource": true,
+   "text": "Jakou ochranu poskytuje úplný kryt na elektrickém zařízení?",
+   "normativeRef": "ČSN EN IEC 60670-1 ed. 2:2021 čl. 3.1"
+  },
+  {
+   "id": "2027-ez3-138",
+   "circuit": "ez3",
+   "circuitTitle": "Všeobecné požadavky na elektrická zařízení",
+   "number": 138,
+   "sourceMarker": "138)",
+   "numberedInSource": true,
+   "text": "Jaký stupeň ochrany musí splňovat úplné kryty pro obvyklé používání?",
+   "normativeRef": "ČSN EN IEC 60670-1 ed. 2:2021 čl. 3.1"
+  },
+  {
+   "id": "2027-ez3-139",
+   "circuit": "ez3",
+   "circuitTitle": "Všeobecné požadavky na elektrická zařízení",
+   "number": 139,
+   "sourceMarker": "139)",
+   "numberedInSource": true,
+   "text": "Jaké požadavky musí splňovat otvory zapuštěné podlahové krabice nebo úplného krytu v době mimo používání?",
+   "normativeRef": "ČSN EN 60670-23:2009 čl. 12.101 + oprava"
+  },
+  {
+   "id": "2027-ez3-140",
+   "circuit": "ez3",
+   "circuitTitle": "Všeobecné požadavky na elektrická zařízení",
+   "number": 140,
+   "sourceMarker": "140)",
+   "numberedInSource": true,
+   "text": "Jak musí být umístěna ovládací zařízení na rozváděči?",
+   "normativeRef": "ČSN EN 50274:2002 čl. 4.1"
+  },
+  {
+   "id": "2027-ez4-001",
+   "circuit": "ez4",
+   "circuitTitle": "LPS v prostředí bez nebezpečí výbuchu",
+   "number": 1,
+   "sourceMarker": null,
+   "numberedInSource": false,
+   "text": "Jak je charakterizována doba trvání blesku T? (flash duration)",
+   "normativeRef": "ČSN EN IEC 62305-1 ed. 3: 2024 čl. 3.15"
+  },
+  {
+   "id": "2027-ez4-002",
+   "circuit": "ez4",
+   "circuitTitle": "LPS v prostředí bez nebezpečí výbuchu",
+   "number": 2,
+   "sourceMarker": null,
+   "numberedInSource": false,
+   "text": "Jak lze charakterizovat chráněnou stavbu?",
+   "normativeRef": "ČSN EN IEC 62305-1 ed. 3: 2024 čl. 3.22"
+  },
+  {
+   "id": "2027-ez4-003",
+   "circuit": "ez4",
+   "circuitTitle": "LPS v prostředí bez nebezpečí výbuchu",
+   "number": 3,
+   "sourceMarker": null,
+   "numberedInSource": false,
+   "text": "Jak je charakterizováno nebezpečné jiskření?",
+   "normativeRef": "ČSN EN IEC 62305-1 ed. 3: 2024 čl. 3.31"
+  },
+  {
+   "id": "2027-ez4-004",
+   "circuit": "ez4",
+   "circuitTitle": "LPS v prostředí bez nebezpečí výbuchu",
+   "number": 4,
+   "sourceMarker": null,
+   "numberedInSource": false,
+   "text": "Normy řady ČSN EN 62305 využívají v celém rozsahu zkrácené názvy. Co znamená označení LPZ?",
+   "normativeRef": "ČSN EN IEC 62305-1 ed. 3: 2024 čl. 3.40"
+  },
+  {
+   "id": "2027-ez4-005",
+   "circuit": "ez4",
+   "circuitTitle": "LPS v prostředí bez nebezpečí výbuchu",
+   "number": 5,
+   "sourceMarker": null,
+   "numberedInSource": false,
+   "text": "Normy řady ČSN EN 62305 využívají v celém rozsahu zkrácené názvy. Co znamená označení LPL?",
+   "normativeRef": "ČSN EN IEC 62305-1 ed. 3: 2024 čl. 3.49"
+  },
+  {
+   "id": "2027-ez4-006",
+   "circuit": "ez4",
+   "circuitTitle": "LPS v prostředí bez nebezpečí výbuchu",
+   "number": 6,
+   "sourceMarker": null,
+   "numberedInSource": false,
+   "text": "Normy řady ČSN EN 62305 využívají v celém rozsahu zkrácené názvy. Co znamená označení LPS?",
+   "normativeRef": "ČSN EN IEC 62305-1 ed. 3: 2024 čl. 3.52"
+  },
+  {
+   "id": "2027-ez4-007",
+   "circuit": "ez4",
+   "circuitTitle": "LPS v prostředí bez nebezpečí výbuchu",
+   "number": 7,
+   "sourceMarker": null,
+   "numberedInSource": false,
+   "text": "Normy řady ČSN EN 62305 využívají v celém rozsahu zkrácené názvy. Co znamená označení SPD?",
+   "normativeRef": "ČSN EN IEC 62305-1 ed. 3: 2024 čl. 3.63"
+  },
+  {
+   "id": "2027-ez4-008",
+   "circuit": "ez4",
+   "circuitTitle": "LPS v prostředí bez nebezpečí výbuchu",
+   "number": 8,
+   "sourceMarker": null,
+   "numberedInSource": false,
+   "text": "Podle řady ČSN EN 62305 jsou znázorněny zdroje škod na stavbě písmeny S1, S2, S3, S4. Co toto označení představuje?",
+   "normativeRef": "ČSN EN IEC 62305-1 ed. 3: 2024 čl. 5.1."
+  },
+  {
+   "id": "2027-ez4-009",
+   "circuit": "ez4",
+   "circuitTitle": "LPS v prostředí bez nebezpečí výbuchu",
+   "number": 9,
+   "sourceMarker": null,
+   "numberedInSource": false,
+   "text": "Jaké jsou maximální hodnoty parametrů vrcholového proudu podle LPL?",
+   "normativeRef": "ČSN EN IEC 62305-1 ed. 3: 2024 čl.8.2 tabulka 3"
+  },
+  {
+   "id": "2027-ez4-010",
+   "circuit": "ez4",
+   "circuitTitle": "LPS v prostředí bez nebezpečí výbuchu",
+   "number": 10,
+   "sourceMarker": null,
+   "numberedInSource": false,
+   "text": "Jaký je poloměr valivé koule r v závislosti na úrovni LPL? (lightning protection level)",
+   "normativeRef": "ČSN EN IEC 62305-1 ed. 3: 2024 čl.8.2 tabulka 4"
+  },
+  {
+   "id": "2027-ez4-011",
+   "circuit": "ez4",
+   "circuitTitle": "LPS v prostředí bez nebezpečí výbuchu",
+   "number": 11,
+   "sourceMarker": null,
+   "numberedInSource": false,
+   "text": "V které části objektu se podle řady ČSN EN 62305 nacházejí zóny LPZ 0A a LPZ 0B?",
+   "normativeRef": "ČSN EN IEC 62305-1 ed. 3: 2024 čl. 8.3"
+  },
+  {
+   "id": "2027-ez4-012",
+   "circuit": "ez4",
+   "circuitTitle": "LPS v prostředí bez nebezpečí výbuchu",
+   "number": 12,
+   "sourceMarker": null,
+   "numberedInSource": false,
+   "text": "Průběh bleskového proudu se podle řady ČSN EN 62305 označuje jako poměr T1/T2 (μs/μs). Co toto označení ve skutečnosti představuje?",
+   "normativeRef": "ČSN EN IEC 62305-1 ed. 3: 2024 příloha A, část A.1"
+  },
+  {
+   "id": "2027-ez4-013",
+   "circuit": "ez4",
+   "circuitTitle": "LPS v prostředí bez nebezpečí výbuchu",
+   "number": 13,
+   "sourceMarker": "13)",
+   "numberedInSource": true,
+   "text": "Jak je definována ztráta (loss) L ?",
+   "normativeRef": "ČSN EN IEC 62305-1 ed. 3: 2024 čl.3.43"
+  },
+  {
+   "id": "2027-ez4-014",
+   "circuit": "ez4",
+   "circuitTitle": "LPS v prostředí bez nebezpečí výbuchu",
+   "number": 14,
+   "sourceMarker": "14)",
+   "numberedInSource": true,
+   "text": "Jak lze definovat úder blesku do stavby (lightning flash to a structure)+",
+   "normativeRef": "ČSN EN IEC 62305-1 ed. 3: 2024 čl.3.26"
+  },
+  {
+   "id": "2027-ez4-015",
+   "circuit": "ez4",
+   "circuitTitle": "LPS v prostředí bez nebezpečí výbuchu",
+   "number": 15,
+   "sourceMarker": "15)",
+   "numberedInSource": true,
+   "text": "Normy řady ČSN EN 62305 využívají v celém rozsahu zkrácené názvy. Co znamená označení LEMP? (lightning electromagnetic impulse)",
+   "normativeRef": "ČSN EN IEC 62305-1 ed. 3: 2024 čl. 3.38"
+  },
+  {
+   "id": "2027-ez4-016",
+   "circuit": "ez4",
+   "circuitTitle": "LPS v prostředí bez nebezpečí výbuchu",
+   "number": 16,
+   "sourceMarker": "16)",
+   "numberedInSource": true,
+   "text": "Jak je definováno přepětí?(surge)",
+   "normativeRef": "ČSN EN IEC 62305-1 ed. 3: 2024 čl. 3.39"
+  },
+  {
+   "id": "2027-ez4-017",
+   "circuit": "ez4",
+   "circuitTitle": "LPS v prostředí bez nebezpečí výbuchu",
+   "number": 17,
+   "sourceMarker": "17)",
+   "numberedInSource": true,
+   "text": "Co je to přípustné riziko (RT) určované ve výpočtech?",
+   "normativeRef": "ČSN EN IEC 62305-1 ed. 3: 2024 čl. 3.48"
+  },
+  {
+   "id": "2027-ez4-018",
+   "circuit": "ez4",
+   "circuitTitle": "LPS v prostředí bez nebezpečí výbuchu",
+   "number": 18,
+   "sourceMarker": "18)",
+   "numberedInSource": true,
+   "text": "Jak jsou charakterizována ochranná opatření před přepětím SPM?",
+   "normativeRef": "ČSN EN IEC 62305-1 ed. 3: 2024 čl. 3.61"
+  },
+  {
+   "id": "2027-ez4-019",
+   "circuit": "ez4",
+   "circuitTitle": "LPS v prostředí bez nebezpečí výbuchu",
+   "number": 19,
+   "sourceMarker": "19)",
+   "numberedInSource": true,
+   "text": "Jak jsou označovány základní příčiny škod?",
+   "normativeRef": "ČSN EN IEC 62305-2 ed. 3: 2025 čl. 5.2"
+  },
+  {
+   "id": "2027-ez4-020",
+   "circuit": "ez4",
+   "circuitTitle": "LPS v prostředí bez nebezpečí výbuchu",
+   "number": 20,
+   "sourceMarker": "20)",
+   "numberedInSource": true,
+   "text": "Jaký základní typ ztrát rozeznáváme na chráněné stavbě?",
+   "normativeRef": "ČSN EN IEC 62305-2 ed. 3: 2025 čl. 5.3."
+  },
+  {
+   "id": "2027-ez4-021",
+   "circuit": "ez4",
+   "circuitTitle": "LPS v prostředí bez nebezpečí výbuchu",
+   "number": 21,
+   "sourceMarker": "21)",
+   "numberedInSource": true,
+   "text": "Na základě čeho se musí vyhodnocovat riziko a složky rizika R?",
+   "normativeRef": "ČSN EN IEC 62305-2 ed. 3: 2025 čl. 6.1"
+  },
+  {
+   "id": "2027-ez4-022",
+   "circuit": "ez4",
+   "circuitTitle": "LPS v prostředí bez nebezpečí výbuchu",
+   "number": 22,
+   "sourceMarker": "22)",
+   "numberedInSource": true,
+   "text": "Co je účelem managementu rizika u staveb způsobeného údery blesku do země?",
+   "normativeRef": "ČSN EN IEC 62305-2 ed. 3: 2025 čl.1"
+  },
+  {
+   "id": "2027-ez4-023",
+   "circuit": "ez4",
+   "circuitTitle": "LPS v prostředí bez nebezpečí výbuchu",
+   "number": 23,
+   "sourceMarker": "23)",
+   "numberedInSource": true,
+   "text": "Jaká místa úderu blesku jsou definována, z hlediska určení zdrojů škod, typů ztrát a složek rizika?",
+   "normativeRef": "ČSN EN IEC 62305-2 ed. 3: 2025 čl.6.1. tabulka 1"
+  },
+  {
+   "id": "2027-ez4-024",
+   "circuit": "ez4",
+   "circuitTitle": "LPS v prostředí bez nebezpečí výbuchu",
+   "number": 24,
+   "sourceMarker": "24)",
+   "numberedInSource": true,
+   "text": "Jaké faktory mají být zohledněny při posouzení rizika u stavby?",
+   "normativeRef": "ČSN EN IEC 62305-2 ed. 3: 2025 čl.7.2"
+  },
+  {
+   "id": "2027-ez4-025",
+   "circuit": "ez4",
+   "circuitTitle": "LPS v prostředí bez nebezpečí výbuchu",
+   "number": 25,
+   "sourceMarker": "25)",
+   "numberedInSource": true,
+   "text": "Jaká je reprezentativní hodnota přípustného rizika RT ?",
+   "normativeRef": "ČSN EN IEC 62305-2 ed. 3: 2025 čl.7.3 POZNÁMKA 1"
+  },
+  {
+   "id": "2027-ez4-026",
+   "circuit": "ez4",
+   "circuitTitle": "LPS v prostředí bez nebezpečí výbuchu",
+   "number": 26,
+   "sourceMarker": "26)",
+   "numberedInSource": true,
+   "text": "Kdo zohledňuje kritičnost vnitřních systémů pro plnění jejich funkce při stanovení přípustné úrovně FT ?",
+   "normativeRef": "ČSN EN IEC 62305-2 ed. 3: 2025 čl. 9.3 POZNÁMKA 2"
+  },
+  {
+   "id": "2027-ez4-027",
+   "circuit": "ez4",
+   "circuitTitle": "LPS v prostředí bez nebezpečí výbuchu",
+   "number": 27,
+   "sourceMarker": "27)",
+   "numberedInSource": true,
+   "text": "Z jakých opatřeních se obvykle skládá systém ochrany před bleskem (LPS)?",
+   "normativeRef": "ČSN EN IEC 62305-3 ed. 3: 2025 ÚVOD"
+  },
+  {
+   "id": "2027-ez4-028",
+   "circuit": "ez4",
+   "circuitTitle": "LPS v prostředí bez nebezpečí výbuchu",
+   "number": 28,
+   "sourceMarker": "28)",
+   "numberedInSource": true,
+   "text": "Měly být pečlivě zváženy typ a umístění LPS již ve fázi návrhu nové stavby?",
+   "normativeRef": "ČSN EN IEC 62305-3 ed. 3: 2025 ÚVOD"
+  },
+  {
+   "id": "2027-ez4-029",
+   "circuit": "ez4",
+   "circuitTitle": "LPS v prostředí bez nebezpečí výbuchu",
+   "number": 29,
+   "sourceMarker": "29)",
+   "numberedInSource": true,
+   "text": "Co představuje systém ochrany před bleskem LPS?",
+   "normativeRef": "ČSN EN IEC 62305-3 ed. 3: 2025 čl. 3.1"
+  },
+  {
+   "id": "2027-ez4-030",
+   "circuit": "ez4",
+   "circuitTitle": "LPS v prostředí bez nebezpečí výbuchu",
+   "number": 30,
+   "sourceMarker": "30)",
+   "numberedInSource": true,
+   "text": "Z čeho se skládá vnější systém ochrany před bleskem?",
+   "normativeRef": "ČSN EN IEC 62305-3 ed. 3: 2025 čl. 3.2"
+  },
+  {
+   "id": "2027-ez4-031",
+   "circuit": "ez4",
+   "circuitTitle": "LPS v prostředí bez nebezpečí výbuchu",
+   "number": 31,
+   "sourceMarker": "31)",
+   "numberedInSource": true,
+   "text": "Čemu musí odpovídat izolovaný (oddálený) LPS? (isolated LPS",
+   "normativeRef": "ČSN EN IEC 62305-3 ed. 3: 2025 čl. 3.3"
+  },
+  {
+   "id": "2027-ez4-032",
+   "circuit": "ez4",
+   "circuitTitle": "LPS v prostředí bez nebezpečí výbuchu",
+   "number": 32,
+   "sourceMarker": "32)",
+   "numberedInSource": true,
+   "text": "Čemu musí odpovídat připojený LPS (attached LPS)?",
+   "normativeRef": "ČSN EN IEC 62305-3 ed. 3: 2025 čl. 3.4"
+  },
+  {
+   "id": "2027-ez4-033",
+   "circuit": "ez4",
+   "circuitTitle": "LPS v prostředí bez nebezpečí výbuchu",
+   "number": 33,
+   "sourceMarker": "33)",
+   "numberedInSource": true,
+   "text": "Čemu musí odpovídat elektricky izolovaný LPS? (electrically insulated LPS)",
+   "normativeRef": "ČSN EN IEC 62305-3 ed. 3: 2025 čl. 3.5"
+  },
+  {
+   "id": "2027-ez4-034",
+   "circuit": "ez4",
+   "circuitTitle": "LPS v prostředí bez nebezpečí výbuchu",
+   "number": 34,
+   "sourceMarker": "34)",
+   "numberedInSource": true,
+   "text": "Co je to pospojování proti blesku (vyrovnání potenciálů při blesku) označované EB? (lightning equipotential bonding)",
+   "normativeRef": "ČSN EN IEC 62305-3 ed. 3: 2025 čl. 3.23"
+  },
+  {
+   "id": "2027-ez4-035",
+   "circuit": "ez4",
+   "circuitTitle": "LPS v prostředí bez nebezpečí výbuchu",
+   "number": 35,
+   "sourceMarker": "35)",
+   "numberedInSource": true,
+   "text": "K čemu slouží přípojnice pospojování (bonding bar?",
+   "normativeRef": "ČSN EN IEC 62305-3 ed. 3: 2025 čl. 3.24"
+  },
+  {
+   "id": "2027-ez4-036",
+   "circuit": "ez4",
+   "circuitTitle": "LPS v prostředí bez nebezpečí výbuchu",
+   "number": 36,
+   "sourceMarker": "36)",
+   "numberedInSource": true,
+   "text": "Jaká data (parametry) jsou závislá na třídě LPS? (lightning protection systém)",
+   "normativeRef": "ČSN EN IEC 62305-3 ed. 3: 2025 čl. 4.1"
+  },
+  {
+   "id": "2027-ez4-037",
+   "circuit": "ez4",
+   "circuitTitle": "LPS v prostředí bez nebezpečí výbuchu",
+   "number": 37,
+   "sourceMarker": "37)",
+   "numberedInSource": true,
+   "text": "Může technicky a ekonomicky optimalizovaný návrh ochrany před bleskem (LPS) využívat náhodných součástí stavby jako části LPS?",
+   "normativeRef": "ČSN EN IEC 62305-3 ed. 3: 2025 čl. 4.2"
+  },
+  {
+   "id": "2027-ez4-038",
+   "circuit": "ez4",
+   "circuitTitle": "LPS v prostředí bez nebezpečí výbuchu",
+   "number": 38,
+   "sourceMarker": "38)",
+   "numberedInSource": true,
+   "text": "U staveb ze železobetonu musí být elektrické propojení armování stanoveno elektrickou zkouškou mezi jímací soustavou a přípojnicí pospojování nebo jiným spojením s uzemňovací soustavou. Jaký je požadavek na maximální celkový odpor, aby mohla být ocelová výztuž v železobetonových stavbách použita jako náhodná součást LPS?",
+   "normativeRef": "ČSN EN IEC 62305-3 ed. 3: 2025 čl.D.5.3.5.2 a D.5.3.5.2.2"
+  },
+  {
+   "id": "2027-ez4-039",
+   "circuit": "ez4",
+   "circuitTitle": "LPS v prostředí bez nebezpečí výbuchu",
+   "number": 39,
+   "sourceMarker": "39)",
+   "numberedInSource": true,
+   "text": "Pokud použijeme ve stavbách z železobetonu pro návrh LPS ocelové armování, je nutné elektrické propojení svislých a vodorovných prutů svařením nebo jiný způsob spojení. Kdo dává souhlas k přivaření k výztužným tyčím?",
+   "normativeRef": "ČSN EN IEC 62305-3 ed. 3: 2025 čl D.5.3.5.2.4"
+  },
+  {
+   "id": "2027-ez4-040",
+   "circuit": "ez4",
+   "circuitTitle": "LPS v prostředí bez nebezpečí výbuchu",
+   "number": 40,
+   "sourceMarker": "40)",
+   "numberedInSource": true,
+   "text": "V jakých případech by měl být na chráněné stavbě použit izolovaný LPS nebo elektricky izolovaný LPS?",
+   "normativeRef": "ČSN EN IEC 62305-3 ed. 3: 2025 čl. 5.1.2"
+  },
+  {
+   "id": "2027-ez4-041",
+   "circuit": "ez4",
+   "circuitTitle": "LPS v prostředí bez nebezpečí výbuchu",
+   "number": 41,
+   "sourceMarker": "41)",
+   "numberedInSource": true,
+   "text": "Jaké části může obsahovat jímací soustava?",
+   "normativeRef": "ČSN EN IEC 62305-3 ed. 3: 2025 čl. 5. 2.1"
+  },
+  {
+   "id": "2027-ez4-042",
+   "circuit": "ez4",
+   "circuitTitle": "LPS v prostředí bez nebezpečí výbuchu",
+   "number": 42,
+   "sourceMarker": "42)",
+   "numberedInSource": true,
+   "text": "Jaké jsou přípustné metody pro stanovení umístění jímací soustavy?",
+   "normativeRef": "ČSN EN IEC 62305-3 ed. 3: 2025 čl. 5. 2.2"
+  },
+  {
+   "id": "2027-ez4-043",
+   "circuit": "ez4",
+   "circuitTitle": "LPS v prostředí bez nebezpečí výbuchu",
+   "number": 43,
+   "sourceMarker": "43)",
+   "numberedInSource": true,
+   "text": "Jaký je přípustný vrcholový úhel pro vyšetření jímací soustavy při metodě pomocí ochranného úhlu?",
+   "normativeRef": "ČSN EN IEC 62305-3 ed. 3: 2025 čl. 5. 2.2.1 obrázek 1"
+  },
+  {
+   "id": "2027-ez4-044",
+   "circuit": "ez4",
+   "circuitTitle": "LPS v prostředí bez nebezpečí výbuchu",
+   "number": 44,
+   "sourceMarker": "44)",
+   "numberedInSource": true,
+   "text": "Jaké jsou přípustné poloměry valivé koule pro vyšetření jímací soustavy?",
+   "normativeRef": "ČSN EN IEC 62305-3 ed. 3: 2025 čl. 5. 2.2.1 tabulka 2"
+  },
+  {
+   "id": "2027-ez4-045",
+   "circuit": "ez4",
+   "circuitTitle": "LPS v prostředí bez nebezpečí výbuchu",
+   "number": 45,
+   "sourceMarker": "45)",
+   "numberedInSource": true,
+   "text": "Kdy je při použití metody valivé koule umístění jímací soustavy dostatečné?",
+   "normativeRef": "ČSN EN IEC 62305-3 ed. 3: 2025 čl. 5. 2.2.2"
+  },
+  {
+   "id": "2027-ez4-046",
+   "circuit": "ez4",
+   "circuitTitle": "LPS v prostředí bez nebezpečí výbuchu",
+   "number": 46,
+   "sourceMarker": "46)",
+   "numberedInSource": true,
+   "text": "Kdy se poloha jímací soustavy při použití metody ochranného úhlu považuje za přiměřenou?",
+   "normativeRef": "ČSN EN IEC 62305-3 ed. 3: 2025 čl. 5. 2.2.3.1"
+  },
+  {
+   "id": "2027-ez4-047",
+   "circuit": "ez4",
+   "circuitTitle": "LPS v prostředí bez nebezpečí výbuchu",
+   "number": 47,
+   "sourceMarker": "47)",
+   "numberedInSource": true,
+   "text": "Kde mají být umístěny jímací vodiče při použití metody mřížové soustavy?",
+   "normativeRef": "ČSN EN IEC 62305-3 ed. 3: 2025 čl. 5. 2.2.4"
+  },
+  {
+   "id": "2027-ez4-048",
+   "circuit": "ez4",
+   "circuitTitle": "LPS v prostředí bez nebezpečí výbuchu",
+   "number": 48,
+   "sourceMarker": "48)",
+   "numberedInSource": true,
+   "text": "U jakých staveb může vzniknout nebezpečí úderu do boku stavby?",
+   "normativeRef": "ČSN EN IEC 62305-3 ed. 3: 2025 čl. 5. 2.3"
+  },
+  {
+   "id": "2027-ez4-049",
+   "circuit": "ez4",
+   "circuitTitle": "LPS v prostředí bez nebezpečí výbuchu",
+   "number": 49,
+   "sourceMarker": "49)",
+   "numberedInSource": true,
+   "text": "V jakých případech mohou být vodiče jímací soustavy umístěny na povrchu střechy?",
+   "normativeRef": "ČSN EN IEC 62305-3 ed. 3: 2025 čl. 5. 2.4"
+  },
+  {
+   "id": "2027-ez4-050",
+   "circuit": "ez4",
+   "circuitTitle": "LPS v prostředí bez nebezpečí výbuchu",
+   "number": 50,
+   "sourceMarker": "50)",
+   "numberedInSource": true,
+   "text": "Jaká je minimální tloušťka „t“ (zabraňuje průrazu) kovových plechů nebo kovové trubky, pro materiál korozivzdorná - pozinkovaná ocel, která je použita jako náhodná součást jímací soustavy LPS?",
+   "normativeRef": "ČSN EN IEC 62305-3 ed. 3: 2025 čl. 5. 2.5 tabulka 3"
+  },
+  {
+   "id": "2027-ez4-051",
+   "circuit": "ez4",
+   "circuitTitle": "LPS v prostředí bez nebezpečí výbuchu",
+   "number": 51,
+   "sourceMarker": "51)",
+   "numberedInSource": true,
+   "text": "Jak musí být uspořádány svody, aby se snížila pravděpodobnost škod v důsledku bleskového proudu protékajícího LPS?",
+   "normativeRef": "ČSN EN IEC 62305-3 ed. 3: 2025 čl. 5. 3.1"
+  },
+  {
+   "id": "2027-ez4-052",
+   "circuit": "ez4",
+   "circuitTitle": "LPS v prostředí bez nebezpečí výbuchu",
+   "number": 52,
+   "sourceMarker": "52)",
+   "numberedInSource": true,
+   "text": "Kolik svodů je nutno instalovat u izolovaného LPS, je-li jímací soustava tvořena závěsnými lany (nebo jedním vodičem)?",
+   "normativeRef": "ČSN EN IEC 62305-3 ed. 3: 2025 čl. 5. 3.2"
+  },
+  {
+   "id": "2027-ez4-053",
+   "circuit": "ez4",
+   "circuitTitle": "LPS v prostředí bez nebezpečí výbuchu",
+   "number": 53,
+   "sourceMarker": "53)",
+   "numberedInSource": true,
+   "text": "Kolik svodů je nutno instalovat u neizolovaného (neoddáleného) LPS?",
+   "normativeRef": "ČSN EN IEC 62305-3 ed. 3: 2025 čl. 5. 3.3"
+  },
+  {
+   "id": "2027-ez4-054",
+   "circuit": "ez4",
+   "circuitTitle": "LPS v prostředí bez nebezpečí výbuchu",
+   "number": 54,
+   "sourceMarker": "54)",
+   "numberedInSource": true,
+   "text": "Jaké jsou preferované hodnoty vzdáleností mezi svody u připojeného (neizolovaného) LPS ve vztahu k třídám LPS?",
+   "normativeRef": "ČSN EN IEC 62305-3 ed. 3: 2025 čl. 5. 3.3 tabulka 5"
+  },
+  {
+   "id": "2027-ez4-055",
+   "circuit": "ez4",
+   "circuitTitle": "LPS v prostředí bez nebezpečí výbuchu",
+   "number": 55,
+   "sourceMarker": "55)",
+   "numberedInSource": true,
+   "text": "Jakým požadavkům má odpovídat konstrukce a instalace svodů LPS?",
+   "normativeRef": "ČSN EN IEC 62305-3 ed. 3: 2025 čl. 5. 3.4"
+  },
+  {
+   "id": "2027-ez4-056",
+   "circuit": "ez4",
+   "circuitTitle": "LPS v prostředí bez nebezpečí výbuchu",
+   "number": 56,
+   "sourceMarker": "56)",
+   "numberedInSource": true,
+   "text": "Mohou se umístit svody neoddáleného LPS na stěnu z normálně hořlavého materiálu?",
+   "normativeRef": "ČSN EN IEC 62305-3 ed. 3: 2025 čl. 5. 3."
+  },
+  {
+   "id": "2027-ez4-057",
+   "circuit": "ez4",
+   "circuitTitle": "LPS v prostředí bez nebezpečí výbuchu",
+   "number": 57,
+   "sourceMarker": "57)",
+   "numberedInSource": true,
+   "text": "Které náhodné části stavby by neměly být považovány za náhodné svody?",
+   "normativeRef": "ČSN EN IEC 62305-3 ed. 3: 2025 čl. 5. 3.5"
+  },
+  {
+   "id": "2027-ez4-058",
+   "circuit": "ez4",
+   "circuitTitle": "LPS v prostředí bez nebezpečí výbuchu",
+   "number": 58,
+   "sourceMarker": "58)",
+   "numberedInSource": true,
+   "text": "Kde by měly být umístěny na svodech zkušební spoj, při připojení k uzemnění?",
+   "normativeRef": "ČSN EN IEC 62305-3 ed. 3: 2025 čl. 5. 3.6"
+  },
+  {
+   "id": "2027-ez4-059",
+   "circuit": "ez4",
+   "circuitTitle": "LPS v prostředí bez nebezpečí výbuchu",
+   "number": 59,
+   "sourceMarker": "59)",
+   "numberedInSource": true,
+   "text": "Jaká je doporučovaná hodnota odporu uzemnění pro LPS měřená při nízké frekvenci?",
+   "normativeRef": "ČSN EN IEC 62305-3 ed. 3: 2025 čl. 5. 4.1."
+  },
+  {
+   "id": "2027-ez4-060",
+   "circuit": "ez4",
+   "circuitTitle": "LPS v prostředí bez nebezpečí výbuchu",
+   "number": 60,
+   "sourceMarker": "60)",
+   "numberedInSource": true,
+   "text": "Jaký smí být nejmenší celkový počet zemničů (uspořádaných z vodorovných nebo svislých zemničů) v uspořádání typu A instalovaného vně chráněné stavby?",
+   "normativeRef": "ČSN EN 62305-3 ed. 2:2012 čl. 5. 4.2."
+  },
+  {
+   "id": "2027-ez4-061",
+   "circuit": "ez4",
+   "circuitTitle": "LPS v prostředí bez nebezpečí výbuchu",
+   "number": 61,
+   "sourceMarker": "61)",
+   "numberedInSource": true,
+   "text": "Z čeho se skládá uzemňovací soustava v uspořádání typu A?",
+   "normativeRef": "ČSN EN IEC 62305-3 ed. 3: 2025 čl. 5. 4.2."
+  },
+  {
+   "id": "2027-ez4-062",
+   "circuit": "ez4",
+   "circuitTitle": "LPS v prostředí bez nebezpečí výbuchu",
+   "number": 62,
+   "sourceMarker": "62)",
+   "numberedInSource": true,
+   "text": "Z čeho se skládá obvodová uzemňovací soustava vně chráněné stavby v uspořádání typu B?",
+   "normativeRef": "ČSN EN IEC 62305-3 ed. 3: 2025 čl. 5. 4.2."
+  },
+  {
+   "id": "2027-ez4-063",
+   "circuit": "ez4",
+   "circuitTitle": "LPS v prostředí bez nebezpečí výbuchu",
+   "number": 63,
+   "sourceMarker": "63)",
+   "numberedInSource": true,
+   "text": "V jaké hloubce a vzdálenosti od stěn by měl být přednostně uložen obvodový zemnič (uspořádání typu B)?",
+   "normativeRef": "ČSN EN IEC 62305-3 ed. 3: 2025 čl. 5. 4.3"
+  },
+  {
+   "id": "2027-ez4-064",
+   "circuit": "ez4",
+   "circuitTitle": "LPS v prostředí bez nebezpečí výbuchu",
+   "number": 64,
+   "sourceMarker": "64)",
+   "numberedInSource": true,
+   "text": "Jaké zemniče se mají přednostně používat jako zemniče náhodné?",
+   "normativeRef": "ČSN EN IEC 62305-3 ed. 3: 2025 čl. 5. 4.4"
+  },
+  {
+   "id": "2027-ez4-065",
+   "circuit": "ez4",
+   "circuitTitle": "LPS v prostředí bez nebezpečí výbuchu",
+   "number": 65,
+   "sourceMarker": "65)",
+   "numberedInSource": true,
+   "text": "Jak musí být omezen počet spojení podél vodičů?",
+   "normativeRef": "ČSN EN IEC 62305-3 ed. 3: 2025 čl. 5. 5.3"
+  },
+  {
+   "id": "2027-ez4-066",
+   "circuit": "ez4",
+   "circuitTitle": "LPS v prostředí bez nebezpečí výbuchu",
+   "number": 66,
+   "sourceMarker": "66)",
+   "numberedInSource": true,
+   "text": "K jakým účelům se zřizuje vnitřní systém LPS?",
+   "normativeRef": "ČSN EN IEC 62305-3 ed. 3: 2025 čl. 6.1"
+  },
+  {
+   "id": "2027-ez4-067",
+   "circuit": "ez4",
+   "circuitTitle": "LPS v prostředí bez nebezpečí výbuchu",
+   "number": 67,
+   "sourceMarker": "67)",
+   "numberedInSource": true,
+   "text": "Jakým způsobem lze dosáhnout při pospojování proti blesku vyrovnání potenciálů s LPS?",
+   "normativeRef": "ČSN EN IEC 62305-3 ed. 3: 2025 čl. 6.2.1"
+  },
+  {
+   "id": "2027-ez4-068",
+   "circuit": "ez4",
+   "circuitTitle": "LPS v prostředí bez nebezpečí výbuchu",
+   "number": 68,
+   "sourceMarker": "68)",
+   "numberedInSource": true,
+   "text": "Kde se provádí pospojování proti blesku pro vnější vodivé části?",
+   "normativeRef": "ČSN EN IEC 62305-3 ed. 3: 2025 čl. 6.2.3"
+  },
+  {
+   "id": "2027-ez4-069",
+   "circuit": "ez4",
+   "circuitTitle": "LPS v prostředí bez nebezpečí výbuchu",
+   "number": 69,
+   "sourceMarker": "69)",
+   "numberedInSource": true,
+   "text": "Jak se vypočte dostatečná vzdálenost (zjednodušený přístup) mezi jímací soustavou a kovovými částmi stavby?",
+   "normativeRef": "ČSN EN IEC 62305-3 ed. 3: 2025 čl.6.3.2."
+  },
+  {
+   "id": "2027-ez4-070",
+   "circuit": "ez4",
+   "circuitTitle": "LPS v prostředí bez nebezpečí výbuchu",
+   "number": 70,
+   "sourceMarker": "70)",
+   "numberedInSource": true,
+   "text": "Jaký je účel revize LPS?",
+   "normativeRef": "ČSN EN IEC 62305-3 ed. 3: 2025 čl. 7.3"
+  },
+  {
+   "id": "2027-ez4-071",
+   "circuit": "ez4",
+   "circuitTitle": "LPS v prostředí bez nebezpečí výbuchu",
+   "number": 71,
+   "sourceMarker": "71)",
+   "numberedInSource": true,
+   "text": "Co není nutné kontrolovat v průběhu kontroly nového LPS?",
+   "normativeRef": "ČSN EN IEC 62305-3 ed. 3: 2025 čl. 7.2"
+  },
+  {
+   "id": "2027-ez4-072",
+   "circuit": "ez4",
+   "circuitTitle": "LPS v prostředí bez nebezpečí výbuchu",
+   "number": 72,
+   "sourceMarker": "72)",
+   "numberedInSource": true,
+   "text": "Jaká dodatečná ochranná opatření, proti dotykovým napětím, mohou být použita u svodů LPS?",
+   "normativeRef": "ČSN EN IEC 62305-3 ed. 3: 2025 čl. 8.1"
+  },
+  {
+   "id": "2027-ez4-073",
+   "circuit": "ez4",
+   "circuitTitle": "LPS v prostředí bez nebezpečí výbuchu",
+   "number": 73,
+   "sourceMarker": "73)",
+   "numberedInSource": true,
+   "text": "Jaká ochranná opatření je možno použít před vznikem krokových napětí vzniklé v okolí vnějších svodů LPS?",
+   "normativeRef": "ČSN EN IEC 62305-3 ed. 3: čl. 8.2"
+  },
+  {
+   "id": "2027-ez4-074",
+   "circuit": "ez4",
+   "circuitTitle": "LPS v prostředí bez nebezpečí výbuchu",
+   "number": 74,
+   "sourceMarker": "74)",
+   "numberedInSource": true,
+   "text": "Co musí být vzato v úvahu, použijeme-li pro stanovení ochranných prostorů metodu ochranného úhlu?",
+   "normativeRef": "ČSN EN IEC 62305-3 ed. 3: čl.5.2.1"
+  },
+  {
+   "id": "2027-ez4-075",
+   "circuit": "ez4",
+   "circuitTitle": "LPS v prostředí bez nebezpečí výbuchu",
+   "number": 75,
+   "sourceMarker": "75)",
+   "numberedInSource": true,
+   "text": "Pro ochranu rovinných ploch je určena mřížová soustava. Kam se umisťují vodiče této jímací soustavy?",
+   "normativeRef": "ČSN EN IEC 62305-3 ed. 3 čl.5.2.2."
+  },
+  {
+   "id": "2027-ez4-076",
+   "circuit": "ez4",
+   "circuitTitle": "LPS v prostředí bez nebezpečí výbuchu",
+   "number": 76,
+   "sourceMarker": "76)",
+   "numberedInSource": true,
+   "text": "Na čem bude záviset koeficient rozdělení (kc) bleskového proudu mezi svody?",
+   "normativeRef": "ČSN EN IEC 62305-3 ed. 3: čl. 6.3.2."
+  },
+  {
+   "id": "2027-ez4-077",
+   "circuit": "ez4",
+   "circuitTitle": "LPS v prostředí bez nebezpečí výbuchu",
+   "number": 77,
+   "sourceMarker": "77)",
+   "numberedInSource": true,
+   "text": "Mohou být výztužné tyče stěn nebo betonových sloupů a ocelových konstrukčních rámů použity jako náhodné svody?",
+   "normativeRef": "ČSN EN IEC 62305-3 ed. 3 čl.5.3.5."
+  },
+  {
+   "id": "2027-ez4-078",
+   "circuit": "ez4",
+   "circuitTitle": "LPS v prostředí bez nebezpečí výbuchu",
+   "number": 78,
+   "sourceMarker": "78)",
+   "numberedInSource": true,
+   "text": "Jak může být zabráněno nebezpečnému jiskření mezi jímací soustavou nebo svody a kovovými částmi stavby, jakož i mezi kovovými instalacemi a vnitřními systémy?",
+   "normativeRef": "ČSN EN IEC 62305-3 ed. 3 čl.5.3.5.1 čl.6.3.1."
+  },
+  {
+   "id": "2027-ez4-079",
+   "circuit": "ez4",
+   "circuitTitle": "LPS v prostředí bez nebezpečí výbuchu",
+   "number": 79,
+   "sourceMarker": "79)",
+   "numberedInSource": true,
+   "text": "Jaké jsou maximální intervaly mezi revizemi LPS?",
+   "normativeRef": "NV 190/2022 Sb. příloha č. 4"
+  },
+  {
+   "id": "2027-ez4-080",
+   "circuit": "ez4",
+   "circuitTitle": "LPS v prostředí bez nebezpečí výbuchu",
+   "number": 80,
+   "sourceMarker": "80)",
+   "numberedInSource": true,
+   "text": "Jak často je nutné provést vizuální kontrolu LPS?",
+   "normativeRef": "NV 190/2022 Sb. příloha č. 4"
+  },
+  {
+   "id": "2027-ez4-081",
+   "circuit": "ez4",
+   "circuitTitle": "LPS v prostředí bez nebezpečí výbuchu",
+   "number": 81,
+   "sourceMarker": "81)",
+   "numberedInSource": true,
+   "text": "Vhodné uzemnění a pospojování je založeno na kompletním systému uzemnění. Co tento systém zahrnuje?",
+   "normativeRef": "ČSN EN 62305-4 ed. 3: 2026 čl. 5.1"
+  },
+  {
+   "id": "2027-ez4-082",
+   "circuit": "ez4",
+   "circuitTitle": "LPS v prostředí bez nebezpečí výbuchu",
+   "number": 82,
+   "sourceMarker": "82)",
+   "numberedInSource": true,
+   "text": "Jaký typ uzemňovací soustavy se upřednostňuje ve stavbách, kde jsou instalovány elektronické systémy?",
+   "normativeRef": "ČSN EN 62305-4 ed. 3: 2026 čl. 5.2"
+  },
+  {
+   "id": "2027-ez4-083",
+   "circuit": "ez4",
+   "circuitTitle": "LPS v prostředí bez nebezpečí výbuchu",
+   "number": 83,
+   "sourceMarker": "83)",
+   "numberedInSource": true,
+   "text": "K zabránění nebezpečných rozdílům potenciálů mezi všemi zařízeními uvnitř vnitřních LPZ je využívána síť pospojování. Jaký je obvyklý rozměr ok této mříže?",
+   "normativeRef": "ČSN EN 62305-4 ed. 3: 2026 čl. 5.3"
+  },
+  {
+   "id": "2027-ez4-084",
+   "circuit": "ez4",
+   "circuitTitle": "LPS v prostředí bez nebezpečí výbuchu",
+   "number": 84,
+   "sourceMarker": "84)",
+   "numberedInSource": true,
+   "text": "Při provedení pospojování se využívá zapojení do hvězdy S, nebo zapojení mřížové M. Jak musí zapojeny na systém uzemnění kovové části při zapojení S?",
+   "normativeRef": "ČSN EN 62305-4 ed. 3: 2026 čl. 5.3"
+  },
+  {
+   "id": "2027-ez4-085",
+   "circuit": "ez4",
+   "circuitTitle": "LPS v prostředí bez nebezpečí výbuchu",
+   "number": 85,
+   "sourceMarker": "85)",
+   "numberedInSource": true,
+   "text": "Přípojnice pospojování by měla být připojena k uzemňovací soustavě. Jak velká má být tato vzdálenost?",
+   "normativeRef": "ČSN EN 62305-4 ed. 3: 2026 čl. 5.4"
+  },
+  {
+   "id": "2027-ez4-086",
+   "circuit": "ez4",
+   "circuitTitle": "LPS v prostředí bez nebezpečí výbuchu",
+   "number": 86,
+   "sourceMarker": "86)",
+   "numberedInSource": true,
+   "text": "Jak musí být provedeno pospojování tam, kde je stanovena zóna ochrany (LPZ) před bleskem?",
+   "normativeRef": "ČSN EN 62305-4 ed. 3: 2026 čl. 5.5"
+  },
+  {
+   "id": "2027-ez4-087",
+   "circuit": "ez4",
+   "circuitTitle": "LPS v prostředí bez nebezpečí výbuchu",
+   "number": 87,
+   "sourceMarker": "87)",
+   "numberedInSource": true,
+   "text": "Kde je nutné instalovat přepěťová ochranná opatření (SPD pro pospojování)?",
+   "normativeRef": "ČSN EN 62305-4 ed. 3: 2026 čl. 5.5"
+  },
+  {
+   "id": "2027-ez4-088",
+   "circuit": "ez4",
+   "circuitTitle": "LPS v prostředí bez nebezpečí výbuchu",
+   "number": 88,
+   "sourceMarker": "88)",
+   "numberedInSource": true,
+   "text": "Jaký smí být minimální průřez pro součásti pospojování (měď, mědí potažená ocel nebo pozinkovaná ocel), při použití materiálu Fe?",
+   "normativeRef": "ČSN EN 62305-4 ed. 3: 2026 čl. 5.6 Tabulka 1"
+  },
+  {
+   "id": "2027-ez4-089",
+   "circuit": "ez4",
+   "circuitTitle": "LPS v prostředí bez nebezpečí výbuchu",
+   "number": 89,
+   "sourceMarker": "89)",
+   "numberedInSource": true,
+   "text": "Kde je vhodné použít prostorové stínění stavby?",
+   "normativeRef": "ČSN EN 62305-4 ed. 3: 2026 čl. 6.2"
+  },
+  {
+   "id": "2027-ez4-090",
+   "circuit": "ez4",
+   "circuitTitle": "LPS v prostředí bez nebezpečí výbuchu",
+   "number": 90,
+   "sourceMarker": "90)",
+   "numberedInSource": true,
+   "text": "Co zahrnuje systém stínění vnějších vedení vstupujících do stavby?",
+   "normativeRef": "ČSN EN 62305-4 ed. 3: 2026 čl. 6.5"
+  },
+  {
+   "id": "2027-ez4-091",
+   "circuit": "ez4",
+   "circuitTitle": "LPS v prostředí bez nebezpečí výbuchu",
+   "number": 91,
+   "sourceMarker": "91)",
+   "numberedInSource": true,
+   "text": "Kdy se nemusí provádět prohlídka SPM (systému ochranných opatření)?",
+   "normativeRef": "ČSN EN 62305-4 ed. 3: 2026 čl. 9.3"
+  },
+  {
+   "id": "2027-ez4-092",
+   "circuit": "ez4",
+   "circuitTitle": "LPS v prostředí bez nebezpečí výbuchu",
+   "number": 92,
+   "sourceMarker": "92)",
+   "numberedInSource": true,
+   "text": "Kdy se musí provádět prohlídky SPM (systému ochranných opatření) ?",
+   "normativeRef": "ČSN EN 62305-4 ed. 3: 2026 čl. 9.3"
+  },
+  {
+   "id": "2027-ez4-093",
+   "circuit": "ez4",
+   "circuitTitle": "LPS v prostředí bez nebezpečí výbuchu",
+   "number": 93,
+   "sourceMarker": "93)",
+   "numberedInSource": true,
+   "text": "Co musí být kontrolováno po instalaci nových opatření SPM (systému ochranných opatření)?",
+   "normativeRef": "ČSN EN 62305-4 ed. 3: 2026 čl. 9.3.2.1"
+  },
+  {
+   "id": "2027-ez4-094",
+   "circuit": "ez4",
+   "circuitTitle": "LPS v prostředí bez nebezpečí výbuchu",
+   "number": 94,
+   "sourceMarker": "94)",
+   "numberedInSource": true,
+   "text": "Jaké úkony se nepožadují při provádění vizuální prohlídky při ověření SPM (systému ochranných opatření)",
+   "normativeRef": "ČSN EN 62305-4 ed. 3: 2026 čl. 9.3.2.2"
+  },
+  {
+   "id": "2027-ez4-095",
+   "circuit": "ez4",
+   "circuitTitle": "LPS v prostředí bez nebezpečí výbuchu",
+   "number": 95,
+   "sourceMarker": "95)",
+   "numberedInSource": true,
+   "text": "Jakým způsobem se při revizi u zařízení SPM kontrolují části uzemňovací soustavy a soustavy pospojování, které nejsou viditelné pro prohlídku?",
+   "normativeRef": "ČSN EN 62305-4 ed. 3: 2026 čl. 9.3.2.3"
+  },
+  {
+   "id": "2027-ez4-096",
+   "circuit": "ez4",
+   "circuitTitle": "LPS v prostředí bez nebezpečí výbuchu",
+   "number": 96,
+   "sourceMarker": "96)",
+   "numberedInSource": true,
+   "text": "Osoby provádějící prohlídku vypracují zprávu, která bude připojena k technické dokumentaci a k předchozím zprávám co prohlídce. Jaké informace musí revizní zpráva obsahovat?",
+   "normativeRef": "ČSN EN 62305-4 ed. 3: 2026 čl. 9.3.3"
+  },
+  {
+   "id": "2027-ez4-097",
+   "circuit": "ez4",
+   "circuitTitle": "LPS v prostředí bez nebezpečí výbuchu",
+   "number": 97,
+   "sourceMarker": "97)",
+   "numberedInSource": true,
+   "text": "Jaká je optimální délka připojení přípojnice pospojování k uzemňovací soustavě?",
+   "normativeRef": "ČSN EN 62305-4 ed. 3: 2026 čl. 5.4"
+  },
+  {
+   "id": "2027-ez4-098",
+   "circuit": "ez4",
+   "circuitTitle": "LPS v prostředí bez nebezpečí výbuchu",
+   "number": 98,
+   "sourceMarker": "98)",
+   "numberedInSource": true,
+   "text": "Pokud se použije u zemniče jednoho svodu několik zemních tyčí, jaká má být vzdálenosti mezi jednotlivými tyčemi?",
+   "normativeRef": "ČSN 33 2000-5-54 ed. 3:2012 čl. NA.10.2.3"
+  },
+  {
+   "id": "2027-ez4-099",
+   "circuit": "ez4",
+   "circuitTitle": "LPS v prostředí bez nebezpečí výbuchu",
+   "number": 99,
+   "sourceMarker": "99)",
+   "numberedInSource": true,
+   "text": "Jaký má být úhel mezi sousedními paprsky v případě, že se páskové nebo drátové zemniče kladou paprskovitě?",
+   "normativeRef": "ČSN 33 2000-5-54 ed. 3:2012 čl. NA.10.3.2"
+  },
+  {
+   "id": "2027-ez4-100",
+   "circuit": "ez4",
+   "circuitTitle": "LPS v prostředí bez nebezpečí výbuchu",
+   "number": 100,
+   "sourceMarker": "100)",
+   "numberedInSource": true,
+   "text": "Jak je vhodné ukládat páskový zemnič do betonové směsi se pod ním netvořily vzduchové kapsy.?",
+   "normativeRef": "ČSN 33 2000-5-54 ed. 3:2012 čl. NA.10.6.1"
+  }
+ ]
+}

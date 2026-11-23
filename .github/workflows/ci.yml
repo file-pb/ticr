@@ -1,0 +1,83 @@
+name: ci
+
+on:
+  push:
+    branches: [main]
+  pull_request:
+
+concurrency:
+  group: ${{ github.workflow }}-${{ github.ref }}
+  cancel-in-progress: true
+
+jobs:
+  test:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+      - uses: actions/setup-node@v4
+        with:
+          node-version: '22'
+          cache: npm
+      - run: npm ci
+      - run: npm test
+
+      # Ověřená odpověď musí mít doložitelný zdroj. Kontrola
+      # čte doslovné texty předpisů z podklady/predpisy/.
+      - name: Klíč odpovědí je doložitelný
+        run: python3 -I scripts/check_answers.py
+      - run: npm run build
+
+      # Banka se nesmí rozejít se zdrojem nepozorovaně. Import se pustí znovu
+      # a výsledek se porovná s tím, co je v gitu.
+      - name: Import je reprodukovatelný
+        run: |
+          cp src/data/questions.2027.json /tmp/banka-z-gitu.json
+          ./scripts/fetch_source.sh || { echo "::warning::ZIP z TIČR se nepodařilo stáhnout, kontrola importu přeskočena"; exit 0; }
+          python3 -I scripts/import_ticr.py
+          if ! diff -q /tmp/banka-z-gitu.json src/data/questions.2027.json; then
+            echo "::error::Naimportovaná banka se liší od té v gitu. Zdroj u TIČR se změnil, nebo se změnil importér."
+            diff /tmp/banka-z-gitu.json src/data/questions.2027.json | head -40
+            exit 1
+          fi
+        continue-on-error: true
+
+  image:
+    needs: test
+    runs-on: ubuntu-latest
+    permissions:
+      contents: read
+      packages: write
+    steps:
+      - uses: actions/checkout@v4
+      - uses: docker/setup-buildx-action@v3
+      - uses: docker/login-action@v3
+        with:
+          registry: ghcr.io
+          username: ${{ github.actor }}
+          password: ${{ secrets.GITHUB_TOKEN }}
+      - uses: docker/build-push-action@v6
+        with:
+          context: .
+          file: deploy/Dockerfile
+          push: ${{ github.ref == 'refs/heads/main' }}
+          tags: ghcr.io/${{ github.repository_owner }}/ticr:latest
+          build-args: VERZE=${{ github.sha }}
+          cache-from: type=gha,scope=ticr
+          cache-to: type=gha,mode=max,scope=ticr
+
+  deploy:
+    needs: image
+    if: github.ref == 'refs/heads/main'
+    runs-on: ubuntu-latest
+    steps:
+      - name: Zavolat nasazovací háček
+        env:
+          WEBHOOK: ${{ vars.DEPLOY_WEBHOOK }}
+          TOKEN: ${{ secrets.DEPLOY_TOKEN }}
+        run: |
+          if [ -z "$WEBHOOK" ] || [ -z "$TOKEN" ]; then
+            echo "::warning::DEPLOY_WEBHOOK nebo DEPLOY_TOKEN chybí — na serveru poběží dál stará verze."
+            exit 0
+          fi
+          # Háček ověřuje X-Deploy-Token, ne Authorization: Bearer.
+          curl -fsS -X POST -H "X-Deploy-Token: $TOKEN" "$WEBHOOK"
