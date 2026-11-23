@@ -1,38 +1,61 @@
-# Nasazení statického webu za Traefikem.
+# Nasazení statického webu za Traefikem na platformě hračkárna.
 #
-# Doména je v proměnné DOMENA, ne natvrdo v kódu — aplikace se tím dá předat
-# jinému správci bez zásahu do repozitáře. Jméno Traefik routeru natvrdo být
-# musí: Compose interpoluje proměnné jen do hodnot, ne do klíčů labelů, a
-# router pojmenovaný doslova ${APP_NAME} skončí u self-signed certifikátu.
+# Proměnné se NEVYMÝŠLEJÍ: `new-app.sh` zapisuje do /opt/apps/<projekt>/.env
+# přesně tři — APP_NAME, PLATFORM_DOMAIN a IMAGE — a víc jich tam není.
+# Dřív tu stálo ${GHCR_OWNER} a ${DOMENA}, což znamenalo, že `docker compose
+# config` skončí na nedefinované proměnné a nasazovací háček soubor odmítne
+# ještě předtím, než se něco stáhne.
+#
+# `image: ${IMAGE}` je rovněž kontrakt: hodnotu drží soubor s proměnnými,
+# který na serveru vyrobí `new-app.sh`, takže compose nemusí znát vlastníka
+# registru a dá se předat jinému správci bez zásahu do repozitáře.
+#
+# Co to NEDĚLÁ: `nasad()` v hook.py pouští jen `docker compose pull` a
+# `up -d` — hodnotu IMAGE nepřepisuje (ověřeno v kódu háčku 23. 11. 2026).
+# Značka tedy zůstává `:latest` a vrátit se na předchozí build podle značky
+# nelze. Platí to i pro ostatní aplikace na platformě, takže je to vlastnost
+# návrhu, ne chyba tohohle souboru.
+#
+# Jméno Traefik routeru je NATVRDO (`ticr`). Compose interpoluje proměnné
+# jen do hodnot, ne do klíčů labelů — router pojmenovaný doslova ${APP_NAME}
+# skončí u self-signed certifikátu.
 
 services:
-  ticr:
-    image: ghcr.io/${GHCR_OWNER:?chybi GHCR_OWNER}/ticr:latest
-    container_name: ticr
+  web:
+    image: ${IMAGE}
     restart: unless-stopped
+    networks: [edge]
     environment:
       PORT: 8080
-    networks:
-      - edge
-    # Statika neunese méně než dynamická aplikace, proto 64 MB jako
-    # rozcestník, ne 512 MB ze šablony služby.
-    deploy:
-      resources:
-        limits:
-          memory: 64M
-          cpus: "0.25"
+    logging:
+      driver: json-file
+      options: { max-size: "10m", max-file: "3" }
+    labels:
+      traefik.enable: "true"
+      traefik.docker.network: edge
+      traefik.http.routers.ticr.rule: Host(`${APP_NAME}.${PLATFORM_DOMAIN:?}`)
+      traefik.http.routers.ticr.entrypoints: websecure
+      traefik.http.routers.ticr.tls.certresolver: le
+      traefik.http.routers.ticr.middlewares: "ratelimit-standard@file,bezpecne-hlavicky@file"
+      traefik.http.services.ticr.loadbalancer.server.port: "8080"
+      # Timeout VĚTŠÍ než 5 s. Krátký timeout udělal u poháru z přetížení
+      # výpadek: web odpovídal pomalu, ale správně, a Traefik ho vyřadil,
+      # takže všichni dostali 503 (poučení 44). U statiky je to nepravděpodobné,
+      # pravidlo ale platí plošně.
+      traefik.http.services.ticr.loadbalancer.healthcheck.path: /health/ready
+      traefik.http.services.ticr.loadbalancer.healthcheck.interval: 10s
+      traefik.http.services.ticr.loadbalancer.healthcheck.timeout: 10s
     healthcheck:
       test: ["CMD", "wget", "-q", "-O", "-", "http://127.0.0.1:8080/health"]
       interval: 30s
-      timeout: 3s
+      timeout: 10s
       retries: 3
       start_period: 5s
-    labels:
-      traefik.enable: "true"
-      traefik.http.routers.ticr.rule: Host(`ticr.${DOMENA:?chybi DOMENA}`)
-      traefik.http.routers.ticr.entrypoints: websecure
-      traefik.http.routers.ticr.tls.certresolver: le
-      traefik.http.services.ticr.loadbalancer.server.port: "8080"
+    deploy:
+      resources:
+        # Jako rozcestník, ne jako šablona služby: nginx se statikou se do
+        # 64 MB vejde s rezervou a stroj má 3,8 GB skutečné paměti.
+        limits: { memory: 64m, cpus: "0.5" }
 
 networks:
   edge:

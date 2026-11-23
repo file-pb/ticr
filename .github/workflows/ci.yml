@@ -81,6 +81,9 @@ jobs:
     if: github.ref == 'refs/heads/main'
     runs-on: ubuntu-latest
     steps:
+      # Checkout je tu kvůli tělu požadavku: bez něj by se compose soubor
+      # neměl odkud vzít a curl by skončil na chybějícím souboru.
+      - uses: actions/checkout@v4
       - name: Zavolat nasazovací háček
         env:
           WEBHOOK: ${{ vars.DEPLOY_WEBHOOK }}
@@ -91,4 +94,16 @@ jobs:
             exit 0
           fi
           # Háček ověřuje X-Deploy-Token, ne Authorization: Bearer.
-          curl -fsS -X POST -H "X-Deploy-Token: $TOKEN" "$WEBHOOK"
+          #
+          # Compose se posílá V TĚLE, ze stejného commitu jako image.
+          # Prázdné tělo znamená „nasaď to, co tu leží", takže nová image
+          # by se spojila se starým nastavením a chybějící proměnná by se
+          # projevila až za běhu. X-Deploy-Poradi dává háčku čím odmítnout
+          # starší build, který dorazí pozdě a přepsal by novější produkci.
+          curl -fsS -X POST \
+            -H "X-Deploy-Token: $TOKEN" \
+            -H "X-Deploy-Sha: ${{ github.sha }}" \
+            -H "X-Deploy-Poradi: ${{ github.run_number }}" \
+            -H "Content-Type: text/plain" \
+            --data-binary @deploy/docker-compose.yml \
+            "$WEBHOOK"
