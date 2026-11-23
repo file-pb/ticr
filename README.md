@@ -116,7 +116,12 @@ curl -s -o /dev/null -w "%{http_code}\n" http://localhost:8080/health
 
 - **Import je vázaný na macOS.** Starší formát Wordu `.doc` převádí `textutil`.
   Přenositelná varianta (LibreOffice nebo `antiword` v kontejneru) je vědomý
-  dluh — import se pouští při přípravě obsahu, ne v provozu.
+  dluh — import se pouští při přípravě obsahu, ne v provozu. **Má to ale
+  následek v CI:** krok „Import je reprodukovatelný" na ubuntu skončí u
+  převodu a nic neověří. Reprodukovatelnost se zatím ověřuje ručně na macOS
+  (naposledy 23. 11. 2026 — banka vyšla bajt po bajtu stejná). Konvertor
+  nejde vyměnit bez porovnání banky bajt po bajtu: jiný nástroj zalomí text
+  jinak a vyrobí jinou banku.
 - **Parametry zkoušky nejsou doložené dokumentem TIČR.** Hranici 80 % uvádí
   TIČR ve zveřejněných informacích. Skladbu — pro rozsah E2A čtyři testy po
   patnácti otázkách, 20 minut na test, tedy 60 otázek a 80 minut — uvádějí

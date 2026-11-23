@@ -38,6 +38,16 @@ rm -rf "$EXTRACT"
 mkdir -p "$EXTRACT"
 unzip -o -q "$ZIP" -d "$EXTRACT"
 
+# textutil je jen na macOS. Jinde se konverze neudělá a skript to řekne
+# zvlášť — záměna „nestáhlo se" za „neumím převést" by vedla k hledání
+# chyby na špatném místě. Výstup je navíc závislý na konvertoru: jiný
+# nástroj dá jiné zalomení, a tím i jinou banku.
+if ! command -v textutil >/dev/null 2>&1; then
+  echo "CHYBA: textutil není k dispozici (je jen na macOS)." >&2
+  echo "ZIP se stáhl v pořádku, převod .doc -> .txt se ale neudělá." >&2
+  exit 3
+fi
+
 echo "Převádím .doc -> .txt (textutil, UTF-8)"
 rm -f "$TXT"/*.txt
 for f in "$EXTRACT"/*.doc; do

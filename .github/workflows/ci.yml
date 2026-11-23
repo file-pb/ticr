@@ -29,10 +29,21 @@ jobs:
 
       # Banka se nesmí rozejít se zdrojem nepozorovaně. Import se pustí znovu
       # a výsledek se porovná s tím, co je v gitu.
-      - name: Import je reprodukovatelný
+      #
+      # POZOR: na ubuntu-latest tahle kontrola **neproběhne**. Převod .doc na
+      # text dělá textutil, který je jen na macOS, takže krok skončí u
+      # konverze a dál se nedostane. Dokud konvertor není přenositelný, je
+      # tenhle krok v CI jen hlášením, ne ověřením — reprodukovatelnost
+      # importu se zatím ověřuje ručně na macOS. Nenahrazovat konvertor bez
+      # porovnání banky bajt po bajtu: jiný nástroj zalomí text jinak a
+      # vyrobí jinou banku.
+      - name: Import je reprodukovatelný (na ubuntu se přeskočí)
         run: |
           cp src/data/questions.2027.json /tmp/banka-z-gitu.json
-          ./scripts/fetch_source.sh || { echo "::warning::ZIP z TIČR se nepodařilo stáhnout, kontrola importu přeskočena"; exit 0; }
+          if ! ./scripts/fetch_source.sh; then
+            echo "::warning::Zdroj se nepodařilo připravit (na ubuntu chybí textutil) — reprodukovatelnost importu TATO úloha neověřila."
+            exit 0
+          fi
           python3 -I scripts/import_ticr.py
           if ! diff -q /tmp/banka-z-gitu.json src/data/questions.2027.json; then
             echo "::error::Naimportovaná banka se liší od té v gitu. Zdroj u TIČR se změnil, nebo se změnil importér."
