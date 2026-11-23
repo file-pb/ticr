@@ -14,7 +14,7 @@ Co se kontroluje:
   4. Odpověď se stavem `overeno` musí mít `verification` se zdrojem, datem
      a způsobem kontroly.
   5. **Zdroj uvedený u ověřené odpovědi musí existovat.** U odpovědí ze
-     `sourceClass: "volny"` se zdroj hledá v `podklady/predpisy/` a ověřuje
+     `sourceClass: "volny"` se zdroj hledá v `predpisy/` a ověřuje
      se, že citovaný předpis i ustanovení jsou v tom souboru doopravdy
      k nalezení. Odpověď, která se odvolává na paragraf, který v textu
      předpisu není, je vymyšlená, i kdyby zněla sebelíp.
@@ -36,7 +36,7 @@ import sys
 
 ROOT = os.path.dirname(os.path.dirname(os.path.abspath(__file__)))
 QUESTIONS = os.path.join(ROOT, "src", "data", "questions.2027.json")
-PREDPISY = os.path.join(ROOT, "podklady", "predpisy")
+PREDPISY = os.path.join(ROOT, "predpisy")
 
 # Čísla, která se v odpovědích objevují jako běžná výplň a nejsou údajem.
 IGNOROVANA_CISLA = {"1", "2", "3", "4", "5"}
@@ -254,7 +254,7 @@ def zkontroluj(path, bank_ids, bank_version, nalezy):
         if text is None:
             nalezy.append(
                 "{}: zdroj odkazuje na předpis {}, ale jeho text není "
-                "v podklady/predpisy/. Bez něj ověření nejde zkontrolovat.".format(kde, cislo)
+                "v predpisy/. Bez něj ověření nejde zkontrolovat.".format(kde, cislo)
             )
             continue
 

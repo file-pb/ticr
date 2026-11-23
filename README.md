@@ -60,6 +60,7 @@ npm test
 src/data/questions.2027.json   banka — generuje import, ručně se needituje
 src/data/answers.2027.json     klíč, veřejná vrstva (volně ověřitelné zdroje)
 src/data/answers.*.local.json  klíč, lokální vrstva (placené podklady), mimo git
+predpisy/                      doslovné texty předpisů — proti nim se klíč ověřuje
 src/domain/                    výběr otázek, hodnocení, čas, opakování — bez UI
 src/storage/                   IndexedDB a přenos pokroku
 src/ui/                        obrazovky

@@ -22,7 +22,7 @@ jobs:
       - run: npm test
 
       # Ověřená odpověď musí mít doložitelný zdroj. Kontrola
-      # čte doslovné texty předpisů z podklady/predpisy/.
+      # čte doslovné texty předpisů z predpisy/.
       - name: Klíč odpovědí je doložitelný
         run: python3 -I scripts/check_answers.py
       - run: npm run build
