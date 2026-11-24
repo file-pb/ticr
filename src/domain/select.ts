@@ -20,10 +20,13 @@ export function examTotalMinutes(preset: ExamPreset): number {
  *
  * Hranici 80 % uvádí TIČR ve zveřejněných informacích. Skladbu — pro rozsah
  * E2A čtyři testy po patnácti otázkách, na každý 20 minut — shodně uvádějí
- * tři nezávislé zdroje: přednášející kurzu ESČ 18. 5. 2026 („E2A jsou čtyři
+ * čtyři nezávislé zdroje: přednášející kurzu ESČ 18. 5. 2026 („E2A jsou čtyři
  * testy po patnácti otázkách, 20 minut na test"), cvičný test rozdaný na
- * konci téhož kurzu 21. 5. 2026 (60 otázek, 80 minut) a záznam prvního dne
- * kurzu 23. 11. 2026. Všechno jsou to druhotné zdroje, ne dokument TIČR.
+ * konci téhož kurzu 21. 5. 2026 (60 otázek, 80 minut), záznam prvního dne
+ * kurzu 23. 11. 2026 a — jako jediný **písemně** — veřejná stránka ESČ
+ * elektrosvaz.cz/rt-online: „kategorie E2A — test ze 4 okruhů … celkem 4x15
+ * otázek / 4x20 minut", „minimálně 80% otázek musí být zodpovězeno správně"
+ * (čteno 24. 11. 2026). Všechno jsou to druhotné zdroje, ne dokument TIČR.
  *
  * **`thresholdPercent` se počítá z celého pokusu, ne po okruzích**, a od
  * 23. 11. 2026 je to doložené: „Vyhodnocuje to až na závěr všech těch 60

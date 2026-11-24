@@ -216,6 +216,10 @@ curl -s -o /dev/null -w "%{http_code}\n" http://localhost:8080/health
   TIČR ve zveřejněných informacích. Skladbu — pro rozsah E2A čtyři testy po
   patnácti otázkách, 20 minut na test, tedy 60 otázek a 80 minut — uvádějí
   shodně dva komerční provozovatelé příprav a tři nezávislé zdroje ze školení.
+  Čtvrtý zdroj to má jako jediný písemně: veřejná stránka ESČ
+  [elektrosvaz.cz/rt-online](https://www.elektrosvaz.cz/rt-online) píše
+  „kategorie E2A — test ze 4 okruhů … celkem 4x15 otázek / 4x20 minut" a
+  „minimálně 80% otázek musí být zodpovězeno správně" (čteno 24. 11. 2026).
   Pořád je to druhotné, takže v aplikaci běží jako tréninkové nastavení a jde
   je změnit.
 - **Hranice 80 % se počítá z celých 60 otázek, ne po okruzích.** Dokud to nebylo

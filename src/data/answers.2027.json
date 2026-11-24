@@ -1,6 +1,6 @@
 {
   "schemaVersion": 1,
-  "answersVersion": "2026-11-23+0.2.0-nv190.0.2.0-z250.0.3.0-bozp.0.3.0-energo-metro.0.3.0-nv194.0.3.0-ostatni.0.3.0-z22",
+  "answersVersion": "2026-11-24+0.2.0-nv190.0.2.0-z250.0.3.0-bozp.0.3.1-energo-metro.0.3.0-nv194.0.3.0-ostatni.0.3.1-z22",
   "bankVersion": "2027.1",
   "license": "CC-BY-SA-4.0",
   "note": "Učební možnosti A/B/C a vysvětlení. NEJSOU to autentické odpovědi TIČR — oficiální dokumenty žádný klíč nezveřejňují. Hodnotí se jen odpovědi se stavem 'overeno', u kterých je ve 'verification' uvedeno, co bylo skutečně přečteno.",
@@ -2250,16 +2250,27 @@
         }
       ],
       "correctOptionId": "a1",
-      "explanation": "Tvorbu českých technických norem upravuje zákon o technických požadavcích na výrobky: § 4 vymezuje, co česká technická norma je, a § 5 odst. 1 stanoví, že jejich tvorbu, vydávání a distribuci, změny a zrušení v rozsahu vymezeném tímto zákonem zaručuje stát.",
+      "explanation": "Tvorbu českých technických norem upravuje zákon č. 22/1997 Sb., jehož záhlaví zní „Zákon o technických požadavcích na výrobky a o změně a doplnění některých zákonů“. Normám jsou v něm věnovány § 4 až § 6: § 4 „České technické normy“ vymezuje, co česká technická norma je, § 5 „Zabezpečení tvorby českých technických norem“ v odstavci 1 stanoví, že tvorbu, vydávání a distribuci českých technických norem, jejich změny a zrušení zaručuje stát, a § 6 stanoví podmínky tvorby a vydávání.",
       "whyWrong": {
         "a2": "Nařízení vlády o vyhrazených technických elektrických zařízeních řeší zařazení zařízení do tříd a požadavky na jejich bezpečnost, tvorbou norem se nezabývá.",
         "a3": "Zákon o bezpečnosti práce v souvislosti s provozem vyhrazených technických zařízení upravuje odbornou způsobilost a oprávnění k činnostem na těchto zařízeních, ne normalizaci."
       },
-      "status": "navrh",
+      "status": "overeno",
       "sourceClass": "volny",
       "visibility": "verejne",
-      "verification": null,
-      "missing": "Odpověď je NÁZEV zákona, a ten nestojí v žádném jednotlivém ustanovení — § 5 odst. 1 říká, že tvorbu ČSN zaručuje stát, nikoli jak se ten zákon jmenuje. Strojová kontrola ji proto ukotvit neumí (překryv s citovaným ustanovením 0,29). Věcně je odpověď správná, ale dokládá ji záhlaví předpisu, ne jeho text; do hodnocení nevstupuje, dokud to neposoudí člověk."
+      "verification": {
+        "method": "primární text předpisu — odpovědí je název zákona, který stojí v jeho záhlaví; tvorbu norem upravují § 4 až § 6 téhož zákona",
+        "checkedAt": "2026-11-24",
+        "checkedBy": "agent",
+        "source": "zákon č. 22/1997 Sb. — záhlaví předpisu, doslovný text, predpisy/zakon-22-1997.txt"
+      },
+      "trainingMaterial": {
+        "name": "Kurz ESČ RT EZ E2A — prezentace „Obecné předpisy“",
+        "version": "2025_6, 22. 1. 2025",
+        "locator": "otázka 44 sady platné k 1. 1. 2025",
+        "currency": "aktualni",
+        "note": "Kurz odpovídá „Zákon č. 22/1997 Sb. (Technické požadavky na výrobky)“ a odkazuje na § 4 až 7. Tuhle odpověď jen potvrzuje; zdrojem je volně dostupný text zákona, ne prezentace."
+      }
     },
     {
       "questionId": "2027-ez1-073",
@@ -2745,29 +2756,40 @@
       "questionId": "2027-ez1-088",
       "options": [
         {
-          "id": "a1",
-          "text": "Vnitřní elektrická instalace odběratele za měřicím místem."
-        },
-        {
-          "id": "a2",
-          "text": "Výrobna elektřiny nebo zařízení pro ukládání elektřiny připojené k distribuční soustavě s napětím do 1 kV včetně s instalovaným výkonem do 50 kW včetně — u těch se ochranné pásmo nestanovuje."
+          "id": "a4",
+          "text": "Nadzemní vedení o napětí do 1 kV včetně."
         },
         {
           "id": "a3",
           "text": "Vedení měřicí, ochranné, řídicí, zabezpečovací, informační a telekomunikační techniky."
+        },
+        {
+          "id": "a5",
+          "text": "Elektrická stanice s převodem napětí z úrovně nad 1 kV na úroveň nízkého napětí."
         }
       ],
-      "correctOptionId": "a2",
-      "explanation": "§ 46 odst. 2 vypočítává, co ochrannými pásmy chráněno JE: nadzemní vedení, podzemní vedení, elektrické stanice, výrobny elektřiny, zařízení pro ukládání elektřiny a vedení měřicí, ochranné, řídicí, zabezpečovací, informační a telekomunikační techniky. Jediné výslovné „ochranné pásmo se nestanovuje“ je v § 46 odst. 7 poslední větě a týká se malých výroben a zařízení pro ukládání elektřiny do 1 kV a do 50 kW.",
+      "correctOptionId": "a4",
+      "explanation": "§ 46 odst. 2 vypočítává, co je ochrannými pásmy chráněno: nadzemní vedení, podzemní vedení, elektrické stanice, výrobny elektřiny, zařízení pro ukládání elektřiny a vedení měřicí, ochranné, řídicí, zabezpečovací, informační a telekomunikační techniky. Rozsah ochranného pásma nadzemního vedení pak § 46 odst. 3 vymezuje teprve „u napětí nad 1 kV a do 35 kV včetně“ a výš — pro nadzemní vedení do 1 kV včetně ochranné pásmo stanovené není. Pozor, výslovné „ochranné pásmo se nestanovuje“ je v § 46 odst. 7 poslední větě a týká se výrobny elektřiny nebo zařízení pro ukládání elektřiny do 1 kV včetně s instalovaným výkonem do 50 kW včetně; i to je pravda, ale otázka míří podle svého normativního odkazu na odstavce 2 a 3.",
       "whyWrong": {
-        "a1": "Že vnitřní instalace odběratele není zařízením elektrizační soustavy, § 46 nikde neříká; je to úsudek z výčtu v odstavci 2, ne text předpisu.",
-        "a3": "Vedení měřicí, ochranné, řídicí, zabezpečovací, informační a telekomunikační techniky je v § 46 odst. 2 uvedeno jako chráněné."
+        "a3": "Vedení měřicí, ochranné, řídicí, zabezpečovací, informační a telekomunikační techniky je v § 46 odst. 2 uvedeno jako chráněné.",
+        "a5": "Ochranné pásmo elektrické stanice § 46 odst. 6 vymezuje výslovně, mimo jiné u stanic s převodem napětí z úrovně nad 1 kV a menší než 52 kV na úroveň nízkého napětí."
       },
-      "status": "navrh",
+      "status": "overeno",
       "sourceClass": "volny",
       "visibility": "verejne",
-      "missing": "Oficiální normativní odkaz míří na § 46 odst. 2 a 3. Ta ale vypočítávají, co ochranným pásmem chráněno je — negativní vymezení v nich není a doplnit ho lze jen úsudkem. Výslovné „ochranné pásmo se nestanovuje“ stojí jinde, v § 46 odst. 7 poslední větě. Dokud není jasné, kterou z obou cest zkouška čeká, zůstává odpověď návrhem a do zkoušky nanečisto nevstupuje.",
-      "reference": "zákon č. 458/2000 Sb., § 46 odst. 2 a § 46 odst. 7 — doslovný text, predpisy/zakon-458-2000.txt"
+      "verification": {
+        "method": "primární text předpisu — výčet chráněných zařízení v § 46 odst. 2 a rozsah ochranného pásma nadzemního vedení v § 46 odst. 3, jehož výčet začíná u napětí nad 1 kV",
+        "checkedAt": "2026-11-24",
+        "checkedBy": "agent",
+        "source": "zákon č. 458/2000 Sb., § 46 odst. 2 a § 46 odst. 3 — doslovný text, predpisy/zakon-458-2000.txt"
+      },
+      "trainingMaterial": {
+        "name": "Kurz ESČ RT EZ E2A — prezentace „Obecné předpisy“",
+        "version": "2025_6, 22. 1. 2025",
+        "locator": "otázka 68 sady platné k 1. 1. 2025",
+        "currency": "aktualni",
+        "note": "Kurz odpovídá „Nadzemní vedení do 1000 V.“ Tím se uzavřela otázka, kterou z obou cest zkouška čeká: dřívější návrh odpovídal výrobnami do 50 kW podle § 46 odst. 7, což je také pravda, ale otázka míří podle svého odkazu na odstavce 2 a 3."
+      }
     },
     {
       "questionId": "2027-ez1-089",
