@@ -143,6 +143,21 @@ def prekryv(odpoved, kontext):
     return len(a & stemy(kontext)) / len(a)
 
 
+def obsahuje_udaj(kde, varianta):
+    """Je `varianta` v textu jako samostatný údaj, ne jako kus jiného čísla?
+
+    Prosté `in` tuhle kontrolu prodírá: „5 kV" je podřetězcem „35 kV", takže
+    vymyšlená hodnota projde, kdykoli stojí v předpisu nějaké delší číslo,
+    které tu naši obsahuje. Změřeno sabotáží 24. 11. 2026 na otázce
+    `2027-ez1-088`: podstrčené „do 5 kV včetně" kontrola pustila, protože
+    § 46 odst. 3 obsahuje „do 35 kV včetně". Proto se před číslem hlídá, že
+    mu nepředchází další číslice, desetinná čárka ani tečka, a za ním, že
+    nepokračuje číslicí.
+    """
+    vzor = r"(?<![\d.,])" + re.escape(varianta) + r"(?!\d)"
+    return re.search(vzor, kde) is not None
+
+
 def cisla_v(text):
     """Vytáhne číselné údaje **i s jednotkou, která za nimi stojí**.
 
@@ -380,8 +395,8 @@ def zkontroluj(path, bank_ids, bank_version, nalezy):
                     else:
                         varianty.add(c.lower())
                 popis = "{} {}".format(udaj, jednotka) if jednotka else udaj
-                v_ustanoveni = any(var in uzky.lower() for var in varianty)
-                v_predpisu = any(var in text.lower() for var in varianty)
+                v_ustanoveni = any(obsahuje_udaj(uzky.lower(), var) for var in varianty)
+                v_predpisu = any(obsahuje_udaj(text.lower(), var) for var in varianty)
                 if not v_predpisu:
                     nalezy.append(
                         "{}: údaj {!r} ve správné odpovědi není nikde v textu "
