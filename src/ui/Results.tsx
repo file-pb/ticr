@@ -1,5 +1,6 @@
 import type { Attempt, Item } from '../domain/types'
 import { scoreAttempt } from '../domain/score'
+import { hasBlocks } from '../domain/blocks'
 
 interface Props {
   attempt: Attempt
@@ -32,7 +33,9 @@ export function Results({ attempt, items, onPracticeMistakes, onHome }: Props) {
         </p>
         <p className="tlumene">
           Hranice {r.thresholdPercent} %, tedy nejméně {r.neededCorrect} správných odpovědí. Čas{' '}
-          {trvani(r.elapsedMs)}. Nevyplněných {r.total - r.answered} (počítají se jako nesprávné).
+          {trvani(r.elapsedMs)}
+          {hasBlocks(attempt) ? ' od spuštění zkoušky, tedy včetně prodlev mezi testy' : ''}.
+          Nevyplněných {r.total - r.answered} (počítají se jako nesprávné).
         </p>
         <div className="pruh" role="img" aria-label={`Úspěšnost ${r.percent} procent`}>
           <span style={{ width: `${r.percent}%` }} />
@@ -45,25 +48,68 @@ export function Results({ attempt, items, onPracticeMistakes, onHome }: Props) {
         )}
       </div>
 
-      <h2>Po okruzích</h2>
-      <table>
-        <thead>
-          <tr>
-            <th scope="col">Okruh</th>
-            <th scope="col" className="cislo">Správně</th>
-            <th scope="col" className="cislo">Otázek</th>
-          </tr>
-        </thead>
-        <tbody>
-          {r.byCircuit.map((c) => (
-            <tr key={c.circuit}>
-              <th scope="row">{c.circuit}</th>
-              <td className="cislo">{c.correct}</td>
-              <td className="cislo">{c.total}</td>
-            </tr>
-          ))}
-        </tbody>
-      </table>
+      {hasBlocks(attempt) ? (
+        <>
+          <h2>Po testech</h2>
+          <table>
+            <caption className="tlumene" style={{ textAlign: 'left', paddingBottom: 6 }}>
+              Jednotlivý test se nehodnotí — hranice {r.thresholdPercent} % se počítá z celého
+              pokusu. Rozpad po testech je jen pro orientaci, kde to drhne.
+            </caption>
+            <thead>
+              <tr>
+                <th scope="col">Test</th>
+                <th scope="col" className="cislo">Správně</th>
+                <th scope="col" className="cislo">Otázek</th>
+                <th scope="col" className="cislo">Využitý čas</th>
+              </tr>
+            </thead>
+            <tbody>
+              {attempt.blocks.map((b, i) => {
+                const vysek = r.outcomes.slice(b.from, b.from + b.count)
+                const cas =
+                  b.startedAt !== null && b.submittedAt !== null
+                    ? Math.max(0, b.submittedAt - b.startedAt)
+                    : null
+                return (
+                  <tr key={b.circuit}>
+                    <th scope="row">
+                      {i + 1}. {b.title} <span className="tlumene">({b.circuit})</span>
+                    </th>
+                    <td className="cislo">{vysek.filter((o) => o.correct).length}</td>
+                    <td className="cislo">{vysek.length}</td>
+                    <td className="cislo">
+                      {cas === null ? <span className="tlumene">nezahájen</span> : trvani(cas)}
+                    </td>
+                  </tr>
+                )
+              })}
+            </tbody>
+          </table>
+        </>
+      ) : (
+        <>
+          <h2>Po okruzích</h2>
+          <table>
+            <thead>
+              <tr>
+                <th scope="col">Okruh</th>
+                <th scope="col" className="cislo">Správně</th>
+                <th scope="col" className="cislo">Otázek</th>
+              </tr>
+            </thead>
+            <tbody>
+              {r.byCircuit.map((c) => (
+                <tr key={c.circuit}>
+                  <th scope="row">{c.circuit}</th>
+                  <td className="cislo">{c.correct}</td>
+                  <td className="cislo">{c.total}</td>
+                </tr>
+              ))}
+            </tbody>
+          </table>
+        </>
+      )}
 
       <h2>Rozbor chyb ({chyby.length})</h2>
       {chyby.length === 0 ? (

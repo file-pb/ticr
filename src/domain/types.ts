@@ -135,11 +135,40 @@ export interface AttemptItem {
   guessed: boolean
 }
 
+/**
+ * Jeden ze čtyř testů zkoušky.
+ *
+ * Zkouška u TIČR neběží jako jeden blok šedesáti otázek: podle záznamu
+ * prvního dne kurzu ESČ z 23. 11. 2026 jsou to **čtyři samostatné testy po
+ * patnácti otázkách, na každý 20 minut**. Pořadí si volí zkoušený, čas se
+ * mezi testy nepřenáší, odevzdání testu je nevratné a výsledek se neukáže
+ * dřív než po čtvrtém testu. Blok proto nese svůj vlastní čas i své vlastní
+ * odevzdání; hranice 80 % se pořád počítá z celých šedesáti otázek.
+ */
+export interface AttemptBlock {
+  circuit: CircuitId
+  title: string
+  /** Index první otázky tohoto testu v `Attempt.items`. Úsek je souvislý. */
+  from: number
+  count: number
+  minutes: number
+  /** null, dokud se test nezahájí. Čas začíná běžet až zahájením. */
+  startedAt: number | null
+  /** Okamžik konce testu v ms. Počítá se z něj, ne z odpočtu v paměti. */
+  deadlineAt: number | null
+  /** Nevratné. Jakmile je vyplněné, test se už neotevře. */
+  submittedAt: number | null
+}
+
 export interface Attempt {
   id: string
   mode: AttemptMode
   createdAt: number
-  /** Okamžik konce v ms. Zbývající čas se počítá z něj, ne z odpočtu v paměti. */
+  /**
+   * Okamžik konce celého pokusu v ms. Zbývající čas se počítá z něj, ne
+   * z odpočtu v paměti. U zkoušky rozdělené na bloky je `null` — čas drží
+   * jednotlivé bloky.
+   */
   deadlineAt: number | null
   finishedAt: number | null
   bankVersion: string
@@ -147,6 +176,11 @@ export interface Attempt {
   thresholdPercent: number
   label: string
   items: AttemptItem[]
+  /**
+   * Rozdělení na testy. Chybí u procvičování a u pokusů uložených dřív, než
+   * aplikace zkoušku na testy dělila — ty se pořád vyhodnotí i zobrazí.
+   */
+  blocks?: AttemptBlock[]
 }
 
 /** Pokrok u jedné otázky. Řídí opakování v rostoucích intervalech. */

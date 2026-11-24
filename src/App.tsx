@@ -1,13 +1,24 @@
 import { useCallback, useEffect, useMemo, useState } from 'react'
 import { answerSet, bank, maLokalniVrstvu } from './data/load'
-import type { Attempt, CircuitId, Item, Progress } from './domain/types'
+import type { Attempt, AttemptBlock, CircuitId, Item, Progress } from './domain/types'
 import { CIRCUIT_ORDER, LPS_CIRCUIT, coverage, joinBank, staleAnswerIds } from './domain/bank'
-import { DEFAULT_EXAM, buildAttemptItems, selectExam, selectPractice, type Shortfall } from './domain/select'
+import { DEFAULT_EXAM, buildAttemptItems, selectExamByCircuit, selectPractice, type Shortfall } from './domain/select'
+import {
+  abandonRemaining,
+  allBlocksSubmitted,
+  buildBlocks,
+  expireBlocks,
+  hasBlocks,
+  runningBlockIndex,
+  startBlock,
+  submitBlock,
+} from './domain/blocks'
 import { isExpired, scoreAttempt } from './domain/score'
 import { advance, emptyProgress, wrongQuestionIds } from './domain/srs'
 import { mulberry32, newSeed } from './domain/rng'
 import * as db from './storage/db'
 import { Home } from './ui/Home'
+import { Bloky } from './ui/Bloky'
 import { Runner } from './ui/Runner'
 import { Results } from './ui/Results'
 import { Study } from './ui/Study'
@@ -20,7 +31,10 @@ const AKTIVNI_POKUS = 'aktivniPokus'
 
 type View =
   | { k: 'home' }
-  | { k: 'run'; attemptId: string }
+  /** Rozcestník testů zkoušky. Odsud si zkoušený volí, který test píše. */
+  | { k: 'blocks'; attemptId: string }
+  /** `blockIndex` je null u procvičování a u pokusů bez dělení na testy. */
+  | { k: 'run'; attemptId: string; blockIndex: number | null }
   | { k: 'result'; attemptId: string }
   | { k: 'study' }
   | { k: 'site' }
@@ -60,12 +74,34 @@ export function App() {
       const attempt = await db.attempts.get(id)
       if (!attempt) return setNacteno(true)
       if (attempt.finishedAt !== null) return setNacteno(true)
+
+      // Zkouška dělená na testy: testu, kterému vypršel čas za zavřené
+      // záložky, se po obnovení nedá dopisovat. Zkouška končí až odevzdáním
+      // čtvrtého testu, ne vypršením jednoho.
+      if (hasBlocks(attempt)) {
+        const po = expireBlocks(attempt, Date.now())
+        if (allBlocksSubmitted(po)) {
+          const uzavreny = { ...po, finishedAt: Date.now() }
+          await dokonci(uzavreny)
+          setView({ k: 'result', attemptId: uzavreny.id })
+        } else {
+          if (po !== attempt) await ulozPokus(po)
+          const bezi = runningBlockIndex(po)
+          setView(
+            bezi === null
+              ? { k: 'blocks', attemptId: po.id }
+              : { k: 'run', attemptId: po.id, blockIndex: bezi },
+          )
+        }
+        return setNacteno(true)
+      }
+
       if (isExpired(attempt, Date.now())) {
         const uzavreny = { ...attempt, finishedAt: attempt.deadlineAt ?? Date.now() }
         await dokonci(uzavreny)
         setView({ k: 'result', attemptId: uzavreny.id })
       } else {
-        setView({ k: 'run', attemptId: attempt.id })
+        setView({ k: 'run', attemptId: attempt.id, blockIndex: null })
       }
       setNacteno(true)
     })()
@@ -74,7 +110,7 @@ export function App() {
 
   const aktivni = useMemo(
     () =>
-      view.k === 'run' || view.k === 'result'
+      view.k === 'run' || view.k === 'result' || view.k === 'blocks'
         ? attempts.find((a) => a.id === view.attemptId) ?? null
         : null,
     [view, attempts],
@@ -102,13 +138,14 @@ export function App() {
     label: string,
     minuty: number | null,
     threshold: number,
+    blocks: AttemptBlock[] | null = null,
   ) {
     const seed = newSeed()
     const rng = mulberry32(seed)
     const now = Date.now()
     const attempt: Attempt = {
       id: `${now}-${seed}`,
-      mode: minuty === null ? 'procvicovani' : 'zkouska',
+      mode: blocks !== null || minuty !== null ? 'zkouska' : 'procvicovani',
       createdAt: now,
       deadlineAt: minuty === null ? null : now + minuty * 60_000,
       finishedAt: null,
@@ -117,12 +154,22 @@ export function App() {
       thresholdPercent: threshold,
       label,
       items: buildAttemptItems(vybrane, rng),
+      ...(blocks !== null ? { blocks } : {}),
     }
     await db.attempts.put(attempt)
     await db.meta.set(AKTIVNI_POKUS, attempt.id)
     setAttempts((xs) => [attempt, ...xs])
     setShortfalls(null)
-    setView({ k: 'run', attemptId: attempt.id })
+    setView(
+      blocks !== null
+        ? { k: 'blocks', attemptId: attempt.id }
+        : { k: 'run', attemptId: attempt.id, blockIndex: null },
+    )
+  }
+
+  async function ulozPokus(zmeneny: Attempt) {
+    await db.attempts.put(zmeneny)
+    setAttempts((xs) => xs.map((a) => (a.id === zmeneny.id ? zmeneny : a)))
   }
 
   async function dokonci(attempt: Attempt) {
@@ -173,18 +220,59 @@ export function App() {
   )
 
   function spustZkousku() {
-    const vyber = selectExam(items, DEFAULT_EXAM, mulberry32(newSeed()))
+    const vyber = selectExamByCircuit(items, DEFAULT_EXAM, mulberry32(newSeed()))
     if (!vyber.ok) {
       setShortfalls(vyber.shortfalls)
       setView({ k: 'home' })
       return
     }
-    void zalozPokus(
-      vyber.items,
-      'Zkouška nanečisto',
-      DEFAULT_EXAM.minutes,
-      DEFAULT_EXAM.thresholdPercent,
+    // Jeden test = jeden okruh. Pokus nemá vlastní lhůtu; čas drží testy, aby
+    // se nedal přenášet mezi nimi. Pořadí, ve kterém se testy píšou, si volí
+    // zkoušený na rozcestníku testů.
+    const { blocks, order } = buildBlocks(
+      vyber.groups.map((g) => ({
+        circuit: g.circuit,
+        title: bank.circuits.find((c) => c.id === g.circuit)?.title ?? g.circuit,
+        items: g.items,
+      })),
+      DEFAULT_EXAM.blockMinutes,
     )
+    void zalozPokus(order, 'Zkouška nanečisto', null, DEFAULT_EXAM.thresholdPercent, blocks)
+  }
+
+  function zahajBlok(attempt: Attempt, index: number) {
+    void (async () => {
+      const po = startBlock(attempt, index, Date.now())
+      await ulozPokus(po)
+      setView({ k: 'run', attemptId: po.id, blockIndex: index })
+    })()
+  }
+
+  /**
+   * Odevzdání testu. Nevratné, a výsledek se neukáže — po čtvrtém testu se
+   * zkouška vyhodnotí sama, dřív ne.
+   */
+  function odevzdejBlok(attempt: Attempt, index: number) {
+    void (async () => {
+      const po = submitBlock(attempt, index, Date.now())
+      if (allBlocksSubmitted(po)) {
+        const uzavreny = { ...po, finishedAt: Date.now() }
+        await dokonci(uzavreny)
+        setView({ k: 'result', attemptId: uzavreny.id })
+      } else {
+        await ulozPokus(po)
+        setView({ k: 'blocks', attemptId: po.id })
+      }
+    })()
+  }
+
+  /** Uzavření nedokončené zkoušky. Nenapsané testy se počítají jako nesprávné. */
+  function ukonciZkousku(attempt: Attempt) {
+    void (async () => {
+      const uzavreny = { ...abandonRemaining(attempt, Date.now()), finishedAt: Date.now() }
+      await dokonci(uzavreny)
+      setView({ k: 'result', attemptId: uzavreny.id })
+    })()
   }
 
   function spustProcvicovani(
@@ -268,13 +356,26 @@ export function App() {
         />
       )}
 
+      {view.k === 'blocks' && aktivni && hasBlocks(aktivni) && (
+        <Bloky
+          attempt={aktivni}
+          onStart={(i) => zahajBlok(aktivni, i)}
+          onResume={(i) => setView({ k: 'run', attemptId: aktivni.id, blockIndex: i })}
+          onEvaluate={() => dokonciAZobraz({ ...aktivni, finishedAt: Date.now() })}
+          onAbandon={() => ukonciZkousku(aktivni)}
+        />
+      )}
+
       {view.k === 'run' && aktivni && (
         <Runner
           attempt={aktivni}
           items={itemMap}
+          blockIndex={view.blockIndex}
           ukazatPrubeznouZpetnouVazbu={aktivni.mode === 'procvicovani'}
           onChange={zmen}
-          onFinish={dokonciAZobraz}
+          onFinish={(a) =>
+            view.blockIndex === null ? dokonciAZobraz(a) : odevzdejBlok(a, view.blockIndex)
+          }
           onToggleSaved={(id) => void toggleSaved(id)}
           savedIds={savedIds}
         />
@@ -320,7 +421,16 @@ export function App() {
           items={itemMap}
           onOpen={(id) => {
             const a = attempts.find((x) => x.id === id)
-            setView(a && a.finishedAt === null ? { k: 'run', attemptId: id } : { k: 'result', attemptId: id })
+            if (!a || a.finishedAt !== null) return setView({ k: 'result', attemptId: id })
+            if (hasBlocks(a)) {
+              const bezi = runningBlockIndex(a)
+              return setView(
+                bezi === null
+                  ? { k: 'blocks', attemptId: id }
+                  : { k: 'run', attemptId: id, blockIndex: bezi },
+              )
+            }
+            setView({ k: 'run', attemptId: id, blockIndex: null })
           }}
           onWipe={() => void db.wipe().then(reload)}
           onReload={() => void reload()}

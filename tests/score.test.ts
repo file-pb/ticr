@@ -1,6 +1,6 @@
 import { describe, expect, it } from 'vitest'
 import { joinBank } from '../src/domain/bank'
-import { DEFAULT_EXAM, selectExam } from '../src/domain/select'
+import { DEFAULT_EXAM, examTotalMinutes, selectExam } from '../src/domain/select'
 import { isExpired, remainingMs, scoreAttempt } from '../src/domain/score'
 import { mulberry32 } from '../src/domain/rng'
 import { makeAttempt, makeBank } from './fixtures'
@@ -124,12 +124,13 @@ describe('čas', () => {
 })
 
 describe('předvolba zkoušky', () => {
-  it('odpovídá doložené skladbě: 4 okruhy × 15 otázek, 80 minut, hranice 80 %', () => {
+  it('odpovídá doložené skladbě: 4 testy × 15 otázek, 20 minut na test, hranice 80 %', () => {
     expect(DEFAULT_EXAM.circuits).toHaveLength(4)
     expect(DEFAULT_EXAM.perCircuit).toBe(15)
     expect(DEFAULT_EXAM.circuits.length * DEFAULT_EXAM.perCircuit).toBe(60)
-    // 4 testy po 20 minutách; aplikace je zatím spojuje do jednoho bloku
-    expect(DEFAULT_EXAM.minutes).toBe(4 * 20)
+    // Čas patří testu, ne zkoušce — mezi testy se nepřenáší.
+    expect(DEFAULT_EXAM.blockMinutes).toBe(20)
+    expect(examTotalMinutes(DEFAULT_EXAM)).toBe(80)
     expect(DEFAULT_EXAM.thresholdPercent).toBe(80)
   })
 })

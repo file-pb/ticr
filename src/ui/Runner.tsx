@@ -1,11 +1,18 @@
 import { useEffect, useMemo, useState } from 'react'
-import type { Attempt, Item } from '../domain/types'
+import type { Attempt, AttemptItem, Item } from '../domain/types'
 import { remainingMs } from '../domain/score'
+import { blockRemainingMs, hasBlocks, setItemInBlock } from '../domain/blocks'
 import { Cas, StavOdpovedi } from './bits'
 
 interface Props {
   attempt: Attempt
   items: Map<string, Item>
+  /**
+   * Index běžícího testu, nebo null, když pokus na testy dělený není
+   * (procvičování a starší pokusy). V režimu testu se pracuje jen s jeho
+   * úsekem otázek a čas i odevzdání patří testu, ne celému pokusu.
+   */
+  blockIndex: number | null
   /** Ve zkoušce se správná odpověď neukazuje před odevzdáním. */
   ukazatPrubeznouZpetnouVazbu: boolean
   onChange: (attempt: Attempt) => void
@@ -17,6 +24,7 @@ interface Props {
 export function Runner({
   attempt,
   items,
+  blockIndex,
   ukazatPrubeznouZpetnouVazbu,
   onChange,
   onFinish,
@@ -27,26 +35,36 @@ export function Runner({
   const [now, setNow] = useState(() => Date.now())
   const [odevzdavam, setOdevzdavam] = useState(false)
 
-  const zbyva = remainingMs(attempt, now)
+  const blok =
+    blockIndex !== null && hasBlocks(attempt) ? attempt.blocks[blockIndex] ?? null : null
+  const od = blok ? blok.from : 0
+  const pocet = blok ? blok.count : attempt.items.length
+  const polozky = useMemo(() => attempt.items.slice(od, od + pocet), [attempt.items, od, pocet])
+
+  const zbyva = blok ? blockRemainingMs(blok, now) : remainingMs(attempt, now)
+  const lhuta = blok ? blok.deadlineAt : attempt.deadlineAt
 
   // Čas se čte z uloženého okamžiku konce, takže refresh ani uspání záložky
   // odpočet neposune. Interval jen překresluje.
   useEffect(() => {
-    if (attempt.deadlineAt === null) return
+    if (lhuta === null) return
     const t = setInterval(() => setNow(Date.now()), 1000)
     return () => clearInterval(t)
-  }, [attempt.deadlineAt])
+  }, [lhuta])
 
+  // Vypršení času odevzdává za zkoušeného. U testu se odevzdá test, ne pokus —
+  // zbylé testy zkoušky tím nekončí.
   useEffect(() => {
-    if (zbyva === 0) onFinish({ ...attempt, finishedAt: Date.now() })
-  }, [zbyva, attempt, onFinish])
+    if (zbyva !== 0) return
+    onFinish(blok ? attempt : { ...attempt, finishedAt: Date.now() })
+  }, [zbyva, attempt, blok, onFinish])
 
-  const aktualni = attempt.items[index]
+  const aktualni = polozky[index]
   const item = aktualni ? items.get(aktualni.questionId) : undefined
 
   const nevyplnene = useMemo(
-    () => attempt.items.filter((i) => i.chosenOptionId === null).length,
-    [attempt.items],
+    () => polozky.filter((i) => i.chosenOptionId === null).length,
+    [polozky],
   )
 
   if (!aktualni || !item || !item.answer) {
@@ -57,11 +75,14 @@ export function Runner({
   const odpovezeno = zvoleno !== null
   const ukazatVysledek = ukazatPrubeznouZpetnouVazbu && odpovezeno
   const spravne = zvoleno === item.answer.correctOptionId
+  const nazev = blok ? blok.title : attempt.label
 
-  function uprav(zmena: Partial<typeof aktualni>) {
-    const dalsi = attempt.items.slice()
-    dalsi[index] = { ...aktualni!, ...zmena }
-    onChange({ ...attempt, items: dalsi })
+  function uprav(zmena: Partial<AttemptItem>) {
+    onChange(setItemInBlock(attempt, blockIndex, index, zmena))
+  }
+
+  function odevzdej() {
+    onFinish(blok ? attempt : { ...attempt, finishedAt: Date.now() })
   }
 
   const moznosti = aktualni.optionOrder
@@ -72,8 +93,15 @@ export function Runner({
     <>
       <div className="radek rozestup">
         <p className="tlumene" style={{ margin: 0 }}>
-          {attempt.label} · otázka {index + 1} z {attempt.items.length} · okruh{' '}
-          {item.question.circuit} · č. {item.question.number}
+          {blok && blockIndex !== null && hasBlocks(attempt) ? (
+            <>
+              Test {blockIndex + 1} ze {attempt.blocks.length} · {blok.title} ·{' '}
+            </>
+          ) : (
+            <>{attempt.label} · </>
+          )}
+          otázka {index + 1} z {pocet} · okruh {item.question.circuit} · č.{' '}
+          {item.question.number}
         </p>
         {zbyva !== null && <Cas ms={zbyva} />}
       </div>
@@ -169,32 +197,35 @@ export function Runner({
             ← Předchozí
           </button>
           <button
-            onClick={() => setIndex((i) => Math.min(attempt.items.length - 1, i + 1))}
-            disabled={index === attempt.items.length - 1}
+            onClick={() => setIndex((i) => Math.min(pocet - 1, i + 1))}
+            disabled={index === pocet - 1}
             className={ukazatVysledek ? 'hlavni' : undefined}
           >
             Další →
           </button>
         </div>
         <button className="hlavni" onClick={() => setOdevzdavam(true)}>
-          {attempt.deadlineAt === null ? 'Ukončit a vyhodnotit' : 'Odevzdat'}
+          {blok ? 'Vyhodnotit test' : attempt.deadlineAt === null ? 'Ukončit a vyhodnotit' : 'Odevzdat'}
         </button>
       </div>
 
       {odevzdavam && (
         <div className="karta" role="alertdialog" aria-label="Potvrzení odevzdání">
-          <h3>Odevzdat {attempt.label.toLowerCase()}?</h3>
+          <h3>{blok ? `Vyhodnotit ${nazev}?` : `Odevzdat ${attempt.label.toLowerCase()}?`}</h3>
           <p>
             {nevyplnene === 0
               ? 'Všechny otázky jsou vyplněné.'
               : `Nevyplněných otázek: ${nevyplnene}. Počítají se jako nesprávné.`}
           </p>
+          {blok && (
+            <p>
+              <strong>Odevzdání testu je nevratné.</strong> Zpátky se k němu nedostaneš a výsledek
+              se ukáže až po odevzdání posledního testu — stejně jako u zkoušky.
+            </p>
+          )}
           <div className="radek">
-            <button
-              className="hlavni"
-              onClick={() => onFinish({ ...attempt, finishedAt: Date.now() })}
-            >
-              Odevzdat
+            <button className="hlavni" onClick={odevzdej}>
+              {blok ? 'Vyhodnotit test' : 'Odevzdat'}
             </button>
             <button onClick={() => setOdevzdavam(false)}>Zpět k otázkám</button>
           </div>
@@ -203,11 +234,11 @@ export function Runner({
 
       <h2>Přehled otázek</h2>
       <p className="tlumene">
-        Vyplněno {attempt.items.length - nevyplnene} z {attempt.items.length}. Vyplněná otázka má
-        plný podklad, označená vlaječku.
+        Vyplněno {pocet - nevyplnene} z {pocet}. Vyplněná otázka má plný podklad, označená
+        vlaječku.
       </p>
       <div className="prehled">
-        {attempt.items.map((it, i) => (
+        {polozky.map((it, i) => (
           <button
             key={it.questionId}
             aria-current={i === index}

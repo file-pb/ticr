@@ -13,6 +13,20 @@ export function StavOdpovedi({ status }: { status: AnswerStatus | null }) {
   return <span className={'odznak ' + key}>{POPIS[key]}</span>
 }
 
+/**
+ * Počet se skloňováním, v prvním pádě. Předvolba zkoušky jsou čtyři testy po
+ * patnácti otázkách, ale je přepsatelná — text se nesmí vázat na konkrétní
+ * číslo. Druhý pád se píše natvrdo („ze 4 testů“), ten je pro všechny počty
+ * stejný.
+ */
+export function pocet(n: number, jedna: string, dva: string, pet: string): string {
+  if (n === 1) return `${n} ${jedna}`
+  return n < 5 ? `${n} ${dva}` : `${n} ${pet}`
+}
+
+export const pocetTestu = (n: number) => pocet(n, 'test', 'testy', 'testů')
+export const pocetOtazek = (n: number) => pocet(n, 'otázka', 'otázky', 'otázek')
+
 export function Cas({ ms }: { ms: number }) {
   const t = Math.max(0, Math.floor(ms / 1000))
   const h = Math.floor(t / 3600)

@@ -5,8 +5,14 @@ import type { AttemptItem, CircuitId, Item } from './types'
 export interface ExamPreset {
   circuits: CircuitId[]
   perCircuit: number
-  minutes: number
+  /** Minut na jeden test, ne na celou zkoušku. Čas se mezi testy nepřenáší. */
+  blockMinutes: number
   thresholdPercent: number
+}
+
+/** Čas na celou zkoušku. Jen informativní součet — zkouška ho takhle nedává. */
+export function examTotalMinutes(preset: ExamPreset): number {
+  return preset.circuits.length * preset.blockMinutes
 }
 
 /**
@@ -24,16 +30,18 @@ export interface ExamPreset {
  * otázek, protože budete mít čtyři testy po 15 otázkách… K úspěšnému složení
  * zkoušky musíte mít 80 % správných odpovědí." Do té doby to byl odhad.
  *
- * **Čím se tahle předvolba od skutečné zkoušky liší:** zkouška běží jako
- * čtyři samostatné testy po 20 minutách, takže čas nejde přenášet mezi
- * okruhy; pořadí testů si volí zkoušený a odeslání testu je nevratné. Mezi
- * testy zkouška výsledek neukáže. Aplikace zatím losuje jeden blok 60 otázek
- * na 80 minut dohromady, což je mírnější. Rozdíl je popsaný v README.
+ * **Čím se tahle předvolba od skutečné zkoušky liší:** rozdíl v čase a
+ * v průběhu zmizel — aplikace od 24. 11. 2026 losuje čtyři samostatné testy
+ * po 15 otázkách, každý se svými 20 minutami a nevratným odevzdáním, v pořadí,
+ * které si volí zkoušený, a výsledek drží až do odevzdání čtvrtého testu.
+ * Zbývá jediný vědomý rozdíl: z běžícího testu se dá odejít do rozcestníku
+ * aplikace, zatímco u zkoušky se z testu odejít nedá. Čas mu i tak běží dál,
+ * protože se počítá z uloženého okamžiku konce. Rozdíl je popsaný v README.
  */
 export const DEFAULT_EXAM: ExamPreset = {
   circuits: ['ez1', 'ez2', 'ez3', 'ez4'],
   perCircuit: 15,
-  minutes: 80,
+  blockMinutes: 20,
   thresholdPercent: 80,
 }
 
@@ -88,14 +96,30 @@ export type ExamSelection =
   | { ok: true; items: Item[] }
   | { ok: false; shortfalls: Shortfall[] }
 
+/** Otázky jednoho testu. Jeden test = jeden okruh, jak to dělá i zkouška. */
+export interface ExamGroup {
+  circuit: CircuitId
+  items: Item[]
+}
+
+export type ExamGroupSelection =
+  | { ok: true; groups: ExamGroup[] }
+  | { ok: false; shortfalls: Shortfall[] }
+
 /**
- * Výběr otázek pro zkoušku nanečisto. Losuje **výhradně z ověřených** odpovědí.
- * Když v okruhu není dost ověřených otázek, vrátí, co kde chybí — nedolévá
- * z jiného okruhu a nepoužije otázku dvakrát.
+ * Výběr otázek pro zkoušku nanečisto, rozdělený po testech. Losuje
+ * **výhradně z ověřených** odpovědí. Když v okruhu není dost ověřených
+ * otázek, vrátí, co kde chybí — nedolévá z jiného okruhu a nepoužije otázku
+ * dvakrát. Okruhy se nekontrolují jen do prvního chybějícího, aby bylo vidět
+ * všechno, co chybí, ne jen první nález.
  */
-export function selectExam(items: Item[], preset: ExamPreset, rng: Rng): ExamSelection {
+export function selectExamByCircuit(
+  items: Item[],
+  preset: ExamPreset,
+  rng: Rng,
+): ExamGroupSelection {
   const shortfalls: Shortfall[] = []
-  const picked: Item[] = []
+  const groups: ExamGroup[] = []
 
   for (const circuit of preset.circuits) {
     const pool = dropDuplicateWording(
@@ -105,11 +129,21 @@ export function selectExam(items: Item[], preset: ExamPreset, rng: Rng): ExamSel
       shortfalls.push({ circuit, needed: preset.perCircuit, available: pool.length })
       continue
     }
-    picked.push(...shuffle(pool, rng).slice(0, preset.perCircuit))
+    groups.push({ circuit, items: shuffle(pool, rng).slice(0, preset.perCircuit) })
   }
 
   if (shortfalls.length > 0) return { ok: false, shortfalls }
-  return { ok: true, items: shuffle(picked, rng) }
+  return { ok: true, groups }
+}
+
+/**
+ * Tentýž výběr složený do jednoho pořadí otázek napříč okruhy. Zkouška takhle
+ * neběží — používá se tam, kde na dělení na testy nezáleží.
+ */
+export function selectExam(items: Item[], preset: ExamPreset, rng: Rng): ExamSelection {
+  const vyber = selectExamByCircuit(items, preset, rng)
+  if (!vyber.ok) return vyber
+  return { ok: true, items: shuffle(vyber.groups.flatMap((g) => g.items), rng) }
 }
 
 export interface PracticeQuery {

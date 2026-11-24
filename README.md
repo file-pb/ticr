@@ -224,9 +224,16 @@ curl -s -o /dev/null -w "%{http_code}\n" http://localhost:8080/health
   otázek… K úspěšnému složení zkoušky musíte mít 80 % správných odpovědí."
   Mezi testy zkouška výsledek nezobrazí. Je to druhotný zdroj (přednášející,
   který zkoušku sám skládal), ne dokument TIČR.
-- **Zkouška běží jako čtyři samostatné testy, aplikace jako jeden blok.**
-  Na zkoušce se čas nedá přenášet mezi okruhy; kdo prošvihne prvních 20 minut,
-  o ně přijde. Pořadí testů si volí zkoušený a stisk „Vyhodnotit" test nevratně
-  uzavře. Aplikace losuje 60 otázek na 80 minut dohromady, což je mírnější.
-  Rozdělení na čtyři bloky zatím není implementované.
+- **Zkouška běží jako čtyři samostatné testy a aplikace od 24. 11. 2026 taky.**
+  Každý test má svých 20 minut, čas se mezi testy nepřenáší — kdo prošvihne
+  prvních 20 minut, o ně přijde. Pořadí testů si volí zkoušený, stisk
+  „Vyhodnotit" test nevratně uzavře a výsledek se neukáže dřív než po čtvrtém
+  testu; hranice 80 % se pak počítá z celých 60 otázek. Dřív aplikace losovala
+  jeden blok 60 otázek na 80 minut, což bylo mírnější.
+  - Jediný vědomý rozdíl, který zbyl: z běžícího testu se dá odejít do
+    rozcestníku aplikace, zatímco u zkoušky se z testu odejít nedá. Čas mu i tak
+    běží dál, protože se počítá z uloženého okamžiku konce — zavřená záložka ani
+    obnovení stránky ho nezastaví a vypršelý test se po návratu uzavře sám.
+  - Nedokončenou zkoušku lze uzavřít i bez napsání všech testů. Nenapsané
+    otázky se počítají jako nesprávné, stejně jako to, co zkoušený neodpoví.
 - **Ústní část zkoušky aplikace neprocvičuje** a nic o ní netvrdí.
