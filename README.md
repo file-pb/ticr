@@ -48,6 +48,12 @@ Trenažér sítí po změně obsahu (seznam otázek k druhům sítí se generuje
 python3 -I scripts/build_site_topics.py && python3 -I scripts/check_site.py
 ```
 
+Průvodce zprávou po novelizaci předpisu:
+
+```bash
+python3 -I scripts/build_zprava.py && python3 -I scripts/check_zprava.py
+```
+
 Mapa norem po přeimportování banky:
 
 ```bash
@@ -74,6 +80,8 @@ src/data/site.json             trenažér sítí — vlastní učební text, neo
 src/data/site-otazky.json      které otázky z banky se ptají na který druh sítě
 src/data/normy-skupiny.json    mapa norem — skupiny a popisky, vlastní text
 src/data/normy.json            mapa norem — inventura spočítaná z banky
+src/data/zprava-citace.json    průvodce zprávou — doslovné citace z NV 190/2022
+src/data/zprava.json           průvodce zprávou — fáze a poznámky, vlastní text
 src/data/answers.2027.json     klíč, veřejná vrstva (volně ověřitelné zdroje)
 src/data/answers.*.local.json  klíč, lokální vrstva (placené podklady), mimo git
 predpisy/                      doslovné texty předpisů — proti nim se klíč ověřuje
@@ -137,6 +145,21 @@ skript. **Popisky skupin a norem jsou vlastní text, neověřený proti katalogu
 `scripts/check_normy.py` hlídá, že je inventura aktuální, že žádná položka
 nepropadla bez zařazení, že rozpad po edicích nikam neztratil otázku a že
 popisek neuvádí číselnou hodnotu.
+
+**Průvodce revizní zprávou** — co musí být uděláno a co musí být ve zprávě.
+Jediná pomůcka, která **není** návrh: všech 91 vět je doslovný text nařízení
+vlády č. 190/2022 Sb. a `scripts/check_zprava.py` ověřuje, že každá z nich
+v `predpisy/nv-190-2022.txt` doslova stojí. Vlastní je jen rozdělení do fází
+a šest poznámek, označených v rozhraní jako moje.
+
+Pokrývá podklady (příloha č. 2 část A), náplň revize (část B), prohlídku
+(příloha č. 1 část A), zkoušku a měření v předepsaném pořadí (část B),
+patnáct náležitostí zprávy od a) po o) (§ 10 odst. 1) a lhůty pravidelných
+revizí (příloha č. 4). Body se dají odškrtávat; stav zůstává v prohlížeči
+a je to pomůcka při učení, ne záznam o provedené revizi.
+
+Co v něm **není**: vzor ani formulář, náležitosti navíc podle ČSN 33 1500
+a ČSN 33 2000-6 (placené normy), postupy měření a mezní hodnoty.
 
 V menu i na rozcestníku stojí pomůcky **odděleně od zkouškové části** a platí
 pro ně jiná pravidla:

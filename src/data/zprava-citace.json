@@ -1,0 +1,438 @@
+{
+  "schemaVersion": 1,
+  "generovano": "2026-11-24",
+  "skript": "scripts/build_zprava.py",
+  "zdroj": {
+    "predpis": "nařízení vlády č. 190/2022 Sb.",
+    "soubor": "predpisy/nv-190-2022.txt",
+    "poznamka": "Doslovný text předpisu. Právní předpis je podle § 3 písm. a) zákona č. 121/2000 Sb. úřední dílo. Text platí k datu stažení uvedenému v predpisy/README.md — novelizace se sama nepozná."
+  },
+  "sekce": [
+    {
+      "id": "zprava-obsah",
+      "nazev": "Co zpráva o revizi obsahuje",
+      "zdroj": "NV č. 190/2022 Sb., § 10 odst. 1",
+      "uvod": "(1) Zpráva o revizi vyhrazeného elektrického zařízení obsahuje",
+      "body": [
+        {
+          "znak": "a",
+          "text": "název a sídlo právnické osoby nebo jméno, popřípadě jména, a příjmení a adresu podnikání podnikající fyzické osoby, která revidované vyhrazené elektrické zařízení provozuje nebo bude provozovat"
+        },
+        {
+          "znak": "b",
+          "text": "identifikaci vyhrazeného elektrického zařízení, které je revidováno, včetně místa umístění"
+        },
+        {
+          "znak": "c",
+          "text": "vymezení rozsahu revize"
+        },
+        {
+          "znak": "d",
+          "text": "jméno, popřípadě jména, a příjmení, podpis a evidenční číslo osvědčení revizního technika, který revizi provedl; v případě elektronického předání zprávy o revizi musí být elektronický dokument podepsán uznávaným elektronickým podpisem 5 )"
+        },
+        {
+          "znak": "e",
+          "text": "určení, zda se jedná o revizi výchozí, pravidelnou nebo mimořádnou a v případě mimořádné revize uvedení důvodu jejího provádění"
+        },
+        {
+          "znak": "f",
+          "text": "datum zahájení revize, ukončení revize, vypracování zprávy o revizi a předání zprávy o revizi"
+        },
+        {
+          "znak": "g",
+          "text": "soupis použitých měřicích přístrojů"
+        },
+        {
+          "znak": "h",
+          "text": "seznam podkladů použitých k provedení revize, včetně jejich vyhodnocení ve vzájemných souvislostech"
+        },
+        {
+          "znak": "i",
+          "text": "soupis provedených úkonů, například prohlídka, zkouška, měření a vyhodnocení"
+        },
+        {
+          "znak": "j",
+          "text": "naměřené hodnoty"
+        },
+        {
+          "znak": "k",
+          "text": "přehled zjištěných závad s uvedením ustanovení porušených právních a ostatních předpisů k zajištění bezpečnosti a ochrany zdraví při práci"
+        },
+        {
+          "znak": "l",
+          "text": "slovní zhodnocení, zda je vyhrazené elektrické zařízení z hlediska bezpečnosti schopno provozu, zda je provedení ochrany před bleskem a přepětím v souladu s právními a ostatní předpisy k zajištění bezpečnosti a ochrany zdraví při práci z doby jejího zřízení a zda její součásti jsou ve stavu způsobilém plnit požadovanou funkci; v případě, že není vyhrazené elektrické zařízení z hlediska bezpečnosti schopno provozu, doplní se odůvodnění tohoto závěru"
+        },
+        {
+          "znak": "m",
+          "text": "vyhodnocení případných záznamů o výsledcích provedených prohlídek a zkoušek a o odstraňování závad zjištěných při předchozí revizi, při provozu a údržbě vyhrazeného elektrického zařízení"
+        },
+        {
+          "znak": "n",
+          "text": "doporučení lhůty provedení příští revize"
+        },
+        {
+          "znak": "o",
+          "text": "potvrzení o převzetí nebo předání zprávy o revizi."
+        }
+      ],
+      "otazky": [
+        "2027-ez1-038"
+      ]
+    },
+    {
+      "id": "podklady-vychozi",
+      "nazev": "Podklady pro výchozí revizi",
+      "zdroj": "NV č. 190/2022 Sb., příloha č. 2 část A bod I",
+      "uvod": "Podklady pro provedení revize vyhrazeného elektrického zařízení obsahují zejména",
+      "body": [
+        {
+          "znak": "a",
+          "text": "průvodní, projektovou nebo výkresovou dokumentaci skutečného provedení vyhrazeného elektrického zařízení, technickou zprávu k dokumentaci"
+        },
+        {
+          "znak": "b",
+          "text": "protokoly o určení vnějších vlivů, pokud nejsou součástí průvodní dokumentace"
+        },
+        {
+          "znak": "c",
+          "text": "výchozí revize těch částí vyhrazeného elektrického zařízení objektu, provozního souboru (dílčího provozního souboru), jež jsou z něho jako celku připraveny postupně k uvedení do provozu"
+        },
+        {
+          "znak": "d",
+          "text": "záznamy o prohlídkách a zkouškách provedených na vyhrazeném elektrickém zařízení v průběhu jeho montáže"
+        },
+        {
+          "znak": "e",
+          "text": "záznamy o provedených opatřeních, prohlídkách a zkouškách provedených v průběhu rekonstrukce vyhrazeného elektrického zařízení, které nemůže být ze závažných společenských, národohospodářských nebo technologických důvodů bez napětí po celou dobu provádění činností, popřípadě stanovisko pověřené organizace nebo znalce"
+        },
+        {
+          "znak": "f",
+          "text": "výpočet rizik pro zařízení určená na ochranu před účinky atmosférické elektřiny se začleněním posuzovaného systému ochrany před bleskem a přepětím (dále jen „LPS“) do příslušné třídy LPS podle normových hodnot, technickou zprávu obsahující dokumentaci LPS, popis návrhu včetně technických výkresů, doprovodnou technickou dokumentaci jednotlivých použitých součástí prokazující jejich vhodnost k použití v dané třídě LPS splněním normativních hodnot a podmínky pro údržbu"
+        },
+        {
+          "znak": "g",
+          "text": "protokoly o kusovém ověřování na zabudované výrobky"
+        },
+        {
+          "znak": "h",
+          "text": "identifikaci právnické osoby nebo podnikající fyzické osoby, včetně čísla oprávnění, která elektroinstalaci prováděla."
+        }
+      ],
+      "otazky": []
+    },
+    {
+      "id": "podklady-pravidelne",
+      "nazev": "Podklady pro pravidelnou a mimořádnou revizi",
+      "zdroj": "NV č. 190/2022 Sb., příloha č. 2 část A bod II",
+      "uvod": "II. Pro pravidelné a mimořádné revize",
+      "body": [
+        {
+          "znak": "a",
+          "text": "provozní a projektovou nebo výkresovou dokumentaci vyhrazeného elektrického zařízení a podmínky pro údržbu"
+        },
+        {
+          "znak": "b",
+          "text": "protokoly o určení vnějších vlivů, pokud nejsou součástí provozní dokumentace"
+        },
+        {
+          "znak": "c",
+          "text": "záznamy o výsledcích provedených prohlídek a zkoušek a o zjištěných a odstraněných závadách při provozu a údržbě"
+        },
+        {
+          "znak": "d",
+          "text": "zprávu o předchozí revizi"
+        },
+        {
+          "znak": "e",
+          "text": "doklady o kontrolách orgánů inspekce práce"
+        },
+        {
+          "znak": "f",
+          "text": "osvědčení k vyhrazenému elektrickému zařízení I. třídy vydanému pověřenou organizací podle § 6 odst. 1 písm. b) zákona"
+        },
+        {
+          "znak": "g",
+          "text": "doklad uvádějící důvody mimořádné revize."
+        }
+      ],
+      "otazky": []
+    },
+    {
+      "id": "napln-vychozi",
+      "nazev": "Náplň výchozí revize",
+      "zdroj": "NV č. 190/2022 Sb., příloha č. 2 část B bod I",
+      "uvod": "I. Při výchozí revizi se s přihlédnutím ke druhu vyhrazeného elektrického zařízení provede",
+      "body": [
+        {
+          "znak": "a",
+          "text": "kontrola shody skutečného provedení vyhrazeného elektrického zařízení s projektovou nebo výkresovou dokumentací a s průvodní dokumentací vyhrazeného elektrického zařízení a kontrola úplnosti průvodní dokumentace"
+        },
+        {
+          "znak": "b",
+          "text": "prohlídka vyhrazeného elektrického zařízení z pohledu splnění podmínek pro instalaci ve vztahu k vnějším vlivům prostředí podle průvodní dokumentace"
+        },
+        {
+          "znak": "c",
+          "text": "opatření k ověření stavu revidovaného vyhrazeného elektrického zařízení zahrnující prohlídku a zkoušku"
+        },
+        {
+          "znak": "d",
+          "text": "provedení potřebných měření a jejich vyhodnocení."
+        }
+      ],
+      "otazky": []
+    },
+    {
+      "id": "napln-pravidelne",
+      "nazev": "Náplň pravidelné a mimořádné revize",
+      "zdroj": "NV č. 190/2022 Sb., příloha č. 2 část B bod II",
+      "uvod": "II. Při pravidelné a mimořádné revizi se s přihlédnutím ke druhu vyhrazeného elektrického zařízení provede",
+      "body": [
+        {
+          "znak": "a",
+          "text": "kontrola shody skutečného provedení vyhrazeného elektrického zařízení s projektovou nebo výkresovou dokumentací a s provozní dokumentací zařízení a kontrola úplnosti provozní dokumentace"
+        },
+        {
+          "znak": "b",
+          "text": "prohlídka skutečného stavu vyhrazeného elektrického zařízení z pohledu splnění původních podmínek pro instalaci ve vztahu k vnějším vlivům prostředí podle průvodní dokumentace a posouzení případných změn provedených od poslední revize"
+        },
+        {
+          "znak": "c",
+          "text": "opatření k ověření stavu revidovaného vyhrazeného elektrického zařízení zahrnující prohlídku a zkoušku"
+        },
+        {
+          "znak": "d",
+          "text": "provedení potřebných měření a jejich vyhodnocení."
+        }
+      ],
+      "otazky": []
+    },
+    {
+      "id": "prohlidka",
+      "nazev": "Prohlídka",
+      "zdroj": "NV č. 190/2022 Sb., příloha č. 1 část A",
+      "uvod": "Prohlídka předchází zkoušce. Prohlídkou se zkontroluje zejména",
+      "body": [
+        {
+          "znak": "a",
+          "text": "způsob, popřípadě stav ochrany před úrazem elektrickým proudem včetně měření vzdáleností, pokud jde zejména o ochranu přepážkami nebo kryty, zábranami nebo polohou"
+        },
+        {
+          "znak": "b",
+          "text": "použití protipožárních přepážek nebo jiných bezpečnostních opatření proti šíření ohně a ochrana před tepelnými účinky"
+        },
+        {
+          "znak": "c",
+          "text": "volba vodičů s ohledem na proudovou zatížitelnost a úbytek napětí"
+        },
+        {
+          "znak": "d",
+          "text": "volba, seřízení a stav ukazatelů ochranných a kontrolních prvků"
+        },
+        {
+          "znak": "e",
+          "text": "použití odpovídajících, vhodně umístěných a dostatečně oddělujících spínacích prvků"
+        },
+        {
+          "znak": "f",
+          "text": "volba elektrických zařízení a ochranných opatření s ohledem na vnější vlivy, oprávněnost zatřídění a označení prostorů z hlediska vnějších vlivů"
+        },
+        {
+          "znak": "g",
+          "text": "označení středních a ochranných vodičů"
+        },
+        {
+          "znak": "h",
+          "text": "vybavení schématy, varovnými nápisy a jinými podobnými informacemi požadovanými jinými právními předpisy nebo technickými normami"
+        },
+        {
+          "znak": "i",
+          "text": "označení obvodů, pojistek, spínačů, svorek"
+        },
+        {
+          "znak": "j",
+          "text": "odpovídající způsob spojení vodičů"
+        },
+        {
+          "znak": "k",
+          "text": "přístupnost z hlediska provozu a údržby."
+        }
+      ],
+      "otazky": []
+    },
+    {
+      "id": "zkouska-poradi",
+      "nazev": "Zkouška a měření v tomhle pořadí",
+      "zdroj": "NV č. 190/2022 Sb., příloha č. 1 část B bod I",
+      "uvod": "Zkoušení a měření se u revidovaného vyhrazeného elektrického zařízení provádí v tomto pořadí:",
+      "body": [
+        {
+          "znak": "a",
+          "text": "spojitost ochranných vodičů a vodičů pro pospojování k uvedení na stejný potenciál"
+        },
+        {
+          "znak": "b",
+          "text": "izolační stav elektrického zařízení"
+        },
+        {
+          "znak": "c",
+          "text": "ochrana oddělením obvodů a oddělením při použití bezpečného malého napětí s označením (SELV) nebo (PELV)"
+        },
+        {
+          "znak": "d",
+          "text": "izolační odpor podlahy a stěn"
+        },
+        {
+          "znak": "e",
+          "text": "automatické odpojení od zdroje"
+        },
+        {
+          "znak": "f",
+          "text": "zkouška zapojení přístrojů"
+        },
+        {
+          "znak": "g",
+          "text": "zkouška elektrické pevnosti"
+        },
+        {
+          "znak": "h",
+          "text": "funkční zkouška"
+        },
+        {
+          "znak": "i",
+          "text": "tepelné účinky"
+        },
+        {
+          "znak": "j",
+          "text": "úbytek napětí"
+        },
+        {
+          "znak": "k",
+          "text": "zkouška polarity"
+        },
+        {
+          "znak": "l",
+          "text": "pořadí fází."
+        }
+      ],
+      "otazky": []
+    },
+    {
+      "id": "zkouska-dalsi",
+      "nazev": "Co se zkouší dál",
+      "zdroj": "NV č. 190/2022 Sb., příloha č. 1 část B bod II",
+      "uvod": "Zkouší se zejména",
+      "body": [
+        {
+          "znak": "a",
+          "text": "hlídače izolačního stavu, proudové chrániče a další ochranné přístroje, a to aktivací zkušebního ovládacího prvku, pokud jsou takovým vybaveny, nebo způsobem předepsaným jejich výrobcem nebo postupem podle technických předpisů, technických dokumentů a technických norem"
+        },
+        {
+          "znak": "b",
+          "text": "účinnost bezpečnostních zařízení, jako jsou zařízení pro nouzové vypnutí, blokovací opatření a hlídače tlaku"
+        },
+        {
+          "znak": "c",
+          "text": "funkční schopnost hlásičů a ukazatelů stavu, jako jsou zařízení pro zpětná hlášení při dálkovém ovládání spínačů a světelné hlásiče"
+        },
+        {
+          "znak": "d",
+          "text": "elektrická pevnost izolace spočívající v provedení zkoušky přiloženým napětím, a to jen v případě, že použité elektrické předměty nemají doloženo zajištění požadovaných vlastností výrobcem"
+        },
+        {
+          "znak": "e",
+          "text": "funkčnost přepěťových ochran."
+        }
+      ],
+      "otazky": []
+    }
+  ],
+  "lhuty": {
+    "nazev": "Základní nejdelší lhůty pravidelných revizí vyhrazeného elektrického zařízení včetně zařízení pro ochranu před účinky atmosférické a statické elektřiny",
+    "zdroj": "NV č. 190/2022 Sb., příloha č. 4",
+    "radky": [
+      {
+        "co": "V objektech určených pro administrativní činnost",
+        "lhuta": "5 let",
+        "skupina": "Podle objektu a prostoru"
+      },
+      {
+        "co": "V objektech určených pro výrobu, vzdělávání (školy, mateřské školy), ubytování (hotely, ubytovny, kempy a jiná ubytovací zařízení) a lékařské účely",
+        "lhuta": "3 roky",
+        "skupina": "Podle objektu a prostoru"
+      },
+      {
+        "co": "Elektrické zařízení v objektu, který podle požárně bezpečnostního řešení umožňuje přítomnost více než 200 osob",
+        "lhuta": "2 roky",
+        "skupina": "Podle objektu a prostoru"
+      },
+      {
+        "co": "Prozatímní zařízení stavenišť",
+        "lhuta": "0,5 roku",
+        "skupina": "Podle objektu a prostoru"
+      },
+      {
+        "co": "Pojízdné a převozné prostředky",
+        "lhuta": "1 rok",
+        "skupina": "Podle objektu a prostoru"
+      },
+      {
+        "co": "Prostory s nebezpečím požáru a výbuchu",
+        "lhuta": "3 roky",
+        "skupina": "Podle objektu a prostoru"
+      },
+      {
+        "co": "Prostory mokré a s trvalým výskytem korozivních nebo znečišťujících látek",
+        "lhuta": "1 rok",
+        "skupina": "Podle objektu a prostoru"
+      },
+      {
+        "co": "LPS chránící kritické systémy",
+        "lhuta": "2 roky",
+        "skupina": "Ochrana před účinky atmosférické a statické elektřiny"
+      },
+      {
+        "co": "LPS chránící ostatní objekty nebo zařízení",
+        "lhuta": "4 roky",
+        "skupina": "Ochrana před účinky atmosférické a statické elektřiny"
+      }
+    ],
+    "doplnky": [
+      {
+        "znak": "a",
+        "text": "Pokud se na elektrické zařízení vztahuje více než jedna revizní lhůta, použije se z nich lhůta nejkratší."
+      },
+      {
+        "znak": "b",
+        "text": "Pravidelná revize musí být provedena v roce, do kterého spadá konec stanovené lhůty od doby provedení poslední revize. Netýká se lhůt, nepřesahujících délku jednoho roku."
+      },
+      {
+        "znak": "c",
+        "text": "Provozovatelé, kteří mají zpracován řád preventivní údržby, kdy pravidelnými kontrolami a údržbou je zajišťována minimalizace rizik souvisejících s provozem elektrických zařízení, mohou ve svém řádu preventivní údržby stanovit lhůty pravidelných revizí až dvojnásobné."
+      },
+      {
+        "znak": "d",
+        "text": "Výše uvedené lhůty nemusí být uplatněny na vyhrazená elektrická zařízení splňující požadavky stanovené § 21 odst. 1 zákona."
+      }
+    ],
+    "doplnkyLps": [
+      {
+        "znak": "a",
+        "text": "Na všech zařízeních LPS je nutno provést nejméně jednou ročně vizuální kontrolu, kterou se ověří, že LPS není viditelně poškozen."
+      },
+      {
+        "znak": "b",
+        "text": "Kritické systémy mohou zahrnovat stavby obsahující citlivé vnitřní systémy, kancelářské budovy a obchodní budovy. Mezi kritické systémy patří vyhrazená elektrická zařízení I. třídy a objekty, kde následkem úderu blesku nebo přepětí může vzniknout škoda velkého rozsahu."
+      }
+    ],
+    "zbytek": "Vyhrazené elektrické zařízení, pro které nestanovuje tato příloha lhůtu, je revidováno podle lhůt, které jsou stanoveny v jiných právních a ostatních předpisech k zajištění bezpečnosti a ochrany zdraví při práci.",
+    "otazky": [
+      "2027-ez1-052",
+      "2027-ez1-053",
+      "2027-ez1-054",
+      "2027-ez1-055",
+      "2027-ez4-079",
+      "2027-ez4-080"
+    ]
+  }
+}

@@ -13,6 +13,7 @@ import { Results } from './ui/Results'
 import { Study } from './ui/Study'
 import { Site } from './ui/Site'
 import { Normy } from './ui/Normy'
+import { Zprava } from './ui/Zprava'
 import { History } from './ui/History'
 
 const AKTIVNI_POKUS = 'aktivniPokus'
@@ -24,6 +25,7 @@ type View =
   | { k: 'study' }
   | { k: 'site' }
   | { k: 'normy' }
+  | { k: 'zprava' }
   | { k: 'history' }
 
 export function App() {
@@ -227,6 +229,7 @@ export function App() {
           <span className="nav-oddelovac" aria-hidden="true" />
           <button onClick={() => setView({ k: 'site' })}>Trenažér sítí</button>
           <button onClick={() => setView({ k: 'normy' })}>Mapa norem</button>
+          <button onClick={() => setView({ k: 'zprava' })}>Revizní zpráva</button>
         </nav>
       )}
 
@@ -260,6 +263,7 @@ export function App() {
           onStudy={() => setView({ k: 'study' })}
           onSite={() => setView({ k: 'site' })}
           onNormy={() => setView({ k: 'normy' })}
+          onZprava={() => setView({ k: 'zprava' })}
           onHistory={() => setView({ k: 'history' })}
         />
       )}
@@ -298,6 +302,13 @@ export function App() {
 
       {view.k === 'normy' && (
         <Normy
+          items={itemMap}
+          onPracticeIds={(ids, label) => spustProcvicovani(label, { onlyIds: ids })}
+        />
+      )}
+
+      {view.k === 'zprava' && (
+        <Zprava
           items={itemMap}
           onPracticeIds={(ids, label) => spustProcvicovani(label, { onlyIds: ids })}
         />

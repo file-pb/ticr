@@ -20,6 +20,7 @@ interface Props {
   onStudy: () => void
   onSite: () => void
   onNormy: () => void
+  onZprava: () => void
   onHistory: () => void
 }
 
@@ -38,6 +39,7 @@ export function Home({
   onStudy,
   onSite,
   onNormy,
+  onZprava,
   onHistory,
 }: Props) {
   const overenoCelkem = pokryti.reduce((a, c) => a + c.overeno, 0)
@@ -146,14 +148,19 @@ export function Home({
         <div className="radek">
           <button onClick={onSite}>Trenažér druhů sítí</button>
           <button onClick={onNormy}>Mapa předpisů a norem</button>
+          <button onClick={onZprava}>Průvodce revizní zprávou</button>
         </div>
         <p className="tlumene">
           <strong>Trenažér sítí</strong> — rozpoznávání TN-C, TN-S, TN-C-S, TT a IT ze schématu,
           s odkazem na otázky z banky, které se na ně ptají.
         </p>
-        <p className="tlumene" style={{ marginBottom: 0 }}>
+        <p className="tlumene">
           <strong>Mapa norem</strong> — na které předpisy sada otázek odkazuje a jakou vahou.
           Počty jsou spočítané z banky, popisky jsou vlastní.
+        </p>
+        <p className="tlumene" style={{ marginBottom: 0 }}>
+          <strong>Průvodce revizní zprávou</strong> — co musí být uděláno a co musí být ve
+          zprávě. Doslovný text nařízení vlády č. 190/2022 Sb., ne přepis vlastními slovy.
         </p>
       </div>
 

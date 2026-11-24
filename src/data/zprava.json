@@ -1,0 +1,40 @@
+{
+  "schemaVersion": 1,
+  "verze": "0.1.0",
+  "nazev": "Průvodce revizní zprávou",
+  "uvod": "Co musí být uděláno a co musí být ve zprávě, podle nařízení vlády č. 190/2022 Sb. Všechny body jsou doslovný text předpisu — nic z toho jsem nepřepisoval vlastními slovy, protože u náležitostí zprávy je přesné znění to jediné, co platí.",
+  "comuNeni": [
+    "Není to vzor ani formulář. Nařízení říká, co ve zprávě musí být, ne jak má vypadat.",
+    "Nejsou tu náležitosti navíc, které požadují ČSN 33 1500 a ČSN 33 2000-6. Obě normy jsou placené a bez přístupu k nim je sem doplnit nemůžu.",
+    "Nejsou tu postupy měření ani mezní hodnoty. Ty jsou v normách, ne v nařízení vlády.",
+    "Formuláře ze školení Elektrosvazu jsou placený podklad a do veřejné aplikace nepatří."
+  ],
+  "faze": [
+    {
+      "id": "priprava",
+      "nazev": "Než vyjedeš",
+      "popis": "Podklady si opatříš předem. Jejich výčet je v předpisu, není to zvyklost.",
+      "sekce": ["podklady-vychozi", "podklady-pravidelne"]
+    },
+    {
+      "id": "na-miste",
+      "nazev": "Na místě",
+      "popis": "Náplň revize, prohlídka a potom zkouška s měřením.",
+      "sekce": ["napln-vychozi", "napln-pravidelne", "prohlidka", "zkouska-poradi", "zkouska-dalsi"]
+    },
+    {
+      "id": "zprava",
+      "nazev": "Zpráva",
+      "popis": "Patnáct náležitostí od písmene a) po o). Chybějící náležitost je vada zprávy, ne stylistická drobnost.",
+      "sekce": ["zprava-obsah"]
+    }
+  ],
+  "poznamky": {
+    "zprava-obsah": "Tohle je minimum dané nařízením vlády. Co navíc požadují ČSN 33 1500 a ČSN 33 2000-6, tady není.",
+    "zkouska-poradi": "Nařízení neříká „doporučuje se\", ale „provádí se v tomto pořadí\". Pořadí je součást požadavku.",
+    "prohlidka": "Prohlídka předchází zkoušce. Výčet je uvozený slovem „zejména\", takže není uzavřený.",
+    "podklady-vychozi": "Výčet je uvozený slovem „zejména\" — podle druhu zařízení můžou být potřeba další podklady.",
+    "napln-pravidelne": "Pravidelná a mimořádná revize mají v nařízení stejnou náplň. Liší se důvodem, ne obsahem.",
+    "lhuty": "Lhůty jsou přímo v nařízení vlády, ne jen v ČSN 33 1500. Je to tedy volně dostupný zdroj, na který se dá při zkoušce i v praxi odkázat."
+  }
+}
