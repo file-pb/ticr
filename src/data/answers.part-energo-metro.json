@@ -40,29 +40,40 @@
    "questionId": "2027-ez1-088",
    "options": [
     {
-     "id": "a1",
-     "text": "Vnitřní elektrická instalace odběratele za měřicím místem."
-    },
-    {
-     "id": "a2",
-     "text": "Výrobna elektřiny nebo zařízení pro ukládání elektřiny připojené k distribuční soustavě s napětím do 1 kV včetně s instalovaným výkonem do 50 kW včetně — u těch se ochranné pásmo nestanovuje."
+     "id": "a4",
+     "text": "Nadzemní vedení o napětí do 1 kV včetně."
     },
     {
      "id": "a3",
      "text": "Vedení měřicí, ochranné, řídicí, zabezpečovací, informační a telekomunikační techniky."
+    },
+    {
+     "id": "a5",
+     "text": "Elektrická stanice s převodem napětí z úrovně nad 1 kV na úroveň nízkého napětí."
     }
    ],
-   "correctOptionId": "a2",
-   "explanation": "§ 46 odst. 2 vypočítává, co ochrannými pásmy chráněno JE: nadzemní vedení, podzemní vedení, elektrické stanice, výrobny elektřiny, zařízení pro ukládání elektřiny a vedení měřicí, ochranné, řídicí, zabezpečovací, informační a telekomunikační techniky. Jediné výslovné „ochranné pásmo se nestanovuje“ je v § 46 odst. 7 poslední větě a týká se malých výroben a zařízení pro ukládání elektřiny do 1 kV a do 50 kW.",
+   "correctOptionId": "a4",
+   "explanation": "§ 46 odst. 2 vypočítává, co je ochrannými pásmy chráněno: nadzemní vedení, podzemní vedení, elektrické stanice, výrobny elektřiny, zařízení pro ukládání elektřiny a vedení měřicí, ochranné, řídicí, zabezpečovací, informační a telekomunikační techniky. Rozsah ochranného pásma nadzemního vedení pak § 46 odst. 3 vymezuje teprve „u napětí nad 1 kV a do 35 kV včetně“ a výš — pro nadzemní vedení do 1 kV včetně ochranné pásmo stanovené není. Pozor, výslovné „ochranné pásmo se nestanovuje“ je v § 46 odst. 7 poslední větě a týká se výrobny elektřiny nebo zařízení pro ukládání elektřiny do 1 kV včetně s instalovaným výkonem do 50 kW včetně; i to je pravda, ale otázka míří podle svého normativního odkazu na odstavce 2 a 3.",
    "whyWrong": {
-    "a1": "Že vnitřní instalace odběratele není zařízením elektrizační soustavy, § 46 nikde neříká; je to úsudek z výčtu v odstavci 2, ne text předpisu.",
-    "a3": "Vedení měřicí, ochranné, řídicí, zabezpečovací, informační a telekomunikační techniky je v § 46 odst. 2 uvedeno jako chráněné."
+    "a3": "Vedení měřicí, ochranné, řídicí, zabezpečovací, informační a telekomunikační techniky je v § 46 odst. 2 uvedeno jako chráněné.",
+    "a5": "Ochranné pásmo elektrické stanice § 46 odst. 6 vymezuje výslovně, mimo jiné u stanic s převodem napětí z úrovně nad 1 kV a menší než 52 kV na úroveň nízkého napětí."
    },
-   "status": "navrh",
+   "status": "overeno",
    "sourceClass": "volny",
    "visibility": "verejne",
-   "missing": "Oficiální normativní odkaz míří na § 46 odst. 2 a 3. Ta ale vypočítávají, co ochranným pásmem chráněno je — negativní vymezení v nich není a doplnit ho lze jen úsudkem. Výslovné „ochranné pásmo se nestanovuje“ stojí jinde, v § 46 odst. 7 poslední větě. Dokud není jasné, kterou z obou cest zkouška čeká, zůstává odpověď návrhem a do zkoušky nanečisto nevstupuje.",
-   "reference": "zákon č. 458/2000 Sb., § 46 odst. 2 a § 46 odst. 7 — doslovný text, predpisy/zakon-458-2000.txt"
+   "verification": {
+    "method": "primární text předpisu — výčet chráněných zařízení v § 46 odst. 2 a rozsah ochranného pásma nadzemního vedení v § 46 odst. 3, jehož výčet začíná u napětí nad 1 kV",
+    "checkedAt": "2026-11-24",
+    "checkedBy": "agent",
+    "source": "zákon č. 458/2000 Sb., § 46 odst. 2 a § 46 odst. 3 — doslovný text, predpisy/zakon-458-2000.txt"
+   },
+   "trainingMaterial": {
+    "name": "Kurz ESČ RT EZ E2A — prezentace „Obecné předpisy“",
+    "version": "2025_6, 22. 1. 2025",
+    "locator": "otázka 68 sady platné k 1. 1. 2025",
+    "currency": "aktualni",
+    "note": "Kurz odpovídá „Nadzemní vedení do 1000 V.“ Tím se uzavřela otázka, kterou z obou cest zkouška čeká: dřívější návrh odpovídal výrobnami do 50 kW podle § 46 odst. 7, což je také pravda, ale otázka míří podle svého odkazu na odstavce 2 a 3."
+   }
   },
   {
    "questionId": "2027-ez1-089",

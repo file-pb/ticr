@@ -85,7 +85,7 @@
     }
    ],
    "correctOptionId": "a1",
-   "explanation": "Tvorbu českých technických norem upravuje zákon o technických požadavcích na výrobky: § 4 vymezuje, co česká technická norma je, a § 5 odst. 1 stanoví, že jejich tvorbu, vydávání a distribuci, změny a zrušení v rozsahu vymezeném tímto zákonem zaručuje stát.",
+   "explanation": "Tvorbu českých technických norem upravuje zákon č. 22/1997 Sb., jehož záhlaví zní „Zákon o technických požadavcích na výrobky a o změně a doplnění některých zákonů“. Normám jsou v něm věnovány § 4 až § 6: § 4 „České technické normy“ vymezuje, co česká technická norma je, § 5 „Zabezpečení tvorby českých technických norem“ v odstavci 1 stanoví, že tvorbu, vydávání a distribuci českých technických norem, jejich změny a zrušení zaručuje stát, a § 6 stanoví podmínky tvorby a vydávání.",
    "whyWrong": {
     "a2": "Nařízení vlády o vyhrazených technických elektrických zařízeních řeší zařazení zařízení do tříd a požadavky na jejich bezpečnost, tvorbou norem se nezabývá.",
     "a3": "Zákon o bezpečnosti práce v souvislosti s provozem vyhrazených technických zařízení upravuje odbornou způsobilost a oprávnění k činnostem na těchto zařízeních, ne normalizaci."
@@ -94,10 +94,17 @@
    "sourceClass": "volny",
    "visibility": "verejne",
    "verification": {
-    "method": "primární text předpisu",
-    "checkedAt": "2026-11-23",
+    "method": "primární text předpisu — odpovědí je název zákona, který stojí v jeho záhlaví; tvorbu norem upravují § 4 až § 6 téhož zákona",
+    "checkedAt": "2026-11-24",
     "checkedBy": "agent",
-    "source": "zákon č. 22/1997 Sb., § 5 odst. 1 ve spojení s § 4 odst. 1 — doslovný text, predpisy/zakon-22-1997.txt"
+    "source": "zákon č. 22/1997 Sb. — záhlaví předpisu, doslovný text, predpisy/zakon-22-1997.txt"
+   },
+   "trainingMaterial": {
+    "name": "Kurz ESČ RT EZ E2A — prezentace „Obecné předpisy“",
+    "version": "2025_6, 22. 1. 2025",
+    "locator": "otázka 44 sady platné k 1. 1. 2025",
+    "currency": "aktualni",
+    "note": "Kurz odpovídá „Zákon č. 22/1997 Sb. (Technické požadavky na výrobky)“ a odkazuje na § 4 až 7. Tuhle odpověď jen potvrzuje; zdrojem je volně dostupný text zákona, ne prezentace."
    }
   },
   {

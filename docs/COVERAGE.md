@@ -6,24 +6,24 @@ Banka `2027.1`, platnost od 2027-01-01. Vygenerováno skriptem `scripts/coverage
 
 | Okruh | Název | Otázek | Ověřeno | Návrh | Sporné | Bez odpovědi |
 | --- | --- | ---: | ---: | ---: | ---: | ---: |
-| ez1 | Obecný test | 90 | 88 | 2 | 0 | 0 |
+| ez1 | Obecný test | 90 | 90 | 0 | 0 | 0 |
 | ez2 | Ochrana před úrazem elektrickým proudem | 100 | 0 | 0 | 0 | 100 |
-| ez3 | Všeobecné požadavky na elektrická zařízení | 140 | 0 | 0 | 0 | 140 |
+| ez3 | Všeobecné požadavky na elektrická zařízení | 140 | 1 | 0 | 0 | 139 |
 | ez4 | LPS v prostředí bez nebezpečí výbuchu | 100 | 2 | 0 | 0 | 98 |
-| | **celkem** | **430** | **90** | **2** | **0** | **338** |
+| | **celkem** | **430** | **93** | **0** | **0** | **337** |
 
 ## Lze spustit zkoušku nanečisto?
 
 Předvolba chce 15 ověřených otázek z každého okruhu, tedy 60 celkem.
 
-- `ez1`: ověřeno 88 z 15 — ano
+- `ez1`: ověřeno 90 z 15 — ano
 - `ez2`: ověřeno 0 z 15 — chybí 15
-- `ez3`: ověřeno 0 z 15 — chybí 15
+- `ez3`: ověřeno 1 z 15 — chybí 14
 - `ez4`: ověřeno 2 z 15 — chybí 13
 
 Započítáno bez doslovných duplicit znění: v bance jich je 1 (oficiální dokument má tutéž otázku dvakrát). Losování je sloučí, takže jedna ověřená odpověď z dvojice přidá jen jednu použitelnou otázku.
 
-**Nelze.** Chybí 43 ověřených otázek. Chybějící se nenahrazují jiným okruhem ani duplicitami; aplikace plnou předvolbu nespustí a nabídne kratší procvičování.
+**Nelze.** Chybí 42 ověřených otázek. Chybějící se nenahrazují jiným okruhem ani duplicitami; aplikace plnou předvolbu nespustí a nabídne kratší procvičování.
 
 ## Čím se dá odpověď vůbec ověřit
 
@@ -41,11 +41,9 @@ vrstvě `src/data/answers.2027.local.json`, která není v gitu ani ve veřejné
 
 ## Co konkrétně chybí doložit
 
-### Právní předpisy — volně ověřitelné (1 otázek)
+### Právní předpisy — volně ověřitelné (0 otázek)
 
-Nejčastější chybějící podklady:
-
-- Nařízení vlády č. 117/2016 Sb. § 2 v platném znění — 1 otázek
+Nic nechybí.
 
 ### Normy ČSN — potřeba přístup k normě (337 otázek)
 

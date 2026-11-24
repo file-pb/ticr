@@ -87,7 +87,9 @@ def main():
     }
 
     with open(OUT, "w", encoding="utf-8") as fh:
-        json.dump(out, fh, ensure_ascii=False, indent=1)
+        # Odsazení 2 — stejné, jakým je soubor v repozitáři psaný. Jiná
+        # hodnota přepíše celý soubor a utopí skutečnou změnu v diffu.
+        json.dump(out, fh, ensure_ascii=False, indent=2)
         fh.write("\n")
 
     stavy = {}

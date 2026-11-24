@@ -1,6 +1,6 @@
 {
   "schemaVersion": 1,
-  "answersVersion": "2026-11-24+0.2.0-nv190.0.2.0-z250.0.3.0-bozp.0.3.1-energo-metro.0.3.0-nv194.0.3.0-ostatni.0.3.1-z22",
+  "answersVersion": "2026-11-24+0.2.0-nv190.0.2.0-z250.0.3.0-bozp.0.3.0-energo-metro.0.3.0-ez3.0.3.0-nv194.0.3.0-ostatni.0.3.0-z22",
   "bankVersion": "2027.1",
   "license": "CC-BY-SA-4.0",
   "note": "Učební možnosti A/B/C a vysvětlení. NEJSOU to autentické odpovědi TIČR — oficiální dokumenty žádný klíč nezveřejňují. Hodnotí se jen odpovědi se stavem 'overeno', u kterých je ve 'verification' uvedeno, co bylo skutečně přečteno.",
@@ -2853,6 +2853,38 @@
         "checkedAt": "2026-11-23",
         "checkedBy": "agent",
         "source": "zákon č. 458/2000 Sb., § 46 odst. 5 — doslovný text, predpisy/zakon-458-2000.txt"
+      }
+    },
+    {
+      "questionId": "2027-ez3-101",
+      "options": [
+        {
+          "id": "a1",
+          "text": "Schopnost zařízení uspokojivě fungovat v elektromagnetickém prostředí, aniž by samo způsobovalo nepřípustné elektromagnetické rušení jiného zařízení v tomto prostředí."
+        },
+        {
+          "id": "a2",
+          "text": "Schopnost zařízení správně fungovat bez zhoršení kvality funkce za přítomnosti elektromagnetického rušení."
+        },
+        {
+          "id": "a3",
+          "text": "Elektromagnetický jev, který může zhoršit funkci zařízení — elektromagnetický šum, nežádoucí signál nebo změna v prostředí šíření."
+        }
+      ],
+      "correctOptionId": "a1",
+      "explanation": "Definice je v § 2 odst. 1 písm. d) nařízení vlády č. 117/2016 Sb.: elektromagnetickou kompatibilitou se rozumí schopnost zařízení uspokojivě fungovat v elektromagnetickém prostředí, aniž by samo způsobovalo nepřípustné elektromagnetické rušení jiného zařízení v tomto prostředí. Kompatibilita je tedy obousměrná — zařízení musí rušení snést a zároveň ho samo nepřípustně nepůsobit.",
+      "whyWrong": {
+        "a2": "To je odolnost podle § 2 odst. 1 písm. f), tedy jen jedna polovina kompatibility: schopnost rušení vydržet. Nic neříká o tom, že zařízení nesmí rušit ostatní.",
+        "a3": "To je elektromagnetické rušení podle § 2 odst. 1 písm. e) — sám ten jev, proti kterému se kompatibilita posuzuje, ne vlastnost zařízení."
+      },
+      "status": "overeno",
+      "sourceClass": "volny",
+      "visibility": "verejne",
+      "verification": {
+        "source": "nařízení vlády č. 117/2016 Sb., § 2 odst. 1 písm. d) — doslovný text, predpisy/nv-117-2016.txt",
+        "method": "primární text předpisu",
+        "checkedAt": "2026-11-24",
+        "checkedBy": "agent"
       }
     },
     {
