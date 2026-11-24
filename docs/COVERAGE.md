@@ -6,20 +6,22 @@ Banka `2027.1`, platnost od 2027-01-01. Vygenerováno skriptem `scripts/coverage
 
 | Okruh | Název | Otázek | Ověřeno | Návrh | Sporné | Bez odpovědi |
 | --- | --- | ---: | ---: | ---: | ---: | ---: |
-| ez1 | Obecný test | 90 | 89 | 1 | 0 | 0 |
+| ez1 | Obecný test | 90 | 88 | 2 | 0 | 0 |
 | ez2 | Ochrana před úrazem elektrickým proudem | 100 | 0 | 0 | 0 | 100 |
 | ez3 | Všeobecné požadavky na elektrická zařízení | 140 | 0 | 0 | 0 | 140 |
 | ez4 | LPS v prostředí bez nebezpečí výbuchu | 100 | 2 | 0 | 0 | 98 |
-| | **celkem** | **430** | **91** | **1** | **0** | **338** |
+| | **celkem** | **430** | **90** | **2** | **0** | **338** |
 
 ## Lze spustit zkoušku nanečisto?
 
 Předvolba chce 15 ověřených otázek z každého okruhu, tedy 60 celkem.
 
-- `ez1`: ověřeno 89 z 15 — ano
+- `ez1`: ověřeno 88 z 15 — ano
 - `ez2`: ověřeno 0 z 15 — chybí 15
 - `ez3`: ověřeno 0 z 15 — chybí 15
 - `ez4`: ověřeno 2 z 15 — chybí 13
+
+Započítáno bez doslovných duplicit znění: v bance jich je 1 (oficiální dokument má tutéž otázku dvakrát). Losování je sloučí, takže jedna ověřená odpověď z dvojice přidá jen jednu použitelnou otázku.
 
 **Nelze.** Chybí 43 ověřených otázek. Chybějící se nenahrazují jiným okruhem ani duplicitami; aplikace plnou předvolbu nespustí a nabídne kratší procvičování.
 
@@ -89,4 +91,4 @@ U okruhu `ez4` (LPS) stojí za zvláštní pozornost řada ČSN EN IEC 62305.
 
 ## Lokální vrstva
 
-Žádná lokální vrstva. Všechny odpovědi v přehledu jsou zveřejnitelné.
+Na tomhle stroji je 33 odpovědí v lokální vrstvě. Do veřejného nasazení nepatří.

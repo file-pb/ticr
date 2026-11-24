@@ -15,6 +15,7 @@ import json
 import os
 import re
 import sys
+import unicodedata
 from collections import Counter, defaultdict
 
 ROOT = os.path.dirname(os.path.dirname(os.path.abspath(__file__)))
@@ -24,6 +25,13 @@ LOCAL_ANSWERS = os.path.join(ROOT, "src", "data", "answers.2027.local.json")
 OUT = os.path.join(ROOT, "docs", "COVERAGE.md")
 
 EXAM_PER_CIRCUIT = 15
+
+
+def kostra(text):
+    """Znění srovnané na holý text — jen k poznání dvou doslova stejných otázek."""
+    s = unicodedata.normalize("NFD", text.lower())
+    s = "".join(c for c in s if unicodedata.category(c) != "Mn")
+    return re.sub(r"\s+", " ", re.sub(r"[^a-z0-9]+", " ", s)).strip()
 
 
 def zdroj_typu(ref):
@@ -47,6 +55,11 @@ def main():
     circuits = defaultdict(lambda: Counter())
     source_kind = defaultdict(lambda: Counter())
     missing = defaultdict(list)
+    # Oficiální dokument TIČR má v ez2 tutéž otázku dvakrát (č. 22 a 23).
+    # V bance obě zůstávají, losování je ale sloučí, takže se do počtu
+    # použitelných ověřených otázek smí započítat jen jedna.
+    videna = defaultdict(set)
+    duplicitni = defaultdict(int)
 
     for q in bank["questions"]:
         c = q["circuit"]
@@ -58,6 +71,13 @@ def main():
             missing[zdroj_typu(q["normativeRef"])].append((q["id"], q["normativeRef"]))
         else:
             circuits[c][a["status"]] += 1
+        k = kostra(q["text"])
+        if k in videna[c]:
+            duplicitni[c] += 1
+            if a is not None and a["status"] == "overeno":
+                circuits[c]["overeno_duplicitni"] += 1
+        else:
+            videna[c].add(k)
 
     order = [c["id"] for c in bank["circuits"]]
     lines = []
@@ -91,12 +111,19 @@ def main():
     w("")
     chybi_celkem = 0
     for c in order:
-        k = circuits[c]["overeno"]
+        k = circuits[c]["overeno"] - circuits[c]["overeno_duplicitni"]
         chybi = max(0, EXAM_PER_CIRCUIT - k)
         chybi_celkem += chybi
         stav = "ano" if chybi == 0 else "chybí {}".format(chybi)
         w("- `{}`: ověřeno {} z {} — {}".format(c, k, EXAM_PER_CIRCUIT, stav))
     w("")
+    dupl = sum(duplicitni.values())
+    if dupl:
+        w("Započítáno bez doslovných duplicit znění: v bance jich je {} "
+          "(oficiální dokument má tutéž otázku dvakrát). Losování je sloučí, "
+          "takže jedna ověřená odpověď z dvojice přidá jen jednu použitelnou "
+          "otázku.".format(dupl))
+        w("")
     if chybi_celkem:
         w("**Nelze.** Chybí {} ověřených otázek. Chybějící se nenahrazují jiným okruhem "
           "ani duplicitami; aplikace plnou předvolbu nespustí a nabídne kratší procvičování."

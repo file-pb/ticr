@@ -84,6 +84,13 @@ Rozhodnutí, která stojí za vysvětlení:
 - **Zkouška losuje výhradně z ověřených odpovědí.** Když v okruhu není 15
   takových otázek, předvolba se nespustí a ukáže, co kde chybí. Nedolévá se
   z jiného okruhu ani duplicitami.
+- **Doslovná duplicita znění se losuje jen jednou.** Oficiální dokument TIČR
+  má v okruhu ez2 tutéž otázku dvakrát — čísla 22 a 23, shodné znění i shodný
+  odkaz (ČSN 33 2000-4-41 ed. 3:2018 čl. 411.3.3). V bance zůstávají obě, aby
+  banka odpovídala zdroji; ve studijním režimu je proto vidět obě. Losování
+  bere jen tu s nižším číslem. Rozhoduje **přesná shoda** znění — dvojice,
+  které se liší jediným slovem (ez2 78/79 SELV proti PELV, 95/96 „nesmí“
+  proti „může“), jsou dvě různé otázky a zůstávají obě.
 
 ## Obsah, licence a cizí práce
 

@@ -31,6 +31,47 @@ export const DEFAULT_EXAM: ExamPreset = {
   thresholdPercent: 80,
 }
 
+/**
+ * Znění otázky srovnané na holý text — malá písmena, bez diakritiky,
+ * bez interpunkce, jedna mezera. Slouží **jen** k poznání dvou doslova
+ * stejných otázek, ne k posuzování podobnosti.
+ */
+function skeleton(text: string): string {
+  return text
+    .toLowerCase()
+    .normalize('NFD')
+    .replace(/\p{Mn}+/gu, '')
+    .replace(/[^a-z0-9]+/g, ' ')
+    .trim()
+}
+
+/**
+ * Vyhodí z výběru doslovné duplicity znění.
+ *
+ * Oficiální dokument TIČR má v okruhu ez2 tutéž otázku dvakrát — čísla 22
+ * a 23, shodné znění i shodný normativní odkaz (ČSN 33 2000-4-41 ed. 3:2018
+ * čl. 411.3.3). V bance obě zůstávají, aby banka odpovídala zdroji bajt po
+ * bajtu; při losování by ale jeden běh mohl obě vytáhnout a vypadalo by to
+ * jako chyba aplikace.
+ *
+ * Rozhoduje **přesná shoda** srovnaného znění. Otázky, které se liší jediným
+ * slovem, jsou dvě různé otázky a obě zůstávají — v ez2 jsou dvojice 78/79
+ * (SELV proti PELV) a 95/96 („nesmí" proti „může"), kde to jediné slovo
+ * obrací odpověď.
+ *
+ * Ponechá se první výskyt v pořadí banky, tedy otázka s nižším číslem.
+ * Pořadí vstupu je dané bankou, ne losem, takže výsledek nezávisí na seedu.
+ */
+export function dropDuplicateWording(items: Item[]): Item[] {
+  const videna = new Set<string>()
+  return items.filter((i) => {
+    const k = skeleton(i.question.text)
+    if (videna.has(k)) return false
+    videna.add(k)
+    return true
+  })
+}
+
 export interface Shortfall {
   circuit: CircuitId
   needed: number
@@ -51,7 +92,9 @@ export function selectExam(items: Item[], preset: ExamPreset, rng: Rng): ExamSel
   const picked: Item[] = []
 
   for (const circuit of preset.circuits) {
-    const pool = items.filter((i) => i.question.circuit === circuit && isScorable(i))
+    const pool = dropDuplicateWording(
+      items.filter((i) => i.question.circuit === circuit && isScorable(i)),
+    )
     if (pool.length < preset.perCircuit) {
       shortfalls.push({ circuit, needed: preset.perCircuit, available: pool.length })
       continue
@@ -74,10 +117,12 @@ export interface PracticeQuery {
 
 export function selectPractice(items: Item[], query: PracticeQuery, rng: Rng): Item[] {
   const idFilter = query.onlyIds ? new Set(query.onlyIds) : null
-  let pool = items.filter((i) =>
-    (query.includeUnverified ? isPracticable(i) : isScorable(i)) &&
-    (!query.circuits || query.circuits.includes(i.question.circuit)) &&
-    (!idFilter || idFilter.has(i.question.id)),
+  let pool = dropDuplicateWording(
+    items.filter((i) =>
+      (query.includeUnverified ? isPracticable(i) : isScorable(i)) &&
+      (!query.circuits || query.circuits.includes(i.question.circuit)) &&
+      (!idFilter || idFilter.has(i.question.id)),
+    ),
   )
   pool = shuffle(pool, rng)
   return query.count ? pool.slice(0, query.count) : pool
