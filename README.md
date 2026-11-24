@@ -48,6 +48,12 @@ Trenažér sítí po změně obsahu (seznam otázek k druhům sítí se generuje
 python3 -I scripts/build_site_topics.py && python3 -I scripts/check_site.py
 ```
 
+Mapa norem po přeimportování banky:
+
+```bash
+python3 -I scripts/build_normy.py && python3 -I scripts/check_normy.py
+```
+
 Přehled pokrytí po změně odpovědí:
 
 ```bash
@@ -66,6 +72,8 @@ npm test
 src/data/questions.2027.json   banka — generuje import, ručně se needituje
 src/data/site.json             trenažér sítí — vlastní učební text, neověřený
 src/data/site-otazky.json      které otázky z banky se ptají na který druh sítě
+src/data/normy-skupiny.json    mapa norem — skupiny a popisky, vlastní text
+src/data/normy.json            mapa norem — inventura spočítaná z banky
 src/data/answers.2027.json     klíč, veřejná vrstva (volně ověřitelné zdroje)
 src/data/answers.*.local.json  klíč, lokální vrstva (placené podklady), mimo git
 predpisy/                      doslovné texty předpisů — proti nim se klíč ověřuje
@@ -107,6 +115,28 @@ Schémata se kreslí z popisu v `src/data/site.json`, takže obrázek nemůže
 zestárnout odděleně od textu. Ke každému druhu je seznam otázek z banky, které
 ho jmenují; generuje ho `scripts/build_site_topics.py` podle kódu ve znění
 otázky a `scripts/check_site.py` hlídá, že je seznam aktuální.
+
+**Mapa předpisů a norem** — na které předpisy sada otázek odkazuje a jakou vahou.
+Banka má 430 otázek a 432 odkazů na 76 předpisů (57 norem ČSN, 19 právních);
+prvních pět nese 45 % všech odkazů. Mapa je ve třech vrstvách — právní
+předpisy, kmenová řada ČSN 33 2000 po částech, normy pro konkrétní oblasti —
+a z každého předpisu se dá projít na otázky, které ho citují.
+
+Dvě věci, které z té inventury vypadly a stojí za pozornost:
+
+- **ČSN EN IEC 62305-3** je citovaná v obou edicích. Padesát jedna otázek míří
+  na ed. 3:2025, jedna jediná (`2027-ez4-060`) na **ed. 2:2012**. Odpovědět na ni
+  podle novější edice je chyba, kterou nic nenapoví.
+- **Dva předpisy píše TIČR nejednotně** — 62305-3 jako „ČSN EN" i „ČSN EN IEC",
+  61140 jako „ČSN" i „ČSN EN". Inventura je spojuje podle čísla, aby se jedna
+  norma nerozpadla na dvě položky.
+
+Počty, označení, edice a zařazení otázek pocházejí z banky a přepočítá je
+skript. **Popisky skupin a norem jsou vlastní text, neověřený proti katalogu
+ČAS** — norma, u které si popiskem nejsem jistý, žádný nemá.
+`scripts/check_normy.py` hlídá, že je inventura aktuální, že žádná položka
+nepropadla bez zařazení, že rozpad po edicích nikam neztratil otázku a že
+popisek neuvádí číselnou hodnotu.
 
 V menu i na rozcestníku stojí pomůcky **odděleně od zkouškové části** a platí
 pro ně jiná pravidla:

@@ -19,6 +19,7 @@ interface Props {
   onPracticeCircuit: (circuit: 'ez1' | 'ez2' | 'ez3' | 'ez4') => void
   onStudy: () => void
   onSite: () => void
+  onNormy: () => void
   onHistory: () => void
 }
 
@@ -36,6 +37,7 @@ export function Home({
   onPracticeCircuit,
   onStudy,
   onSite,
+  onNormy,
   onHistory,
 }: Props) {
   const overenoCelkem = pokryti.reduce((a, c) => a + c.overeno, 0)
@@ -143,10 +145,15 @@ export function Home({
         </p>
         <div className="radek">
           <button onClick={onSite}>Trenažér druhů sítí</button>
+          <button onClick={onNormy}>Mapa předpisů a norem</button>
         </div>
+        <p className="tlumene">
+          <strong>Trenažér sítí</strong> — rozpoznávání TN-C, TN-S, TN-C-S, TT a IT ze schématu,
+          s odkazem na otázky z banky, které se na ně ptají.
+        </p>
         <p className="tlumene" style={{ marginBottom: 0 }}>
-          Rozpoznávání sítí TN-C, TN-S, TN-C-S, TT a IT ze schématu, s odkazem na otázky z banky,
-          které se na ně ptají.
+          <strong>Mapa norem</strong> — na které předpisy sada otázek odkazuje a jakou vahou.
+          Počty jsou spočítané z banky, popisky jsou vlastní.
         </p>
       </div>
 

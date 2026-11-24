@@ -1,0 +1,148 @@
+{
+  "schemaVersion": 1,
+  "verze": "0.1.0",
+  "nazev": "Mapa předpisů a norem, na které zkouška odkazuje",
+  "stavCeleho": "navrh",
+  "varovani": "Počty otázek, označení norem, edice i zařazení otázek pocházejí z oficiální banky TIČR a dají se přepočítat skriptem. Popisky skupin a jednotlivých norem jsou naproti tomu moje vlastní, pro orientaci — nejsou to názvy z katalogu ČAS a nikdo je neověřil. Norma, u které jsem si popiskem nebyl jistý, ho nemá žádný.",
+  "doloz": "Názvy norem ověřit proti katalogu agentury ČAS (agentura-cas.cz), rozsah jednotlivých částí proti úvodním článkům samotných norem.",
+  "skupiny": [
+    {
+      "id": "pravni-vz",
+      "nazev": "Právní předpisy k vyhrazeným elektrickým zařízením",
+      "popis": "Závazné samy o sobě. Určují, kdo smí revize provádět, co je vyhrazené zařízení a co musí zpráva o revizi obsahovat.",
+      "vzor": "^(250/2021|190/2022|194/2022)$",
+      "druh": "pravni",
+      "vrstva": "pravni",
+      "zkratka": "Vyhrazená elektrická zařízení"
+    },
+    {
+      "id": "pravni-ostatni",
+      "nazev": "Ostatní právní předpisy",
+      "popis": "Bezpečnost práce, technické požadavky na výrobky, metrologie, energetika, živnosti.",
+      "vzor": "^\\d+/\\d{4}$",
+      "druh": "pravni",
+      "vrstva": "pravni",
+      "zkratka": "Ostatní předpisy"
+    },
+    {
+      "id": "csn-33-2000-1",
+      "nazev": "ČSN 33 2000-1 — rozsah a základní pojmy",
+      "popis": "Úvodní část kmenové řady pro elektrické instalace nízkého napětí. Mimo jiné odsud pochází označování druhů sítí (TN, TT, IT).",
+      "vzor": "^33 2000-1$",
+      "druh": "csn",
+      "vrstva": "kmenove",
+      "zkratka": "33 2000-1"
+    },
+    {
+      "id": "csn-33-2000-4",
+      "nazev": "ČSN 33 2000-4-4x — ochranná opatření",
+      "popis": "Čím se chrání před úrazem elektrickým proudem, před účinky tepla, před nadproudy a před podpětím; odpojování a spínání.",
+      "vzor": "^33 2000-4-",
+      "druh": "csn",
+      "vrstva": "kmenove",
+      "zkratka": "33 2000-4-4x"
+    },
+    {
+      "id": "csn-33-2000-5",
+      "nazev": "ČSN 33 2000-5-5x — výběr a stavba zařízení",
+      "popis": "Jak se zařízení vybírá a staví: vedení, spínací a řídicí přístroje, uzemnění a ochranné vodiče.",
+      "vzor": "^33 2000-5-",
+      "druh": "csn",
+      "vrstva": "kmenove",
+      "zkratka": "33 2000-5-5x"
+    },
+    {
+      "id": "csn-33-2000-6",
+      "nazev": "ČSN 33 2000-6 — revize",
+      "popis": "Část kmenové řady věnovaná revizím elektrických instalací.",
+      "vzor": "^33 2000-6$",
+      "druh": "csn",
+      "vrstva": "kmenove",
+      "zkratka": "33 2000-6"
+    },
+    {
+      "id": "csn-33-2000-7",
+      "nazev": "ČSN 33 2000-7-7xx — zvláštní prostory a zařízení",
+      "popis": "Odchylky a doplňky pro konkrétní prostředí — koupelny, bazény, staveniště, zdravotnické prostory, fotovoltaika a další. Každý prostor má vlastní část.",
+      "vzor": "^33 2000-7-",
+      "druh": "csn",
+      "vrstva": "kmenove",
+      "zkratka": "33 2000-7-7xx"
+    },
+    {
+      "id": "lps",
+      "nazev": "Řada 62305 — ochrana před bleskem",
+      "popis": "Čtyři části: obecné principy, řízení rizika, hmotné škody a ohrožení života, ochrana elektrických a elektronických systémů. Okruh ez4 stojí hlavně na nich.",
+      "vzor": "^62305-",
+      "druh": "csn",
+      "vrstva": "oblasti",
+      "zkratka": "62305 — blesk"
+    },
+    {
+      "id": "csn-ostatni",
+      "nazev": "Další české kmenové normy",
+      "popis": "Normy řad 33 a 34 mimo kmenovou řadu 33 2000 — revize, vnitřní rozvody, přípojky, pohyblivé přívody.",
+      "vzor": "^(33|34|73) ",
+      "druh": "csn",
+      "vrstva": "oblasti",
+      "zkratka": "Další české"
+    },
+    {
+      "id": "csn-prevzate",
+      "nazev": "Převzaté evropské a mezinárodní normy",
+      "popis": "Normy ČSN EN a ČSN EN IEC k výrobkům a společným hlediskům — rozváděče, krytí, označování vodičů, obsluha a práce na zařízení.",
+      "vzor": ".",
+      "druh": "csn",
+      "vrstva": "oblasti",
+      "zkratka": "Převzaté EN"
+    }
+  ],
+  "popisky": {
+    "33 2000-4-41": "Ochrana před úrazem elektrickým proudem. Nejcitovanější norma celé zkoušky.",
+    "33 2000-4-42": "Ochrana před účinky tepla.",
+    "33 2000-4-43": "Ochrana před nadproudy.",
+    "33 2000-4-46": "Odpojování a spínání.",
+    "33 2000-5-52": "Výběr a stavba elektrických vedení.",
+    "33 2000-5-54": "Uzemnění a ochranné vodiče.",
+    "33 2000-7-701": "Prostory s vanou nebo sprchou.",
+    "33 2000-7-704": "Elektrická zařízení na staveništích a demolicích.",
+    "33 2000-7-710": "Zdravotnické prostory.",
+    "33 1500": "Revize elektrických zařízení — lhůty a pravidla.",
+    "33 2130": "Vnitřní elektrické rozvody.",
+    "33 2312": "Elektrická zařízení v hořlavých látkách a na nich.",
+    "33 3320": "Elektrické přípojky.",
+    "34 0350": "Pohyblivé přívody a šňůrová vedení.",
+    "61140": "Ochrana před úrazem elektrickým proudem — společná hlediska pro instalaci a zařízení.",
+    "61439-1": "Rozváděče nízkého napětí — obecná ustanovení.",
+    "60204-1": "Bezpečnost strojních zařízení — elektrická zařízení strojů.",
+    "60445": "Označování svorek zařízení a zakončení vodičů.",
+    "60529": "Stupně ochrany krytem (kód IP).",
+    "50110-1": "Obsluha a práce na elektrických zařízeních.",
+    "250/2021": "Zákon o bezpečnosti práce v souvislosti s provozem vyhrazených technických zařízení.",
+    "190/2022": "Nařízení vlády o vyhrazených elektrických zařízeních a požadavcích na zajištění jejich bezpečnosti. Zde je i obsah zprávy o revizi.",
+    "194/2022": "Nařízení vlády o požadavcích na odbornou způsobilost k výkonu činnosti na elektrických zařízeních.",
+    "22/1997": "Zákon o technických požadavcích na výrobky.",
+    "505/1990": "Zákon o metrologii.",
+    "458/2000": "Energetický zákon.",
+    "262/2006": "Zákoník práce.",
+    "309/2006": "Zákon o zajištění dalších podmínek bezpečnosti a ochrany zdraví při práci.",
+    "378/2001": "Nařízení vlády o bližších požadavcích na bezpečný provoz a používání strojů a zařízení."
+  },
+  "vrstvy": [
+    {
+      "id": "pravni",
+      "nazev": "Právní předpisy",
+      "popis": "Zákony a nařízení vlády. Závazné samy o sobě."
+    },
+    {
+      "id": "kmenove",
+      "nazev": "Kmenová řada pro elektrické instalace",
+      "popis": "ČSN 33 2000 po částech. Část -1 definuje pojmy, části -4 a -5 ochranu a stavbu, část -6 revize, části -7 zvláštní prostory."
+    },
+    {
+      "id": "oblasti",
+      "nazev": "Normy pro konkrétní oblasti",
+      "popis": "Ochrana před bleskem, další české kmenové normy a převzaté evropské normy k výrobkům."
+    }
+  ]
+}

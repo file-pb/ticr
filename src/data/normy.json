@@ -1,0 +1,2640 @@
+{
+  "schemaVersion": 1,
+  "generovano": "2026-11-24",
+  "skript": "scripts/build_normy.py",
+  "bankVersion": "2027.1",
+  "poznamka": "Generovaný soubor. Počty plynou z normativních odkazů v bance. Otázka, jejíž odkaz jmenuje dva předpisy, se počítá u obou, takže součet přes položky může být vyšší než počet otázek.",
+  "otazekVBance": 430,
+  "bezRozpoznanehoOdkazu": [],
+  "polozky": [
+    {
+      "klic": "33 2000-4-41",
+      "druh": "csn",
+      "oznaceni": "ČSN 33 2000-4-41",
+      "tvary": [
+        "ČSN 33 2000-4-41"
+      ],
+      "edice": [
+        "ed. 3"
+      ],
+      "roky": [
+        "2018"
+      ],
+      "skupina": "csn-33-2000-4",
+      "popis": "Ochrana před úrazem elektrickým proudem. Nejcitovanější norma celé zkoušky.",
+      "otazkyPodleEdice": {
+        "ed. 3": [
+          "2027-ez2-001",
+          "2027-ez2-002",
+          "2027-ez2-003",
+          "2027-ez2-004",
+          "2027-ez2-005",
+          "2027-ez2-006",
+          "2027-ez2-007",
+          "2027-ez2-008",
+          "2027-ez2-009",
+          "2027-ez2-010",
+          "2027-ez2-011",
+          "2027-ez2-012",
+          "2027-ez2-013",
+          "2027-ez2-014",
+          "2027-ez2-015",
+          "2027-ez2-016",
+          "2027-ez2-017",
+          "2027-ez2-018",
+          "2027-ez2-019",
+          "2027-ez2-020",
+          "2027-ez2-021",
+          "2027-ez2-022",
+          "2027-ez2-023",
+          "2027-ez2-024",
+          "2027-ez2-025",
+          "2027-ez2-026",
+          "2027-ez2-029",
+          "2027-ez2-030",
+          "2027-ez2-031",
+          "2027-ez2-032",
+          "2027-ez2-033",
+          "2027-ez2-034",
+          "2027-ez2-035",
+          "2027-ez2-036",
+          "2027-ez2-037",
+          "2027-ez2-038",
+          "2027-ez2-039",
+          "2027-ez2-040",
+          "2027-ez2-041",
+          "2027-ez2-042",
+          "2027-ez2-043",
+          "2027-ez2-044",
+          "2027-ez2-045",
+          "2027-ez2-046",
+          "2027-ez2-047",
+          "2027-ez2-048",
+          "2027-ez2-049",
+          "2027-ez2-050",
+          "2027-ez2-051",
+          "2027-ez2-052",
+          "2027-ez2-053",
+          "2027-ez2-054",
+          "2027-ez2-055",
+          "2027-ez2-056",
+          "2027-ez2-057",
+          "2027-ez2-058",
+          "2027-ez2-059",
+          "2027-ez2-060",
+          "2027-ez2-061",
+          "2027-ez2-062",
+          "2027-ez2-063",
+          "2027-ez2-064",
+          "2027-ez2-065",
+          "2027-ez2-066",
+          "2027-ez2-067",
+          "2027-ez3-028",
+          "2027-ez3-029",
+          "2027-ez3-036",
+          "2027-ez3-037"
+        ]
+      },
+      "otazek": 69,
+      "podleOkruhu": {
+        "ez2": 65,
+        "ez3": 4
+      },
+      "otazky": [
+        "2027-ez2-001",
+        "2027-ez2-002",
+        "2027-ez2-003",
+        "2027-ez2-004",
+        "2027-ez2-005",
+        "2027-ez2-006",
+        "2027-ez2-007",
+        "2027-ez2-008",
+        "2027-ez2-009",
+        "2027-ez2-010",
+        "2027-ez2-011",
+        "2027-ez2-012",
+        "2027-ez2-013",
+        "2027-ez2-014",
+        "2027-ez2-015",
+        "2027-ez2-016",
+        "2027-ez2-017",
+        "2027-ez2-018",
+        "2027-ez2-019",
+        "2027-ez2-020",
+        "2027-ez2-021",
+        "2027-ez2-022",
+        "2027-ez2-023",
+        "2027-ez2-024",
+        "2027-ez2-025",
+        "2027-ez2-026",
+        "2027-ez2-029",
+        "2027-ez2-030",
+        "2027-ez2-031",
+        "2027-ez2-032",
+        "2027-ez2-033",
+        "2027-ez2-034",
+        "2027-ez2-035",
+        "2027-ez2-036",
+        "2027-ez2-037",
+        "2027-ez2-038",
+        "2027-ez2-039",
+        "2027-ez2-040",
+        "2027-ez2-041",
+        "2027-ez2-042",
+        "2027-ez2-043",
+        "2027-ez2-044",
+        "2027-ez2-045",
+        "2027-ez2-046",
+        "2027-ez2-047",
+        "2027-ez2-048",
+        "2027-ez2-049",
+        "2027-ez2-050",
+        "2027-ez2-051",
+        "2027-ez2-052",
+        "2027-ez2-053",
+        "2027-ez2-054",
+        "2027-ez2-055",
+        "2027-ez2-056",
+        "2027-ez2-057",
+        "2027-ez2-058",
+        "2027-ez2-059",
+        "2027-ez2-060",
+        "2027-ez2-061",
+        "2027-ez2-062",
+        "2027-ez2-063",
+        "2027-ez2-064",
+        "2027-ez2-065",
+        "2027-ez2-066",
+        "2027-ez2-067",
+        "2027-ez3-028",
+        "2027-ez3-029",
+        "2027-ez3-036",
+        "2027-ez3-037"
+      ]
+    },
+    {
+      "klic": "62305-3",
+      "druh": "csn",
+      "oznaceni": "ČSN EN IEC 62305-3",
+      "tvary": [
+        "ČSN EN 62305-3",
+        "ČSN EN IEC 62305-3"
+      ],
+      "edice": [
+        "ed. 2",
+        "ed. 3"
+      ],
+      "roky": [
+        "2012",
+        "2025"
+      ],
+      "skupina": "lps",
+      "popis": null,
+      "otazkyPodleEdice": {
+        "ed. 2": [
+          "2027-ez4-060"
+        ],
+        "ed. 3": [
+          "2027-ez4-027",
+          "2027-ez4-028",
+          "2027-ez4-029",
+          "2027-ez4-030",
+          "2027-ez4-031",
+          "2027-ez4-032",
+          "2027-ez4-033",
+          "2027-ez4-034",
+          "2027-ez4-035",
+          "2027-ez4-036",
+          "2027-ez4-037",
+          "2027-ez4-038",
+          "2027-ez4-039",
+          "2027-ez4-040",
+          "2027-ez4-041",
+          "2027-ez4-042",
+          "2027-ez4-043",
+          "2027-ez4-044",
+          "2027-ez4-045",
+          "2027-ez4-046",
+          "2027-ez4-047",
+          "2027-ez4-048",
+          "2027-ez4-049",
+          "2027-ez4-050",
+          "2027-ez4-051",
+          "2027-ez4-052",
+          "2027-ez4-053",
+          "2027-ez4-054",
+          "2027-ez4-055",
+          "2027-ez4-056",
+          "2027-ez4-057",
+          "2027-ez4-058",
+          "2027-ez4-059",
+          "2027-ez4-061",
+          "2027-ez4-062",
+          "2027-ez4-063",
+          "2027-ez4-064",
+          "2027-ez4-065",
+          "2027-ez4-066",
+          "2027-ez4-067",
+          "2027-ez4-068",
+          "2027-ez4-069",
+          "2027-ez4-070",
+          "2027-ez4-071",
+          "2027-ez4-072",
+          "2027-ez4-073",
+          "2027-ez4-074",
+          "2027-ez4-075",
+          "2027-ez4-076",
+          "2027-ez4-077",
+          "2027-ez4-078"
+        ]
+      },
+      "otazek": 52,
+      "podleOkruhu": {
+        "ez4": 52
+      },
+      "otazky": [
+        "2027-ez4-027",
+        "2027-ez4-028",
+        "2027-ez4-029",
+        "2027-ez4-030",
+        "2027-ez4-031",
+        "2027-ez4-032",
+        "2027-ez4-033",
+        "2027-ez4-034",
+        "2027-ez4-035",
+        "2027-ez4-036",
+        "2027-ez4-037",
+        "2027-ez4-038",
+        "2027-ez4-039",
+        "2027-ez4-040",
+        "2027-ez4-041",
+        "2027-ez4-042",
+        "2027-ez4-043",
+        "2027-ez4-044",
+        "2027-ez4-045",
+        "2027-ez4-046",
+        "2027-ez4-047",
+        "2027-ez4-048",
+        "2027-ez4-049",
+        "2027-ez4-050",
+        "2027-ez4-051",
+        "2027-ez4-052",
+        "2027-ez4-053",
+        "2027-ez4-054",
+        "2027-ez4-055",
+        "2027-ez4-056",
+        "2027-ez4-057",
+        "2027-ez4-058",
+        "2027-ez4-059",
+        "2027-ez4-060",
+        "2027-ez4-061",
+        "2027-ez4-062",
+        "2027-ez4-063",
+        "2027-ez4-064",
+        "2027-ez4-065",
+        "2027-ez4-066",
+        "2027-ez4-067",
+        "2027-ez4-068",
+        "2027-ez4-069",
+        "2027-ez4-070",
+        "2027-ez4-071",
+        "2027-ez4-072",
+        "2027-ez4-073",
+        "2027-ez4-074",
+        "2027-ez4-075",
+        "2027-ez4-076",
+        "2027-ez4-077",
+        "2027-ez4-078"
+      ]
+    },
+    {
+      "klic": "33 2000-5-54",
+      "druh": "csn",
+      "oznaceni": "ČSN 33 2000-5-54",
+      "tvary": [
+        "ČSN 33 2000-5-54"
+      ],
+      "edice": [
+        "ed. 3"
+      ],
+      "roky": [
+        "2012",
+        "2023"
+      ],
+      "skupina": "csn-33-2000-5",
+      "popis": "Uzemnění a ochranné vodiče.",
+      "otazkyPodleEdice": {
+        "ed. 3": [
+          "2027-ez2-080",
+          "2027-ez2-081",
+          "2027-ez2-082",
+          "2027-ez2-083",
+          "2027-ez2-084",
+          "2027-ez2-085",
+          "2027-ez2-086",
+          "2027-ez2-087",
+          "2027-ez2-088",
+          "2027-ez2-089",
+          "2027-ez2-090",
+          "2027-ez2-091",
+          "2027-ez2-092",
+          "2027-ez2-093",
+          "2027-ez2-094",
+          "2027-ez2-095",
+          "2027-ez2-096",
+          "2027-ez2-097",
+          "2027-ez2-098",
+          "2027-ez2-099",
+          "2027-ez2-100",
+          "2027-ez3-060",
+          "2027-ez3-061",
+          "2027-ez4-098",
+          "2027-ez4-099",
+          "2027-ez4-100"
+        ]
+      },
+      "otazek": 26,
+      "podleOkruhu": {
+        "ez2": 21,
+        "ez3": 2,
+        "ez4": 3
+      },
+      "otazky": [
+        "2027-ez2-080",
+        "2027-ez2-081",
+        "2027-ez2-082",
+        "2027-ez2-083",
+        "2027-ez2-084",
+        "2027-ez2-085",
+        "2027-ez2-086",
+        "2027-ez2-087",
+        "2027-ez2-088",
+        "2027-ez2-089",
+        "2027-ez2-090",
+        "2027-ez2-091",
+        "2027-ez2-092",
+        "2027-ez2-093",
+        "2027-ez2-094",
+        "2027-ez2-095",
+        "2027-ez2-096",
+        "2027-ez2-097",
+        "2027-ez2-098",
+        "2027-ez2-099",
+        "2027-ez2-100",
+        "2027-ez3-060",
+        "2027-ez3-061",
+        "2027-ez4-098",
+        "2027-ez4-099",
+        "2027-ez4-100"
+      ]
+    },
+    {
+      "klic": "190/2022",
+      "druh": "pravni",
+      "oznaceni": "NV č. 190/2022 Sb.",
+      "tvary": [
+        "NV č. 190/2022 Sb."
+      ],
+      "edice": [],
+      "roky": [],
+      "skupina": "pravni-vz",
+      "popis": "Nařízení vlády o vyhrazených elektrických zařízeních a požadavcích na zajištění jejich bezpečnosti. Zde je i obsah zprávy o revizi.",
+      "otazkyPodleEdice": {},
+      "otazek": 24,
+      "podleOkruhu": {
+        "ez1": 22,
+        "ez4": 2
+      },
+      "otazky": [
+        "2027-ez1-034",
+        "2027-ez1-035",
+        "2027-ez1-036",
+        "2027-ez1-037",
+        "2027-ez1-038",
+        "2027-ez1-039",
+        "2027-ez1-040",
+        "2027-ez1-041",
+        "2027-ez1-042",
+        "2027-ez1-043",
+        "2027-ez1-044",
+        "2027-ez1-045",
+        "2027-ez1-046",
+        "2027-ez1-047",
+        "2027-ez1-048",
+        "2027-ez1-049",
+        "2027-ez1-050",
+        "2027-ez1-051",
+        "2027-ez1-052",
+        "2027-ez1-053",
+        "2027-ez1-054",
+        "2027-ez1-055",
+        "2027-ez4-079",
+        "2027-ez4-080"
+      ]
+    },
+    {
+      "klic": "250/2021",
+      "druh": "pravni",
+      "oznaceni": "zákon č. 250/2021 Sb.",
+      "tvary": [
+        "zákon č. 250/2021 Sb."
+      ],
+      "edice": [],
+      "roky": [],
+      "skupina": "pravni-vz",
+      "popis": "Zákon o bezpečnosti práce v souvislosti s provozem vyhrazených technických zařízení.",
+      "otazkyPodleEdice": {},
+      "otazek": 22,
+      "podleOkruhu": {
+        "ez1": 22
+      },
+      "otazky": [
+        "2027-ez1-012",
+        "2027-ez1-013",
+        "2027-ez1-014",
+        "2027-ez1-015",
+        "2027-ez1-016",
+        "2027-ez1-017",
+        "2027-ez1-018",
+        "2027-ez1-019",
+        "2027-ez1-020",
+        "2027-ez1-021",
+        "2027-ez1-022",
+        "2027-ez1-023",
+        "2027-ez1-024",
+        "2027-ez1-025",
+        "2027-ez1-026",
+        "2027-ez1-027",
+        "2027-ez1-028",
+        "2027-ez1-029",
+        "2027-ez1-030",
+        "2027-ez1-031",
+        "2027-ez1-032",
+        "2027-ez1-033"
+      ]
+    },
+    {
+      "klic": "62305-1",
+      "druh": "csn",
+      "oznaceni": "ČSN EN IEC 62305-1",
+      "tvary": [
+        "ČSN EN IEC 62305-1"
+      ],
+      "edice": [
+        "ed. 3"
+      ],
+      "roky": [
+        "2024"
+      ],
+      "skupina": "lps",
+      "popis": null,
+      "otazkyPodleEdice": {
+        "ed. 3": [
+          "2027-ez4-001",
+          "2027-ez4-002",
+          "2027-ez4-003",
+          "2027-ez4-004",
+          "2027-ez4-005",
+          "2027-ez4-006",
+          "2027-ez4-007",
+          "2027-ez4-008",
+          "2027-ez4-009",
+          "2027-ez4-010",
+          "2027-ez4-011",
+          "2027-ez4-012",
+          "2027-ez4-013",
+          "2027-ez4-014",
+          "2027-ez4-015",
+          "2027-ez4-016",
+          "2027-ez4-017",
+          "2027-ez4-018"
+        ]
+      },
+      "otazek": 18,
+      "podleOkruhu": {
+        "ez4": 18
+      },
+      "otazky": [
+        "2027-ez4-001",
+        "2027-ez4-002",
+        "2027-ez4-003",
+        "2027-ez4-004",
+        "2027-ez4-005",
+        "2027-ez4-006",
+        "2027-ez4-007",
+        "2027-ez4-008",
+        "2027-ez4-009",
+        "2027-ez4-010",
+        "2027-ez4-011",
+        "2027-ez4-012",
+        "2027-ez4-013",
+        "2027-ez4-014",
+        "2027-ez4-015",
+        "2027-ez4-016",
+        "2027-ez4-017",
+        "2027-ez4-018"
+      ]
+    },
+    {
+      "klic": "62305-4",
+      "druh": "csn",
+      "oznaceni": "ČSN EN 62305-4",
+      "tvary": [
+        "ČSN EN 62305-4"
+      ],
+      "edice": [
+        "ed. 3"
+      ],
+      "roky": [
+        "2026"
+      ],
+      "skupina": "lps",
+      "popis": null,
+      "otazkyPodleEdice": {
+        "ed. 3": [
+          "2027-ez4-081",
+          "2027-ez4-082",
+          "2027-ez4-083",
+          "2027-ez4-084",
+          "2027-ez4-085",
+          "2027-ez4-086",
+          "2027-ez4-087",
+          "2027-ez4-088",
+          "2027-ez4-089",
+          "2027-ez4-090",
+          "2027-ez4-091",
+          "2027-ez4-092",
+          "2027-ez4-093",
+          "2027-ez4-094",
+          "2027-ez4-095",
+          "2027-ez4-096",
+          "2027-ez4-097"
+        ]
+      },
+      "otazek": 17,
+      "podleOkruhu": {
+        "ez4": 17
+      },
+      "otazky": [
+        "2027-ez4-081",
+        "2027-ez4-082",
+        "2027-ez4-083",
+        "2027-ez4-084",
+        "2027-ez4-085",
+        "2027-ez4-086",
+        "2027-ez4-087",
+        "2027-ez4-088",
+        "2027-ez4-089",
+        "2027-ez4-090",
+        "2027-ez4-091",
+        "2027-ez4-092",
+        "2027-ez4-093",
+        "2027-ez4-094",
+        "2027-ez4-095",
+        "2027-ez4-096",
+        "2027-ez4-097"
+      ]
+    },
+    {
+      "klic": "33 2130",
+      "druh": "csn",
+      "oznaceni": "ČSN 33 2130",
+      "tvary": [
+        "ČSN 33 2130"
+      ],
+      "edice": [
+        "ed. 4"
+      ],
+      "roky": [
+        "2024"
+      ],
+      "skupina": "csn-ostatni",
+      "popis": "Vnitřní elektrické rozvody.",
+      "otazkyPodleEdice": {
+        "ed. 4": [
+          "2027-ez3-030",
+          "2027-ez3-078",
+          "2027-ez3-079",
+          "2027-ez3-080",
+          "2027-ez3-081",
+          "2027-ez3-082",
+          "2027-ez3-083",
+          "2027-ez3-084",
+          "2027-ez3-085",
+          "2027-ez3-086",
+          "2027-ez3-087",
+          "2027-ez3-088"
+        ]
+      },
+      "otazek": 12,
+      "podleOkruhu": {
+        "ez3": 12
+      },
+      "otazky": [
+        "2027-ez3-030",
+        "2027-ez3-078",
+        "2027-ez3-079",
+        "2027-ez3-080",
+        "2027-ez3-081",
+        "2027-ez3-082",
+        "2027-ez3-083",
+        "2027-ez3-084",
+        "2027-ez3-085",
+        "2027-ez3-086",
+        "2027-ez3-087",
+        "2027-ez3-088"
+      ]
+    },
+    {
+      "klic": "61140",
+      "druh": "csn",
+      "oznaceni": "ČSN EN 61140",
+      "tvary": [
+        "ČSN 61140",
+        "ČSN EN 61140"
+      ],
+      "edice": [
+        "ed. 3"
+      ],
+      "roky": [
+        "2016"
+      ],
+      "skupina": "csn-prevzate",
+      "popis": "Ochrana před úrazem elektrickým proudem — společná hlediska pro instalaci a zařízení.",
+      "otazkyPodleEdice": {
+        "ed. 3": [
+          "2027-ez2-068",
+          "2027-ez2-069",
+          "2027-ez2-070",
+          "2027-ez2-071",
+          "2027-ez2-072",
+          "2027-ez2-073",
+          "2027-ez2-074",
+          "2027-ez2-075",
+          "2027-ez2-076",
+          "2027-ez2-077",
+          "2027-ez2-078",
+          "2027-ez2-079"
+        ]
+      },
+      "otazek": 12,
+      "podleOkruhu": {
+        "ez2": 12
+      },
+      "otazky": [
+        "2027-ez2-068",
+        "2027-ez2-069",
+        "2027-ez2-070",
+        "2027-ez2-071",
+        "2027-ez2-072",
+        "2027-ez2-073",
+        "2027-ez2-074",
+        "2027-ez2-075",
+        "2027-ez2-076",
+        "2027-ez2-077",
+        "2027-ez2-078",
+        "2027-ez2-079"
+      ]
+    },
+    {
+      "klic": "61439-1",
+      "druh": "csn",
+      "oznaceni": "ČSN EN IEC 61439-1",
+      "tvary": [
+        "ČSN EN IEC 61439-1"
+      ],
+      "edice": [
+        "ed. 3"
+      ],
+      "roky": [
+        "2022"
+      ],
+      "skupina": "csn-prevzate",
+      "popis": "Rozváděče nízkého napětí — obecná ustanovení.",
+      "otazkyPodleEdice": {
+        "ed. 3": [
+          "2027-ez3-118",
+          "2027-ez3-119",
+          "2027-ez3-120",
+          "2027-ez3-121",
+          "2027-ez3-122",
+          "2027-ez3-123",
+          "2027-ez3-124",
+          "2027-ez3-125",
+          "2027-ez3-126",
+          "2027-ez3-127",
+          "2027-ez3-128",
+          "2027-ez3-129"
+        ]
+      },
+      "otazek": 12,
+      "podleOkruhu": {
+        "ez3": 12
+      },
+      "otazky": [
+        "2027-ez3-118",
+        "2027-ez3-119",
+        "2027-ez3-120",
+        "2027-ez3-121",
+        "2027-ez3-122",
+        "2027-ez3-123",
+        "2027-ez3-124",
+        "2027-ez3-125",
+        "2027-ez3-126",
+        "2027-ez3-127",
+        "2027-ez3-128",
+        "2027-ez3-129"
+      ]
+    },
+    {
+      "klic": "194/2022",
+      "druh": "pravni",
+      "oznaceni": "NV č. 194/2022 Sb.",
+      "tvary": [
+        "NV č. 194/2022 Sb."
+      ],
+      "edice": [],
+      "roky": [],
+      "skupina": "pravni-vz",
+      "popis": "Nařízení vlády o požadavcích na odbornou způsobilost k výkonu činnosti na elektrických zařízeních.",
+      "otazkyPodleEdice": {},
+      "otazek": 10,
+      "podleOkruhu": {
+        "ez1": 10
+      },
+      "otazky": [
+        "2027-ez1-056",
+        "2027-ez1-057",
+        "2027-ez1-058",
+        "2027-ez1-059",
+        "2027-ez1-060",
+        "2027-ez1-061",
+        "2027-ez1-062",
+        "2027-ez1-063",
+        "2027-ez1-064",
+        "2027-ez1-065"
+      ]
+    },
+    {
+      "klic": "22/1997",
+      "druh": "pravni",
+      "oznaceni": "zákon č. 22/1997 Sb.",
+      "tvary": [
+        "zákon č. 22/1997 Sb."
+      ],
+      "edice": [],
+      "roky": [],
+      "skupina": "pravni-ostatni",
+      "popis": "Zákon o technických požadavcích na výrobky.",
+      "otazkyPodleEdice": {},
+      "otazek": 9,
+      "podleOkruhu": {
+        "ez1": 9
+      },
+      "otazky": [
+        "2027-ez1-069",
+        "2027-ez1-070",
+        "2027-ez1-072",
+        "2027-ez1-073",
+        "2027-ez1-074",
+        "2027-ez1-075",
+        "2027-ez1-076",
+        "2027-ez1-077",
+        "2027-ez1-078"
+      ]
+    },
+    {
+      "klic": "62305-2",
+      "druh": "csn",
+      "oznaceni": "ČSN EN IEC 62305-2",
+      "tvary": [
+        "ČSN EN IEC 62305-2"
+      ],
+      "edice": [
+        "ed. 3"
+      ],
+      "roky": [
+        "2025"
+      ],
+      "skupina": "lps",
+      "popis": null,
+      "otazkyPodleEdice": {
+        "ed. 3": [
+          "2027-ez4-019",
+          "2027-ez4-020",
+          "2027-ez4-021",
+          "2027-ez4-022",
+          "2027-ez4-023",
+          "2027-ez4-024",
+          "2027-ez4-025",
+          "2027-ez4-026"
+        ]
+      },
+      "otazek": 8,
+      "podleOkruhu": {
+        "ez4": 8
+      },
+      "otazky": [
+        "2027-ez4-019",
+        "2027-ez4-020",
+        "2027-ez4-021",
+        "2027-ez4-022",
+        "2027-ez4-023",
+        "2027-ez4-024",
+        "2027-ez4-025",
+        "2027-ez4-026"
+      ]
+    },
+    {
+      "klic": "60204-1",
+      "druh": "csn",
+      "oznaceni": "ČSN EN 60204-1",
+      "tvary": [
+        "ČSN EN 60204-1"
+      ],
+      "edice": [
+        "ed. 3"
+      ],
+      "roky": [
+        "2019"
+      ],
+      "skupina": "csn-prevzate",
+      "popis": "Bezpečnost strojních zařízení — elektrická zařízení strojů.",
+      "otazkyPodleEdice": {
+        "ed. 3": [
+          "2027-ez3-111",
+          "2027-ez3-112",
+          "2027-ez3-113",
+          "2027-ez3-114",
+          "2027-ez3-115",
+          "2027-ez3-116",
+          "2027-ez3-117"
+        ]
+      },
+      "otazek": 7,
+      "podleOkruhu": {
+        "ez3": 7
+      },
+      "otazky": [
+        "2027-ez3-111",
+        "2027-ez3-112",
+        "2027-ez3-113",
+        "2027-ez3-114",
+        "2027-ez3-115",
+        "2027-ez3-116",
+        "2027-ez3-117"
+      ]
+    },
+    {
+      "klic": "33 2000-7-710",
+      "druh": "csn",
+      "oznaceni": "ČSN 33 2000-7-710",
+      "tvary": [
+        "ČSN 33 2000-7-710"
+      ],
+      "edice": [
+        "ed. 2"
+      ],
+      "roky": [
+        "2026"
+      ],
+      "skupina": "csn-33-2000-7",
+      "popis": "Zdravotnické prostory.",
+      "otazkyPodleEdice": {
+        "ed. 2": [
+          "2027-ez3-064",
+          "2027-ez3-065",
+          "2027-ez3-066",
+          "2027-ez3-067",
+          "2027-ez3-068",
+          "2027-ez3-089"
+        ]
+      },
+      "otazek": 6,
+      "podleOkruhu": {
+        "ez3": 6
+      },
+      "otazky": [
+        "2027-ez3-064",
+        "2027-ez3-065",
+        "2027-ez3-066",
+        "2027-ez3-067",
+        "2027-ez3-068",
+        "2027-ez3-089"
+      ]
+    },
+    {
+      "klic": "33 2000-7-704",
+      "druh": "csn",
+      "oznaceni": "ČSN 33 2000-7-704",
+      "tvary": [
+        "ČSN 33 2000-7-704"
+      ],
+      "edice": [
+        "ed. 3"
+      ],
+      "roky": [
+        "2018"
+      ],
+      "skupina": "csn-33-2000-7",
+      "popis": "Elektrická zařízení na staveništích a demolicích.",
+      "otazkyPodleEdice": {
+        "ed. 3": [
+          "2027-ez3-051",
+          "2027-ez3-052",
+          "2027-ez3-053",
+          "2027-ez3-054",
+          "2027-ez3-055"
+        ]
+      },
+      "otazek": 5,
+      "podleOkruhu": {
+        "ez3": 5
+      },
+      "otazky": [
+        "2027-ez3-051",
+        "2027-ez3-052",
+        "2027-ez3-053",
+        "2027-ez3-054",
+        "2027-ez3-055"
+      ]
+    },
+    {
+      "klic": "33 2000-4-46",
+      "druh": "csn",
+      "oznaceni": "ČSN 33 2000-4-46",
+      "tvary": [
+        "ČSN 33 2000-4-46"
+      ],
+      "edice": [
+        "ed. 3"
+      ],
+      "roky": [
+        "2017"
+      ],
+      "skupina": "csn-33-2000-4",
+      "popis": "Odpojování a spínání.",
+      "otazkyPodleEdice": {
+        "ed. 3": [
+          "2027-ez3-024",
+          "2027-ez3-025",
+          "2027-ez3-026",
+          "2027-ez3-027"
+        ]
+      },
+      "otazek": 4,
+      "podleOkruhu": {
+        "ez3": 4
+      },
+      "otazky": [
+        "2027-ez3-024",
+        "2027-ez3-025",
+        "2027-ez3-026",
+        "2027-ez3-027"
+      ]
+    },
+    {
+      "klic": "33 2000-5-52",
+      "druh": "csn",
+      "oznaceni": "ČSN 33 2000-5-52",
+      "tvary": [
+        "ČSN 33 2000-5-52"
+      ],
+      "edice": [
+        "ed. 2"
+      ],
+      "roky": [
+        "2012"
+      ],
+      "skupina": "csn-33-2000-5",
+      "popis": "Výběr a stavba elektrických vedení.",
+      "otazkyPodleEdice": {
+        "ed. 2": [
+          "2027-ez3-031",
+          "2027-ez3-032",
+          "2027-ez3-035",
+          "2027-ez3-039"
+        ]
+      },
+      "otazek": 4,
+      "podleOkruhu": {
+        "ez3": 4
+      },
+      "otazky": [
+        "2027-ez3-031",
+        "2027-ez3-032",
+        "2027-ez3-035",
+        "2027-ez3-039"
+      ]
+    },
+    {
+      "klic": "34 0350",
+      "druh": "csn",
+      "oznaceni": "ČSN 34 0350",
+      "tvary": [
+        "ČSN 34 0350"
+      ],
+      "edice": [
+        "ed. 2"
+      ],
+      "roky": [
+        "2009"
+      ],
+      "skupina": "csn-ostatni",
+      "popis": "Pohyblivé přívody a šňůrová vedení.",
+      "otazkyPodleEdice": {
+        "ed. 2": [
+          "2027-ez3-102",
+          "2027-ez3-103",
+          "2027-ez3-104",
+          "2027-ez3-105"
+        ]
+      },
+      "otazek": 4,
+      "podleOkruhu": {
+        "ez3": 4
+      },
+      "otazky": [
+        "2027-ez3-102",
+        "2027-ez3-103",
+        "2027-ez3-104",
+        "2027-ez3-105"
+      ]
+    },
+    {
+      "klic": "378/2001",
+      "druh": "pravni",
+      "oznaceni": "NV č. 378/2001 Sb.",
+      "tvary": [
+        "NV č. 378/2001 Sb."
+      ],
+      "edice": [],
+      "roky": [],
+      "skupina": "pravni-ostatni",
+      "popis": "Nařízení vlády o bližších požadavcích na bezpečný provoz a používání strojů a zařízení.",
+      "otazkyPodleEdice": {},
+      "otazek": 4,
+      "podleOkruhu": {
+        "ez1": 4
+      },
+      "otazky": [
+        "2027-ez1-008",
+        "2027-ez1-009",
+        "2027-ez1-010",
+        "2027-ez1-011"
+      ]
+    },
+    {
+      "klic": "458/2000",
+      "druh": "pravni",
+      "oznaceni": "zákon č. 458/2000 Sb.",
+      "tvary": [
+        "zákon č. 458/2000 Sb."
+      ],
+      "edice": [],
+      "roky": [],
+      "skupina": "pravni-ostatni",
+      "popis": "Energetický zákon.",
+      "otazkyPodleEdice": {},
+      "otazek": 4,
+      "podleOkruhu": {
+        "ez1": 4
+      },
+      "otazky": [
+        "2027-ez1-087",
+        "2027-ez1-088",
+        "2027-ez1-089",
+        "2027-ez1-090"
+      ]
+    },
+    {
+      "klic": "117/2016",
+      "druh": "pravni",
+      "oznaceni": "NV č. 117/2016 Sb.",
+      "tvary": [
+        "NV č. 117/2016 Sb."
+      ],
+      "edice": [],
+      "roky": [],
+      "skupina": "pravni-ostatni",
+      "popis": null,
+      "otazkyPodleEdice": {},
+      "otazek": 3,
+      "podleOkruhu": {
+        "ez1": 2,
+        "ez3": 1
+      },
+      "otazky": [
+        "2027-ez1-079",
+        "2027-ez1-080",
+        "2027-ez3-101"
+      ]
+    },
+    {
+      "klic": "251/2005",
+      "druh": "pravni",
+      "oznaceni": "zákon č. 251/2005 Sb.",
+      "tvary": [
+        "zákon č. 251/2005 Sb."
+      ],
+      "edice": [],
+      "roky": [],
+      "skupina": "pravni-ostatni",
+      "popis": null,
+      "otazkyPodleEdice": {},
+      "otazek": 3,
+      "podleOkruhu": {
+        "ez1": 3
+      },
+      "otazky": [
+        "2027-ez1-066",
+        "2027-ez1-067",
+        "2027-ez1-068"
+      ]
+    },
+    {
+      "klic": "33 1500",
+      "druh": "csn",
+      "oznaceni": "ČSN 33 1500",
+      "tvary": [
+        "ČSN 33 1500"
+      ],
+      "edice": [
+        "bez edice"
+      ],
+      "roky": [
+        "1990"
+      ],
+      "skupina": "csn-ostatni",
+      "popis": "Revize elektrických zařízení — lhůty a pravidla.",
+      "otazkyPodleEdice": {
+        "bez edice": [
+          "2027-ez3-009",
+          "2027-ez3-010",
+          "2027-ez3-011"
+        ]
+      },
+      "otazek": 3,
+      "podleOkruhu": {
+        "ez3": 3
+      },
+      "otazky": [
+        "2027-ez3-009",
+        "2027-ez3-010",
+        "2027-ez3-011"
+      ]
+    },
+    {
+      "klic": "33 2000-1",
+      "druh": "csn",
+      "oznaceni": "ČSN 33 2000-1",
+      "tvary": [
+        "ČSN 33 2000-1"
+      ],
+      "edice": [
+        "ed. 2"
+      ],
+      "roky": [
+        "2009"
+      ],
+      "skupina": "csn-33-2000-1",
+      "popis": null,
+      "otazkyPodleEdice": {
+        "ed. 2": [
+          "2027-ez3-016",
+          "2027-ez3-017",
+          "2027-ez3-018"
+        ]
+      },
+      "otazek": 3,
+      "podleOkruhu": {
+        "ez3": 3
+      },
+      "otazky": [
+        "2027-ez3-016",
+        "2027-ez3-017",
+        "2027-ez3-018"
+      ]
+    },
+    {
+      "klic": "33 2000-4-43",
+      "druh": "csn",
+      "oznaceni": "ČSN 33 2000-4-43",
+      "tvary": [
+        "ČSN 33 2000-4-43"
+      ],
+      "edice": [
+        "ed. 3"
+      ],
+      "roky": [
+        "2024"
+      ],
+      "skupina": "csn-33-2000-4",
+      "popis": "Ochrana před nadproudy.",
+      "otazkyPodleEdice": {
+        "ed. 3": [
+          "2027-ez3-021",
+          "2027-ez3-022",
+          "2027-ez3-038"
+        ]
+      },
+      "otazek": 3,
+      "podleOkruhu": {
+        "ez3": 3
+      },
+      "otazky": [
+        "2027-ez3-021",
+        "2027-ez3-022",
+        "2027-ez3-038"
+      ]
+    },
+    {
+      "klic": "33 2000-5-53",
+      "druh": "csn",
+      "oznaceni": "ČSN 33 2000-5-53",
+      "tvary": [
+        "ČSN 33 2000-5-53"
+      ],
+      "edice": [
+        "ed. 3"
+      ],
+      "roky": [
+        "2022"
+      ],
+      "skupina": "csn-33-2000-5",
+      "popis": null,
+      "otazkyPodleEdice": {
+        "ed. 3": [
+          "2027-ez2-027",
+          "2027-ez2-028",
+          "2027-ez3-040"
+        ]
+      },
+      "otazek": 3,
+      "podleOkruhu": {
+        "ez2": 2,
+        "ez3": 1
+      },
+      "otazky": [
+        "2027-ez2-027",
+        "2027-ez2-028",
+        "2027-ez3-040"
+      ]
+    },
+    {
+      "klic": "33 2000-7-701",
+      "druh": "csn",
+      "oznaceni": "ČSN 33 2000-7-701",
+      "tvary": [
+        "ČSN 33 2000-7-701"
+      ],
+      "edice": [
+        "ed. 3"
+      ],
+      "roky": [
+        "2025"
+      ],
+      "skupina": "csn-33-2000-7",
+      "popis": "Prostory s vanou nebo sprchou.",
+      "otazkyPodleEdice": {
+        "ed. 3": [
+          "2027-ez3-043",
+          "2027-ez3-044",
+          "2027-ez3-045"
+        ]
+      },
+      "otazek": 3,
+      "podleOkruhu": {
+        "ez3": 3
+      },
+      "otazky": [
+        "2027-ez3-043",
+        "2027-ez3-044",
+        "2027-ez3-045"
+      ]
+    },
+    {
+      "klic": "33 2000-7-702",
+      "druh": "csn",
+      "oznaceni": "ČSN 33 2000-7-702",
+      "tvary": [
+        "ČSN 33 2000-7-702"
+      ],
+      "edice": [
+        "ed. 3"
+      ],
+      "roky": [
+        "2011"
+      ],
+      "skupina": "csn-33-2000-7",
+      "popis": null,
+      "otazkyPodleEdice": {
+        "ed. 3": [
+          "2027-ez3-046",
+          "2027-ez3-047",
+          "2027-ez3-048"
+        ]
+      },
+      "otazek": 3,
+      "podleOkruhu": {
+        "ez3": 3
+      },
+      "otazky": [
+        "2027-ez3-046",
+        "2027-ez3-047",
+        "2027-ez3-048"
+      ]
+    },
+    {
+      "klic": "33 2000-7-714",
+      "druh": "csn",
+      "oznaceni": "ČSN 33 2000-7-714",
+      "tvary": [
+        "ČSN 33 2000-7-714"
+      ],
+      "edice": [
+        "ed. 2"
+      ],
+      "roky": [
+        "2012"
+      ],
+      "skupina": "csn-33-2000-7",
+      "popis": null,
+      "otazkyPodleEdice": {
+        "ed. 2": [
+          "2027-ez3-071",
+          "2027-ez3-072",
+          "2027-ez3-073"
+        ]
+      },
+      "otazek": 3,
+      "podleOkruhu": {
+        "ez3": 3
+      },
+      "otazky": [
+        "2027-ez3-071",
+        "2027-ez3-072",
+        "2027-ez3-073"
+      ]
+    },
+    {
+      "klic": "33 2180",
+      "druh": "csn",
+      "oznaceni": "ČSN 33 2180",
+      "tvary": [
+        "ČSN 33 2180"
+      ],
+      "edice": [
+        "bez edice"
+      ],
+      "roky": [
+        "1980"
+      ],
+      "skupina": "csn-ostatni",
+      "popis": null,
+      "otazkyPodleEdice": {
+        "bez edice": [
+          "2027-ez3-090",
+          "2027-ez3-091",
+          "2027-ez3-092"
+        ]
+      },
+      "otazek": 3,
+      "podleOkruhu": {
+        "ez3": 3
+      },
+      "otazky": [
+        "2027-ez3-090",
+        "2027-ez3-091",
+        "2027-ez3-092"
+      ]
+    },
+    {
+      "klic": "33 2312",
+      "druh": "csn",
+      "oznaceni": "ČSN 33 2312",
+      "tvary": [
+        "ČSN 33 2312"
+      ],
+      "edice": [
+        "ed. 2"
+      ],
+      "roky": [
+        "2014"
+      ],
+      "skupina": "csn-ostatni",
+      "popis": "Elektrická zařízení v hořlavých látkách a na nich.",
+      "otazkyPodleEdice": {
+        "ed. 2": [
+          "2027-ez3-093",
+          "2027-ez3-094",
+          "2027-ez3-095"
+        ]
+      },
+      "otazek": 3,
+      "podleOkruhu": {
+        "ez3": 3
+      },
+      "otazky": [
+        "2027-ez3-093",
+        "2027-ez3-094",
+        "2027-ez3-095"
+      ]
+    },
+    {
+      "klic": "50110-1",
+      "druh": "csn",
+      "oznaceni": "ČSN EN 50110-1",
+      "tvary": [
+        "ČSN EN 50110-1"
+      ],
+      "edice": [
+        "ed. 4"
+      ],
+      "roky": [
+        "2015",
+        "2025"
+      ],
+      "skupina": "csn-prevzate",
+      "popis": "Obsluha a práce na elektrických zařízeních.",
+      "otazkyPodleEdice": {
+        "ed. 4": [
+          "2027-ez3-107",
+          "2027-ez3-108",
+          "2027-ez3-109"
+        ]
+      },
+      "otazek": 3,
+      "podleOkruhu": {
+        "ez3": 3
+      },
+      "otazky": [
+        "2027-ez3-107",
+        "2027-ez3-108",
+        "2027-ez3-109"
+      ]
+    },
+    {
+      "klic": "505/1990",
+      "druh": "pravni",
+      "oznaceni": "zákon č. 505/1990 Sb.",
+      "tvary": [
+        "zákon č. 505/1990 Sb."
+      ],
+      "edice": [],
+      "roky": [],
+      "skupina": "pravni-ostatni",
+      "popis": "Zákon o metrologii.",
+      "otazkyPodleEdice": {},
+      "otazek": 3,
+      "podleOkruhu": {
+        "ez1": 3
+      },
+      "otazky": [
+        "2027-ez1-084",
+        "2027-ez1-085",
+        "2027-ez1-086"
+      ]
+    },
+    {
+      "klic": "60445",
+      "druh": "csn",
+      "oznaceni": "ČSN EN IEC 60445",
+      "tvary": [
+        "ČSN EN IEC 60445"
+      ],
+      "edice": [
+        "ed. 6"
+      ],
+      "roky": [
+        "2022"
+      ],
+      "skupina": "csn-prevzate",
+      "popis": "Označování svorek zařízení a zakončení vodičů.",
+      "otazkyPodleEdice": {
+        "ed. 6": [
+          "2027-ez3-002",
+          "2027-ez3-003",
+          "2027-ez3-004"
+        ]
+      },
+      "otazek": 3,
+      "podleOkruhu": {
+        "ez3": 3
+      },
+      "otazky": [
+        "2027-ez3-002",
+        "2027-ez3-003",
+        "2027-ez3-004"
+      ]
+    },
+    {
+      "klic": "61439-4",
+      "druh": "csn",
+      "oznaceni": "ČSN EN 61439-4",
+      "tvary": [
+        "ČSN EN 61439-4"
+      ],
+      "edice": [
+        "bez edice"
+      ],
+      "roky": [
+        "2013"
+      ],
+      "skupina": "csn-prevzate",
+      "popis": null,
+      "otazkyPodleEdice": {
+        "bez edice": [
+          "2027-ez3-133",
+          "2027-ez3-134",
+          "2027-ez3-135"
+        ]
+      },
+      "otazek": 3,
+      "podleOkruhu": {
+        "ez3": 3
+      },
+      "otazky": [
+        "2027-ez3-133",
+        "2027-ez3-134",
+        "2027-ez3-135"
+      ]
+    },
+    {
+      "klic": "262/2006",
+      "druh": "pravni",
+      "oznaceni": "zákon č. 262/2006 Sb.",
+      "tvary": [
+        "zákon č. 262/2006 Sb."
+      ],
+      "edice": [],
+      "roky": [],
+      "skupina": "pravni-ostatni",
+      "popis": "Zákoník práce.",
+      "otazkyPodleEdice": {},
+      "otazek": 2,
+      "podleOkruhu": {
+        "ez1": 2
+      },
+      "otazky": [
+        "2027-ez1-004",
+        "2027-ez1-005"
+      ]
+    },
+    {
+      "klic": "309/2006",
+      "druh": "pravni",
+      "oznaceni": "zákon č. 309/2006 Sb.",
+      "tvary": [
+        "zákon č. 309/2006 Sb."
+      ],
+      "edice": [],
+      "roky": [],
+      "skupina": "pravni-ostatni",
+      "popis": "Zákon o zajištění dalších podmínek bezpečnosti a ochrany zdraví při práci.",
+      "otazkyPodleEdice": {},
+      "otazek": 2,
+      "podleOkruhu": {
+        "ez1": 2
+      },
+      "otazky": [
+        "2027-ez1-006",
+        "2027-ez1-007"
+      ]
+    },
+    {
+      "klic": "33 2000-4-42",
+      "druh": "csn",
+      "oznaceni": "ČSN 33 2000-4-42",
+      "tvary": [
+        "ČSN 33 2000-4-42"
+      ],
+      "edice": [
+        "ed. 2"
+      ],
+      "roky": [
+        "2012"
+      ],
+      "skupina": "csn-33-2000-4",
+      "popis": "Ochrana před účinky tepla.",
+      "otazkyPodleEdice": {
+        "ed. 2": [
+          "2027-ez3-033",
+          "2027-ez3-034"
+        ]
+      },
+      "otazek": 2,
+      "podleOkruhu": {
+        "ez3": 2
+      },
+      "otazky": [
+        "2027-ez3-033",
+        "2027-ez3-034"
+      ]
+    },
+    {
+      "klic": "33 2000-5-51",
+      "druh": "csn",
+      "oznaceni": "ČSN 33 2000-5-51",
+      "tvary": [
+        "ČSN 33 2000-5-51"
+      ],
+      "edice": [
+        "ed. 3"
+      ],
+      "roky": [
+        "2022"
+      ],
+      "skupina": "csn-33-2000-5",
+      "popis": null,
+      "otazkyPodleEdice": {
+        "ed. 3": [
+          "2027-ez3-019",
+          "2027-ez3-020"
+        ]
+      },
+      "otazek": 2,
+      "podleOkruhu": {
+        "ez3": 2
+      },
+      "otazky": [
+        "2027-ez3-019",
+        "2027-ez3-020"
+      ]
+    },
+    {
+      "klic": "33 2000-5-559",
+      "druh": "csn",
+      "oznaceni": "ČSN 33 2000-5-559",
+      "tvary": [
+        "ČSN 33 2000-5-559"
+      ],
+      "edice": [
+        "ed. 2"
+      ],
+      "roky": [
+        "2013"
+      ],
+      "skupina": "csn-33-2000-5",
+      "popis": null,
+      "otazkyPodleEdice": {
+        "ed. 2": [
+          "2027-ez3-041",
+          "2027-ez3-042"
+        ]
+      },
+      "otazek": 2,
+      "podleOkruhu": {
+        "ez3": 2
+      },
+      "otazky": [
+        "2027-ez3-041",
+        "2027-ez3-042"
+      ]
+    },
+    {
+      "klic": "33 2000-6",
+      "druh": "csn",
+      "oznaceni": "ČSN 33 2000-6",
+      "tvary": [
+        "ČSN 33 2000-6"
+      ],
+      "edice": [
+        "ed. 2"
+      ],
+      "roky": [
+        "2017"
+      ],
+      "skupina": "csn-33-2000-6",
+      "popis": null,
+      "otazkyPodleEdice": {
+        "ed. 2": [
+          "2027-ez3-012",
+          "2027-ez3-013"
+        ]
+      },
+      "otazek": 2,
+      "podleOkruhu": {
+        "ez3": 2
+      },
+      "otazky": [
+        "2027-ez3-012",
+        "2027-ez3-013"
+      ]
+    },
+    {
+      "klic": "33 2000-7-703",
+      "druh": "csn",
+      "oznaceni": "ČSN 33 2000-7-703",
+      "tvary": [
+        "ČSN 33 2000-7-703"
+      ],
+      "edice": [
+        "ed. 2"
+      ],
+      "roky": [
+        "2005"
+      ],
+      "skupina": "csn-33-2000-7",
+      "popis": null,
+      "otazkyPodleEdice": {
+        "ed. 2": [
+          "2027-ez3-049",
+          "2027-ez3-050"
+        ]
+      },
+      "otazek": 2,
+      "podleOkruhu": {
+        "ez3": 2
+      },
+      "otazky": [
+        "2027-ez3-049",
+        "2027-ez3-050"
+      ]
+    },
+    {
+      "klic": "33 2000-7-705",
+      "druh": "csn",
+      "oznaceni": "ČSN 33 2000-7-705",
+      "tvary": [
+        "ČSN 33 2000-7-705"
+      ],
+      "edice": [
+        "ed. 2"
+      ],
+      "roky": [
+        "2007"
+      ],
+      "skupina": "csn-33-2000-7",
+      "popis": null,
+      "otazkyPodleEdice": {
+        "ed. 2": [
+          "2027-ez3-056",
+          "2027-ez3-057"
+        ]
+      },
+      "otazek": 2,
+      "podleOkruhu": {
+        "ez3": 2
+      },
+      "otazky": [
+        "2027-ez3-056",
+        "2027-ez3-057"
+      ]
+    },
+    {
+      "klic": "33 2000-7-706",
+      "druh": "csn",
+      "oznaceni": "ČSN 33 2000-7-706",
+      "tvary": [
+        "ČSN 33 2000-7-706"
+      ],
+      "edice": [
+        "ed. 3"
+      ],
+      "roky": [
+        "2026"
+      ],
+      "skupina": "csn-33-2000-7",
+      "popis": null,
+      "otazkyPodleEdice": {
+        "ed. 3": [
+          "2027-ez3-058",
+          "2027-ez3-059"
+        ]
+      },
+      "otazek": 2,
+      "podleOkruhu": {
+        "ez3": 2
+      },
+      "otazky": [
+        "2027-ez3-058",
+        "2027-ez3-059"
+      ]
+    },
+    {
+      "klic": "33 2000-7-708",
+      "druh": "csn",
+      "oznaceni": "ČSN 33 2000-7-708",
+      "tvary": [
+        "ČSN 33 2000-7-708"
+      ],
+      "edice": [
+        "ed. 4"
+      ],
+      "roky": [
+        "2018"
+      ],
+      "skupina": "csn-33-2000-7",
+      "popis": null,
+      "otazkyPodleEdice": {
+        "ed. 4": [
+          "2027-ez3-062",
+          "2027-ez3-063"
+        ]
+      },
+      "otazek": 2,
+      "podleOkruhu": {
+        "ez3": 2
+      },
+      "otazky": [
+        "2027-ez3-062",
+        "2027-ez3-063"
+      ]
+    },
+    {
+      "klic": "33 2000-7-712",
+      "druh": "csn",
+      "oznaceni": "ČSN 33 2000-7-712",
+      "tvary": [
+        "ČSN 33 2000-7-712"
+      ],
+      "edice": [
+        "ed. 2"
+      ],
+      "roky": [
+        "2016"
+      ],
+      "skupina": "csn-33-2000-7",
+      "popis": null,
+      "otazkyPodleEdice": {
+        "ed. 2": [
+          "2027-ez3-069",
+          "2027-ez3-070"
+        ]
+      },
+      "otazek": 2,
+      "podleOkruhu": {
+        "ez3": 2
+      },
+      "otazky": [
+        "2027-ez3-069",
+        "2027-ez3-070"
+      ]
+    },
+    {
+      "klic": "33 2000-7-713",
+      "druh": "csn",
+      "oznaceni": "ČSN 33 2000-7-713",
+      "tvary": [
+        "ČSN 33 2000-7-713"
+      ],
+      "edice": [
+        "bez edice"
+      ],
+      "roky": [
+        "2018"
+      ],
+      "skupina": "csn-33-2000-7",
+      "popis": null,
+      "otazkyPodleEdice": {
+        "bez edice": [
+          "2027-ez3-096",
+          "2027-ez3-097"
+        ]
+      },
+      "otazek": 2,
+      "podleOkruhu": {
+        "ez3": 2
+      },
+      "otazky": [
+        "2027-ez3-096",
+        "2027-ez3-097"
+      ]
+    },
+    {
+      "klic": "33 2000-7-753",
+      "druh": "csn",
+      "oznaceni": "ČSN 33 2000-7-753",
+      "tvary": [
+        "ČSN 33 2000-7-753"
+      ],
+      "edice": [
+        "ed. 2"
+      ],
+      "roky": [
+        "2015"
+      ],
+      "skupina": "csn-33-2000-7",
+      "popis": null,
+      "otazkyPodleEdice": {
+        "ed. 2": [
+          "2027-ez3-076",
+          "2027-ez3-077"
+        ]
+      },
+      "otazek": 2,
+      "podleOkruhu": {
+        "ez3": 2
+      },
+      "otazky": [
+        "2027-ez3-076",
+        "2027-ez3-077"
+      ]
+    },
+    {
+      "klic": "33 3320",
+      "druh": "csn",
+      "oznaceni": "ČSN 33 3320",
+      "tvary": [
+        "ČSN 33 3320"
+      ],
+      "edice": [
+        "ed. 2"
+      ],
+      "roky": [
+        "2014"
+      ],
+      "skupina": "csn-ostatni",
+      "popis": "Elektrické přípojky.",
+      "otazkyPodleEdice": {
+        "ed. 2": [
+          "2027-ez3-099",
+          "2027-ez3-100"
+        ]
+      },
+      "otazek": 2,
+      "podleOkruhu": {
+        "ez3": 2
+      },
+      "otazky": [
+        "2027-ez3-099",
+        "2027-ez3-100"
+      ]
+    },
+    {
+      "klic": "455/1991",
+      "druh": "pravni",
+      "oznaceni": "zákon č. 455/1991 Sb.",
+      "tvary": [
+        "zákon č. 455/1991 Sb."
+      ],
+      "edice": [],
+      "roky": [],
+      "skupina": "pravni-ostatni",
+      "popis": null,
+      "otazkyPodleEdice": {},
+      "otazek": 2,
+      "podleOkruhu": {
+        "ez1": 2
+      },
+      "otazky": [
+        "2027-ez1-001",
+        "2027-ez1-002"
+      ]
+    },
+    {
+      "klic": "60529",
+      "druh": "csn",
+      "oznaceni": "ČSN EN 60529",
+      "tvary": [
+        "ČSN EN 60529"
+      ],
+      "edice": [
+        "bez edice"
+      ],
+      "roky": [
+        "1993"
+      ],
+      "skupina": "csn-prevzate",
+      "popis": "Stupně ochrany krytem (kód IP).",
+      "otazkyPodleEdice": {
+        "bez edice": [
+          "2027-ez3-006",
+          "2027-ez3-007"
+        ]
+      },
+      "otazek": 2,
+      "podleOkruhu": {
+        "ez3": 2
+      },
+      "otazky": [
+        "2027-ez3-006",
+        "2027-ez3-007"
+      ]
+    },
+    {
+      "klic": "60670-1",
+      "druh": "csn",
+      "oznaceni": "ČSN EN IEC 60670-1",
+      "tvary": [
+        "ČSN EN IEC 60670-1"
+      ],
+      "edice": [
+        "ed. 2"
+      ],
+      "roky": [
+        "2021"
+      ],
+      "skupina": "csn-prevzate",
+      "popis": null,
+      "otazkyPodleEdice": {
+        "ed. 2": [
+          "2027-ez3-137",
+          "2027-ez3-138"
+        ]
+      },
+      "otazek": 2,
+      "podleOkruhu": {
+        "ez3": 2
+      },
+      "otazky": [
+        "2027-ez3-137",
+        "2027-ez3-138"
+      ]
+    },
+    {
+      "klic": "61439-3",
+      "druh": "csn",
+      "oznaceni": "ČSN EN 61439-3",
+      "tvary": [
+        "ČSN EN 61439-3"
+      ],
+      "edice": [
+        "bez edice",
+        "ed. 2"
+      ],
+      "roky": [
+        "2025"
+      ],
+      "skupina": "csn-prevzate",
+      "popis": null,
+      "otazkyPodleEdice": {
+        "bez edice": [
+          "2027-ez3-132"
+        ],
+        "ed. 2": [
+          "2027-ez3-130"
+        ]
+      },
+      "otazek": 2,
+      "podleOkruhu": {
+        "ez3": 2
+      },
+      "otazky": [
+        "2027-ez3-130",
+        "2027-ez3-132"
+      ]
+    },
+    {
+      "klic": "146/2024",
+      "druh": "pravni",
+      "oznaceni": "vyhláška č. 146/2024 Sb.",
+      "tvary": [
+        "vyhláška č. 146/2024 Sb."
+      ],
+      "edice": [],
+      "roky": [],
+      "skupina": "pravni-ostatni",
+      "popis": null,
+      "otazkyPodleEdice": {},
+      "otazek": 1,
+      "podleOkruhu": {
+        "ez1": 1
+      },
+      "otazky": [
+        "2027-ez1-082"
+      ]
+    },
+    {
+      "klic": "278/2008",
+      "druh": "pravni",
+      "oznaceni": "NV č. 278/2008 Sb.",
+      "tvary": [
+        "NV č. 278/2008 Sb."
+      ],
+      "edice": [],
+      "roky": [],
+      "skupina": "pravni-ostatni",
+      "popis": null,
+      "otazkyPodleEdice": {},
+      "otazek": 1,
+      "podleOkruhu": {
+        "ez1": 1
+      },
+      "otazky": [
+        "2027-ez1-002"
+      ]
+    },
+    {
+      "klic": "283/2021",
+      "druh": "pravni",
+      "oznaceni": "zákon č. 283/2021 Sb.",
+      "tvary": [
+        "zákon č. 283/2021 Sb."
+      ],
+      "edice": [],
+      "roky": [],
+      "skupina": "pravni-ostatni",
+      "popis": null,
+      "otazkyPodleEdice": {},
+      "otazek": 1,
+      "podleOkruhu": {
+        "ez1": 1
+      },
+      "otazky": [
+        "2027-ez1-081"
+      ]
+    },
+    {
+      "klic": "33 0360",
+      "druh": "csn",
+      "oznaceni": "ČSN 33 0360",
+      "tvary": [
+        "ČSN 33 0360"
+      ],
+      "edice": [
+        "ed. 2"
+      ],
+      "roky": [
+        "2014"
+      ],
+      "skupina": "csn-ostatni",
+      "popis": null,
+      "otazkyPodleEdice": {
+        "ed. 2": [
+          "2027-ez3-008"
+        ]
+      },
+      "otazek": 1,
+      "podleOkruhu": {
+        "ez3": 1
+      },
+      "otazky": [
+        "2027-ez3-008"
+      ]
+    },
+    {
+      "klic": "33 1310",
+      "druh": "csn",
+      "oznaceni": "ČSN 33 1310",
+      "tvary": [
+        "ČSN 33 1310"
+      ],
+      "edice": [
+        "ed. 2"
+      ],
+      "roky": [
+        "2009"
+      ],
+      "skupina": "csn-ostatni",
+      "popis": null,
+      "otazkyPodleEdice": {
+        "ed. 2": [
+          "2027-ez3-014"
+        ]
+      },
+      "otazek": 1,
+      "podleOkruhu": {
+        "ez3": 1
+      },
+      "otazky": [
+        "2027-ez3-014"
+      ]
+    },
+    {
+      "klic": "33 2000-4-45",
+      "druh": "csn",
+      "oznaceni": "ČSN 33 2000-4-45",
+      "tvary": [
+        "ČSN 33 2000-4-45"
+      ],
+      "edice": [
+        "bez edice"
+      ],
+      "roky": [
+        "1996"
+      ],
+      "skupina": "csn-33-2000-4",
+      "popis": null,
+      "otazkyPodleEdice": {
+        "bez edice": [
+          "2027-ez3-023"
+        ]
+      },
+      "otazek": 1,
+      "podleOkruhu": {
+        "ez3": 1
+      },
+      "otazky": [
+        "2027-ez3-023"
+      ]
+    },
+    {
+      "klic": "33 2000-7-715",
+      "druh": "csn",
+      "oznaceni": "ČSN 33 2000-7-715",
+      "tvary": [
+        "ČSN 33 2000-7-715"
+      ],
+      "edice": [
+        "ed. 2"
+      ],
+      "roky": [
+        "2013"
+      ],
+      "skupina": "csn-33-2000-7",
+      "popis": null,
+      "otazkyPodleEdice": {
+        "ed. 2": [
+          "2027-ez3-074"
+        ]
+      },
+      "otazek": 1,
+      "podleOkruhu": {
+        "ez3": 1
+      },
+      "otazky": [
+        "2027-ez3-074"
+      ]
+    },
+    {
+      "klic": "33 2000-7-722",
+      "druh": "csn",
+      "oznaceni": "ČSN 33 2000-7-722",
+      "tvary": [
+        "ČSN 33 2000-7-722"
+      ],
+      "edice": [
+        "ed. 3"
+      ],
+      "roky": [
+        "2019"
+      ],
+      "skupina": "csn-33-2000-7",
+      "popis": null,
+      "otazkyPodleEdice": {
+        "ed. 3": [
+          "2027-ez3-075"
+        ]
+      },
+      "otazek": 1,
+      "podleOkruhu": {
+        "ez3": 1
+      },
+      "otazky": [
+        "2027-ez3-075"
+      ]
+    },
+    {
+      "klic": "34 1090",
+      "druh": "csn",
+      "oznaceni": "ČSN 34 1090",
+      "tvary": [
+        "ČSN 34 1090"
+      ],
+      "edice": [
+        "ed. 2"
+      ],
+      "roky": [
+        "2011"
+      ],
+      "skupina": "csn-ostatni",
+      "popis": null,
+      "otazkyPodleEdice": {
+        "ed. 2": [
+          "2027-ez3-106"
+        ]
+      },
+      "otazek": 1,
+      "podleOkruhu": {
+        "ez3": 1
+      },
+      "otazky": [
+        "2027-ez3-106"
+      ]
+    },
+    {
+      "klic": "345/2002",
+      "druh": "pravni",
+      "oznaceni": "vyhláška č. 345/2002 Sb.",
+      "tvary": [
+        "vyhláška č. 345/2002 Sb."
+      ],
+      "edice": [],
+      "roky": [],
+      "skupina": "pravni-ostatni",
+      "popis": null,
+      "otazkyPodleEdice": {},
+      "otazek": 1,
+      "podleOkruhu": {
+        "ez1": 1
+      },
+      "otazky": [
+        "2027-ez1-086"
+      ]
+    },
+    {
+      "klic": "366/2013",
+      "druh": "pravni",
+      "oznaceni": "NV č. 366/2013 Sb.",
+      "tvary": [
+        "NV č. 366/2013 Sb."
+      ],
+      "edice": [],
+      "roky": [],
+      "skupina": "pravni-ostatni",
+      "popis": null,
+      "otazkyPodleEdice": {},
+      "otazek": 1,
+      "podleOkruhu": {
+        "ez1": 1
+      },
+      "otazky": [
+        "2027-ez1-083"
+      ]
+    },
+    {
+      "klic": "50160",
+      "druh": "csn",
+      "oznaceni": "ČSN EN 50160",
+      "tvary": [
+        "ČSN EN 50160"
+      ],
+      "edice": [
+        "ed. 4"
+      ],
+      "roky": [
+        "2023"
+      ],
+      "skupina": "csn-prevzate",
+      "popis": null,
+      "otazkyPodleEdice": {
+        "ed. 4": [
+          "2027-ez3-001"
+        ]
+      },
+      "otazek": 1,
+      "podleOkruhu": {
+        "ez3": 1
+      },
+      "otazky": [
+        "2027-ez3-001"
+      ]
+    },
+    {
+      "klic": "50191",
+      "druh": "csn",
+      "oznaceni": "ČSN EN 50191",
+      "tvary": [
+        "ČSN EN 50191"
+      ],
+      "edice": [
+        "ed. 2"
+      ],
+      "roky": [
+        "2011"
+      ],
+      "skupina": "csn-prevzate",
+      "popis": null,
+      "otazkyPodleEdice": {
+        "ed. 2": [
+          "2027-ez3-015"
+        ]
+      },
+      "otazek": 1,
+      "podleOkruhu": {
+        "ez3": 1
+      },
+      "otazky": [
+        "2027-ez3-015"
+      ]
+    },
+    {
+      "klic": "50274",
+      "druh": "csn",
+      "oznaceni": "ČSN EN 50274",
+      "tvary": [
+        "ČSN EN 50274"
+      ],
+      "edice": [
+        "bez edice"
+      ],
+      "roky": [
+        "2002"
+      ],
+      "skupina": "csn-prevzate",
+      "popis": null,
+      "otazkyPodleEdice": {
+        "bez edice": [
+          "2027-ez3-140"
+        ]
+      },
+      "otazek": 1,
+      "podleOkruhu": {
+        "ez3": 1
+      },
+      "otazky": [
+        "2027-ez3-140"
+      ]
+    },
+    {
+      "klic": "60073",
+      "druh": "csn",
+      "oznaceni": "ČSN EN 60073",
+      "tvary": [
+        "ČSN EN 60073"
+      ],
+      "edice": [
+        "ed. 2"
+      ],
+      "roky": [
+        "2003"
+      ],
+      "skupina": "csn-prevzate",
+      "popis": null,
+      "otazkyPodleEdice": {
+        "ed. 2": [
+          "2027-ez3-005"
+        ]
+      },
+      "otazek": 1,
+      "podleOkruhu": {
+        "ez3": 1
+      },
+      "otazky": [
+        "2027-ez3-005"
+      ]
+    },
+    {
+      "klic": "60670-23",
+      "druh": "csn",
+      "oznaceni": "ČSN EN 60670-23",
+      "tvary": [
+        "ČSN EN 60670-23"
+      ],
+      "edice": [
+        "bez edice"
+      ],
+      "roky": [
+        "2009"
+      ],
+      "skupina": "csn-prevzate",
+      "popis": null,
+      "otazkyPodleEdice": {
+        "bez edice": [
+          "2027-ez3-139"
+        ]
+      },
+      "otazek": 1,
+      "podleOkruhu": {
+        "ez3": 1
+      },
+      "otazky": [
+        "2027-ez3-139"
+      ]
+    },
+    {
+      "klic": "61439-2",
+      "druh": "csn",
+      "oznaceni": "ČSN EN IEC 61439-2",
+      "tvary": [
+        "ČSN EN IEC 61439-2"
+      ],
+      "edice": [
+        "ed. 3"
+      ],
+      "roky": [
+        "2021"
+      ],
+      "skupina": "csn-prevzate",
+      "popis": null,
+      "otazkyPodleEdice": {
+        "ed. 3": [
+          "2027-ez3-131"
+        ]
+      },
+      "otazek": 1,
+      "podleOkruhu": {
+        "ez3": 1
+      },
+      "otazky": [
+        "2027-ez3-131"
+      ]
+    },
+    {
+      "klic": "61439-6",
+      "druh": "csn",
+      "oznaceni": "ČSN EN 61439-6",
+      "tvary": [
+        "ČSN EN 61439-6"
+      ],
+      "edice": [
+        "bez edice"
+      ],
+      "roky": [
+        "2013"
+      ],
+      "skupina": "csn-prevzate",
+      "popis": null,
+      "otazkyPodleEdice": {
+        "bez edice": [
+          "2027-ez3-136"
+        ]
+      },
+      "otazek": 1,
+      "podleOkruhu": {
+        "ez3": 1
+      },
+      "otazky": [
+        "2027-ez3-136"
+      ]
+    },
+    {
+      "klic": "61936-1",
+      "druh": "csn",
+      "oznaceni": "ČSN EN IEC 61936-1",
+      "tvary": [
+        "ČSN EN IEC 61936-1"
+      ],
+      "edice": [
+        "ed. 2"
+      ],
+      "roky": [
+        "2022"
+      ],
+      "skupina": "csn-prevzate",
+      "popis": null,
+      "otazkyPodleEdice": {
+        "ed. 2": [
+          "2027-ez3-098"
+        ]
+      },
+      "otazek": 1,
+      "podleOkruhu": {
+        "ez3": 1
+      },
+      "otazky": [
+        "2027-ez3-098"
+      ]
+    },
+    {
+      "klic": "73 6006",
+      "druh": "csn",
+      "oznaceni": "ČSN 73 6006",
+      "tvary": [
+        "ČSN 73 6006"
+      ],
+      "edice": [
+        "bez edice"
+      ],
+      "roky": [
+        "2003"
+      ],
+      "skupina": "csn-ostatni",
+      "popis": null,
+      "otazkyPodleEdice": {
+        "bez edice": [
+          "2027-ez3-110"
+        ]
+      },
+      "otazek": 1,
+      "podleOkruhu": {
+        "ez3": 1
+      },
+      "otazky": [
+        "2027-ez3-110"
+      ]
+    },
+    {
+      "klic": "89/2012",
+      "druh": "pravni",
+      "oznaceni": "zákon č. 89/2012 Sb.",
+      "tvary": [
+        "zákon č. 89/2012 Sb."
+      ],
+      "edice": [],
+      "roky": [],
+      "skupina": "pravni-ostatni",
+      "popis": null,
+      "otazkyPodleEdice": {},
+      "otazek": 1,
+      "podleOkruhu": {
+        "ez1": 1
+      },
+      "otazky": [
+        "2027-ez1-003"
+      ]
+    },
+    {
+      "klic": "90/2016",
+      "druh": "pravni",
+      "oznaceni": "zákon č. 90/2016 Sb.",
+      "tvary": [
+        "zákon č. 90/2016 Sb."
+      ],
+      "edice": [],
+      "roky": [],
+      "skupina": "pravni-ostatni",
+      "popis": null,
+      "otazkyPodleEdice": {},
+      "otazek": 1,
+      "podleOkruhu": {
+        "ez1": 1
+      },
+      "otazky": [
+        "2027-ez1-071"
+      ]
+    }
+  ]
+}
