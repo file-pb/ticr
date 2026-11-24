@@ -215,11 +215,18 @@ curl -s -o /dev/null -w "%{http_code}\n" http://localhost:8080/health
 - **Parametry zkoušky nejsou doložené dokumentem TIČR.** Hranici 80 % uvádí
   TIČR ve zveřejněných informacích. Skladbu — pro rozsah E2A čtyři testy po
   patnácti otázkách, 20 minut na test, tedy 60 otázek a 80 minut — uvádějí
-  shodně dva komerční provozovatelé příprav a dva nezávislé zdroje ze školení.
+  shodně dva komerční provozovatelé příprav a tři nezávislé zdroje ze školení.
   Pořád je to druhotné, takže v aplikaci běží jako tréninkové nastavení a jde
   je změnit.
+- **Hranice 80 % se počítá z celých 60 otázek, ne po okruzích.** Dokud to nebylo
+  doložené, aplikace to tak dělala jako odhad. Záznam prvního dne kurzu ESČ
+  z 23. 11. 2026 to říká výslovně: „Vyhodnocuje to až na závěr všech těch 60
+  otázek… K úspěšnému složení zkoušky musíte mít 80 % správných odpovědí."
+  Mezi testy zkouška výsledek nezobrazí. Je to druhotný zdroj (přednášející,
+  který zkoušku sám skládal), ne dokument TIČR.
 - **Zkouška běží jako čtyři samostatné testy, aplikace jako jeden blok.**
   Na zkoušce se čas nedá přenášet mezi okruhy; kdo prošvihne prvních 20 minut,
-  o ně přijde. Aplikace losuje 60 otázek na 80 minut dohromady, což je
-  mírnější. Rozdělení na čtyři bloky zatím není implementované.
+  o ně přijde. Pořadí testů si volí zkoušený a stisk „Vyhodnotit" test nevratně
+  uzavře. Aplikace losuje 60 otázek na 80 minut dohromady, což je mírnější.
+  Rozdělení na čtyři bloky zatím není implementované.
 - **Ústní část zkoušky aplikace neprocvičuje** a nic o ní netvrdí.

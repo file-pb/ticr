@@ -14,15 +14,21 @@ export interface ExamPreset {
  *
  * Hranici 80 % uvádí TIČR ve zveřejněných informacích. Skladbu — pro rozsah
  * E2A čtyři testy po patnácti otázkách, na každý 20 minut — shodně uvádějí
- * dva nezávislé zdroje: přednášející kurzu ESČ 18. 5. 2026 („E2A jsou čtyři
- * testy po patnácti otázkách, 20 minut na test") a cvičný test rozdaný na
- * konci téhož kurzu 21. 5. 2026 (60 otázek, 80 minut). Obojí jsou druhotné
- * zdroje, ne dokument TIČR.
+ * tři nezávislé zdroje: přednášející kurzu ESČ 18. 5. 2026 („E2A jsou čtyři
+ * testy po patnácti otázkách, 20 minut na test"), cvičný test rozdaný na
+ * konci téhož kurzu 21. 5. 2026 (60 otázek, 80 minut) a záznam prvního dne
+ * kurzu 23. 11. 2026. Všechno jsou to druhotné zdroje, ne dokument TIČR.
+ *
+ * **`thresholdPercent` se počítá z celého pokusu, ne po okruzích**, a od
+ * 23. 11. 2026 je to doložené: „Vyhodnocuje to až na závěr všech těch 60
+ * otázek, protože budete mít čtyři testy po 15 otázkách… K úspěšnému složení
+ * zkoušky musíte mít 80 % správných odpovědí." Do té doby to byl odhad.
  *
  * **Čím se tahle předvolba od skutečné zkoušky liší:** zkouška běží jako
  * čtyři samostatné testy po 20 minutách, takže čas nejde přenášet mezi
- * okruhy. Aplikace zatím losuje jeden blok 60 otázek na 80 minut dohromady,
- * což je mírnější. Rozdíl je popsaný v README.
+ * okruhy; pořadí testů si volí zkoušený a odeslání testu je nevratné. Mezi
+ * testy zkouška výsledek neukáže. Aplikace zatím losuje jeden blok 60 otázek
+ * na 80 minut dohromady, což je mírnější. Rozdíl je popsaný v README.
  */
 export const DEFAULT_EXAM: ExamPreset = {
   circuits: ['ez1', 'ez2', 'ez3', 'ez4'],
