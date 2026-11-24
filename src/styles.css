@@ -184,3 +184,21 @@ footer { margin: 40px 0 24px; color: var(--text-tlumeny); font-size: 0.85rem; }
   body { font-size: 16px; }
   .prehled button { width: 38px; height: 38px; }
 }
+
+/* Trenažér druhů sítí */
+.sit-schema {
+  display: block;
+  width: 100%;
+  max-width: 520px;
+  height: auto;
+  margin: 10px 0;
+  color: var(--text);
+}
+.sit-popisek {
+  font-size: 11px;
+  font-family: ui-monospace, SFMono-Regular, Menlo, monospace;
+  fill: var(--text-tlumeny);
+}
+
+/* Pomůcky stojí v menu zvlášť — nejsou to otázky TIČR. */
+.nav-oddelovac { flex: 1 1 auto; min-width: 8px; }

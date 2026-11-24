@@ -18,6 +18,7 @@ interface Props {
   onPracticeShort: (count: number) => void
   onPracticeCircuit: (circuit: 'ez1' | 'ez2' | 'ez3' | 'ez4') => void
   onStudy: () => void
+  onSite: () => void
   onHistory: () => void
 }
 
@@ -34,6 +35,7 @@ export function Home({
   onPracticeShort,
   onPracticeCircuit,
   onStudy,
+  onSite,
   onHistory,
 }: Props) {
   const overenoCelkem = pokryti.reduce((a, c) => a + c.overeno, 0)
@@ -86,6 +88,7 @@ export function Home({
         <button onClick={() => onPracticeShort(20)}>Série 20 otázek</button>
         <button onClick={onStudy}>Procházet banku</button>
       </div>
+
       <div className="radek" style={{ marginTop: 8 }}>
         {(['ez1', 'ez2', 'ez3', 'ez4'] as const).map((c) => (
           <button key={c} onClick={() => onPracticeCircuit(c)}>
@@ -131,6 +134,21 @@ export function Home({
         Skóre samo o sobě úspěch u TIČR nepředpovídá. Čti ho vždy spolu s pokrytím banky — několik
         opakovaných testů z malé části otázek nic nedokazuje.
       </p>
+
+      <h2>Pomůcky mimo zkouškovou banku</h2>
+      <div className="karta">
+        <p style={{ marginTop: 0 }}>
+          Vlastní učební materiál aplikace. <strong>Není to sada otázek TIČR</strong> — nehodnotí
+          se jím zkouška nanečisto, nezapisuje se do pokroku a do pokrytí banky se nepočítá.
+        </p>
+        <div className="radek">
+          <button onClick={onSite}>Trenažér druhů sítí</button>
+        </div>
+        <p className="tlumene" style={{ marginBottom: 0 }}>
+          Rozpoznávání sítí TN-C, TN-S, TN-C-S, TT a IT ze schématu, s odkazem na otázky z banky,
+          které se na ně ptají.
+        </p>
+      </div>
 
       <UcebniUpozorneni />
       <PuvodBanky bank={bank} />

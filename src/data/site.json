@@ -1,0 +1,134 @@
+{
+  "schemaVersion": 1,
+  "verze": "0.1.0",
+  "nazev": "Druhy sítí podle způsobu uzemnění",
+  "stavCeleho": "navrh",
+  "varovani": "Učební text napsaný pro tuhle aplikaci. Nikdo ho neověřil proti normě. Nejsou to definice převzaté z normy a nelze se o ně opřít při zkoušce ani při revizi — slouží k orientaci v tom, čím se druhy sítí liší, a k nácviku jejich rozpoznání.",
+  "doloz": "Doložit proti ČSN 33 2000-1 ed. 2:2009 čl. 312.2 a 312.2.1 (označování druhů sítí) a ČSN 33 2000-4-41 ed. 3:2018 čl. 411.4 až 411.6 (automatické odpojení od zdroje v sítích TN, TT a IT). Obě normy jsou placené, bez přístupu k nim zůstává tenhle text návrhem.",
+  "pismena": [
+    {
+      "pozice": "první",
+      "vyznam": "Vztah zdroje k zemi.",
+      "varianty": [
+        { "znak": "T", "popis": "Jeden bod zdroje je přímo uzemněn — ve střídavých sítích obvykle nulový bod." },
+        { "znak": "I", "popis": "Živé části jsou od země izolovány, nebo je jeden bod spojen se zemí přes impedanci." }
+      ]
+    },
+    {
+      "pozice": "druhá",
+      "vyznam": "Vztah neživých částí zařízení k zemi.",
+      "varianty": [
+        { "znak": "N", "popis": "Neživé části jsou spojeny s uzemněným bodem zdroje, ne s vlastním zemničem." },
+        { "znak": "T", "popis": "Neživé části mají vlastní zemnič, nezávislý na uzemnění zdroje." }
+      ]
+    },
+    {
+      "pozice": "další u sítí TN",
+      "vyznam": "Uspořádání ochranného a nulového vodiče.",
+      "varianty": [
+        { "znak": "S", "popis": "Ochranná funkce má vodič oddělený od nulového — PE a N jsou dva vodiče." },
+        { "znak": "C", "popis": "Ochranná a nulová funkce jsou sloučené v jediném vodiči PEN." }
+      ]
+    }
+  ],
+  "druhy": [
+    {
+      "id": "tn-c",
+      "kod": "TN-C",
+      "nazev": "Síť TN-C",
+      "rozpad": ["T — jeden bod zdroje přímo uzemněn", "N — neživé části spojeny s uzemněným bodem zdroje", "C — ochranná a nulová funkce sloučené"],
+      "znaky": [
+        "Ochranný a nulový vodič jsou po celé síti sloučené do jediného vodiče PEN.",
+        "Neživé části se připojují na vodič PEN.",
+        "Vodič PEN nese provozní proud i ochrannou funkci současně."
+      ],
+      "zameny": [
+        { "s": "TN-C-S", "cim": "V TN-C-S se PEN od určitého bodu rozdělí na PE a N. V TN-C zůstává sloučený v celé síti." }
+      ],
+      "schema": {
+        "zdroj": "uzemneny",
+        "vodice": [{ "znak": "L1" }, { "znak": "L2" }, { "znak": "L3" }, { "znak": "PEN" }],
+        "neziveCasti": "PEN"
+      }
+    },
+    {
+      "id": "tn-s",
+      "kod": "TN-S",
+      "nazev": "Síť TN-S",
+      "rozpad": ["T — jeden bod zdroje přímo uzemněn", "N — neživé části spojeny s uzemněným bodem zdroje", "S — ochranná a nulová funkce oddělené"],
+      "znaky": [
+        "Ochranný vodič PE a nulový vodič N jsou po celé síti oddělené.",
+        "Neživé části se připojují na vodič PE.",
+        "Vodičem PE neprotéká provozní proud."
+      ],
+      "zameny": [
+        { "s": "TN-C-S", "cim": "V TN-S jsou PE a N oddělené od zdroje. V TN-C-S je část sítě od zdroje vedená jako PEN." },
+        { "s": "TT", "cim": "V TN-S vede PE od uzemněného bodu zdroje. V TT má zařízení vlastní zemnič a žádný PE od zdroje nepřichází." }
+      ],
+      "schema": {
+        "zdroj": "uzemneny",
+        "vodice": [{ "znak": "L1" }, { "znak": "L2" }, { "znak": "L3" }, { "znak": "N" }, { "znak": "PE" }],
+        "neziveCasti": "PE"
+      }
+    },
+    {
+      "id": "tn-c-s",
+      "kod": "TN-C-S",
+      "nazev": "Síť TN-C-S",
+      "rozpad": ["T — jeden bod zdroje přímo uzemněn", "N — neživé části spojeny s uzemněným bodem zdroje", "C-S — nejprve sloučené, od určitého bodu oddělené"],
+      "znaky": [
+        "V části sítě od zdroje jsou ochranná a nulová funkce sloučené ve vodiči PEN.",
+        "Od určitého bodu dál jsou vedené jako oddělené vodiče PE a N.",
+        "Za bodem rozdělení se oddělené vodiče už znovu nespojují."
+      ],
+      "zameny": [
+        { "s": "TN-C", "cim": "Rozdíl je v existenci bodu rozdělení. TN-C žádný nemá." },
+        { "s": "TN-S", "cim": "Rozdíl je v tom, že před bodem rozdělení jde o jediný vodič PEN." }
+      ],
+      "schema": {
+        "zdroj": "uzemneny",
+        "vodice": [{ "znak": "L1" }, { "znak": "L2" }, { "znak": "L3" }, { "znak": "PEN", "deleniNa": ["N", "PE"] }],
+        "neziveCasti": "PE"
+      }
+    },
+    {
+      "id": "tt",
+      "kod": "TT",
+      "nazev": "Síť TT",
+      "rozpad": ["T — jeden bod zdroje přímo uzemněn", "T — neživé části mají vlastní zemnič"],
+      "znaky": [
+        "Jeden bod zdroje je přímo uzemněn.",
+        "Neživé části jsou uzemněné zemničem, který je na uzemnění zdroje elektricky nezávislý.",
+        "Porucha se uzavírá přes zem, ne přes ochranný vodič vedený od zdroje."
+      ],
+      "zameny": [
+        { "s": "TN-S", "cim": "V TT chybí ochranný vodič vedený od zdroje; neživé části jsou na vlastním zemniči." },
+        { "s": "IT", "cim": "Rozdíl je na straně zdroje: v TT je zdroj přímo uzemněn, v IT izolovaný nebo uzemněný přes impedanci." }
+      ],
+      "schema": {
+        "zdroj": "uzemneny",
+        "vodice": [{ "znak": "L1" }, { "znak": "L2" }, { "znak": "L3" }, { "znak": "N" }],
+        "neziveCasti": "vlastniZemnic"
+      }
+    },
+    {
+      "id": "it",
+      "kod": "IT",
+      "nazev": "Síť IT",
+      "rozpad": ["I — zdroj izolovaný od země, nebo spojený se zemí přes impedanci", "T — neživé části mají vlastní zemnič"],
+      "znaky": [
+        "Živé části jsou od země izolované, nebo je jeden bod spojen se zemí přes impedanci.",
+        "Neživé části zařízení jsou uzemněné.",
+        "Nulový vodič se rozvádět může i nemusí — norma zná obě varianty."
+      ],
+      "zameny": [
+        { "s": "TT", "cim": "Rozdíl je na straně zdroje: v IT není zdroj přímo uzemněn." }
+      ],
+      "schema": {
+        "zdroj": "izolovany",
+        "vodice": [{ "znak": "L1" }, { "znak": "L2" }, { "znak": "L3" }],
+        "neziveCasti": "vlastniZemnic"
+      }
+    }
+  ]
+}

@@ -42,6 +42,12 @@ scripts/fetch_source.sh && python3 -I scripts/import_ticr.py
 
 `fetch_source.sh` bere i ručně dodaný ZIP: `scripts/fetch_source.sh ~/Downloads/otazky.zip`.
 
+Trenažér sítí po změně obsahu (seznam otázek k druhům sítí se generuje):
+
+```bash
+python3 -I scripts/build_site_topics.py && python3 -I scripts/check_site.py
+```
+
 Přehled pokrytí po změně odpovědí:
 
 ```bash
@@ -58,6 +64,8 @@ npm test
 
 ```
 src/data/questions.2027.json   banka — generuje import, ručně se needituje
+src/data/site.json             trenažér sítí — vlastní učební text, neověřený
+src/data/site-otazky.json      které otázky z banky se ptají na který druh sítě
 src/data/answers.2027.json     klíč, veřejná vrstva (volně ověřitelné zdroje)
 src/data/answers.*.local.json  klíč, lokální vrstva (placené podklady), mimo git
 predpisy/                      doslovné texty předpisů — proti nim se klíč ověřuje
@@ -91,6 +99,28 @@ Rozhodnutí, která stojí za vysvětlení:
   bere jen tu s nižším číslem. Rozhoduje **přesná shoda** znění — dvojice,
   které se liší jediným slovem (ez2 78/79 SELV proti PELV, 95/96 „nesmí“
   proti „může“), jsou dvě různé otázky a zůstávají obě.
+
+## Pomůcky mimo zkouškovou banku
+
+**Trenažér druhů sítí** — rozpoznávání TN-C, TN-S, TN-C-S, TT a IT ze schématu.
+Schémata se kreslí z popisu v `src/data/site.json`, takže obrázek nemůže
+zestárnout odděleně od textu. Ke každému druhu je seznam otázek z banky, které
+ho jmenují; generuje ho `scripts/build_site_topics.py` podle kódu ve znění
+otázky a `scripts/check_site.py` hlídá, že je seznam aktuální.
+
+V menu i na rozcestníku stojí pomůcky **odděleně od zkouškové části** a platí
+pro ně jiná pravidla:
+
+- Je to **vlastní učební text aplikace, neověřený proti normě.** Nejsou to
+  definice převzaté z ČSN 33 2000-1 ed. 2 ani z ČSN 33 2000-4-41 ed. 3; obě
+  normy jsou placené a bez přístupu k nim zůstává text návrhem.
+- **Neuvádí žádnou číselnou hodnotu.** Doby odpojení, dovolená dotyková napětí
+  a nejmenší průřezy jsou přesně ty údaje, které se bez normy vymýšlet nesmí.
+  Trenažér učí uspořádání vodičů a uzemnění. `scripts/check_site.py` číslo
+  s jednotkou v učebním textu odmítne.
+- **Nehodnotí se jím zkouška a nezapisuje se do pokroku.** Výsledek kvízu
+  nikam neodchází, do pokrytí banky se nepočítá a opakování podle pokroku se
+  o něj neopírá.
 
 ## Obsah, licence a cizí práce
 

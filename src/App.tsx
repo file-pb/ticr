@@ -11,6 +11,7 @@ import { Home } from './ui/Home'
 import { Runner } from './ui/Runner'
 import { Results } from './ui/Results'
 import { Study } from './ui/Study'
+import { Site } from './ui/Site'
 import { History } from './ui/History'
 
 const AKTIVNI_POKUS = 'aktivniPokus'
@@ -20,6 +21,7 @@ type View =
   | { k: 'run'; attemptId: string }
   | { k: 'result'; attemptId: string }
   | { k: 'study' }
+  | { k: 'site' }
   | { k: 'history' }
 
 export function App() {
@@ -218,6 +220,10 @@ export function App() {
           <button onClick={() => setView({ k: 'home' })}>← Rozcestník</button>
           <button onClick={() => setView({ k: 'study' })}>Procházet banku</button>
           <button onClick={() => setView({ k: 'history' })}>Historie</button>
+          {/* Pomůcky stojí v menu zvlášť. Nejsou to otázky TIČR a nemají se
+              s nimi plést. */}
+          <span className="nav-oddelovac" aria-hidden="true" />
+          <button onClick={() => setView({ k: 'site' })}>Trenažér sítí</button>
         </nav>
       )}
 
@@ -249,6 +255,7 @@ export function App() {
             spustProcvicovani(`Procvičování okruhu ${c}`, { circuits: [c] })
           }
           onStudy={() => setView({ k: 'study' })}
+          onSite={() => setView({ k: 'site' })}
           onHistory={() => setView({ k: 'history' })}
         />
       )}
@@ -276,6 +283,13 @@ export function App() {
 
       {view.k === 'study' && (
         <Study items={items} savedIds={savedIds} onToggleSaved={(id) => void toggleSaved(id)} />
+      )}
+
+      {view.k === 'site' && (
+        <Site
+          items={itemMap}
+          onPracticeIds={(ids, label) => spustProcvicovani(label, { onlyIds: ids })}
+        />
       )}
 
       {view.k === 'history' && (

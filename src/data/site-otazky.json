@@ -1,0 +1,48 @@
+{
+  "schemaVersion": 1,
+  "generovano": "2026-11-24",
+  "skript": "scripts/build_site_topics.py",
+  "bankVersion": "2027.1",
+  "poznamka": "Generovaný soubor. Obsahuje jen ID otázek z banky, ne jejich znění ani odpovědi. Přiřazení je podle kódu sítě ve znění otázky, tedy mechanické — otázka, která se druhu sítě týká věcně, ale kód nejmenuje, tu není.",
+  "temata": {
+    "tn-c": [
+      "2027-ez2-026",
+      "2027-ez3-036",
+      "2027-ez3-064"
+    ],
+    "tn-s": [
+      "2027-ez3-017"
+    ],
+    "tn-c-s": [
+      "2027-ez2-027",
+      "2027-ez2-028",
+      "2027-ez3-018"
+    ],
+    "tt": [
+      "2027-ez2-029",
+      "2027-ez2-030",
+      "2027-ez3-016",
+      "2027-ez3-065"
+    ],
+    "it": [
+      "2027-ez2-031",
+      "2027-ez2-032",
+      "2027-ez2-033",
+      "2027-ez3-016",
+      "2027-ez3-065"
+    ],
+    "spolecne": [
+      "2027-ez2-020",
+      "2027-ez2-025",
+      "2027-ez2-097",
+      "2027-ez2-100",
+      "2027-ez3-004",
+      "2027-ez3-033",
+      "2027-ez3-086",
+      "2027-ez3-094",
+      "2027-ez3-122",
+      "2027-ez3-123",
+      "2027-ez3-126"
+    ]
+  }
+}
